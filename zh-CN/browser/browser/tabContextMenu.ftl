@@ -79,6 +79,10 @@ move-to-end =
 move-to-new-window =
     .label = 移动到新窗口
     .accesskey = W
+# Variables
+#  $profileName (string): The name of the profile to move tab to
+move-to-new-profile =
+    .label = 移动到“{ $profileName }”
 tab-context-close-multiple-tabs =
     .label = 批量关闭标签页
     .accesskey = M
@@ -123,6 +127,14 @@ tab-context-move-tabs =
            *[other] 移动标签页
         }
     .accesskey = v
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-device =
+    .label =
+        { $tabCount ->
+            [1] 发送到设备
+           *[other] 发送 { $tabCount } 个标签页到设备
+        }
+    .accesskey = n
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

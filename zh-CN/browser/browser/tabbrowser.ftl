@@ -253,6 +253,20 @@ tab-context-move-tab-to-group =
            *[other] 将标签页添加到群组
         }
     .accesskey = G
+tab-context-move-split-view-to-new-group =
+    .label =
+        { $splitViewCount ->
+            [1] 将分屏添加到新群组
+           *[other] 将分屏添加到新群组
+        }
+    .accesskey = G
+tab-context-move-split-view-to-group =
+    .label =
+        { $splitViewCount ->
+            [1] 将分屏添加到群组
+           *[other] 将分屏添加到群组
+        }
+    .accesskey = G
 tab-context-move-tab-to-group-saved-groups =
     .label = 关闭的群组
 tab-group-editor-action-new-tab =
@@ -311,6 +325,25 @@ tab-group-context-open-saved-group-in-this-window =
 tab-group-context-open-saved-group-in-new-window =
     .label = 新建窗口打开群组
 
+## Tab Notes
+
+tab-context-add-note =
+    .label = 添加备注
+    .accesskey = A
+tab-context-edit-note =
+    .label = 编辑备注
+    .accesskey = E
+tab-note-editor-title-create = 添加备注
+tab-note-editor-title-edit = 编辑备注
+tab-note-editor-text-field =
+    .placeholder = 您想记下关于此标签页的什么信息？
+tab-note-editor-button-cancel =
+    .label = 取消
+    .accesskey = C
+tab-note-editor-button-save =
+    .label = 保存
+    .accesskey = S
+
 ## Split View
 
 # Split view tabs display their respective contents side by side
@@ -329,3 +362,14 @@ tab-context-separate-split-view =
     .label = 解除分屏
     .accesskey = t
 tab-context-badge-new = 新
+
+## Manage Split View (icon in the address bar & three-dot menu in the footer)
+
+# "Separate" is a verb, as in "separate the split view tabs and display them normally".
+split-view-menuitem-separate-tabs =
+    .label = 分离标签页
+# "Reverse" is a verb, as in "reverse the order of split view tabs".
+split-view-menuitem-reverse-tabs =
+    .label = 对调标签页
+split-view-menuitem-close-both-tabs =
+    .label = 关闭两个标签页

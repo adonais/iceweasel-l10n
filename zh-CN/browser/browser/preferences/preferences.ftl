@@ -60,6 +60,7 @@ pane-experimental-description2 = 更改高级配置的设置可能会影响 { -b
 settings-pane-labs-title = { -firefoxlabs-brand-name }
 settings-category-labs =
     .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description4 = 欢迎试用我们的实验性功能！这些功能尚在开发和改进，可能会影响 { -brand-short-name } 的运作方式。只有在您开启<a data-l10n-name="data-collection">技术和交互数据</a>收集后，我们才会收到有关您使用这些功能的数据。
 pane-experimental-description3 = 欢迎试用我们的实验性功能！这些功能尚在开发和改进，可能会影响 { -brand-short-name } 的运作方式。
 pane-experimental-reset =
     .label = 恢复默认设置
@@ -113,6 +114,7 @@ extension-controlling-proxy-config = <img data-l10n-name ="icon"/> <strong>{ $na
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
 extension-controlled-enable = 要启用该扩展，请从 <img data-l10n-name="menu-icon"/> 菜单打开 <img data-l10n-name="addons-icon"/> 附加组件页面。
+extension-controlled-enable-2 = 若要重新启用此扩展，请访问<a data-l10n-name="addons-link">扩展和主题</a>。
 # This string is shown to notify the user that their home page or new tab preferences
 # are being controlled by an extension.
 extension-controlling-homepage = “{ $name }”控制主页的部分设置。
@@ -158,11 +160,44 @@ preferences-data-migration-description = 将书签、密码、历史记录和自
 preferences-data-migration-button =
     .label = 导入数据
     .accesskey = m
+preferences-profiles-group-header =
+    .heading = 配置文件
+preferences-profiles-subpane-description =
+    .description = 各配置文件独立保存浏览数据和设置（包括历史记录、密码等）。
+preferences-profiles-section-header =
+    .label = 配置文件
+    .description = 各配置文件独立保存浏览数据和设置（包括历史记录、密码等）。
 preferences-profiles-header = 配置文件
 preferences-manage-profiles-description = 各配置文件独立保存浏览数据和设置（包括历史记录、密码等）。
 preferences-manage-profiles-learn-more = 详细了解
 preferences-manage-profiles-button =
     .label = 管理配置文件
+preferences-profiles-settings-button =
+    .label = 设置
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = 复制现有配置文件
+    .description = 新配置文件将复制您的设置、附加组件、历史记录，以及书签、密码等保存的数据，但不会包含账户与同步信息。
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = 要复制的配置文件
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = 选择配置文件
+preferences-copy-profile-button = 复制
+tabs-group-header2 =
+    .label = 标签页
+tabs-opening-heading =
+    .label = 打开
+tabs-interaction-heading =
+    .label = 交互
+tabs-containers-heading =
+    .label = 身份
+tabs-closing-heading =
+    .label = 关闭
 tabs-group-header = 标签页
 ctrl-tab-recently-used-order =
     .label = 按下 Ctrl+Tab 时，依照最近使用顺序循环切换标签页
@@ -668,6 +703,8 @@ home-prefs-shortcuts-header =
 home-prefs-shortcuts-description = 您保存或访问过的网站
 home-prefs-shortcuts-by-option-sponsored =
     .label = 赞助商网站
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
 
 ## Home Section - Firefox Home Content Customization
 
@@ -680,6 +717,9 @@ home-prefs-recommended-by-description-generic = 由 { -brand-product-name } 系�
 home-prefs-stories-header =
     .label = 文章
 home-prefs-stories-description = 根据您的阅读记录为您推荐文章
+home-prefs-stories-header2 =
+    .label = 文章
+    .description = 由 { -brand-product-name } 系列产品推荐的精选内容
 
 ##
 
@@ -710,14 +750,24 @@ home-prefs-weather-header =
     .label = 天气
 home-prefs-weather-description = 速览今日天气预报
 home-prefs-weather-learn-more-link = 详细了解
+home-prefs-widgets-header =
+    .label = 小组件
 home-prefs-trending-search-header =
     .label = 热门搜索
 home-prefs-trending-search-description = 流行及常搜主题
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = 清单
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = 计时器
 # "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
 home-prefs-support-firefox-header =
     .label = 支持 { -brand-product-name }
 home-prefs-mission-message = 建设一个更好的互联网的使命，离不开我们赞助商的支持
 home-prefs-mission-message-learn-more-link = 了解其方式
+home-prefs-mission-message2 =
+    .message = 建设一个更好的互联网的使命，离不开我们赞助商的支持。
 home-prefs-manage-topics-link = 管理主题
 home-prefs-choose-wallpaper-link = 选择壁纸
 # Variables:
@@ -808,6 +858,8 @@ remove-addon-engine-alert = 若要移除此搜索引擎，请先移除关联的�
 containers-back-button2 =
     .aria-label = 回到设置
 containers-header = 身份标签页
+containers-section-header =
+    .heading = 身份标签页
 containers-add-button =
     .label = 添加新身份
     .accesskey = A
@@ -972,6 +1024,14 @@ sync-choose-what-to-sync-dialog4 =
 ## The device name controls.
 
 sync-device-name-header = 设备名称
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = 设备名称
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = 更改设备名称
+    .accesskey = h
 sync-device-name-change =
     .label = 更改设备名称…
     .accesskey = h
@@ -1013,10 +1073,16 @@ forms-ask-to-save-logins =
 # by searching for the former term "logins". It's not displayed in the UI.
 pane-privacy-passwords-header = 密码
     .searchkeywords = 登录信息
+forms-passwords-header =
+    .label = 密码
+    .aria-label = 密码
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-passwords =
     .label = 询问是否保存密码
     .accesskey = A
+forms-manage-password-exceptions =
+    .label = 管理密码例外
+    .accesskey = M
 forms-exceptions =
     .label = 例外…
     .accesskey = x
@@ -1047,12 +1113,31 @@ forms-saved-logins =
 forms-fill-usernames-and-passwords =
     .label = 自动填写用户名和密码
     .accesskey = F
+forms-fill-usernames-and-passwords-2 =
+    .label = 保存并自动填写用户名和密码
+    .accesskey = f
 forms-saved-passwords =
     .label = 保存的密码
     .accesskey = d
+forms-saved-passwords-2 =
+    .label = 管理保存的密码
+    .accesskey = d
+forms-saved-passwords-searchkeywords = 您的计算机上存储了下列网站的登录信息
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = 额外保护
 forms-primary-pw-use =
     .label = 使用主密码
     .accesskey = U
+forms-primary-pw-set =
+    .label = 设置主密码
+forms-primary-pw-on =
+    .label = 主密码：开启
+forms-primary-pw-change-2 =
+    .label = 更改主密码
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = 关闭主密码
 # This operation requires the user to authenticate with the operating system (device sign-in)
 forms-os-reauth =
     .label = 填写或管理密码前需验证设备登录信息
@@ -1118,6 +1203,8 @@ autofill-payment-methods-header =
 autofill-payment-methods-checkbox-message-2 =
     .label = 保存和自动填写付款信息
     .accesskey = p
+autofill-payment-methods-manage-payments-title =
+    .heading = 管理付款方式
 autofill-payment-methods-manage-payments-button =
     .label = 管理付款方式
     .accesskey = m
@@ -1125,6 +1212,13 @@ autofill-payment-methods-manage-payments-button =
 autofill-reauth-payment-methods-checkbox-2 =
     .label = 自动填写和管理付款方式前需验证设备登录信息
     .accesskey = o
+autofill-payment-methods-add-button = 添加付款方式
+payments-list-header =
+    .label = 付款方式
+payments-list-item-label = <strong>付款方式</strong>
+payments-remove-payment-prompt-title = 确定要移除此付款方式吗？
+payments-remove-payment-prompt-confirm-button = 移除
+payments-remove-payment-prompt-cancel-button = 取消
 autofill-addresses-title = 地址等信息
 autofill-addresses-header =
     .aria-label = 地址等信息
@@ -1134,10 +1228,28 @@ autofill-addresses-checkbox-message =
 autofill-addresses-manage-addresses-button =
     .label = 管理地址等信息
     .accesskey = M
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: 2423 *********)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
 
 ## Privacy Section - History
 
 history-header = 历史记录
+# This label is followed, on the same line, by a dropdown list of options
+# (Remember history, etc.).
+# In English it visually creates a full sentence, e.g.
+# "Firefox will" + "Remember history".
+#
+# If this doesn't work for your language, you can translate this message:
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
+history-remember-label2 = { -brand-short-name } 将
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
@@ -1155,6 +1267,15 @@ history-remember-option-never =
     .label = 不记录历史
 history-remember-option-custom =
     .label = 使用自定义设置
+history-remember-description3 =
+    .aria-label = { history-remember-label2 }
+    .description = { -brand-short-name } 将记住您的浏览、下载、表单和搜索记录。
+history-dontremember-description3 =
+    .aria-label = { history-remember-label2 }
+    .description = { -brand-short-name } 将采用与“隐私浏览模式”相同的设置，不会记录您浏览网络的历史。
+history-custom-description3 =
+    .aria-label = { history-remember-label2 }
+    .description = { -brand-short-name } 将使用自定义设置处理您的浏览、下载、表单和搜索记录。
 history-remember-description = { -brand-short-name } 将记住您的浏览、下载、表单和搜索记录。
 history-dontremember-description = { -brand-short-name } 将采用与“隐私浏览模式”相同的设置，不会记录您浏览网络的历史。
 history-private-browsing-permanent =
@@ -1308,6 +1429,10 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = 显示热门搜索建议
     .accesskey = t
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option =
+    .label = { -brand-short-name } 的建议
+addressbar-locbar-suggest-all-option-desc = 从网络上获取与您的搜索相关的建议。
 # Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
 addressbar-locbar-suggest-nonsponsored-option =
     .label = { -brand-short-name } 的建议
@@ -1489,6 +1614,8 @@ permissions-notification-link = 详细了解
 permissions-notification-pause =
     .label = 暂停通知直至下次打开 { -brand-short-name }
     .accesskey = n
+permissions-autoplay2 =
+    .label = 自动播放
 permissions-autoplay = 自动播放
 permissions-autoplay-settings =
     .label = 设置…
@@ -1496,6 +1623,18 @@ permissions-autoplay-settings =
 permissions-block-popups2 =
     .label = 拦截弹出式窗口和第三方重定向
     .accesskey = B
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button2 =
+    .label = 管理弹出式窗口和第三方重定向例外
+    .accesskey = E
+    .searchkeywords = 弹出式窗口 弹窗 popups
+permissions-addon-install-warning2 =
+    .label = 当网站尝试安装扩展时发出警告
+    .accesskey = W
+permissions-addon-exceptions2 =
+    .label = 选择可以安装扩展的网站
+    .accesskey = E
 permissions-block-popups =
     .label = 阻止弹出式窗口
     .accesskey = B
@@ -1511,6 +1650,26 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = 例外…
     .accesskey = E
+permissions-header2 =
+    .label = 权限
+    .description = 您授予所浏览网站的权限。
+permissions-location2 =
+    .label = 位置
+permissions-localhost2 =
+    .label = 设备应用和服务
+permissions-local-network2 =
+    .label = 本地网络设备
+permissions-xr2 =
+    .label = 虚拟现实
+permissions-camera2 =
+    .label = 摄像头
+permissions-microphone2 =
+    .label = 麦克风
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = 扬声器
+permissions-notification2 =
+    .label = 通知
 
 ## Privacy Section - Data Collection
 

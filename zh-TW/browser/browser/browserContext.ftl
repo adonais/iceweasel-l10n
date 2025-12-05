@@ -278,10 +278,6 @@ main-context-menu-image-desc =
 main-context-menu-visual-search-2 =
     .label = 使用 { $engine } 搜尋圖片
     .accesskey = e
-# Variables
-#   $engine (String) - Name of the search engine that will perform the search.
-main-context-menu-visual-search =
-    .label = 使用 { $engine } 搜尋圖片
 main-context-menu-video-save-as =
     .label = 另存視訊檔案…
     .accesskey = v
@@ -297,6 +293,9 @@ main-context-menu-video-email =
 main-context-menu-audio-email =
     .label = 郵寄音訊…
     .accesskey = a
+main-context-menu-send-to-device-2 =
+    .label = 傳送到裝置
+    .accesskey = n
 main-context-menu-save-to-pocket =
     .label = 將頁面儲存至 { -pocket-brand-name }
     .accesskey = k

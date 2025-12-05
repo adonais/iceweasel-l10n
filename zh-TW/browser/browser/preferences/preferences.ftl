@@ -60,6 +60,7 @@ pane-experimental-description2 = 調整進階設定，可能會影響 { -brand-s
 settings-pane-labs-title = { -firefoxlabs-brand-name }
 settings-category-labs =
     .tooltiptext = { -firefoxlabs-brand-name }
+pane-experimental-description4 = 請試用看看我們實驗中的功能！這些功能仍在開發進化中，可能會影響 { -brand-short-name } 的運作。若您開啟捕捉<a data-l10n-name="data-collection">技術與互動資料</a>，我們則會接收您對這些功能的使用方式資料。
 pane-experimental-description3 = 試試看我們的實驗性功能！這些功能還在開發與進化中，可能會影響 { -brand-short-name } 運作方式。
 pane-experimental-reset =
     .label = 回復為預設值
@@ -100,7 +101,7 @@ extension-controlling-password-saving = <img data-l10n-name="icon"/> 此設定�
 extension-controlling-web-notifications = <img data-l10n-name="icon"/> 此設定受 <strong>{ $name }</strong> 控制。
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlling-privacy-containers = 必須開啟容器分頁功能才能使用 <img data-l10n-name="icon"/> <strong>{ $name }</strong>。
+extension-controlling-privacy-containers = 使用 <img data-l10n-name="icon"/> <strong>{ $name }</strong> 必須開啟容器分頁功能。
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlling-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> 此設定受 <strong>{ $name }</strong> 控制。
@@ -113,6 +114,7 @@ extension-controlling-proxy-config = <img data-l10n-name="icon"/> <strong>{ $nam
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
 extension-controlled-enable = 要啟用這套擴充套件，請到 <img data-l10n-name="menu-icon"/> 選單中的 <img data-l10n-name="addons-icon"/> 附加元件。
+extension-controlled-enable-2 = 請到<a data-l10n-name="addons-link">擴充套件與佈景主題</a>重新啟用此擴充套件。
 # This string is shown to notify the user that their home page or new tab preferences
 # are being controlled by an extension.
 extension-controlling-homepage = { $name } 會控制您的部分首頁設定。
@@ -153,16 +155,52 @@ startup-restore-warn-on-quit =
     .label = 關閉瀏覽器時警告您
 disable-extension =
     .label = 停用擴充套件
+preferences-data-migration-group =
+    .label = 匯入瀏覽器資料
+    .description = 從其他瀏覽器匯入您的書籤、密碼、上網紀錄、擴充套件、表單自動填寫資料。
 preferences-data-migration-header = 匯入瀏覽器資料
 preferences-data-migration-description = 將書籤、密碼、瀏覽紀錄與網頁自動填寫資料匯入到 { -brand-short-name }。
 preferences-data-migration-button =
     .label = 匯入資料
     .accesskey = m
+preferences-profiles-group-header =
+    .heading = 設定檔
+preferences-profiles-subpane-description =
+    .description = 每套設定檔的上網資料與設定（包含瀏覽紀錄、網頁密碼等等）各自獨立，不互相影響。
+preferences-profiles-section-header =
+    .label = 設定檔
+    .description = 每套設定檔的上網資料與設定（包含瀏覽紀錄、網頁密碼等等）各自獨立，不互相影響。
 preferences-profiles-header = 設定檔
 preferences-manage-profiles-description = 每套設定檔的上網資料與設定（包含瀏覽紀錄、網頁密碼等等）各自獨立，不互相影響。
 preferences-manage-profiles-learn-more = 更多資訊
 preferences-manage-profiles-button =
     .label = 管理設定檔
+preferences-profiles-settings-button =
+    .label = 設定
+# This string labels the entire copy profile section in the profiles sub-pane.
+preferences-copy-profile-header =
+    .label = 複製現有設定檔
+    .description = 將從您現有設定檔複製設定、附加元件、瀏覽紀錄、書籤密碼等儲存的資料，但不會複製登入的帳號或同步資訊。
+# This string sits next to the copy controls, both the copy-profile-select
+# drop-down and the copy-profile-button, so that the user understands they
+# need to first pick a profile to copy, and then click the copy button.
+preferences-profile-to-copy =
+    .label = 要複製的設定檔
+# This string is a placeholder that will be shown in a drop-down list of
+# profiles. The user will select a profile, then click the copy button
+# to make a copy of that profile.
+preferences-copy-profile-select = 選擇設定檔
+preferences-copy-profile-button = 複製
+tabs-group-header2 =
+    .label = 分頁
+tabs-opening-heading =
+    .label = 開啟
+tabs-interaction-heading =
+    .label = 互動
+tabs-containers-heading =
+    .label = 容器
+tabs-closing-heading =
+    .label = 關閉
 tabs-group-header = 分頁
 ctrl-tab-recently-used-order =
     .label = 按下 Ctrl+Tab 時，依照最近使用分頁的順序切換分頁標籤
@@ -561,6 +599,9 @@ browsing-search-on-start-typing =
 browsing-picture-in-picture-toggle-enabled =
     .label = 開啟影片子母畫面播放控制元件
     .accesskey = E
+browsing-picture-in-picture-enable-when-switching-tabs =
+    .label = 切換分頁時，於子母畫面中繼續播放影片
+    .accesskey = s
 browsing-picture-in-picture-learn-more = 了解更多
 browsing-media-control =
     .label = 使用鍵盤、耳機或虛擬介面控制媒體內容播放行為
@@ -660,6 +701,8 @@ home-prefs-shortcuts-header =
 home-prefs-shortcuts-description = 您儲存或造訪過的網站
 home-prefs-shortcuts-by-option-sponsored =
     .label = 贊助捷徑
+home-prefs-content-header =
+    .label = { -firefox-home-brand-name }
 
 ## Home Section - Firefox Home Content Customization
 
@@ -672,6 +715,9 @@ home-prefs-recommended-by-description-generic = 由 { -brand-product-name } 產�
 home-prefs-stories-header =
     .label = 文章
 home-prefs-stories-description = 依照您的上網行為，提供個人化文章推薦
+home-prefs-stories-header2 =
+    .label = 文章
+    .description = 由 { -brand-product-name } 產品家族精選的內容文章
 
 ##
 
@@ -702,14 +748,24 @@ home-prefs-weather-header =
     .label = 天氣
 home-prefs-weather-description = 讓您一目了然今天的天氣預報
 home-prefs-weather-learn-more-link = 更多資訊
+home-prefs-widgets-header =
+    .label = 小工具
 home-prefs-trending-search-header =
     .label = 熱門搜尋
 home-prefs-trending-search-description = 熱門與常見搜尋主題
+# Lists is a widget on New Tab, similar to a to-do widget
+home-prefs-lists-header =
+    .label = 清單
+# Timer is a widget on New Tab, similar to the Pomodoro timer.
+home-prefs-timer-header =
+    .label = 計時器
 # "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
 home-prefs-support-firefox-header =
     .label = 支持 { -brand-product-name }
 home-prefs-mission-message = 贊助商支持我們打造出一個更好的網路環境的使命
 home-prefs-mission-message-learn-more-link = 看看是如何達成的
+home-prefs-mission-message2 =
+    .message = 贊助商支持我們打造出一個更好的網路環境的使命。
 home-prefs-manage-topics-link = 管理主題
 home-prefs-choose-wallpaper-link = 挑選一張背景圖
 # Variables:
@@ -804,6 +860,8 @@ remove-addon-engine-alert = 若要移除此搜尋引擎，請先移除相關的�
 containers-back-button2 =
     .aria-label = 回到選項頁面
 containers-header = 容器分頁
+containers-section-header =
+    .heading = 容器分頁
 containers-add-button =
     .label = 新增容器
     .accesskey = A
@@ -968,6 +1026,14 @@ sync-choose-what-to-sync-dialog4 =
 ## The device name controls.
 
 sync-device-name-header = 裝置名稱
+# Variables:
+#   $placeholder (string) - The placeholder text of the input
+sync-device-name-input =
+    .aria-label = 裝置名稱
+    .placeholder = { $placeholder }
+sync-device-name-change-2 =
+    .label = 更改裝置名稱
+    .accesskey = h
 sync-device-name-change =
     .label = 更改裝置名稱…
     .accesskey = h
@@ -1009,10 +1075,16 @@ forms-ask-to-save-logins =
 # by searching for the former term "logins". It's not displayed in the UI.
 pane-privacy-passwords-header = 密碼
     .searchkeywords = 登入資訊
+forms-passwords-header =
+    .label = 密碼
+    .aria-label = 密碼
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-passwords =
     .label = 提示儲存密碼
     .accesskey = A
+forms-manage-password-exceptions =
+    .label = 管理密碼例外
+    .accesskey = M
 forms-exceptions =
     .label = 例外網站…
     .accesskey = x
@@ -1043,12 +1115,31 @@ forms-saved-logins =
 forms-fill-usernames-and-passwords =
     .label = 自動填寫帳號與密碼
     .accesskey = F
+forms-fill-usernames-and-passwords-2 =
+    .label = 儲存並自動填寫使用者名稱與密碼
+    .accesskey = f
 forms-saved-passwords =
     .label = 已存密碼
     .accesskey = d
+forms-saved-passwords-2 =
+    .label = 管理儲存的密碼
+    .accesskey = d
+forms-saved-passwords-searchkeywords = 您的電腦上儲存了下列網站的登入資訊
+# Header for additional protections when managing password settings.
+forms-additional-protections-header =
+    .label = 其他保護
 forms-primary-pw-use =
     .label = 使用主控密碼
     .accesskey = U
+forms-primary-pw-set =
+    .label = 設定主控密碼
+forms-primary-pw-on =
+    .label = 已開啟主控密碼
+forms-primary-pw-change-2 =
+    .label = 更改主控密碼
+# Label for button to disable primary password.
+forms-primary-pw-turn-off =
+    .label = 關閉主控密碼
 # This operation requires the user to authenticate with the operating system (device sign-in)
 forms-os-reauth =
     .label = 填寫與管理密碼時需進行裝置登入驗證
@@ -1114,6 +1205,8 @@ autofill-payment-methods-header =
 autofill-payment-methods-checkbox-message-2 =
     .label = 儲存並自動填寫付款資訊
     .accesskey = p
+autofill-payment-methods-manage-payments-title =
+    .heading = 管理付款方式
 autofill-payment-methods-manage-payments-button =
     .label = 管理付款方式
     .accesskey = m
@@ -1121,6 +1214,13 @@ autofill-payment-methods-manage-payments-button =
 autofill-reauth-payment-methods-checkbox-2 =
     .label = 自動填寫與管理付款資訊時，需進行裝置登入驗證
     .accesskey = o
+autofill-payment-methods-add-button = 新增付款方式
+payments-list-header =
+    .label = 付款方式
+payments-list-item-label = <strong>付款方式</strong>
+payments-remove-payment-prompt-title = 要移除這筆付款方式嗎？
+payments-remove-payment-prompt-confirm-button = 移除
+payments-remove-payment-prompt-cancel-button = 取消
 autofill-addresses-title = 地址與更多資訊
 autofill-addresses-header =
     .aria-label = 地址與更多資訊
@@ -1130,10 +1230,28 @@ autofill-addresses-checkbox-message =
 autofill-addresses-manage-addresses-button =
     .label = 管理地址與更多資訊
     .accesskey = M
+# These values are displayed for each credit card record listed on the Manage Payment methods
+# settings page.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: 2423 *********)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item =
+    .label = { $cardNumber }
+    .description = { $expDate }
 
 ## Privacy Section - History
 
 history-header = 瀏覽紀錄
+# This label is followed, on the same line, by a dropdown list of options
+# (Remember history, etc.).
+# In English it visually creates a full sentence, e.g.
+# "Firefox will" + "Remember history".
+#
+# If this doesn't work for your language, you can translate this message:
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
+history-remember-label2 = { -brand-short-name } 將
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
@@ -1151,6 +1269,15 @@ history-remember-option-never =
     .label = 不保留歷史記錄
 history-remember-option-custom =
     .label = 使用自訂的設定
+history-remember-description3 =
+    .aria-label = { history-remember-label2 }
+    .description = { -brand-short-name } 將記住您的瀏覽、下載、表單填寫與搜尋紀錄。
+history-dontremember-description3 =
+    .aria-label = { history-remember-label2 }
+    .description = { -brand-short-name } 不會儲存任何瀏覽記錄，如同在隱私瀏覽狀態下執行。
+history-custom-description3 =
+    .aria-label = { history-remember-label2 }
+    .description = { -brand-short-name } 會針對您的瀏覽、下載、表單填寫與搜尋紀錄使用您自訂的選項。
 history-remember-description = { -brand-short-name } 將記住您的瀏覽、下載、表單填寫與搜尋紀錄。
 history-dontremember-description = { -brand-short-name } 不會儲存任何瀏覽記錄，如同在隱私瀏覽狀態下執行。
 history-private-browsing-permanent =
@@ -1304,6 +1431,10 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = 顯示熱門搜尋建議
     .accesskey = t
+# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
+addressbar-locbar-suggest-all-option =
+    .label = 來自 { -brand-short-name } 的建議
+addressbar-locbar-suggest-all-option-desc = 取得您搜尋內容的相關建議。
 # Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
 addressbar-locbar-suggest-nonsponsored-option =
     .label = 來自 { -brand-short-name } 的建議
@@ -1485,6 +1616,8 @@ permissions-notification-link = 了解更多
 permissions-notification-pause =
     .label = 暫停通知到 { -brand-short-name } 重新啟動後
     .accesskey = n
+permissions-autoplay2 =
+    .label = 自動播放
 permissions-autoplay = 自動播放
 permissions-autoplay-settings =
     .label = 設定…
@@ -1492,6 +1625,18 @@ permissions-autoplay-settings =
 permissions-block-popups2 =
     .label = 封鎖彈出型視窗與第三方重新導向
     .accesskey = B
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button2 =
+    .label = 管理彈出型視窗與第三方重新導向例外
+    .accesskey = E
+    .searchkeywords = popups 彈出 視窗
+permissions-addon-install-warning2 =
+    .label = 網站嘗試安裝擴充套件時警告
+    .accesskey = W
+permissions-addon-exceptions2 =
+    .label = 選擇可以安裝擴充套件的網站
+    .accesskey = E
 permissions-block-popups =
     .label = 封鎖彈出型視窗
     .accesskey = B
@@ -1507,6 +1652,26 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = 例外網站…
     .accesskey = E
+permissions-header2 =
+    .label = 權限
+    .description = 您上網時，授予網站的權限。
+permissions-location2 =
+    .label = 位置
+permissions-localhost2 =
+    .label = 裝置應用程式與服務
+permissions-local-network2 =
+    .label = 區域網路裝置
+permissions-xr2 =
+    .label = 虛擬實境
+permissions-camera2 =
+    .label = 攝影機
+permissions-microphone2 =
+    .label = 麥克風
+# Privacy permission for sound output devices.
+permissions-speaker2 =
+    .label = 喇叭
+permissions-notification2 =
+    .label = 通知
 
 ## Privacy Section - Data Collection
 

@@ -101,6 +101,8 @@ genai-menu-no-provider-2 =
 genai-chatbot-title = AI 聊天機器人
 genai-header-provider-menu =
     .title = 挑選一套機器人
+genai-header-settings-button =
+    .title = AI 聊天選項
 genai-header-options-button =
     .title = 開啟選單
 genai-header-close-button =
@@ -227,11 +229,11 @@ link-preview-settings-button =
     .title = 預覽鏈結選項
 link-preview-settings-enable =
     .label = 開啟預覽鏈結功能
-    .description = 開啟捷徑或對鍊結按滑鼠右鍵的時候，先檢視頁面標題、描述與更多資訊。
+    .description = 開啟捷徑或對鏈結按滑鼠右鍵的時候，先檢視頁面標題、描述與更多資訊。
 link-preview-settings-key-points =
     .label = 允許 AI 讀取頁面頂部，產生頁面重點
 link-preview-settings-long-press =
-    .label = 捷徑：長按鏈結 1 秒鐘
+    .label = 快速預覽：長按鏈結 1 秒鐘
 # Title that appears when user is shown the opt-in flow for link previews
 link-preview-optin-title = 想要用 AI 看到更多內容嗎？
 # Message that appears when user is shown the opt-in flow for link previews
@@ -253,3 +255,7 @@ link-preview-setup-faster-next-time = 您下次能更快就看到重點內容。
 link-preview-onboarding-button = 檢視預覽
 # Onboarding card Close button
 link-preview-onboarding-close = 關閉
+# Title for the first-time setup modal
+link-preview-first-time-setup-title = 首次設定
+# Message for the first-time setup modal
+link-preview-first-time-setup-message = 這可能需要一點時間，下次可以更快看到網頁重點。

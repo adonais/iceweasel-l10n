@@ -17,6 +17,7 @@ tab-group-editor-select-suggestions =
     .label = 全选
 tab-group-editor-no-tabs-found-title =
     .label = 未找到推荐
+
 tab-group-editor-no-tabs-found-message = 打开的相似标签页，AI将推荐一个名称并将这些标签页智能分组。
 # Message is shown to the user whenever there are smart tags suggest
 tab-group-editor-information-message = AI根据此窗口中相似的标签页建议名称和标签。

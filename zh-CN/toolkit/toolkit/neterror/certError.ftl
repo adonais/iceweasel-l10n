@@ -107,6 +107,12 @@ fp-cert-error-code = 错误代码：{ $error }
 # Variables:
 #   $datetime (Date) - Current datetime.
 fp-datetime = { DATETIME($datetime, month: "short", year: "numeric", day: "numeric") } { DATETIME($datetime, timeStyle: "long") }
+# This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-certerror-transparency-why-dangerous-body = { -brand-short-name } 无法信任 { $hostname }，因其无法证明自己符合公开证书透明度要求。
+# This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
+fp-certerror-transparency-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。
 fp-learn-more-about-secure-connection-failures = 详细了解安全连接失败
 fp-learn-more-about-cert-issues = 详细了解此类证书问题
 fp-learn-more-about-time-related-errors = 详细了解时间相关错误的解决办法
@@ -191,3 +197,4 @@ fp-certerror-hide-advanced-button = 隐藏高级选项
 fp-certerror-override-exception-button = 继续前往 { $hostname }（存在风险）
 fp-certerror-intro = { -brand-short-name } 发现 <strong>{ $hostname }</strong> 存在严重的安全隐患。若有人冒充此网站，其可试图窃取您的信用卡信息、密码、邮箱地址等信息。
 fp-certerror-expired-into = { -brand-short-name } 发现 <strong>{ $hostname }</strong> 存在安全问题。此网站可能未正确设置，或者您设备的日期/时间有误。
+fp-certerror-transparency-intro = 若有人冒充 <strong>{ $hostname }</strong>，其可试图窃取您的信用卡信息、密码、邮箱地址等信息。

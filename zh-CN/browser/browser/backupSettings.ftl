@@ -149,11 +149,6 @@ backup-service-error-recovery-failed =
 backup-service-error-went-wrong2 =
     .heading = 备份时出现问题。
     .message = 请稍后重试。
-# There was some error in the backup service but we don't have a more specific
-# idea of what went wrong
-backup-service-error-went-wrong =
-    .heading = 出了点问题
-    .message = { -brand-short-name } 备份过程中出现问题，请重试或尝试重启 { -brand-short-name }。
 
 ## These strings are displayed in a modal when users want to enable encryption or change the password for an existing backup.
 
@@ -243,3 +238,5 @@ other-backup-files-founds = <b>注意：</b>另找到其他 { $numberOfOtherBack
 #   $machineName (String) - Name of the machine that the backup was created on.
 backup-file-creation-date-and-device = { DATETIME($date, year: "numeric", month: "numeric", day: "numeric") } 创建于 { $machineName }
 backup-file-restore-file-validation-error = 文件无效，请尝试选取其他文件。<a data-l10n-name="restore-problems">仍有问题？</a>
+restore-from-backup-filepicker-input =
+    .placeholder = 未选择文件

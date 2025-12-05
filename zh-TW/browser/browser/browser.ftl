@@ -426,6 +426,9 @@ quickactions-cmd-restart = 重新啟動, 重開, restart
 # Opens the screenshot tool
 quickactions-screenshot3 = 拍攝畫面擷圖
 quickactions-cmd-screenshot2 = 擷圖, 截圖, 擷取, 截取, 快照, screenshot, take a screenshot
+# Opens about:translations
+quickactions-translate = 翻譯
+quickactions-cmd-translate = 翻譯, translate
 quickactions-cmd-screenshot = 畫面擷圖, 擷圖, screenshot
 # Opens about:preferences
 quickactions-settings2 = 管理設定
@@ -923,6 +926,10 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = 未選擇捷徑，請挑選一個捷徑
     .tooltiptext = 未選擇捷徑，請挑選一個捷徑
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword =
+    .label = 已停用關鍵字搜尋
+    .tooltiptext = 已停用關鍵字搜尋
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -1453,7 +1460,6 @@ trustpanel-header-enabled = { -brand-product-name } 警戒中
 trustpanel-description-enabled2 = 您已受到保護，若我們發現某些不安全的地方會再通知您。
 trustpanel-header-enabled-insecure = 在此網站請小心
 trustpanel-description-enabled-insecure = { -brand-product-name } 發現某些東西有點可疑。
-trustpanel-description-enabled = 您已受到保護，若我們發現某些不安全的地方會再通知您
 trustpanel-header-disabled = 您已關閉保護
 trustpanel-description-disabled = 已關閉 { -brand-product-name } 的追蹤保護，建議您重新開啟。
 trustpanel-clear-cookies-button = 清除 Cookie 與網站資料
