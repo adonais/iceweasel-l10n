@@ -292,6 +292,9 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = 为此页面添加书签 ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = 分屏视图
+    .aria-label = 分屏视图
 
 ## Page Action Context Menu
 
@@ -525,6 +528,8 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = 您并未安全地连接至此网站。
 identity-connection-verified = 您已安全地连接至此网站。
 identity-ev-owner-label = 证书颁发给：
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = 符合 (EU) 2024/1183 法规规范。
 identity-description-custom-root2 = Mozilla 不认识此证书颁发者。它可能是由您的操作系统或管理员身份添加。
 identity-remove-cert-exception =
     .label = 移除例外
@@ -831,6 +836,9 @@ urlbar-result-menu-dont-show-market =
     .label = 不再显示市场建议
 # A message that replaces a result when the user dismisses Market suggestions.
 urlbar-result-dismissal-acknowledgment-market = 感谢反馈，市场建议将不再显示。
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = “股市”建议
 # A message that replaces a result when the user dismisses all suggestions of a
 # particular type.
 urlbar-result-dismissal-acknowledgment-all = 感谢反馈，此类建议将不再显示。
@@ -910,6 +918,10 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = 未选择快捷方式，请选择
     .tooltiptext = 未选择快捷方式，请选择
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword =
+    .label = 关键词搜索已禁用
+    .tooltiptext = 关键词搜索已禁用
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -1433,7 +1445,7 @@ trustpanel-etp-description-disabled = { -brand-product-name } 认为大公司应
 trustpanel-connection-label-secure = 连接安全
 trustpanel-connection-label-insecure = 连接不安全
 trustpanel-header-enabled = { -brand-product-name } 正在防护
-trustpanel-description-enabled2 = 您已受保护，我们会在发现异常情况时告知您。
+trustpanel-description-enabled2 = 您已受保护。若发现异常，我们将提醒。
 trustpanel-header-enabled-insecure = 请谨慎浏览此网站
 trustpanel-description-enabled-insecure = { -brand-product-name } 发现可疑情况。
 trustpanel-header-disabled = 您已关闭保护
@@ -1493,3 +1505,4 @@ trustpanel-fingerprinter-list-header = 这些网站正试图跟踪您的数字�
 trustpanel-cryptominer-blocking-tab-header = { -brand-product-name } 已拦截 { $count } 个加密货币挖矿程序
 trustpanel-cryptominer-not-blocking-tab-header = { -brand-product-name } 已允许 { $count } 个加密货币挖矿程序
 trustpanel-cryptominer-tab-list-header = 这些网站正试图挖掘加密货币：
+trustpanel-blocker-section-header2 = 已在此网站上拦截 <span data-l10n-name="count">{ $count }</span> 个跟踪器

@@ -241,6 +241,8 @@ annotations-default-pdf-handler-headline = 在任意位置签名
 annotations-default-pdf-handler-body = 绘制、键入或上传您的签名，并准确放置到所需位置。保存常用签名，方便下次使用。
 annotations-make-default-pdf-handler-title = 要将 { -brand-short-name } 设为您的默认 PDF 编辑器吗？
 annotations-make-default-pdf-handler-subtitle = 每次打开 PDF 时都能使用我们的工具。
+annotations-make-default-pdf-primary-cta-label = 设为默认
+annotations-make-default-pdf-next-label = 下一步
 annotations-make-default-pdf-primary-cta =
     .label = 设为默认
 annotations-make-default-pdf-next =
@@ -273,7 +275,7 @@ device-migration-fxa-spotlight-sync-primary-button = 开始使用
 ## Set as Default PDF Reader Infobar
 
 # The question portion of the following message should have the <strong> and </strong> tags surrounding it.
-pdf-default-notification-message = <strong>想将 { -brand-short-name } 设为默认 PDF 阅读器吗？</strong>使用 { -brand-short-name } 阅读和编辑电脑中的 PDF 文档。
+pdf-default-notification-message = <strong>想将 { -brand-short-name } 设为默认 PDF 阅读器吗？</strong>使用 { -brand-short-name } 阅读和编辑计算机中保存的 PDF 文档。
 pdf-default-notification-set-default-button =
     .label = 设为默认
 pdf-default-notification-decline-button =
@@ -421,3 +423,18 @@ etp-strict-exceptions-infobar-button = 应用修复
     .accesskey = A
 etp-strict-exceptions-infobar-not-now = 暂时不要
     .accesskey = N
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } 目前不是您的默认浏览器
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } 目前不是您的主浏览器
+set-default-menu-message-row-layout-title = 将 { -brand-short-name } 设为主浏览器
+set-default-menu-message-row-layout-title-variant = 将 { -brand-short-name } 设为默认浏览器
+set-default-menu-message-row-layout-subtitle = 每一次浏览，都有最快速度、安全与隐私保护。
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] 将 { -brand-short-name } 设为默认浏览器并在程序坞中保留，方便随手开启。
+       *[other] 将 { -brand-short-name } 设为默认浏览器并固定到任务栏，方便随手开启。
+    }
+set-default-menu-message-primary-button = 设为默认浏览器
+set-default-menu-message-primary-button-variant = 设为主浏览器

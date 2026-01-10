@@ -21,6 +21,8 @@ inactive-css-not-grid-or-flex-container-or-multicol-container = 由於不是 Fle
 inactive-css-not-multicol-container = 由於不是多欄容器，<strong>{ $property }</strong> 對此元素沒有影響。
 inactive-css-column-span = 由於不在多欄容器中，<strong>{ $property }</strong> 對此元素沒有 span 效果。
 inactive-css-not-grid-or-flex-item = 由於不是 Flex 或 Grid 項目，<strong>{ $property }</strong> 對此元素沒有影響。
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item = 由於這個元素不是 grid 或 flex 項目，也不是絕對定位元素，<strong>{ $property }</strong> 對其沒有影響。
+inactive-css-not-grid-or-absolutely-positioned-item = 由於這個元素不是 grid 元素，也不是絕對定位元素，<strong>{ $property }</strong> 對其沒有影響。
 inactive-css-not-grid-item = 由於不是 Grid 項目，<strong>{ $property }</strong> 對此元素沒有影響。
 inactive-css-not-grid-container = 由於不是 Grid 容器，<strong>{ $property }</strong> 對此元素沒有影響。
 inactive-css-not-flex-item = 由於不是 Flex 項目，<strong>{ $property }</strong> 對此元素沒有影響。
@@ -63,6 +65,7 @@ inactive-css-ruby-element = 由於此元素是 ruby 元素，<strong>{ $property
 
 inactive-css-highlight-pseudo-elements-not-supported = 強調的 pseudo-elements 不支援 <strong>{ $property }</strong>。
 inactive-css-cue-pseudo-element-not-supported = ::cue 偽元素不支援 <strong>{ $property }</strong>。
+inactive-css-at-position-try-not-supported = <strong>@position-try</strong> 規則不支援 <strong>{ $property }</strong>。
 # Variables:
 #   $lineCount (integer) - The number of lines the element has.
 inactive-css-text-wrap-balance-lines-exceeded = 由於行數超過 { $lineCount } 行，<strong>{ $property }</strong> 對此元素沒有影響。
@@ -80,6 +83,8 @@ inactive-css-not-grid-or-flex-or-block-container-fix = 請嘗試加入 <strong>d
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = 請嘗試加入 <strong>display:grid</strong>、<strong>display:flex</strong> 或 <strong>columns:2</strong>。{ learn-more }
 inactive-css-not-multicol-container-fix = 請嘗試加入 <strong>column-count</strong> 或 <strong>column-width</strong>。{ learn-more }
 inactive-css-column-span-fix = 請嘗試對上層元素加入 <strong>column-count</strong> 或 <strong>column-width</strong>。{ learn-more }
+inactive-css-not-grid-or-flex-or-absolutely-positioned-item-fix = 請嘗試為元素加入 <strong>position:absolute</strong>，或為元素的父元素加入 <strong>display:grid</strong>、<strong>display:flex</strong>、<strong>display:inline-grid</strong> 或 <strong>display:inline-flex</strong>。{ learn-more }
+inactive-css-not-grid-or-absolutely-positioned-item-fix = 請嘗試為元素加入 <strong>position:absolute</strong>，或為其父元素加入 <strong>display:grid</strong>、<strong>display:inline-grid</strong>。{ learn-more }
 inactive-css-not-grid-or-flex-item-fix-3 = 請嘗試為元素的父元素加入 <strong>display:grid</strong>、<strong>display:flex</strong>、<strong>display:inline-grid</strong> 或 <strong>display:inline-flex</strong>。{ learn-more }
 inactive-css-not-grid-item-fix-2 = 請嘗試為元素的父元素加入 <strong>display:grid</strong> 或 <strong>display:inline-grid</strong>。{ learn-more }
 inactive-css-not-grid-container-fix = 請嘗試加入 <strong>display:grid</strong> 或 <strong>display:inline-grid</strong>。{ learn-more }
@@ -133,3 +138,5 @@ css-compatibility-learn-more-message = <span data-l10n-name="link">了解更多<
 
 # :has() should not be translated
 css-selector-warning-unconstrained-has = 這個選擇器使用了不受限的 <strong>:has()</strong>，可能會導致頁面運作緩慢
+# :scope should not be translated
+css-selector-warning-sibling-combinator-after-scope = 在 <strong>:scope</strong> 之後的同級選擇器不會選擇到任何東西

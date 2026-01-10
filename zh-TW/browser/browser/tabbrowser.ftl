@@ -330,9 +330,15 @@ tab-group-context-open-saved-group-in-new-window =
 tab-context-add-note =
     .label = 新增註記
     .accesskey = A
+tab-context-update-note =
+    .label = 更新註記
+    .accesskey = U
 tab-context-edit-note =
     .label = 編輯註記
     .accesskey = E
+tab-context-delete-note =
+    .label = 刪除註記
+    .accesskey = D
 tab-note-editor-title-create = 新增註記
 tab-note-editor-title-edit = 編輯註記
 tab-note-editor-text-field =
@@ -343,6 +349,12 @@ tab-note-editor-button-cancel =
 tab-note-editor-button-save =
     .label = 儲存
     .accesskey = S
+# Displayed within the tab note edit dialog box when the user has entered more
+# characters than are allowed.
+# Variables:
+#   $totalCharacters (Number): the number of characters the user has entered.
+#   $maxAllowedCharacters (Number): the maximum number of characters allowed for a tab note.
+tab-note-editor-character-limit = { NUMBER($totalCharacters, useGrouping: "false") } 個字元，最多 { NUMBER($maxAllowedCharacters, useGrouping: "false") } 個字元
 
 ## Split View
 

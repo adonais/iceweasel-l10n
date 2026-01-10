@@ -15,9 +15,9 @@
 #  $content-title (String): the title of the web content.
 browser-main-window-window-titles =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } 隱私瀏覽
+    .data-title-private = { -brand-full-name } 隱私瀏覽模式
     .data-content-title-default = { $content-title } — { -brand-full-name }
-    .data-content-title-private = { $content-title } — { -brand-full-name } 隱私瀏覽
+    .data-content-title-private = { $content-title } — { -brand-full-name } 隱私瀏覽模式
 # These are the default window titles on macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -37,9 +37,9 @@ browser-main-window-window-titles =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac-window-titles =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } — 隱私瀏覽
+    .data-title-private = { -brand-full-name } — 隱私瀏覽模式
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } — 隱私瀏覽
+    .data-content-title-private = { $content-title } — 隱私瀏覽模式
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -292,6 +292,9 @@ urlbar-star-edit-bookmark =
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
     .tooltiptext = 將本頁加入書籤 ({ $shortcut })
+urlbar-split-view-button =
+    .tooltiptext = 分割畫面
+    .aria-label = 分割畫面
 
 ## Page Action Context Menu
 
@@ -529,6 +532,8 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = 您並未安全地連線至此網站。
 identity-connection-verified = 您正安全地連線至此網站。
 identity-ev-owner-label = 憑證簽發給：
+# "qualified" here refers to the qualified website authentication certificate presented by the site.
+identity-etsi = 符合歐盟（EU）2024/1183 法規規範。
 identity-description-custom-root2 = Mozilla 不認識此憑證簽發者，可能是由您的作業系統或網路管理員所加入的。
 identity-remove-cert-exception =
     .label = 移除例外
@@ -835,6 +840,9 @@ urlbar-result-menu-dont-show-market =
     .label = 不要顯示金融市場建議
 # A message that replaces a result when the user dismisses Market suggestions.
 urlbar-result-dismissal-acknowledgment-market = 感謝您的意見回饋，不再會看到金融市場建議。
+# This a11y label is read by screen readers when an item in the row is selected.
+urlbar-result-aria-group-market =
+    .aria-label = 股市建議
 # A message that replaces a result when the user dismisses all suggestions of a
 # particular type.
 urlbar-result-dismissal-acknowledgment-all = 感謝您的意見回饋，不再會看到建議資訊。
@@ -1259,7 +1267,7 @@ pinned-tabs-drop-indicator = 將分頁放到此處即可釘選
 
 # <img data-l10n-name="icon"/> will be replaced by the application menu icon
 restore-session-startup-suggestion-message = <strong>想開啟先前的分頁？</strong>您可以從 { -brand-short-name } 應用程式選單 <img data-l10n-name="icon"/> 當中的「歷史」重新開啟先前的瀏覽階段。
-restore-session-startup-suggestion-button = 告訴我怎麼做
+restore-session-startup-suggestion-button = 告訴我如何作
 
 ## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
 
@@ -1517,3 +1525,4 @@ trustpanel-fingerprinter-list-header = 下列網站嘗試對您建立數位指�
 trustpanel-cryptominer-blocking-tab-header = { -brand-product-name } 已封鎖 { $count } 組加密貨幣採礦程式
 trustpanel-cryptominer-not-blocking-tab-header = { -brand-product-name } 已放行 { $count } 組加密貨幣採礦程式
 trustpanel-cryptominer-tab-list-header = 下列網站嘗試挖礦：
+trustpanel-blocker-section-header2 = 已封鎖此網站上的 <span data-l10n-name="count">{ $count }</span> 組追蹤器

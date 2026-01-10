@@ -241,6 +241,8 @@ annotations-default-pdf-handler-headline = 可以在任何地方進行電子簽�
 annotations-default-pdf-handler-body = 畫圖、打字，或上傳您的簽名圖檔，然後放到想要簽名的地方。還可以將常用的簽名樣式儲存下來，方便之後使用。
 annotations-make-default-pdf-handler-title = 要將 { -brand-short-name } 設為您的預設 PDF 編輯器嗎？
 annotations-make-default-pdf-handler-subtitle = 每次開啟 PDF 檔案時都可以使用我們的工具。
+annotations-make-default-pdf-primary-cta-label = 設為預設軟體
+annotations-make-default-pdf-next-label = 下一個
 annotations-make-default-pdf-primary-cta =
     .label = 設為預設軟體
 annotations-make-default-pdf-next =
@@ -421,3 +423,18 @@ etp-strict-exceptions-infobar-button = 套用修正
     .accesskey = A
 etp-strict-exceptions-infobar-not-now = 現在不要
     .accesskey = N
+
+## 'Set to default' messaging displayed within the App menu
+
+set-default-menu-message-simple-layout-title = { -brand-short-name } 不是您的預設瀏覽器
+set-default-menu-message-simple-layout-title-variant = { -brand-short-name } 不是您的主要瀏覽器
+set-default-menu-message-row-layout-title = 將 { -brand-short-name } 設為您的主要瀏覽器
+set-default-menu-message-row-layout-title-variant = 將 { -brand-short-name } 設為您的預設瀏覽器
+set-default-menu-message-row-layout-subtitle = 隨時上網都有最快速度、安全與隱私保護。
+set-default-menu-message-row-layout-subtitle-variant =
+    { PLATFORM() ->
+        [macos] 將 { -brand-short-name } 設為預設瀏覽器並保留在您的 Dock，方便隨手開啟。
+       *[other] 將 { -brand-short-name } 設為預設瀏覽器並保留在您的工具列，方便隨手開啟。
+    }
+set-default-menu-message-primary-button = 設為預設瀏覽器
+set-default-menu-message-primary-button-variant = 設為主要瀏覽器
