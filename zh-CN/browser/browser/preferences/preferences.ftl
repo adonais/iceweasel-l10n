@@ -772,8 +772,13 @@ home-homepage-title =
 ## Custom Homepage subpage
 
 home-custom-homepage-header = 自定义主页
+home-custom-homepage-subpage =
+    .heading = 自定义主页
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
 home-custom-homepage-subheader = 网址
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card =
+    .heading = 网址
 home-custom-homepage-address =
     .placeholder = 输入地址
 home-custom-homepage-address-button =
@@ -947,6 +952,9 @@ suggestions-addressbar-settings-generic2 = 更改其他地址栏建议设置
 search-suggestions-cant-show = 由于您已经设置 { -brand-short-name } 不记录浏览历史，地址栏中将不会显示搜索建议。
 search-one-click-header2 = 快捷搜索
 search-one-click-desc = 请选择在地址栏和搜索栏输入关键词时，您希望显示在下方的其他可选用的搜索引擎。
+search-one-click-header-3 =
+    .label = 备用搜索引擎
+    .description = 选择在地址栏中显示的搜索引擎和快捷方式。
 search-choose-engine-column =
     .label = 搜索引擎
 search-choose-keyword-column =
@@ -959,6 +967,9 @@ search-remove-engine =
     .accesskey = R
 search-add-engine =
     .label = 添加
+    .accesskey = A
+search-add-engine-2 =
+    .label = 添加搜索引擎
     .accesskey = A
 search-edit-engine =
     .label = 编辑
@@ -1940,6 +1951,9 @@ collection-studies-description = 抢先体验尚未全面推出的功能和概�
 collection-studies =
     .label = 允许 { -brand-short-name } 安装并运行一些研究项目
 collection-studies-link = 查看 { -brand-short-name } 研究
+nimbus-rollouts-enabled =
+    .label = 允许 { -brand-short-name } 在更新间隔期间改进功能、性能、稳定性。
+nimbus-rollouts-enabled-description = 更改会远程进行。
 addon-recommendations2 =
     .label = 允许进行个性化扩展推荐
 addon-recommendations-description = 获取扩展推荐，改进浏览体验。

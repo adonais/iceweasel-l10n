@@ -764,8 +764,13 @@ home-homepage-title =
 ## Custom Homepage subpage
 
 home-custom-homepage-header = 自訂首頁
+home-custom-homepage-subpage =
+    .heading = 自訂首頁
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
 home-custom-homepage-subheader = 網站網址
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card =
+    .heading = 網站網址
 home-custom-homepage-address =
     .placeholder = 請輸入網址
 home-custom-homepage-address-button =
@@ -943,6 +948,9 @@ suggestions-addressbar-settings-generic2 = 修改其他網址列建議設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header2 = 搜尋快速鍵
 search-one-click-desc = 請選擇當您在網址列或搜尋列輸入關鍵字時，可選用的其他搜尋引擎。
+search-one-click-header-3 =
+    .label = 其他搜尋引擎
+    .description = 選擇要在網址列顯示哪些搜尋引擎與捷徑。
 search-choose-engine-column =
     .label = 搜尋引擎
 search-choose-keyword-column =
@@ -955,6 +963,9 @@ search-remove-engine =
     .accesskey = r
 search-add-engine =
     .label = 新增
+    .accesskey = A
+search-add-engine-2 =
+    .label = 新增搜尋引擎
     .accesskey = A
 search-edit-engine =
     .label = 編輯
@@ -1936,6 +1947,9 @@ collection-studies-description = 在功能推出給所有人之前，搶先試�
 collection-studies =
     .label = 允許 { -brand-short-name } 安裝並進行研究
 collection-studies-link = 檢視 { -brand-short-name } 所進行的研究
+nimbus-rollouts-enabled =
+    .label = 允許 { -brand-short-name } 在新版本推出前改進功能、效能、穩定度
+nimbus-rollouts-enabled-description = 變更將從遠端自動推送並套用。
 addon-recommendations2 =
     .label = 允許個人化推薦的擴充套件
 addon-recommendations-description = 依照您的使用方式推薦擴充套件，改進您的上網體驗。
