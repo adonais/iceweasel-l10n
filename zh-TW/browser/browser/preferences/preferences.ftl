@@ -2202,7 +2202,7 @@ iceweasel-libportable-download-description =
     同時也支持瀏覽器下載項。 你需要先啟用userChrome環境。
 iceweasel-libportable-download-warning1 = 你也可以很方便的手動整合下載器, 見項目 Issues 說明。
 iceweasel-libportable-download-pop = downloadUpcheck安裝成功<br>重啟瀏覽器后生效
-iceweasel-libportable-download-needed = 你需要先啟用userChrome環境
+iceweasel-libportable-download-needed = 下載失敗或者沒有啟用userChrome環境
 iceweasel-libportable-bosskey-description = 默認Ctrl+Shift+~，portable.ini 可修改快捷鍵。
 iceweasel-libportable-bosskey-warning1 = 你需要防止快捷鍵與其他應用沖突。
 iceweasel-libportable-ontabs-description = 對應 portable.ini 中的 OnTabs 選項。
