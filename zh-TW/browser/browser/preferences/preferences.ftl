@@ -12,6 +12,8 @@ do-not-track-option-always =
 global-privacy-control-description =
     .label = 告訴網站不要銷售或分享我的資料
     .accesskey = s
+non-technical-privacy-group =
+    .label = 網站隱私權偏好設定
 non-technical-privacy-header = 網站隱私權偏好設定
 non-technical-privacy-label =
     .aria-label = { non-technical-privacy-header }
@@ -51,6 +53,9 @@ category-privacy =
 pane-sync-title3 = 同步
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
+pane-ai-controls-title = AI 控制
+category-ai-controls =
+    .tooltiptext = { pane-ai-controls-title }
 pane-experimental-title = { -brand-short-name } 實驗
 category-experimental =
     .tooltiptext = { -brand-short-name } 實驗
@@ -73,6 +78,8 @@ close-button =
     .aria-label = 關閉
 do-not-track-removal2 =
     .label = 我們不再支援「Do Not Track」訊號
+applications-setting-new-file-types =
+    .label = { -brand-short-name } 應如何處理其他檔案？
 
 ## Browser Restart Dialog
 
@@ -249,6 +256,8 @@ browser-containers-settings =
     .label = 設定…
     .accesskey = i
 containers-disable-alert-title = 要關閉所有容器分頁嗎？
+startup-group =
+    .label = 啟動
 
 ## Variables:
 ##   $tabCount (number) - Number of tabs
@@ -268,6 +277,19 @@ containers-remove-cancel-button = 不要移除此容器
 settings-tabs-show-image-in-preview =
     .label = 當滑鼠移動到分頁標籤上時，顯示分頁預覽
     .accessKey = h
+browser-layout-header2 =
+    .label = 瀏覽器版面
+browser-layout-horizontal-tabs2 =
+    .label = 水平分頁標籤
+    .title = 分頁放置於畫面頂端
+    .description = 分頁放置於畫面頂端
+browser-layout-vertical-tabs2 =
+    .label = 垂直分頁標籤
+    .title = 分頁放置於側邊欄
+    .description = 分頁放置於側邊欄
+browser-layout-show-sidebar2 =
+    .label = 顯示側邊欄
+    .description = 不用離開主畫面就能快速開啟書籤、手機上的分頁、AI 聊天機器人等功能。
 browser-layout-header = 瀏覽器版面
 browser-layout-horizontal-tabs =
     .label = 水平分頁標籤
@@ -282,6 +304,9 @@ browser-layout-show-sidebar-desc = 不用離開主畫面就能快速開啟書籤
 ## General Section - Language & Appearance
 
 language-and-appearance-header = 語言與外觀
+appearance-group =
+    .label = 網站外觀
+    .description = 某些網站可依照您的偏好來調整顯示配色，可在此決定要針對這些網站使用哪種配色模式。
 preferences-web-appearance-header = 網站外觀
 preferences-web-appearance-description = 某些網站可依照您的偏好來調整顯示配色，可在此決定要針對這些網站使用哪種配色模式。
 preferences-web-appearance-choice-auto2 =
@@ -343,6 +368,14 @@ preferences-colors-description = 覆蓋 { -brand-short-name } 的預設文字、
 preferences-colors-manage-button =
     .label = 管理色彩…
     .accesskey = C
+preferences-fonts-header2 =
+    .label = 字型
+default-font-2 =
+    .label = 預設字型
+    .accesskey = D
+default-font-size-2 =
+    .label = 大小
+    .accesskey = S
 preferences-fonts-header = 字型
 default-font = 預設字型
     .accesskey = D
@@ -372,6 +405,28 @@ preferences-text-zoom-override-warning =
     .message = 警告：若您選擇「只縮放文字」，但未將預設縮放比例設定為 100%，可能造成某些網站或內容不正常。
 language-header = 語言
 choose-language-description = 請選擇瀏覽支援多國語言的網頁時要優先顯示哪種語言
+website-language-heading =
+    .label = 網站語言
+    .description = 一張網頁有時候會有不同語言的版本，請選擇要顯示的語言版本順序。
+website-preferred-language =
+    .label = 偏好語言
+website-add-language =
+    .label = 新增語言
+website-add-language-button =
+    .aria-label = 新增選擇的語言
+    .title = 新增選擇的語言
+# The pattern used to generate strings presented to the user in the
+# website languages selection list.
+#
+# Example:
+#   Icelandic
+#   Spanish (Chile)
+#
+# Variables:
+#   $locale (String) - A name of the locale (for example: "Icelandic", "Spanish (Chile)")
+website-remove-language-button =
+    .aria-label = 移除 { $locale }
+    .title = 移除 { $locale }
 choose-button =
     .label = 選擇…
     .accesskey = o
@@ -489,6 +544,9 @@ download-always-ask-where =
 download-private-browsing-delete =
     .label = 關閉所有隱私瀏覽視窗時，刪除於隱私瀏覽模式中下載的檔案
     .accesskey = D
+applications-setting =
+    .label = 應用程式
+    .description = 選擇 { -brand-short-name } 要如何處理您上網時下載的檔案。
 applications-header = 應用程式
 applications-description = 選擇 { -brand-short-name } 要如何處理您上網時下載的檔案。
 applications-filter =
@@ -496,9 +554,11 @@ applications-filter =
 applications-type-column =
     .label = 內容類型
     .accesskey = t
+applications-type-heading = 內容類型
 applications-action-column =
     .label = 動作
     .accesskey = A
+applications-action-heading = 動作
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
 applications-file-ending = { $extension } 檔案
@@ -571,6 +631,8 @@ applications-save-for-new-types =
 applications-ask-before-handling =
     .label = 詢問要直接開啟還是儲存檔案
     .accesskey = A
+drm-group =
+    .label = 數位權利管理（DRM）內容
 drm-content-header = 數位權利管理（DRM）內容
 play-drm-content =
     .label = 播放 DRM 內容
@@ -649,6 +711,8 @@ performance-limit-content-process-blocked-desc = 僅能在多程序的 { -brand-
 #   $num (number) - Default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
     .label = { $num }（預設）
+performance-group =
+    .label = 效能
 
 ## General Section - Browsing
 
@@ -697,6 +761,8 @@ browsing-cfr-features =
     .label = 隨您上網推薦新功能
     .accesskey = f
 browsing-cfr-recommendations-learn-more = 了解更多
+browsing-group =
+    .label = 瀏覽
 
 ## General Section - Proxy
 
@@ -706,18 +772,32 @@ network-proxy-connection-learn-more = 了解更多
 network-proxy-connection-settings =
     .label = 設定…
     .accesskey = e
+network-proxy-group =
+    .label = 網路設定
+    .description = 設定 { -brand-short-name } 要如何連線至網際網路。
 
 ## Home Section
 
 home-new-windows-tabs-header = 新視窗與分頁
 home-new-windows-tabs-description2 = 選擇開啟首頁、新視窗和新分頁時要看到的內容。
 
+## Home Section - Default Browser
+
+home-default-browser-title =
+    .label = 預設瀏覽器
+is-default-browser-2 =
+    .message = 好選擇！{ -brand-short-name } 是您的預設瀏覽器。
+is-not-default-browser-2 =
+    .message = 嗯… { -brand-short-name } 不是您的預設瀏覽器。
+set-as-my-default-browser-2 =
+    .label = 設為預設瀏覽器
+    .accesskey = D
+
 ## Custom Homepage subpage
 
 home-homepage-mode-label = 首頁與新視窗
 home-homepage-new-windows =
     .label = 新視窗
-home-homepage-mode-label2 = 新視窗
 home-newtabs-mode-label = 新分頁
 home-homepage-new-tabs =
     .label = 新分頁
@@ -738,8 +818,6 @@ home-homepage-manage-extension-button =
 # This option leads to the "Custom Homepage" subpage
 home-homepage-custom-homepage-button =
     .label = 選擇特定網站
-# This option leads to the "Custom Homepage" subpage
-home-homepage-custom-homepage-url = 選擇特定網站
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -754,7 +832,6 @@ use-current-pages =
 choose-bookmark =
     .label = 使用書籤…
     .accesskey = B
-home-homepage-header = 首頁
 
 ## Home Section - Home Page Customization
 
@@ -767,23 +844,33 @@ home-custom-homepage-header = 自訂首頁
 home-custom-homepage-subpage =
     .heading = 自訂首頁
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
-home-custom-homepage-subheader = 網站網址
+home-custom-homepage-card-header =
+    .label = 網站網址
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
-home-custom-homepage-card =
-    .heading = 網站網址
+home-custom-homepage-subheader = 網站網址
 home-custom-homepage-address =
     .placeholder = 請輸入網址
 home-custom-homepage-address-button =
     .label = 新增網址
 # Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = 尚未加入任何網站。
+home-custom-homepage-delete-address-button =
+    .aria-label = 刪除地址
+    .title = 刪除地址
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = 取代為
+# Shown when no custom websites/URLs to use as a homepage have been added yet
 home-custom-homepage-no-websites-yet = 尚未加入任何網站。
 # Further options to use when setting the home page. Two action buttons are placed in line with this prompt
 # to replace the current home page with a currently open page or bookmark.
 home-custom-homepage-replace-with = 取代為
-# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with)
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
 home-custom-homepage-current-pages-button =
     .label = 目前開啟的頁面
-# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with)
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
 home-custom-homepage-bookmarks-button =
     .label = 書籤…
 
@@ -951,6 +1038,8 @@ search-one-click-desc = 請選擇當您在網址列或搜尋列輸入關鍵字�
 search-one-click-header-3 =
     .label = 其他搜尋引擎
     .description = 選擇要在網址列顯示哪些搜尋引擎與捷徑。
+update-search-engine-success =
+    .message = 已成功更新搜尋引擎
 search-choose-engine-column =
     .label = 搜尋引擎
 search-choose-keyword-column =
@@ -1015,7 +1104,7 @@ sync-group-label =
 account-group-label =
     .label = { -vendor-short-name } 帳號
 account-placeholder =
-    .label = 您尚未登入。
+    .label = 您尚未登入
     .description = 登入後即可透過有隱私、加密過的方式，將您的資料同步道不同裝置上。
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
@@ -1422,16 +1511,16 @@ autofill-reauth-payment-methods-checkbox-2 =
 autofill-payment-methods-add-button = 新增付款方式
 payments-list-header =
     .label = 付款方式
-payments-list-item-label = <strong>付款方式</strong>
 payments-delete-payment-prompt-title = 要刪除這筆付款方式嗎？
 payments-delete-payment-prompt-confirm-button = 刪除
 payments-delete-payment-prompt-cancel-button = 取消
+payments-delete-payment-button-label =
+    .aria-label = 刪除
+payments-edit-payment-button-label =
+    .aria-label = 編輯
 # This message is displayed when no payment methods such as credit card are stored in Firefox
 payments-no-payments-stored-message =
     .label = 未新增付款方式
-payments-remove-payment-prompt-title = 要移除這筆付款方式嗎？
-payments-remove-payment-prompt-confirm-button = 移除
-payments-remove-payment-prompt-cancel-button = 取消
 autofill-addresses-title = 地址與更多資訊
 autofill-addresses-header =
     .aria-label = 地址與更多資訊
@@ -1471,6 +1560,10 @@ address-moz-box-item =
 payment-moz-box-item =
     .label = { $cardNumber }
     .description = { $expDate }
+addresses-group =
+    .label = 地址與更多資訊
+payments-group =
+    .label = 付款方式
 
 ## Privacy Section - History
 
@@ -1502,6 +1595,15 @@ history-remember-option-never =
     .label = 不保留歷史記錄
 history-remember-option-custom =
     .label = 使用自訂的設定
+history-remember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } 將記住您的瀏覽、下載、表單填寫與搜尋紀錄。
+history-dontremember-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } 不會儲存任何瀏覽記錄，如同在隱私瀏覽狀態下執行。
+history-custom-description4 =
+    .aria-label = { history-group.label }
+    .description = { -brand-short-name } 會針對您的瀏覽、下載、表單填寫與搜尋紀錄使用您自訂的選項。
 history-remember-description3 =
     .aria-label = { history-remember-label2 }
     .description = { -brand-short-name } 將記住您的瀏覽、下載、表單填寫與搜尋紀錄。
@@ -1531,6 +1633,8 @@ history-clear-on-close-settings =
 history-clear-button =
     .label = 清除瀏覽記錄…
     .accesskey = s
+history-group =
+    .label = 瀏覽紀錄
 
 ## Privacy Section - Site Data
 
@@ -1597,6 +1701,8 @@ sitedata-cookies-exceptions2 =
     .label = 管理例外網站
     .accesskey = x
     .description = 您可以指定哪些網站總是可以，或永遠不可儲存 Cookie 與網站資料。
+cookies-site-data-group =
+    .label = Cookie 與網站資料
 
 ## Privacy Section - Cookie Banner Handling
 
@@ -1616,11 +1722,6 @@ cookie-banner-blocker-checkbox-label =
 ## Search Section
 
 addressbar-header = 網址列
-addressbar-suggest-1 = 選擇要在網址列顯示哪些建議
-# When Firefox Suggest is enabled, this replaces `addressbar-header`.
-addressbar-header-firefox-suggest-1 = { -firefox-suggest-brand-name }
-# When Firefox Suggest is enabled, this replaces `addressbar-suggest`.
-addressbar-suggest-firefox-suggest-1 = 將在網址列顯示來自 { -brand-short-name } 與我們的夥伴所提供的建議。
 addressbar-suggest = 在使用網址列時提供建議
 # When Firefox Suggest is enabled, this replaces `addressbar-header`.
 addressbar-header-firefox-suggest = 網址列 — { -firefox-suggest-brand-name }
@@ -1677,10 +1778,6 @@ addressbar-locbar-showrecentsearches-option =
 addressbar-locbar-showtrendingsuggestions-option =
     .label = 顯示熱門搜尋建議
     .accesskey = t
-# Toggles whether suggestions are obtained from Firefox Suggest or not (local or online).
-addressbar-locbar-suggest-all-option =
-    .label = 來自 { -brand-short-name } 的建議
-addressbar-locbar-suggest-all-option-desc = 取得您搜尋內容的相關建議。
 # Nonsponsored suggestions refers to Firefox Suggest suggestions like Wikipedia.
 addressbar-locbar-suggest-nonsponsored-option =
     .label = 來自 { -brand-short-name } 的建議
@@ -1698,12 +1795,12 @@ addressbar-firefox-suggest-online =
     .label = 一邊打字，一邊從 Mozilla 取得建議
 addressbar-dismissed-suggestions-label-2 =
     .label = 忽略的建議
-    .description = 還原顯示被忽略的贊助商與 { -brand-short-name } 建議。
+    .description = 重新顯示被忽略的贊助商與 { -brand-short-name } 建議項目。
 addressbar-restore-dismissed-suggestions-button-2 =
     .label = 還原建議
 addressbar-quickactions-learn-more = 了解更多
 addressbar-dismissed-suggestions-label = 忽略的建議
-addressbar-restore-dismissed-suggestions-description = 還原顯示被忽略的贊助商與 { -brand-short-name } 建議。
+addressbar-restore-dismissed-suggestions-description = 重新顯示被忽略的贊助商與 { -brand-short-name } 建議項目。
 addressbar-restore-dismissed-suggestions-button =
     .label = 還原
 
@@ -1989,6 +2086,8 @@ website-advertising-private-attribution-description = 此功能可在不收集�
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = 安全性
+browsing-protection-group =
+    .label = 詐騙內容與危險網站保護
 security-browsing-protection = 詐騙內容與危險網站保護
 security-enable-safe-browsing =
     .label = 封鎖危險及詐騙內容
@@ -2045,10 +2144,17 @@ httpsonly-radio-disabled3 =
     .description = { -brand-short-name } 可能還是會將某些連線升級為 HTTPS 連線
 httpsonly-radio-disabled =
     .label = 不要開啟純 HTTPS 模式
+httpsonly-group =
+    .label = 純 HTTPS 模式
+    .description = 僅允許對網站使用安全連線。{ -brand-short-name } 會在進行不安全連線前先詢問。
+httpsonly-label2 =
+    .aria-label = { httpsonly-group.label }
 
 ## DoH Section
 
 preferences-doh-header = DNS over HTTPS
+dns-over-https-group =
+    .label = DNS over HTTPS
 preferences-doh-description = DNS over HTTPS 會將您的網域名稱查詢請求加密後傳送，使其他人更難得知您要開啟的網站，讓 DNS 查詢變得安全。
 preferences-doh-description2 = DNS over HTTPS 會將您的網域名稱查詢請求加密後傳送，使其他人更難得知您要開啟的網站，讓 DNS 查詢變得安全。
 # Variables:
@@ -2109,6 +2215,66 @@ preferences-doh-manage-exceptions =
 
 desktop-folder-name = 桌面
 downloads-folder-name = 下載
+choose-download-folder-title = 選取下載目錄：
+
+## AI controls page
+
+preferences-ai-controls-header =
+    .heading = { pane-ai-controls-title }
+preferences-ai-controls-description = 您可隨時在 { -brand-short-name } 決定是否使用 AI 擴充功能。即將推出更多控制設定。
+preferences-ai-controls-block-ai-label = 封鎖 AI 功能
+preferences-ai-controls-block-ai =
+    .label = { preferences-ai-controls-block-ai-label }
+preferences-ai-controls-block-ai-description = 封鎖的話，代表您不會在 { -brand-short-name } 看到目前已有，或新推出的 AI 擴充功能，或是任何有關這些功能的彈出提示。若需有關包含哪些功能、如何控制傳統機器學習技術的相關功能（如搜尋建議）的相關資訊，<a data-l10n-name="link">請參考此處</a>。
+preferences-ai-controls-blocked-message =
+    .message = 預設會封鎖目前與新推出的 AI 擴充功能，可使用下列控制設定針對特定功能解除封鎖。
+preferences-ai-controls-on-device-group =
+    .label = 本機裝置上的 AI
+    .description = 這些功能會下載小型 AI 模型到您的裝置上運作，這樣可以幫助保護您的隱私。
+preferences-ai-controls-translations-control =
+    .label = 翻譯
+    .description = 用您偏好的語言，無縫瀏覽網頁。
+preferences-ai-controls-translations-more-link = 更多翻譯設定
+preferences-ai-controls-pdfjs-control =
+    .label = { -brand-short-name } PDF 檢視器中的圖片替代文字
+    .description = 當您新增圖片到 PDF 當中時，根據圖片內容加入描述，讓圖片更有親和力。
+preferences-ai-controls-tab-group-suggestions-control =
+    .label = 分頁群組建議
+    .description = 管理您的分頁，並提供名稱建議。
+preferences-ai-controls-key-points-control =
+    .label = 預覽鏈結當中的重點資訊
+    .description = 在開啟鏈結之前先看一下快速摘要。
+preferences-ai-controls-sidebar-chatbot-group =
+    .label = 側邊欄中的 AI 聊天機器人
+    .description = 上網時也在畫面中留一塊空間給聊天機器人。從 Anthropic Claude、ChatGPT、Copilot、Google Gemini 及 Le Chat Mistral 當中挑選一套。
+preferences-ai-controls-sidebar-chatbot-control =
+    .label = 側邊欄中的聊天機器人
+# This option means that a user will see the feature and can use it.
+preferences-ai-controls-state-available =
+    .label = 可用
+# This option means a user has opted in to use the feature.
+preferences-ai-controls-state-enabled =
+    .label = 啟用
+# This option means the user won't see and can't use the feature. For on-device AI, any models already downloaded are removed.
+preferences-ai-controls-state-blocked =
+    .label = 封鎖
+preferences-ai-controls-state-description-before = 選項的意思：
+preferences-ai-controls-state-description-available = <strong>可用：</strong>您會看到這個功能，也能使用。
+preferences-ai-controls-state-description-enabled = <strong>啟用：</strong>您主動選擇要使用此功能。
+preferences-ai-controls-state-description-blocked = <strong>封鎖：</strong>您不會看到這個功能，也不能使用。針對在裝置內運作的 AI 模型，將會移除所有曾下載的模型。
+preferences-ai-controls-block-confirmation-heading = 要封鎖 AI 功能嗎？
+preferences-ai-controls-block-confirmation-description = 您不會在 { -brand-short-name } 看到目前已有，或新推出的 AI 擴充功能，或是任何有關這些功能的彈出提示。但之後還是可以解除封鎖任何想要使用的功能。
+preferences-ai-controls-block-confirmation-features-start = 會封鎖哪些功能：
+preferences-ai-controls-block-confirmation-translations = 翻譯
+preferences-ai-controls-block-confirmation-pdfjs = { -brand-short-name } PDF 檢視器中的圖片替代文字
+preferences-ai-controls-block-confirmation-tab-group-suggestions = 分頁群組建議
+preferences-ai-controls-block-confirmation-key-points = 預覽鏈結當中的重點資訊
+preferences-ai-controls-block-confirmation-sidebar-chatbot = 側邊欄中的聊天機器人
+preferences-ai-controls-block-confirmation-features-after = 封鎖功能也會影響使用由 { -brand-short-name } 提供的 AI 功能的擴充套件。
+preferences-ai-controls-block-confirmation-cancel =
+    .label = 取消
+preferences-ai-controls-block-confirmation-confirm =
+    .label = 封鎖
 
 pane-iceweasel-title = Iceweasel
 category-iceweasel =
@@ -2132,10 +2298,6 @@ iceweasel-ipv6-checkbox =
     .label = 啟用 IPv6
 iceweasel-javascript-checkbox =
     .label = 禁用 Javascript
-iceweasel-ai-checkbox =
-    .label = 禁用 AI 相關功能
-iceweasel-searchhand-checkbox =
-    .label = 恢復搜索移交功能
 iceweasel-taskbartabs-checkbox =
     .label = 隱藏地址欄 TaskbarTabs 按鈕
 iceweasel-libportable-heading = libportable 選項
@@ -2170,10 +2332,6 @@ iceweasel-extension-update-warning1 = 如果您不在每次更新前審查擴展
 iceweasel-autocopy-description = 選擇一些文本復制，然后用鼠標中鍵粘貼。
 iceweasel-ipv6-description = 允許 Iceweasel 使用 IPv6 連接。
 iceweasel-ipv6-warning1 = 與其在瀏覽器中阻止 IPv6，我們建議在您的操作系統中啟用 IPv6 隱私擴展。
-iceweasel-ai-description = 本地 AI 可能導致 CPU 與內存占用明顯攀升。
-iceweasel-ai-warning1 = 它的數據使用可能侵犯用戶隱私。
-iceweasel-searchhand-description = 在新標簽頁搜索時移交到地址欄。
-iceweasel-searchhand-warning1 = 我們默認禁用, 你可以恢復它。
 iceweasel-tips-description = 當禁用分頁預覽時，我們也禁用了分頁消息提示框。
 iceweasel-tips-warning1 = 此選項可以恢復禁用分頁預覽后的消息提示框。
 iceweasel-tabcompactmode-description = 恢復舊版設計的標簽欄與地址欄高度。
@@ -2266,4 +2424,3 @@ save_to = 保存到
 this_desktop = 桌面
 downloads_folder = 下載
 disk_x = %s 盤
-

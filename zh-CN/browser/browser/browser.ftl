@@ -720,6 +720,7 @@ urlbar-result-action-search-in-private = 在隐私窗口中搜索
 urlbar-result-action-search-w-engine = 使用 { $engine } 搜索
 urlbar-result-action-sponsored = 赞助推广
 urlbar-result-action-switch-tab = 切换到标签页
+urlbar-result-action-move-tab-to-split-view = 将标签页移动到分屏
 urlbar-result-action-visit = 访问
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -759,6 +760,14 @@ urlbar-result-action-copy-to-clipboard = 复制
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = 未定义
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle = { -brand-product-name } 扩展
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = 推荐
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -816,6 +825,8 @@ urlbar-result-weather-title-city-only = <strong>{ $temperature }°{ $unit }</str
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider } · 赞助
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = 询问
 
 ## These strings are used for Realtime suggestions in the urlbar.
 ## Market refers to stocks, indexes, and funds.
@@ -1483,7 +1494,6 @@ urlbar-trust-icon-notsecure-label = 不安全
 ## Variables
 ##  $count (String): the number of trackers blocked.
 
-trustpanel-blocker-section-header = 已在此网站上拦截 <span>{ $count }</span> 个跟踪器
 trustpanel-blocker-description = { -brand-product-name } 认为大公司应该减少对您的跟踪，所以我们会尽可能拦截跟踪项。
 trustpanel-blocked-header = { -brand-product-name } 为您拦截了以下项目：
 trustpanel-tracking-header = 为使网站正常运作，{ -brand-product-name } 已允许以下项目：

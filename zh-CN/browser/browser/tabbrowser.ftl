@@ -37,6 +37,8 @@ tabbrowser-close-tabs-button =
 #   $tabCount (Number): The number of tabs that will be closed.
 tabbrowser-close-tabs-tooltip =
     .label = 关闭 { $tabCount } 个标签页
+tab-splitview-splitter =
+    .aria-label = 调整分屏标签页大小
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -360,9 +362,6 @@ tab-note-editor-character-limit = { NUMBER($totalCharacters, useGrouping: "false
 
 ## Split View
 
-# Split view tabs display their respective contents side by side
-# Displayed within the tooltip on tabs inside of a tab split view
-tabbrowser-tab-label-tab-split-view = 分屏视图
 # Open a new tab next to the current tab and display their contents side by side
 tab-context-add-split-view =
     .label = 添加分屏

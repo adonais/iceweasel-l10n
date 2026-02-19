@@ -567,6 +567,9 @@ browser-window-restore-down-button =
     .tooltiptext = 還原大小
 browser-window-close-button =
     .tooltiptext = 關閉
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = 返回
 
 ## Tab actions
 
@@ -724,6 +727,7 @@ urlbar-result-action-search-in-private = 用隱私瀏覽視窗搜尋
 urlbar-result-action-search-w-engine = 使用 { $engine } 進行搜尋
 urlbar-result-action-sponsored = 贊助項目
 urlbar-result-action-switch-tab = 切換至該分頁
+urlbar-result-action-move-tab-to-split-view = 將分頁移動到分割畫面
 urlbar-result-action-visit = 前往
 # "Switch to tab with container" is used when the target tab is located in a
 # different container.
@@ -763,6 +767,14 @@ urlbar-result-action-copy-to-clipboard = 複製
 urlbar-result-action-calculator-result = = { $result }
 # The string returned for an undefined calculator result such as when dividing by 0
 urlbar-result-action-undefined-calculator-result = 未定義
+# The sub title of an add-on suggestion in the urlbar.
+urlbar-result-addons-subtitle = { -brand-product-name } 擴充套件
+# The sub title of a mdn suggestion in the urlbar.
+urlbar-result-mdn-subtitle = { -mdn-brand-name }
+# The sub title of a Yelp suggestion in the urlbar.
+urlbar-result-yelp-subtitle = { -yelp-brand-name }
+# This string explaining that the suggestion is a recommendation.
+urlbar-result-suggestion-recommended = 推薦
 # Shows the result of a formula expression being calculated, in scientific notation.
 # The last = sign will be shown as part of the result (e.g. "= 1.0e17").
 # Variables
@@ -820,6 +832,8 @@ urlbar-result-weather-title-city-only = { $city } 氣溫 <strong>{ $temperature 
 #   $provider (String) - The name of the weather-data provider. It will be the
 #       name of a company, organization, or service.
 urlbar-result-weather-provider-sponsored = { $provider }∙贊助資訊
+# Used for asking AI assistant chat.
+urlbar-result-action-ai-chat = 詢問
 
 ## These strings are used for Realtime suggestions in the urlbar.
 ## Market refers to stocks, indexes, and funds.
@@ -1162,6 +1176,9 @@ toolbar-button-synced-tabs =
 toolbar-button-new-private-window =
     .label = 開新隱私視窗
     .tooltiptext = 新增隱私瀏覽視窗 ({ $shortcut })
+toolbar-button-share-tab =
+    .label = 分享
+    .tooltiptext = 分享此頁面
 
 ## EME notification panel
 
@@ -1503,7 +1520,6 @@ urlbar-trust-icon-notsecure-label = 不安全
 ## Variables
 ##  $count (String): the number of trackers blocked.
 
-trustpanel-blocker-section-header = 已封鎖此網站上的 <span>{ $count }</span> 組追蹤器
 trustpanel-blocker-description = { -brand-product-name } 認為大企業們應該少追蹤您一點，我們會盡可能封鎖追蹤器。
 trustpanel-blocked-header = { -brand-product-name } 為您封鎖了下列項目：
 trustpanel-tracking-header = { -brand-product-name } 放行了下列項目，讓網站不致於故障：
