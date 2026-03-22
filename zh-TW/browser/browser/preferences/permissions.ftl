@@ -178,7 +178,7 @@ permissions-site-camera-disable-label =
     .label = 封鎖新網站使用您攝影機的請求
 permissions-site-camera-disable-desc = 將防止上列以外的網站請您允許使用攝影機。封鎖使用攝影機的權限可能會影響某些網站的功能。
 
-## Site Permissions - Local host
+## Site Permissions - Loopback network
 
 permissions-site-localhost-window =
     .title = 設定 - 裝置應用程式與服務
@@ -219,7 +219,7 @@ permissions-site-speaker-desc = 下列網站曾要求存取您的音訊輸出裝
 permissions-exceptions-doh-window =
     .title = 使用 DNS over HTTPS 的例外網站
     .style = { permissions-window2.style }
-permissions-exceptions-manage-doh-desc = { -brand-short-name } 不會對下列網站與子網域網站，使用安全的 DNS 進行查詢。
+permissions-exceptions-manage-doh-desc = { -brand-short-name } 不會對下列網站與子網域網站，使用加密 DNS 進行查詢。
 permissions-doh-entry-field = 請輸入網站的網域名稱
     .accesskey = d
 permissions-doh-add-exception =

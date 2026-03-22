@@ -19,8 +19,15 @@ backup-folder-name = 恢复 { -brand-product-name }
 #
 # FirefoxBackup_default_20240606-1830.html
 backup-file-name = { -brand-product-name }Backup
+settings-data-backup-header2 =
+    .label = 备份
+    .description = 自动保护您的书签、历史记录等数据。
 settings-data-backup-header = 备份
 settings-data-backup-toggle = 管理备份
+settings-data-backup-toggle-on2 =
+    .label = 开启备份
+settings-data-backup-toggle-off2 =
+    .label = 关闭备份
 settings-data-backup-toggle-on = 开启备份
 settings-data-backup-toggle-off = 关闭备份
 settings-data-backup-trigger-button = 立即备份
@@ -31,6 +38,13 @@ settings-data-backup-scheduled-backups-on = 备份：已开启
 settings-data-backup-scheduled-backups-off = 备份：已关闭
 settings-data-backup-scheduled-backups-description = 自动保护您的书签、历史记录等数据。<a data-l10n-name="support-link">详细了解</a>
 settings-data-backup-last-backup-date = 上次备份：{ DATETIME($date, dateStyle: "short") } { DATETIME($date, timeStyle: "short") }
+settings-data-backup-scheduled-backups-on2 =
+    .label = 备份：已开启
+settings-data-backup-scheduled-backups-off2 =
+    .label = 备份：已关闭
+# "Location" refers to the folder where backups are being written to.
+settings-data-backup-last-backup-location2 =
+    .label = 备份位置
 # "Location" refers to the folder where backups are being written to.
 settings-data-backup-last-backup-location = 位置
 settings-data-backup-last-backup-location-show-in-folder = 在文件夹中显示
@@ -47,12 +61,16 @@ settings-data-backup-restore-header = 恢复数据
 settings-data-backup-scheduled-backups-off-restore-description = 使用其他设备上的 { -brand-product-name } 备份来恢复您的数据。
 settings-data-backup-scheduled-backups-off-restore-choose = 选择备份文件…
 
-## These strings are shown under the header if scheduled backups are enabled.
+##
 
 settings-data-backup-scheduled-backups-on-restore-description = 从上次备份恢复您的 { -brand-product-name } 数据。
 settings-data-backup-scheduled-backups-on-restore-choose = 恢复…
+settings-sensitive-data =
+    .label = 敏感数据
 settings-data-toggle-encryption-label = 备份敏感数据
 settings-data-toggle-encryption-support-link = 详细了解
+settings-data-change-password2 =
+    .label = 更改密码
 settings-data-change-password = 更改密码…
 
 ## These strings are displayed in a modal when users want to turn on scheduled backups.
@@ -95,6 +113,9 @@ turn-off-scheduled-backups-confirm-button = 关闭并删除备份
 restore-from-backup-header = 恢复数据
 # Variables:
 #   $date (string) - Date to be formatted based on locale
+restore-from-backup-support-link1 = 恢复的内容
+# Variables:
+#   $date (string) - Date to be formatted based on locale
 restore-from-backup-description-with-metadata =
     .message = 此操作将使用 { DATETIME($date, timeStyle: "short", dateStyle: "short") } 的备份替换 { -brand-short-name } 当前所有数据。
 restore-from-backup-support-link =
@@ -112,6 +133,10 @@ restore-from-backup-password-description = 用于解锁加密的备份。
 restore-from-backup-cancel-button = 取消
 restore-from-backup-confirm-button = 恢复并重启
 restore-from-backup-restoring-button = 正在恢复…
+restore-from-backup-type-replace =
+    .label = 用此备份替换所有数据
+restore-from-backup-type-add =
+    .label = 保留数据并创建新的配置文件
 
 ## These strings are displayed in a small error message bar in the settings
 ## menu if there was an error when trying to restore a backed up profile

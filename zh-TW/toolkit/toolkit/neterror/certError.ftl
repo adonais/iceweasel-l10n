@@ -72,6 +72,8 @@ open-in-new-window-for-csp-or-xfo-error = 用新視窗開啟網站
 #   $hostname (string) - Hostname of the website blocked by csp or xfo error.
 csp-xfo-blocked-long-desc = 為了保護您的安全，{ $hostname } 不允許在被別的網站嵌入時，讓  { -brand-short-name } 顯示頁面內容。若要見到此頁面，請用新視窗開啟。
 fp-certerror-view-certificate-link = 檢視網站憑證
+fp-certerror-return-to-previous-page-recommended-button-2 = 返回上一頁（建議）
+    .accesskey = G
 fp-certerror-return-to-previous-page-recommended-button = 返回上一頁（建議）
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
@@ -209,6 +211,8 @@ certerror-mitm-title = 有軟體造成 { -brand-short-name } 無法與此網站�
 
 fp-certerror-page-title = 警告：有安全性風險
 fp-certerror-body-title = 請小心，有些東西不對勁。
+fp-certerror-illustration-alt =
+    .alt = 狐狸看著橘色警告的圖示。
 fp-certerror-why-site-dangerous = 哪個部分導致網站看來不安全？
 fp-certerror-what-can-you-do = 您可以做什麼？
 fp-certerror-advanced-title = 進階
@@ -222,3 +226,5 @@ fp-certerror-override-exception-button = 繼續前往 { $hostname }（有風險�
 fp-certerror-intro = { -brand-short-name } 發現 <strong>{ $hostname }</strong> 有潛在的重大安全性問題。有人可能會假扮網站，嘗試竊取您的信用卡資訊、密碼或電子郵件信箱等資料。
 fp-certerror-expired-into = { -brand-short-name } 發現 <strong>{ $hostname }</strong> 有安全性問題。可能是網站未正確設定，或是您使用的裝置時間不正確。
 fp-certerror-transparency-intro = 可能是其他假扮為 <strong>{ $hostname }</strong> 的有心人，正嘗試偷走您的信用卡資訊、密碼、信箱等資料。
+fp-certerror-override-exception-button-2 = 繼續前往 { $hostname }（有風險）
+    .accesskey = P

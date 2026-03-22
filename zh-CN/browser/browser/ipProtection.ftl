@@ -23,7 +23,6 @@ ipprotection-title = VPN
 
 ## Feature introduction callout
 
-ipprotection-feature-introduction-link-text = 使用全新的<a data-l10n-name="learn-more-vpn">内置 VPN</a> 添一层加密，隐藏真实位置、保护个人数据。
 ipprotection-feature-introduction-button-primary = 下一步
 ipprotection-feature-introduction-button-secondary-not-now = 暂时不要
 ipprotection-feature-introduction-button-secondary-no-thanks = 不了，谢谢
@@ -36,11 +35,16 @@ ipprotection-site-settings-callout-button = 知道了
 ## Panel
 
 unauthenticated-vpn-title = 试用 { -brand-product-name } 的内置 VPN
-unauthenticated-hide-location-message = 隐藏真实位置，为 { -brand-product-name } 中的浏览添一层加密保护。
 # Variables
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 unauthenticated-bandwidth-limit-message = 每月可免费获得 { $maxUsage } GB VPN 流量
 unauthenticated-get-started = 开始使用
+site-exclusion-toggle-enabled-1 =
+    .label = 为此网站使用 VPN
+    .aria-label = 已为此网站开启 VPN
+site-exclusion-toggle-disabled-1 =
+    .label = 为此网站使用 VPN
+    .aria-label = 已为此网站关闭 VPN
 site-exclusion-toggle-label = 为此网站使用 VPN
 site-exclusion-toggle-enabled =
     .aria-label = 已为此网站开启 VPN
@@ -122,17 +126,45 @@ ip-protection-site-exceptions-all-sites-button =
     .description = { $count } 个网站
 ip-protection-autostart =
     .label = 自动开启 VPN
+ip-protection-autostart-checkbox =
+    .label = 打开 { -brand-short-name } 时
 ip-protection-autostart-private-checkbox =
     .label = 在隐私窗口中
+ip-protection-vpn-upgrade-link =
+    .label = 使用 { -mozilla-vpn-brand-name }，将保护扩展到 { -brand-short-name } 之外。
+    .description = 无论您在家中还是使用公共 Wi-Fi，均可选择自定义 VPN 位置，并在最多五台设备上为所有应用添加保护。
 
 ## IP Protection dialogs
 
 ip-protection-exceptions-dialog-window =
     .title = 管理网站设置
+ip-protection-exclusions-desc = 将为不在此列表中的所有网站使用 VPN。可在此处添加网站，或打开 VPN 添加。
 
 ## IP Protection Bandwidth
 
 ip-protection-bandwidth-header = 每月 VPN 流量
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-this-month-gb = 本月剩余 { $usageLeft } / { $maxUsage } GB
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-gb = 剩余 { $usageLeft } / { $maxUsage } GB
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-this-month-mb = 本月剩余 { $usageLeft } MB / { $maxUsage } GB
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-mb = 剩余 { $usageLeft } MB / { $maxUsage } GB
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-hit-for-the-month = 您已用完全部 { $maxUsage } GB VPN 流量，使用权限将于下个月重置。
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-help-text = 每月初重置为 { $maxUsage } GB。
 
 ## IP Protection bandwidth reset callout
 
@@ -142,6 +174,9 @@ ipprotection-bandwidth-reset-button = 明白了
 ## IP Protection alerts
 
 vpn-paused-alert-title = VPN 已暂停
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+vpn-paused-alert-body = 您已用完全部 { $maxUsage } GB VPN 流量，使用权限将于下个月重置。
 vpn-paused-alert-close-tabs-button = 关闭所有标签页
 vpn-paused-alert-continue-wo-vpn-button = 不使用 VPN 继续
 vpn-error-alert-title = VPN 目前未运行。

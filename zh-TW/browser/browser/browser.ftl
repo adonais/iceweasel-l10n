@@ -934,10 +934,15 @@ urlbar-searchmode-default =
     .tooltiptext = 預設搜尋引擎
 # Label shown on the top of Searchmode Switcher popup. After this label, the
 # available search engines will be listed.
-urlbar-searchmode-popup-description = 這次使用下列搜尋引擎搜尋：
+urlbar-searchmode-popup-description-menucaption =
+    .label = 這次使用下列搜尋引擎搜尋：
 # Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
 # reset after submitting.
-urlbar-searchmode-popup-sticky-description = 使用下列引擎搜尋：
+urlbar-searchmode-popup-sticky-description-menucaption =
+    .label = 使用下列引擎搜尋：
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-description = 這次使用下列搜尋引擎搜尋：
 urlbar-searchmode-popup-search-settings-menuitem =
     .label = 搜尋設定
 # Label shown next to a new search engine in the Searchmode Switcher popup to promote it.
@@ -1158,6 +1163,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = 密碼
     .tooltiptext = 檢視與管理您儲存的密碼
+qrcode-panel-error =
+    .message = QR Code 產生失敗，請再試一次。
+qrcode-copy-button =
+    .label = 複製
+qrcode-copy-success =
+    .message = 已將 QR Code 複製至剪貼簿。
+qrcode-copy-error =
+    .message = QR Code 複製失敗。
+qrcode-save-button =
+    .label = 儲存
+qrcode-save-success =
+    .message = 已儲存 QR Code。
+qrcode-save-error =
+    .message = QR Code 儲存失敗。
+qrcode-save-title = 儲存 QR Code
+qrcode-save-filter-png = PNG 圖片
+qrcode-save-filename = qrcode.png
+qrcode-window-title = QR Code
+qrcode-dialog-title = QR Code
+qrcode-image =
+    .aria-label = QR Code
+qrcode-close-button =
+    .aria-label = 關閉
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1198,6 +1226,15 @@ panel-save-update-password = 密碼
 # "More" item in macOS share menu
 menu-share-more =
     .label = 更多…
+# Variables:
+#   $count (Number) - The number of links that will be copied.
+menu-share-copy-links =
+    .label =
+        { $count ->
+            [one] 複製鏈結
+           *[other] 複製 { $count } 個鏈結
+        }
+    .accesskey = L
 menu-share-copy-link =
     .label = 複製鏈結
     .accesskey = L

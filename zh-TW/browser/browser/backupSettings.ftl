@@ -19,8 +19,15 @@ backup-folder-name = 還原 { -brand-product-name }
 #
 # FirefoxBackup_default_20240606-1830.html
 backup-file-name = { -brand-product-name }Backup
+settings-data-backup-header2 =
+    .label = 備份
+    .description = 自動保護您的書籤、瀏覽紀錄與其他資料。
 settings-data-backup-header = 備份
 settings-data-backup-toggle = 管理備份
+settings-data-backup-toggle-on2 =
+    .label = 開啟備份
+settings-data-backup-toggle-off2 =
+    .label = 關閉備份
 settings-data-backup-toggle-on = 開啟備份
 settings-data-backup-toggle-off = 關閉備份
 settings-data-backup-trigger-button = 立即備份
@@ -31,15 +38,31 @@ settings-data-backup-scheduled-backups-on = 備份：開啟
 settings-data-backup-scheduled-backups-off = 備份：關閉
 settings-data-backup-scheduled-backups-description = 自動保護您的書籤、瀏覽紀錄與其他資料。<a data-l10n-name="support-link">了解更多</a>
 settings-data-backup-last-backup-date = 上次備份時間：{ DATETIME($date, dateStyle: "short") } { DATETIME($date, timeStyle: "short") }
+settings-data-backup-scheduled-backups-on2 =
+    .label = 備份已開啟
+settings-data-backup-scheduled-backups-off2 =
+    .label = 備份已關閉
+# "Location" refers to the folder where backups are being written to.
+settings-data-backup-last-backup-location2 =
+    .label = 備份位置
 # "Location" refers to the folder where backups are being written to.
 settings-data-backup-last-backup-location = 位置
 settings-data-backup-last-backup-location-show-in-folder = 於資料夾顯示
 settings-data-backup-last-backup-location-edit = 編輯…
 settings-data-create-backup-error = 於 { DATETIME($date, dateStyle: "short") } { DATETIME($date, timeStyle: "short") } 進行備份時，發生錯誤
 settings-sensitive-data-encryption-description = 加密備份您的網站密碼與付款方式，確保資料安全。
+settings-data-toggle-encryption-label2 =
+    .label = 備份您的敏感資料
+    .description = 除了其他資料外，以加密方式備份您的網站密碼、付款方式。
 # Variables:
 #   $fileName (String) - The file name of the last backup that was created.
 settings-data-backup-last-backup-filename = 檔案名稱：{ $fileName }
+settings-data-backup-restore-scheduled-on =
+    .label = 還原您的資料
+    .description = 從最後一次備份還原您的 { -brand-product-name } 資料。
+settings-data-backup-restore-scheduled-off =
+    .label = 還原您的資料
+    .description = 使用另一台裝置上的 { -brand-product-name } 備份資料來還原。
 settings-data-backup-restore-header = 還原您的資料
 
 ## These strings are shown under the header if scheduled backups are disabled.
@@ -47,12 +70,16 @@ settings-data-backup-restore-header = 還原您的資料
 settings-data-backup-scheduled-backups-off-restore-description = 使用另一台裝置上的 { -brand-product-name } 備份檔來還原資料。
 settings-data-backup-scheduled-backups-off-restore-choose = 選擇備份檔…
 
-## These strings are shown under the header if scheduled backups are enabled.
+##
 
 settings-data-backup-scheduled-backups-on-restore-description = 還原先前備份的 { -brand-product-name } 資料。
 settings-data-backup-scheduled-backups-on-restore-choose = 還原…
+settings-sensitive-data =
+    .label = 敏感資料
 settings-data-toggle-encryption-label = 備份敏感資料
 settings-data-toggle-encryption-support-link = 了解更多
+settings-data-change-password2 =
+    .label = 更改密碼
 settings-data-change-password = 更改密碼…
 
 ## These strings are displayed in a modal when users want to turn on scheduled backups.
@@ -95,6 +122,9 @@ turn-off-scheduled-backups-confirm-button = 關閉並刪除備份檔
 restore-from-backup-header = 還原您的資料
 # Variables:
 #   $date (string) - Date to be formatted based on locale
+restore-from-backup-support-link1 = 會還原哪些資料？
+# Variables:
+#   $date (string) - Date to be formatted based on locale
 restore-from-backup-description-with-metadata =
     .message = 將使用 { DATETIME($date, timeStyle: "short", dateStyle: "short") } 備份檔當中的資料，取代 { -brand-short-name } 現有的所有資料。
 restore-from-backup-support-link =
@@ -112,6 +142,13 @@ restore-from-backup-password-description = 將解開您的加密備份檔。
 restore-from-backup-cancel-button = 取消
 restore-from-backup-confirm-button = 還原並重新啟動
 restore-from-backup-restoring-button = 還原中…
+restore-from-backup-type-group-label =
+    .label = 要取代目前設定檔嗎？
+restore-from-backup-type-replace =
+    .label = 用此備份檔當中的內容取代所有資料
+restore-from-backup-type-add =
+    .label = 保留現有資料，建立新設定檔
+restore-from-backup-profiles-disabled-message = 將用備份檔當中的資料，取代您 { -brand-short-name } 目前所有的資料。
 
 ## These strings are displayed in a small error message bar in the settings
 ## menu if there was an error when trying to restore a backed up profile
@@ -233,6 +270,15 @@ backup-file-other-browser-restore-step-4 = 收到提示後，重新啟動 { -bra
 # Variables:
 # $numberOfOtherBackupsFound (number) - The number of backups found other than the displayed default backup
 other-backup-files-founds = <b>註：</b>找到另 { $numberOfOtherBackupsFound } 個備份檔
+# Variables:
+#   $profileName (String) - The name of the profile that was backed up.
+#   $date (Datetime) - The date the backup was created.
+#   $machineName (String) - Name of the machine that the backup was created on.
+backup-file-creation-metadata2 = <b>{ $profileName }</b> 於 { DATETIME($date, year: "numeric", month: "numeric", day: "numeric") } 建立於 { $machineName }
+# Variables:
+#   $deviceName (String) - The name of the device from which the backup was created.
+#   $date (Number) - The epoch timestamp of the restore.
+backup-restored-profile-name = 從 { $deviceName } 於 { DATETIME($date, year: "numeric", month: "numeric", day: "numeric") } { DATETIME($date, hour: "2-digit", minute: "2-digit") } 還原
 # Variables:
 #   $date (Datetime) - The date the backup was created
 #   $machineName (String) - Name of the machine that the backup was created on.

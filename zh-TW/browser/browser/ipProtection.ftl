@@ -24,8 +24,8 @@ ipprotection-title = VPN
 ## Feature introduction callout
 
 ipprotection-feature-introduction-title = 向您介紹直接內建於瀏覽器的 VPN 功能
-ipprotection-feature-introduction-link-text = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏您的所在位置，並透過額外的加密措施保護您的資料。
-ipprotection-feature-introduction-link-text-private-browsing = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏您的所在位置，並透過額外的加密措施保護您的資料，就算在隱私瀏覽視窗中也能受到保護。
+ipprotection-feature-introduction-link-text-2 = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏所在位置，並保護您的資料。
+ipprotection-feature-introduction-link-text-private-browsing-2 = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏所在位置，並保護您的資料，就算在隱私瀏覽視窗中也能受到保護。
 ipprotection-feature-introduction-button-primary = 下一個
 ipprotection-feature-introduction-button-secondary-not-now = 現在不要
 ipprotection-feature-introduction-button-secondary-no-thanks = 不要，謝謝
@@ -39,11 +39,17 @@ ipprotection-site-settings-callout-button = 知道了！
 ## Panel
 
 unauthenticated-vpn-title = 試用 { -brand-product-name } 的內建 VPN
-unauthenticated-hide-location-message = 於 { -brand-product-name } 隱藏您的所在位置，並多加一層加密保護。
+unauthenticated-hide-location-message-2 = 使用 { -brand-product-name } 上網時，隱藏您的所在位置。
 # Variables
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 unauthenticated-bandwidth-limit-message = 每月獲得 { $maxUsage } GB 免費 VPN 流量。
 unauthenticated-get-started = 開始使用
+site-exclusion-toggle-enabled-1 =
+    .label = 使用 VPN 開啟此網站
+    .aria-label = 已對此網站開啟 VPN 連線
+site-exclusion-toggle-disabled-1 =
+    .label = 使用 VPN 開啟此網站
+    .aria-label = 已對此網站關閉 VPN 連線
 site-exclusion-toggle-label = 使用 VPN 開啟此網站
 site-exclusion-toggle-enabled =
     .aria-label = 已對此網站開啟 VPN 連線
@@ -90,6 +96,12 @@ ipprotection-connection-status-network-error-description = 請連線到網際網
 ipprotection-message-bandwidth-warning =
     .heading = VPN 流量即將用完
     .message = 這個月您還剩下 { $usageLeft } GB 可以使用。（上限 { $maxUsage } GB）
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ipprotection-message-bandwidth-warning-mb =
+    .heading = VPN 流量即將用完
+    .message = 這個月可使用 { $maxUsage } GB，剩餘 { $usageLeft } MB 可用。
 ipprotection-message-continuous-onboarding-intro = 開啟 VPN 即可隱藏您的所在位置，並在上網時多加一層加密保護。
 ipprotection-message-continuous-onboarding-autostart = 設定在每次開啟 { -brand-short-name } 時<a data-l10n-name="setting-link">就自動開啟 VPN</a>，讓您受到更多一層保護。
 ipprotection-message-continuous-onboarding-site-settings = { -brand-short-name } 會記得您設定要讓哪些網站透過 VPN 開啟。也可隨時到<a data-l10n-name="setting-link">設定</a>當中調整。
@@ -108,6 +120,9 @@ ip-protection-bandwidth-warning-infobar-message-75 = <strong>您已經用了不�
 # Variables
 #   $usageLeft (number) - The amount of data a user has left in a month (in GB)
 ip-protection-bandwidth-warning-infobar-message-90 = <strong>您的 VPN 流量即將用完。</strong>目前剩餘 { $usageLeft } GB 流量。流量用完之後將暫停 VPN 連線保護，並於下個月初重設流量限制。
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+ip-protection-bandwidth-warning-infobar-message-90-mb = <strong>您的 VPN 流量即將用完。</strong>目前剩餘 { $usageLeft } MB 流量。流量用完之後將暫停 VPN 連線保護，並於下個月初重設流量限制。
 
 ## IP Protection Settings
 
@@ -119,9 +134,9 @@ ip-protection-site-exceptions =
     .label = 網站設定
 # Variables:
 #   $maxUsage (number) - The bandwidth limit of free VPN, in GB
-ip-protection-not-opted-in =
+ip-protection-not-opted-in-2 =
     .heading = 試用 { -brand-short-name } 的內建 VPN
-    .message = 隱藏您的所在位置，並對 { -brand-short-name } 上網瀏覽內容多加一層加密。每月均可免費使用 { $maxUsage } GB VPN 流量。
+    .message = 使用 { -brand-short-name } 上網時，隱藏您的所在位置。每月都有 { $maxUsage } GB 免費流量。
 ip-protection-not-opted-in-button = 開始使用
 # Variables:
 #   $count (number) - The number of sites saved as VPN exclusions.
@@ -169,6 +184,7 @@ ip-protection-bandwidth-hit-for-the-month = 您已用完 { $maxUsage } GB 的 VP
 # Variables
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 ip-protection-bandwidth-help-text = 每月月初重設為 { $maxUsage } GB。
+ip-protection-bandwidth-header-1 = 每月流量限制
 
 ## IP Protection bandwidth reset callout
 
@@ -177,6 +193,11 @@ ip-protection-bandwidth-help-text = 每月月初重設為 { $maxUsage } GB。
 ipprotection-bandwidth-reset-title = 已恢復 { $maxUsage } GB VPN 流量，可以立刻使用
 ipprotection-bandwidth-reset-text = 開啟 VPN 加上一層隱私保護，每月都有免費流量。
 ipprotection-bandwidth-reset-button = 知道了！
+
+## IP Protection add-on breakage warnings
+
+ipp-activator-breakage-sign-in-warning = <strong>此網站可能無法透過 VPN 使用。</strong>請登入或關閉 VPN 後再開啟此網站。
+ipp-activator-breakage-turn-off-warning = <strong>此網站可能無法透過 VPN 使用。</strong>請先關閉 VPN 後再開啟此網站。
 
 ## IP Protection alerts
 

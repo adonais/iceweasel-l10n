@@ -14,9 +14,14 @@ global-privacy-control-description =
     .accesskey = s
 non-technical-privacy-group =
     .label = 網站隱私權偏好設定
+do-not-track-removal3 =
+    .message = 我們不再支援「Do Not Track」功能
+non-technical-privacy-heading =
+    .label = 其他保護
+preferences-privacy-relay-available =
+    .label = 建議 { -relay-brand-name } 轉寄信箱
+    .description = 隱藏您的實際電子郵件地址，避免收到垃圾信。
 non-technical-privacy-header = 網站隱私權偏好設定
-non-technical-privacy-label =
-    .aria-label = { non-technical-privacy-header }
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
@@ -139,10 +144,6 @@ startup-header = 啟動
 always-check-default =
     .label = 總是檢查 { -brand-short-name } 是否為您的預設瀏覽器
     .accesskey = w
-is-default-browser =
-    .message = { -brand-short-name } 是您目前的預設瀏覽器
-is-not-default-browser =
-    .message = { -brand-short-name } 不是您的預設瀏覽器
 is-default = { -brand-short-name } 是您目前的預設瀏覽器
 is-not-default = { -brand-short-name } 不是您的預設瀏覽器
 set-as-my-default-browser =
@@ -277,6 +278,8 @@ containers-remove-cancel-button = 不要移除此容器
 settings-tabs-show-image-in-preview =
     .label = 當滑鼠移動到分頁標籤上時，顯示分頁預覽
     .accessKey = h
+settings-tabs-drag-to-create-tab-groups =
+    .label = 將分頁拖曳到一起，即可建立分頁群組
 browser-layout-header2 =
     .label = 瀏覽器版面
 browser-layout-horizontal-tabs2 =
@@ -512,9 +515,16 @@ settings-translations-subpage-no-sites-added =
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
     .label = 使用您作業系統的「{ $localeName }」語系來顯示日期、時間、數字、單位。
+settings-spellcheck-header =
+    .label = 拼字檢查
 check-user-spelling =
     .label = 打字時即時檢查拼字
     .accesskey = t
+spellcheck-download-dictionaries =
+    .label = 下載字典套件
+spellcheck-promo =
+    .heading = 如何進行拼字檢查
+    .message = 對文字欄位按右鍵，即可開關拼字檢察功能或更改語言。不是所有輸入欄位都支援拼字檢查。
 
 ## General Section - Files and Applications
 
@@ -772,14 +782,20 @@ network-proxy-connection-learn-more = 了解更多
 network-proxy-connection-settings =
     .label = 設定…
     .accesskey = e
-network-proxy-group =
-    .label = 網路設定
-    .description = 設定 { -brand-short-name } 要如何連線至網際網路。
+network-proxy-group2 =
+    .label = Proxy 設定值
+    .description = 設定 { -brand-short-name } 要如何連線到網際網路。
+network-proxy-connection-settings2 =
+    .label = 設定 Proxy
+    .description = 更改這些設定可能會造成連線問題
+    .accesskey = p
 
 ## Home Section
 
 home-new-windows-tabs-header = 新視窗與分頁
 home-new-windows-tabs-description2 = 選擇開啟首頁、新視窗和新分頁時要看到的內容。
+home-section =
+    .heading = 首頁與啟動
 
 ## Home Section - Default Browser
 
@@ -846,8 +862,6 @@ home-custom-homepage-subpage =
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
 home-custom-homepage-card-header =
     .label = 網站網址
-# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
-home-custom-homepage-subheader = 網站網址
 home-custom-homepage-address =
     .placeholder = 請輸入網址
 home-custom-homepage-address-button =
@@ -862,11 +876,6 @@ home-custom-homepage-delete-address-button =
 # to replace the current home page with a currently open page or bookmark.
 home-custom-homepage-replace-with-prompt =
     .label = 取代為
-# Shown when no custom websites/URLs to use as a homepage have been added yet
-home-custom-homepage-no-websites-yet = 尚未加入任何網站。
-# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
-# to replace the current home page with a currently open page or bookmark.
-home-custom-homepage-replace-with = 取代為
 # Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
 home-custom-homepage-current-pages-button =
     .label = 目前開啟的頁面
@@ -1040,6 +1049,14 @@ search-one-click-header-3 =
     .description = 選擇要在網址列顯示哪些搜尋引擎與捷徑。
 update-search-engine-success =
     .message = 已成功更新搜尋引擎
+search-edit-engine-2 =
+    .title = 編輯搜尋引擎
+search-delete-engine =
+    .title = 刪除搜尋引擎
+search-enable-engine =
+    .title = 啟用搜尋引擎
+search-outlink-to-extensions-page =
+    .title = 於擴充套件與佈景主題管理
 search-choose-engine-column =
     .label = 搜尋引擎
 search-choose-keyword-column =
@@ -1493,7 +1510,6 @@ autofill-saved-payment-methods-button = 儲存的付款方式
 # This operation requires the user to authenticate with the operating system (device sign-in)
 autofill-reauth-payment-methods-checkbox = 填寫與管理付款資訊時需進行裝置登入驗證
     .accesskey = o
-autofill-payment-methods-title = 付款方式
 autofill-payment-methods-header =
     .aria-label = 付款方式
 autofill-payment-methods-checkbox-message-2 =
@@ -1521,9 +1537,6 @@ payments-edit-payment-button-label =
 # This message is displayed when no payment methods such as credit card are stored in Firefox
 payments-no-payments-stored-message =
     .label = 未新增付款方式
-autofill-addresses-title = 地址與更多資訊
-autofill-addresses-header =
-    .aria-label = 地址與更多資訊
 autofill-addresses-checkbox-message =
     .label = 儲存並自動填寫地址
     .accesskey = S
@@ -1577,20 +1590,15 @@ history-header = 瀏覽紀錄
 #   - Simply as "Firefox", moving the verb into each option.
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
-history-remember-label2 = { -brand-short-name } 將
-# This label is followed, on the same line, by a dropdown list of options
-# (Remember history, etc.).
-# In English it visually creates a full sentence, e.g.
-# "Firefox will" + "Remember history".
-#
-# If this doesn't work for your language, you can translate this message:
-#   - Simply as "Firefox", moving the verb into each option.
-#     This will result in "Firefox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } 將
     .accesskey = w
 history-remember-option-all =
     .label = 保留所有歷史記錄
+history-remember-option-never2 =
+    .label = 不保留歷史記錄
+    .description = 每個視窗都是隱私視窗，開啟此選項後，需要再允許擴充套件才能運作。
+history-remember-option-custom2 =
+    .label = 自訂瀏覽紀錄行為
 history-remember-option-never =
     .label = 不保留歷史記錄
 history-remember-option-custom =
@@ -1603,15 +1611,6 @@ history-dontremember-description4 =
     .description = { -brand-short-name } 不會儲存任何瀏覽記錄，如同在隱私瀏覽狀態下執行。
 history-custom-description4 =
     .aria-label = { history-group.label }
-    .description = { -brand-short-name } 會針對您的瀏覽、下載、表單填寫與搜尋紀錄使用您自訂的選項。
-history-remember-description3 =
-    .aria-label = { history-remember-label2 }
-    .description = { -brand-short-name } 將記住您的瀏覽、下載、表單填寫與搜尋紀錄。
-history-dontremember-description3 =
-    .aria-label = { history-remember-label2 }
-    .description = { -brand-short-name } 不會儲存任何瀏覽記錄，如同在隱私瀏覽狀態下執行。
-history-custom-description3 =
-    .aria-label = { history-remember-label2 }
     .description = { -brand-short-name } 會針對您的瀏覽、下載、表單填寫與搜尋紀錄使用您自訂的選項。
 history-remember-description = { -brand-short-name } 將記住您的瀏覽、下載、表單填寫與搜尋紀錄。
 history-dontremember-description = { -brand-short-name } 不會儲存任何瀏覽記錄，如同在隱私瀏覽狀態下執行。
@@ -1633,29 +1632,45 @@ history-clear-on-close-settings =
 history-clear-button =
     .label = 清除瀏覽記錄…
     .accesskey = s
+history-header2 =
+    .heading = 瀏覽紀錄
+history-section-header =
+    .label = 瀏覽紀錄
+    .description = 選擇關閉瀏覽器時，{ -brand-short-name } 要記住哪些項目。
+history-custom-section-header =
+    .label = 進階設定
+    .description = 調整關閉瀏覽器時，{ -brand-short-name } 要記住哪些項目。
+history-custom-button =
+    .label = 選擇 { -brand-short-name } 要記住哪些項目
 history-group =
     .label = 瀏覽紀錄
+history-remember-option-all2 =
+    .label = 保留所有歷史記錄
 
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie 與網站資料
-sitedata-label =
-    .aria-label = { sitedata-header }
 sitedata-total-size-calculating = 正在計算網站資料與快取大小…
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size2 = 您儲存的 Cookie、歷史、網站資料與快取目前使用了 <strong>{ $value } { $unit }</strong> 磁碟空間。
+sitedata-total-size3 = 網站資料目前使用了 <strong>{ $value } { $unit }</strong> 磁碟空間。
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 您儲存的 Cookie、網站資料與快取目前使用了 { $value } { $unit } 磁碟空間
 sitedata-learn-more = 了解更多
+sitedata-delete-on-close2 =
+    .label = 每次關閉 { -brand-short-name } 時都清除 Cookie 與網站資料
+    .accesskey = c
 sitedata-delete-on-close =
     .label = 關閉 { -brand-short-name } 時清除 Cookie 與網站資料
     .accesskey = C
 sitedata-delete-on-close-private-browsing3 =
     .message = 依照您的瀏覽紀錄設定，當您關閉瀏覽器後，{ -brand-short-name } 會自動刪除瀏覽階段中產生的 Cookie 與網站資料。
+sitedata-delete-on-close-private-browsing4 =
+    .heading = 不儲存瀏覽紀錄。
+    .message = 關閉瀏覽器時，{ -brand-short-name } 會自動清除 Cookie 與網站資料。
 sitedata-delete-on-close-private-browsing = 在永久隱私瀏覽模式下，每次關閉 { -brand-short-name } 時就會清除 Cookie 與網站資料。
 sitedata-delete-on-close-private-browsing2 = 依照您的瀏覽紀錄設定，當您關閉瀏覽器後，{ -brand-short-name } 會自動刪除瀏覽階段中產生的 Cookie 與網站資料。
 sitedata-allow-cookies-option =
@@ -1701,6 +1716,16 @@ sitedata-cookies-exceptions2 =
     .label = 管理例外網站
     .accesskey = x
     .description = 您可以指定哪些網站總是可以，或永遠不可儲存 Cookie 與網站資料。
+sitedata-heading =
+    .label = 瀏覽資料
+    .description = 管理您的 Cookie、瀏覽紀錄、快取、網站資料與更多資料。
+sitedata-settings3 =
+    .label = 清除特定網站資料
+    .accesskey = s
+sitedata-cookies-exceptions3 =
+    .label = 管理例外網站
+    .accesskey = x
+    .description = 針對特定網站決定要如何處理 Cookie 與網站資料。
 cookies-site-data-group =
     .label = Cookie 與網站資料
 
@@ -1841,7 +1866,7 @@ content-blocking-cross-site-tracking-cookies = 跨網站追蹤 Cookie
 content-blocking-all-cross-site-cookies-private-windows = 隱私視窗中的跨網站 Cookie
 content-blocking-isolate-cross-site-cookies = 隔離跨網站 Cookie
 content-blocking-cross-site-tracking-cookies-plus-isolate = 跨網站追蹤 Cookie，並隔離剩餘的 Cookie
-content-blocking-social-media-trackers = 社交媒體追蹤器
+content-blocking-social-media-trackers = 社群網路追蹤器
 content-blocking-all-cookies = 所有 Cookie
 content-blocking-unvisited-cookies = 來自未造訪過網站的 Cookie
 content-blocking-all-windows-tracking-content = 所有視窗中的追蹤內容
@@ -1967,13 +1992,20 @@ permissions-block-popups2 =
     .accesskey = B
 # "popup" is a misspelling that is more popular than the correct spelling of
 # "pop-up" so it's included as a search keyword, not displayed in the UI.
+permissions-block-popups-exceptions-button4 =
+    .label = 管理例外網站
+    .description = 加入可以開啟彈出型視窗，或重新導向到第三方網站的網站。
+    .accesskey = E
+    .searchkeywords = 彈出型視窗, popups
+permissions-addon-install-warning3 =
+    .label = 網站嘗試安裝擴充套件時，喜善警告
+    .accesskey = W
+# "popup" is a misspelling that is more popular than the correct spelling of
+# "pop-up" so it's included as a search keyword, not displayed in the UI.
 permissions-block-popups-exceptions-button2 =
     .label = 管理彈出型視窗與第三方重新導向例外
     .accesskey = E
     .searchkeywords = popups 彈出 視窗
-permissions-addon-install-warning2 =
-    .label = 網站嘗試安裝擴充套件時警告
-    .accesskey = W
 permissions-addon-exceptions2 =
     .label = 選擇可以安裝擴充套件的網站
     .accesskey = E
@@ -1992,9 +2024,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = 例外網站…
     .accesskey = E
-permissions-header2 =
-    .label = 權限
-    .description = 您上網時，授予網站的權限。
 permissions-location2 =
     .label = 位置
 permissions-localhost2 =
@@ -2012,6 +2041,9 @@ permissions-speaker2 =
     .label = 喇叭
 permissions-notification2 =
     .label = 通知
+permissions-header3 =
+    .label = 權限
+    .description = 管理網站能夠存取、控制、觸發哪些項目。
 
 ## Privacy Section - Data Collection
 
@@ -2026,6 +2058,8 @@ collection-description = 我們致力於提供您選擇，也只會收集我們�
 collection-privacy-notice = 隱私權公告
 collection-health-report-telemetry-disabled = 將不再允許 { -vendor-short-name } 捕捉技術與互動資料，之前收集的資料將於 30 天內刪除。
 collection-health-report-telemetry-disabled-link = 了解更多
+backup-multi-profile-warning-message =
+    .message = 若要讓此變更在備份中生效，請開啟每個設定檔，並到「設定」當中選擇「立即備份」。
 collection-usage-ping =
     .label = 傳送每日使用情況回報給 { -vendor-short-name }
     .accesskey = u
@@ -2086,13 +2120,16 @@ website-advertising-private-attribution-description = 此功能可在不收集�
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = 安全性
-browsing-protection-group =
-    .label = 詐騙內容與危險網站保護
+browsing-protection-group2 =
+    .label = 詐欺內容與危險網站保護
+    .description = 危險網站與下載項目，可能會讓您的資料與裝置遭受風險。{ -brand-short-name } 會自動封鎖這類資料並警告。
 security-browsing-protection = 詐騙內容與危險網站保護
 security-enable-safe-browsing =
     .label = 封鎖危險及詐騙內容
     .accesskey = B
 security-enable-safe-browsing-link = 了解更多
+security-safe-browsing-warning =
+    .message = 關閉此功能將減少對詐騙、惡意網站，以及危險下載項目的保護。
 security-block-downloads =
     .label = 封鎖危險的下載項目
     .accesskey = D
@@ -2121,16 +2158,19 @@ space-alert-over-5gb-settings-button =
     .accesskey = O
 space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 的磁碟空間不足。</strong>網站內容可能無法正確顯示。您可以到「選項 > 隱私權與安全性 > Cookie 與網站資料」清除目前儲存的網站資料。
 space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 的磁碟空間不足。</strong>網站內容可能無法正確顯示。請點擊「瞭解更多」清理磁碟空間，讓您有更好的瀏覽體驗。
-certs-description2 =
+certs-description3 =
     .label = 憑證
-    .description = 設定 { -brand-short-name } 要用來驗證身分的憑證。
+    .description = 設定 { -brand-short-name } 要用來確認加密連線的憑證。
+certs-view2 =
+    .label = 管理憑證
+    .accesskey = C
+certs-devices2 =
+    .label = 管理安全裝置
+    .accesskey = D
 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = 純 HTTPS 模式
-httpsonly-label =
-    .aria-label = { httpsonly-header }
-    .description = 僅允許對網站使用安全連線。{ -brand-short-name } 會在進行不安全連線前先詢問。
 httpsonly-description3 = 僅允許對網站使用安全連線。{ -brand-short-name } 會在進行不安全連線前先詢問。
 httpsonly-learn-more2 = 純 HTTPS 模式的運作原理是什麼？
 httpsonly-description = HTTPS 讓您與要造訪的網站間，能夠有安全而加密過的連線。大部分的網站都支援 HTTPS，開啟純 HTTPS 模式後，{ -brand-short-name } 就會將所有的連線都升級為 HTTPS 連線。
@@ -2153,8 +2193,9 @@ httpsonly-label2 =
 ## DoH Section
 
 preferences-doh-header = DNS over HTTPS
-dns-over-https-group =
+dns-over-https-group2 =
     .label = DNS over HTTPS
+    .description = Domain Name System over HTTPS（DoH）會將網站查詢行為加密，讓您的電信業者或其他人更難看出您準備要造訪的網站。
 preferences-doh-description = DNS over HTTPS 會將您的網域名稱查詢請求加密後傳送，使其他人更難得知您要開啟的網站，讓 DNS 查詢變得安全。
 preferences-doh-description2 = DNS over HTTPS 會將您的網域名稱查詢請求加密後傳送，使其他人更難得知您要開啟的網站，讓 DNS 查詢變得安全。
 # Variables:
@@ -2172,44 +2213,107 @@ preferences-doh-status-disabled = 關閉
 # Variables:
 #   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
 preferences-doh-status-not-active = 未啟用（{ $reason }）
-preferences-doh-group-message = 使用下列方式開啟安全 DNS 功能：
+preferences-doh-group-message = 使用下列方式開啟加密 DNS 功能：
 preferences-doh-group-message2 = 使用下列方式開啟 DNS over HTTPS：
 preferences-doh-expand-section =
     .tooltiptext = 更多資訊
 preferences-doh-setting-default =
     .label = 預設保護
     .accesskey = D
-preferences-doh-default-desc = { -brand-short-name } 會為您決定使用安全的 DNS 的時機，以保護您的隱私。
-preferences-doh-default-detailed-desc-1 = 在可用安全 DNS 的地區就使用
-preferences-doh-default-detailed-desc-2 = 若無法使用安全的 DNS 提供者，就使用您的預設 DNS 解析器。
+preferences-doh-default-desc = { -brand-short-name } 會為您決定使用加密 DNS 的時機，以保護您的隱私。
+preferences-doh-default-detailed-desc-1 = 在可用加密 DNS 的地區就使用
+preferences-doh-default-detailed-desc-2 = 若無法使用加密的 DNS 提供者，就使用您的預設 DNS 解析器。
 preferences-doh-default-detailed-desc-3 = 盡可能使用本機提供者
 preferences-doh-default-detailed-desc-4 = 當 VPN、家長監護設定或企業政策生效時就關閉
-preferences-doh-default-detailed-desc-5 = 當網路裝置告訴 { -brand-short-name } 不該使用安全 DNS 時就關閉
+preferences-doh-default-detailed-desc-5 = 當網路裝置告訴 { -brand-short-name } 不該使用加密 DNS 時就關閉
 preferences-doh-setting-enabled =
     .label = 加強保護
     .accesskey = I
-preferences-doh-enabled-desc = 由您自行決定要使用哪個提供者的安全 DNS。
+preferences-doh-enabled-desc = 由您自行決定要使用哪個提供者的加密 DNS。
 preferences-doh-enabled-detailed-desc-1 = 使用您選擇的提供者
-preferences-doh-enabled-detailed-desc-2 = 只在無法使用安全的 DNS 提供者時，使用您的預設 DNS 解析器。
+preferences-doh-enabled-detailed-desc-2 = 只在無法使用加密 DNS 提供者時，使用您的預設 DNS 解析器。
 preferences-doh-setting-strict =
     .label = 最大保護
     .accesskey = M
-preferences-doh-strict-desc = { -brand-short-name } 總是會使用安全 DNS。若我們需要使用系統 DNS 時，您會看到安全性警告。
+preferences-doh-strict-desc = { -brand-short-name } 總是會使用加密 DNS。若我們需要使用系統 DNS 時，您會看到安全性警告。
 preferences-doh-strict-detailed-desc-1 = 只使用您選擇的提供者
-preferences-doh-strict-detailed-desc-2 = 安全 DNS 無法使用時總是警告我
-preferences-doh-strict-detailed-desc-3 = 若無法使用安全 DNS，就不開啟網站或無法正常運作
+preferences-doh-strict-detailed-desc-2 = 無法使用加密 DNS 時總是警告我
+preferences-doh-strict-detailed-desc-3 = 若無法使用加密 DNS，就不開啟網站或無法正常運作
 preferences-doh-setting-off =
     .label = 關閉
     .accesskey = O
 preferences-doh-off-desc = 使用您系統預設的 DNS 解析器
 preferences-doh-checkbox-warn =
-    .label = 若有第三方系統主動封鎖安全 DNS 時警告我
+    .label = 若有第三方系統主動封鎖加密 DNS 時警告我
     .accesskey = W
 preferences-doh-select-resolver = 選擇提供者：
-preferences-doh-exceptions-description = { -brand-short-name } 將不對下列網站使用安全 DNS
+preferences-doh-exceptions-description = { -brand-short-name } 將不對下列網站使用加密 DNS
 preferences-doh-manage-exceptions =
     .label = 管理例外網站…
     .accesskey = x
+preferences-doh-overview-default =
+    .label = 預設保護
+    .description = 在可用的地方就使用加密的 DNS。
+preferences-doh-overview-custom =
+    .label = 自訂
+    .description = 總是使用加密的 DNS，自行控管 DNS 業者與備用行為。
+preferences-doh-overview-off =
+    .label = 關閉
+    .description = 使用您的預設 DNS 解析器。
+preferences-doh-advanced-button =
+    .label = 進階設定
+preferences-doh-advanced-section =
+    .label = 進階設定
+    .description = Domain Name System over HTTPS（DoH）會將網站查詢行為加密，讓您的電信業者或其他人更難看出您準備要造訪的網站。
+preferences-doh-manage-exceptions2 =
+    .label = 管理例外
+    .accesskey = x
+preferences-doh-radio-default =
+    .label = 預設
+    .description = 在可用地區就使用加密 DNS 進行查詢
+preferences-doh-radio-custom =
+    .label = 自訂
+    .description = 總是使用加密 DNS，並自行控制提供者與備用行為
+preferences-doh-radio-off =
+    .label = 關閉
+    .description = 使用預設的 DNS 解析器
+preferences-doh-fallback-label =
+    .label = 無法使用加密 DNS 時，總是警告我
+preferences-doh-status-item-off =
+    .message = DNS over HTTPS 已關閉
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = 由於嘗試使用提供者 { $name } 時遇到錯誤（{ $reason }），DNS over HTTPS 無法運作
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = 由於收到無效網址（{ $reason }），DNS over HTTPS 無法運作
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = 正在使用 { $name } 提供者的 DNS over HTTPS 服務
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = 由於嘗試使用本地提供者 { $name } 時遇到錯誤（{ $reason }），DNS over HTTPS 無法運作
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = 正在使用 { $name } 本地提供者的 DNS over HTTPS 服務
+preferences-doh-select-resolver-label =
+    .label = 選擇提供者：
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = 使用者此提供者進行 DNS over HTTPS 解析
+preferences-doh-custom-provider-label =
+    .aria-label = 輸入自訂提供者網址
+preferences-doh-header2 =
+    .heading = DNS over HTTPS
 
 ## The following strings are used in the Download section of settings
 
@@ -2261,7 +2365,7 @@ preferences-ai-controls-state-blocked =
 preferences-ai-controls-state-description-before = 選項的意思：
 preferences-ai-controls-state-description-available = <strong>可用：</strong>您會看到這個功能，也能使用。
 preferences-ai-controls-state-description-enabled = <strong>啟用：</strong>您主動選擇要使用此功能。
-preferences-ai-controls-state-description-blocked = <strong>封鎖：</strong>您不會看到這個功能，也不能使用。針對在裝置內運作的 AI 模型，將會移除所有曾下載的模型。
+preferences-ai-controls-state-description-blocked = <strong>封鎖：</strong>您不會看到這個功能，也不能使用。也會移除所有在裝置內運作的 AI 模型。
 preferences-ai-controls-block-confirmation-heading = 要封鎖 AI 功能嗎？
 preferences-ai-controls-block-confirmation-description = 您不會在 { -brand-short-name } 看到目前已有，或新推出的 AI 擴充功能，或是任何有關這些功能的彈出提示。但之後還是可以解除封鎖任何想要使用的功能。
 preferences-ai-controls-block-confirmation-features-start = 會封鎖哪些功能：
@@ -2428,3 +2532,138 @@ save_to = 保存到
 this_desktop = 桌面
 downloads_folder = 下載
 disk_x = %s 盤
+
+## Privacy and security status card
+
+security-privacy-status-ok-header = { -brand-short-name } 警戒中
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = { -brand-short-name } 建議進行某些安全性改進
+security-privacy-status-ok-label = 已開啟加強型追蹤保護
+security-privacy-status-problem-label = 我們發現會影響您保護的設定
+security-privacy-status-problem-helper-label = 檢視問題
+security-privacy-status-pending-trackers-label = 正在查詢 { -brand-short-name } 上個月封鎖了多少追蹤器
+# This label tells the user how many trackers we have blocked for them.
+# Variables:
+#   $trackerCount (Number) - Number of trackers we have blocked in the last month
+security-privacy-status-trackers-label = 上個月封鎖了 { $trackerCount } 組追蹤器
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = 您開啟了<a data-l10n-name="strict-tracking-protection">嚴格保護</a>
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = 您開啟了<a data-l10n-name="custom-tracking-protection">自訂保護</a>
+security-privacy-status-up-to-date-label = 您已經安裝最新、最安全的 { -brand-short-name }
+security-privacy-status-update-needed-label = 已推出新版的 { -brand-short-name }。
+security-privacy-status-update-error-label = { -brand-short-name } 更新時遇到問題
+security-privacy-status-update-checking-label = { -brand-short-name } 正在檢查更新
+security-privacy-status-update-needed-description = 獲得最新的速度、穩定性、安全性更新。
+security-privacy-status-update-button-label =
+    .label = 更新 { -brand-short-name }
+security-privacy-image-warning =
+    .alt = 一副加上驚嘆號的盾牌，表達對您的安全性警告的擔憂
+security-privacy-image-ok =
+    .alt = 一副打勾的盾牌，表示您目前沒有待處理的安全性問題
+security-privacy-issue-card =
+    .heading = 安全性警告
+issue-card-reset-button =
+    .label = 重設
+issue-card-dismiss-button =
+    .tooltiptext = 知道了！
+    .aria-label = 知道了！
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-header =
+    .label = 加強型追蹤保護
+    .description = 網站會使用追蹤器在線上跟蹤您，並顯示可怕的廣告。{ -brand-short-name } 會在您上網時自動封鎖追蹤器，讓您可自行掌握自己的數位足跡。
+preferences-etp-level-standard =
+    .label = 標準（預設）
+    .description = 強大又可靠的保護機制，可順暢開啟大多數網站。
+preferences-etp-level-strict =
+    .label = 嚴格
+    .description = 保護機制更強大，封鎖更多追蹤器，但某些網站可能會故障。
+preferences-etp-level-custom =
+    .label = 自訂
+    .description = 自行決定開關哪些保護項目。
+preferences-etp-status-advanced-button =
+    .label = 進階設定
+preferences-etp-status-protections-dashboard-link =
+    .label = 檢視您的個人化保護儀表板
+    .description = 看看 { -brand-short-name } 已為您封鎖多少社群媒體追蹤器、數位指紋追蹤程式、加密貨幣採礦程式等類型的追蹤器。
+preferences-etp-header =
+    .heading = 加強型追蹤保護
+preferences-etp-advanced-settings-group =
+    .label = 進階設定
+    .description = 網站會使用追蹤器在線上跟蹤您，並顯示可怕的廣告。{ -brand-short-name } 會在您上網時自動封鎖大多數的追蹤器，讓您可自行掌握自己的數位足跡。
+preferences-etp-customize-button =
+    .label = 自訂追蹤保護
+preferences-etp-reload-tabs-hint =
+    .message = 重新載入分頁才能套用變更。
+preferences-etp-reload-tabs-hint-button =
+    .label = 重新載入所有分頁
+preferences-etp-rfp-warning-message =
+    .message = 您開啟了 Resist Fingerprinting（RFP）功能，將蓋過 { -brand-short-name } 的部分數位指紋追蹤保護設定。此功能可能造成某些網站運作不正常。
+preferences-etp-level-warning-message =
+    .heading = 注意！某些網站可能會無法正常運作。
+    .message = 某些網站會直接在功能或內容當中建立追蹤器。當 { -brand-short-name } 封鎖追蹤器後，這些功能就會故障。可以嘗試使用「修正網站問題」功能或針對該網站關閉追蹤保護機制。
+preferences-etp-manage-exceptions-button =
+    .label = 管理例外網站
+    .description = 管理要針對哪些網站停用加強型追蹤保護功能。
+preferences-etp-customize-header =
+    .heading = 自訂追蹤保護
+preferences-etp-reset =
+    .label = 重設自訂項目
+    .description = 將選項重設回預先設計的保護等級。
+preferences-etp-reset-standard-button =
+    .label = 重設為標準
+preferences-etp-reset-strict-button =
+    .label = 重設為嚴格
+preferences-etp-custom-control-group =
+    .label = 追蹤保護
+    .description = 選擇要開啟或關閉哪些保護項目。
+preferences-etp-custom-cookies-enabled =
+    .label = Cookie
+preferences-etp-custom-cookie-behavior =
+    .aria-label = Cookie
+preferences-etpc-custom-cookie-behavior-accept-all =
+    .label = 所有網站都可使用 Cookie
+preferences-etp-custom-tracking-protection-enabled =
+    .label = 追蹤用內容
+preferences-etp-custom-tracking-protection-enabled-context =
+    .aria-label = 追蹤用內容
+preferences-etp-custom-crypto-mining-protection-enabled =
+    .label = 加密貨幣採礦程式
+preferences-etp-custom-known-fingerprinting-protection-enabled =
+    .label = 已知的數位指紋追蹤程式
+preferences-etp-custom-suspect-fingerprinting-protection-enabled =
+    .label = 疑似是數位指紋追蹤程式
+preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
+    .aria-label = 疑似是數位指紋追蹤程式
+
+## Warnings section
+
+security-privacy-issue-warning-fingerprinters =
+    .label = 未封鎖已知的數位指紋追蹤程式
+    .description = 可能會讓某些追蹤器不設定 Cookie 就能追蹤您。
+security-privacy-issue-warning-third-party-cookies =
+    .label = 已開啟第三方 Cookie
+    .description = 某些網站可透過第三方 Cookie 在不同網站間追蹤您。
+security-privacy-issue-warning-password-manager =
+    .label = 已停用密碼管理員
+    .description = 密碼管理員可幫助您儲存網站的高強度密碼。
+security-privacy-issue-warning-popup-blocker =
+    .label = 已停用彈出型視窗封鎖器
+    .description = 彈出型視窗很干擾人，也可能有害。
+security-privacy-issue-warning-extension-install =
+    .label = 網站可直接安裝擴充套件
+    .description = 不用先詢問您，網站就可以直接安裝擴充套件到 { -brand-short-name }。
+security-privacy-issue-warning-safe-browsing =
+    .label = 不封鎖危險或詐騙內容
+    .description = 您暴露到詐騙與惡意軟體網站的機會將增加。
+security-privacy-issue-warning-doh =
+    .label = 已停用 DNS over HTTPS
+    .description = DNS over HTTPS 可對您的電信業者隱藏您造訪過的網站。
+security-privacy-issue-warning-ech =
+    .label = 已停用 Encrypted Client Hello
+    .description = Encrypted Client Hello 功能可對您的電信業者隱藏您造訪過的網站。
+security-privacy-issue-warning-proxy-autodetection =
+    .label = 已開啟 Proxy 自動設定
+    .description = Proxy 自動設定功能可能會讓未受信任的網路監控您的上網行為。

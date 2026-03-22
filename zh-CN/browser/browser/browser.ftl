@@ -563,6 +563,9 @@ browser-window-restore-down-button =
     .tooltiptext = 向下还原
 browser-window-close-button =
     .tooltiptext = 关闭
+# Clicking this button closes the window and returns to the tab where it was opened from
+browser-window-return-to-opener =
+    .tooltiptext = 返回
 
 ## Tab actions
 
@@ -915,10 +918,15 @@ urlbar-searchmode-default =
     .tooltiptext = 默认搜索引擎
 # Label shown on the top of Searchmode Switcher popup. After this label, the
 # available search engines will be listed.
-urlbar-searchmode-popup-description = 本次搜索使用：
+urlbar-searchmode-popup-description-menucaption =
+    .label = 本次搜索使用：
 # Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
 # reset after submitting.
-urlbar-searchmode-popup-sticky-description = 搜索引擎：
+urlbar-searchmode-popup-sticky-description-menucaption =
+    .label = 搜索引擎：
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-description = 本次搜索使用：
 urlbar-searchmode-popup-search-settings-menuitem =
     .label = 搜索设置
 # Label shown next to a new search engine in the Searchmode Switcher popup to promote it.
@@ -1157,6 +1165,9 @@ toolbar-button-synced-tabs =
 toolbar-button-new-private-window =
     .label = 新建隐私窗口
     .tooltiptext = 新建一个隐私浏览窗口 ({ $shortcut })
+toolbar-button-share-tab =
+    .label = 共享
+    .tooltiptext = 共享此页面
 
 ## EME notification panel
 

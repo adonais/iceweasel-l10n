@@ -7,6 +7,9 @@
 
 menu-application-preferences =
     .label = 偏好設定
+# Starting with macOS Ventura (13), the name of the "Preferences" menu item changed to "Settings".
+menu-application-settings =
+    .label = 選項…
 menu-application-services =
     .label = 服務
 menu-application-hide-this =
@@ -85,6 +88,9 @@ menu-file-email-link =
 menu-file-share-url =
     .label = 分享
     .accesskey = h
+menu-file-share-qrcode =
+    .label = 產生 QR Code…
+    .accesskey = Q
 menu-file-print-setup =
     .label = 頁面設定…
     .accesskey = u
@@ -349,7 +355,7 @@ menu-help-switch-device =
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
-    .label = 回報詐騙網站…
+    .label = 檢舉詐騙網站…
     .accesskey = D
 menu-help-not-deceptive =
     .label = 這不是詐騙網站…

@@ -25,6 +25,8 @@ neterror-override-exception-button = 接受風險並繼續
 neterror-pref-reset-button = 還原預設設定
 neterror-return-to-previous-page-button = 返回
 neterror-return-to-previous-page-recommended-button = 返回上一頁（建議）
+neterror-try-again-button-2 = 重試
+    .accesskey = T
 neterror-try-again-button = 重試
 neterror-add-exception-button = 總是繼續開啟此網站
 neterror-settings-button = 更改 DNS 設定
@@ -69,7 +71,7 @@ neterror-dns-not-found-offline-hint-reconnect = 中斷，然後重新連線到 W
 ##   $trrDomain (String) - Hostname of the DNS over HTTPS server that is currently in use.
 
 neterror-dns-not-found-trr-only-reason = { -brand-short-name } 無法透過信任的 DNS 解析器保護您對本網址的瀏覽請求。原因如下：
-neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } 無法透過我們的安全 DNS 業者來保護您對本網址的瀏覽請求。原因如下：
+neterror-dns-not-found-trr-only-reason2 = { -brand-short-name } 無法透過我們的加密 DNS 業者來保護您對本網址的瀏覽請求。原因如下：
 neterror-dns-not-found-trr-third-party-warning2 = 您可以繼續使用預設 DNS 解析器，但第三方仍可能得知您造訪過哪些網站。
 neterror-dns-not-found-trr-only-could-not-connect = { -brand-short-name } 無法連線到 { $trrDomain }。
 neterror-dns-not-found-trr-only-timeout = 連線到 { $trrDomain } 的時間比預期得久。
@@ -176,12 +178,15 @@ neterror-response-status-code = 錯誤代碼：{ $responsestatus } { $responsest
 ## Felt Privacy V1 Strings
 
 fp-neterror-offline-body-title = 您的網路連線可能有點問題
+fp-neterror-illustration-alt =
+    .alt = 狐狸看著離線的網路線的圖示。
 
 ## Variables:
 ##   $hostname (String) - Hostname of the website to which the user was trying to connect.
 
 fp-neterror-connection-intro = { -brand-short-name } 無法與伺服器 { $hostname } 建立安全連線。
 fp-neterror-offline-intro = { -brand-short-name } 無法連線到位於 <strong>{ $hostname }</strong> 的伺服器
+fp-neterror-net-timeout-intro = 位於 <strong>{ $hostname }</strong> 的伺服器花了太久時間，還是沒有回應。
 fp-neterror-coop-coep-intro = 因為此頁面的安全性設定與前一頁不符，{ -brand-short-name } 並未載入此頁面。
 fp-neterror-http-auth-disabled-intro = 可能是其他假扮為該網站的有心人，正嘗試偷走您的帳號、密碼、信箱等資料。
 fp-neterror-http-auth-disabled-secure-connection = 此網站要求必須使用安全連線，您無法加入例外造訪此網站。
@@ -196,3 +201,5 @@ fp-neterror-http-auth-disabled-what-can-you-do-body = 這通常是網站本身�
 # This string appears after the following string: "Why did this happen?" (fp-neterror-why-did-this-happen)
 fp-neterror-coop-coep-why-did-this-happen-body = 有時網站會設定一些保護機制，避免網站本身受到與其他網站間不必要的互動影響。
 fp-learn-more-about-https-connections = 了解 HTTPS 連線的更多資訊
+fp-neterror-vpn-error-title = 無法連線至 VPN
+fp-neterror-vpn-error-description = 請稍候幾分鐘再試一次。

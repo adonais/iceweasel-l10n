@@ -527,6 +527,7 @@ restore-from-backup-secondary-top-button = 从备份恢复
 restore-from-backup-title = 按您需要，取回熟悉的 { -brand-short-name } 体验
 restore-from-backup-subtitle = 恢复您的所有书签、历史记录和其他数据，立即接续浏览。
 restore-from-backup-secondary-button = 不恢复
+multiple-backups-info-tile = <strong>发现多个备份文件。</strong>已选中最近的文件，如需还原其他配置文件，请前往<a data-l10n-name="settings-label">设置</a>。
 
 ## Restored from Backup spotlight
 
@@ -558,6 +559,8 @@ onboarding-personalization-motivation-other-option = 其他
 
 onboarding-refresh-pin-set-default-subtitle = 我们会保护您的数据，并自动阻止大公司窥探您的浏览活动。
 onboarding-refresh-import-subtitle = 将密码、书签、历史记录等数据搬到这里。
+# "Give your browsing a boost" means to enhance or improve the browsing experience
+onboarding-refresh-onboarding-addons-title = 提升浏览体验
 onboarding-refresh-sync-title = 畅行千里，同步万物。
 onboarding-refresh-gratitude-subtitle = 感谢您使用 { -brand-short-name }，这是唯一由非营利组织支持的主流浏览器。您的支持激励着我们为更开放、更美好且人人可用的互联网继续奋斗。
 # "has your back" is an idiom suggesting support and protection

@@ -41,7 +41,7 @@ policy-DisableBuiltinPDFViewer = 停用 { -brand-short-name } 內建的 PDF 閱�
 policy-DisableDefaultBrowserAgent = 不讓預設瀏覽器代理工具作任何事。僅對 Windows 有效，其他平台沒有代理工具可用。
 policy-DisableDeveloperTools = 防止使用開發者工具。
 policy-DisableEncryptedClientHello = 停用 TLS 的 Encrypted Client Hello（ECH）功能。
-policy-DisableFeedbackCommands = 停用於「說明」選單中傳送意見回饋的相關指令（「送出意見回饋」與「回報詐騙網站」）。
+policy-DisableFeedbackCommands = 停用於「說明」選單中傳送意見回饋的相關指令（「送出意見回饋」與「檢舉詐騙網站」）。
 policy-DisableFirefoxAccounts = 停用 { -fxaccount-brand-name }相關服務，包含 Sync。
 # This string is in the process of being deprecated in favor of policy-DisableAccounts.
 policy-DisableFirefoxAccounts1 = 停用需要帳號才可使用的服務，包含 Sync。
@@ -135,6 +135,7 @@ policy-SearchSuggestEnabled = 啟用或停用搜尋建議。
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = 新增或刪除 PKCS #11 模組。
 policy-ShowHomeButton = 於工具列顯示首頁按鈕。
+policy-SitePolicies = 網站相關原則。
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = 程式啟動時不顯示使用條款與隱私權公告。您必須獲得您提供使用此瀏覽器的所有使用者授權，並代表他們同意使用條款。
 policy-SSLVersionMax = 設定最大 SSL 版本。

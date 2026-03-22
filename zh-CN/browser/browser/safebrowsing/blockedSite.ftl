@@ -73,4 +73,4 @@ safeb-blocked-addon-page-error-desc-override = <strong>为什么拦截此网站�
 safeb-blocked-addon-page-error-desc2-override = <strong>{ $sitename }</strong> 可能涉及诈骗和有害活动。
 safeb-blocked-addon-page-error-desc3-override = <strong>您可以：</strong>
 safeb-blocked-addon-page-error-desc4-override = 为防止再次出现此情况，您可以在 about:addons 中移除或禁用 <strong>{ $addonName }</strong>。
-safeb-blocked-addon-page-learn-more = <a data-l10n-name='firefox_support'>详细了解 { -brand-short-name } 的钓鱼网站与恶意网站防护功能</a>。
+safeb-blocked-addon-page-learn-more3 = <a data-l10n-name='firefox_support_harmful_addons'>详细了解 { -brand-short-name } 的恶意附加组件保护</a>。

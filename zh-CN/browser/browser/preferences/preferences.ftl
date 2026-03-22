@@ -14,9 +14,14 @@ global-privacy-control-description =
     .accesskey = s
 non-technical-privacy-group =
     .label = 网站隐私首选项
+do-not-track-removal3 =
+    .message = 我们已不再支持“请勿追踪”功能。
+non-technical-privacy-heading =
+    .label = 更多保护
+preferences-privacy-relay-available =
+    .label = 建议使用 { -relay-brand-name } 马甲邮箱
+    .description = 隐藏真实邮箱地址，保护收件箱免受垃圾邮件侵扰。
 non-technical-privacy-header = 网站隐私首选项
-non-technical-privacy-label =
-    .aria-label = { non-technical-privacy-header }
 # Do not translate.
 # "Global Privacy Control" or "GPC" are a web platform feature name and abbreviation
 # included to facilitate power-user search of the about:preferences page.
@@ -77,7 +82,7 @@ focus-search =
 close-button =
     .aria-label = 关闭
 do-not-track-removal2 =
-    .label = 我们不再支持“请勿跟踪”信号
+    .label = 我们已不再支持“请勿跟踪”信号
 applications-setting-new-file-types =
     .label = { -brand-short-name } 应如何处理其他文件？
 
@@ -139,10 +144,6 @@ startup-header = 启动
 always-check-default =
     .label = 总是检查 { -brand-short-name } 是否是您的默认浏览器
     .accesskey = w
-is-default-browser =
-    .message = { -brand-short-name } 目前是您的默认浏览器
-is-not-default-browser =
-    .message = { -brand-short-name } 目前不是您的默认浏览器
 is-default = { -brand-short-name } 目前是您的默认浏览器
 is-not-default = { -brand-short-name } 目前不是您的默认浏览器
 set-as-my-default-browser =
@@ -520,9 +521,16 @@ settings-translations-subpage-no-sites-added =
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
     .label = 根据您操作系统的“{ $localeName }”首选项设置日期、时间、数字格式和单位制。
+settings-spellcheck-header =
+    .label = 拼写检查
 check-user-spelling =
     .label = 在您输入时检查拼写
     .accesskey = t
+spellcheck-download-dictionaries =
+    .label = 下载字典
+spellcheck-promo =
+    .heading = 如何使用拼写检查
+    .message = 右键点击文本字段可开关拼写检查或更改语言。并非所有字段都支持拼写检查。
 
 ## General Section - Files and Applications
 
@@ -562,9 +570,11 @@ applications-filter =
 applications-type-column =
     .label = 内容类型
     .accesskey = T
+applications-type-heading = 内容类型
 applications-action-column =
     .label = 操作
     .accesskey = A
+applications-action-heading = 操作
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
 applications-file-ending = { $extension } 文件
@@ -778,9 +788,13 @@ network-proxy-connection-learn-more = 详细了解
 network-proxy-connection-settings =
     .label = 设置…
     .accesskey = e
-network-proxy-group =
-    .label = 网络设置
-    .description = 配置 { -brand-short-name } 如何连接互联网。
+network-proxy-group2 =
+    .label = 代理设置
+    .description = 配置 { -brand-short-name } 连接互联网的方式。
+network-proxy-connection-settings2 =
+    .label = 配置代理
+    .description = 更改这些设置可能会导致连接问题
+    .accesskey = p
 
 ## Home Section
 
@@ -852,8 +866,6 @@ home-custom-homepage-subpage =
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
 home-custom-homepage-card-header =
     .label = 网址
-# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
-home-custom-homepage-subheader = 网址
 home-custom-homepage-address =
     .placeholder = 输入地址
 home-custom-homepage-address-button =
@@ -868,11 +880,6 @@ home-custom-homepage-delete-address-button =
 # to replace the current home page with a currently open page or bookmark.
 home-custom-homepage-replace-with-prompt =
     .label = 替换为
-# Shown when no custom websites/URLs to use as a homepage have been added yet
-home-custom-homepage-no-websites-yet = 未添加网站。
-# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
-# to replace the current home page with a currently open page or bookmark.
-home-custom-homepage-replace-with = 替换为
 # Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
 home-custom-homepage-current-pages-button =
     .label = 当前打开的页面
@@ -1040,6 +1047,16 @@ search-one-click-desc = 请选择在地址栏和搜索栏输入关键词时，�
 search-one-click-header-3 =
     .label = 备用搜索引擎
     .description = 选择在地址栏中显示的搜索引擎和快捷方式。
+update-search-engine-success =
+    .message = 更新搜索引擎成功
+search-edit-engine-2 =
+    .title = 编辑搜索引擎
+search-delete-engine =
+    .title = 移除搜索引擎
+search-enable-engine =
+    .title = 启用搜索引擎
+search-outlink-to-extensions-page =
+    .title = 在扩展与主题中管理
 search-choose-engine-column =
     .label = 搜索引擎
 search-choose-keyword-column =
@@ -1387,9 +1404,9 @@ forms-breach-alerts =
     .accesskey = b
 forms-breach-alerts-learn-more-link = 详细了解
 preferences-relay-integration-checkbox =
-    .label = 建议使用 { -relay-brand-name } 马甲邮箱以保护您的电子邮箱
+    .label = 建议使用 { -relay-brand-name } 马甲邮箱以保护邮箱地址
 preferences-relay-integration-checkbox2 =
-    .label = 建议使用 { -relay-brand-name } 马甲邮箱来保护邮箱地址
+    .label = 建议使用 { -relay-brand-name } 马甲邮箱以保护邮箱地址
     .accesskey = r
 relay-integration-learn-more-link = 详细了解
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
@@ -1493,7 +1510,6 @@ autofill-saved-payment-methods-button = 保存的付款方式
 # This operation requires the user to authenticate with the operating system (device sign-in)
 autofill-reauth-payment-methods-checkbox = 填写和管理付款方式前需验证设备登录信息
     .accesskey = o
-autofill-payment-methods-title = 付款方式
 autofill-payment-methods-header =
     .aria-label = 付款方式
 autofill-payment-methods-checkbox-message-2 =
@@ -1521,9 +1537,6 @@ payments-edit-payment-button-label =
 # This message is displayed when no payment methods such as credit card are stored in Firefox
 payments-no-payments-stored-message =
     .label = 未添加付款方式
-autofill-addresses-title = 地址等信息
-autofill-addresses-header =
-    .aria-label = 地址等信息
 autofill-addresses-checkbox-message =
     .label = 保存并自动填写地址
     .accesskey = S
@@ -1577,16 +1590,6 @@ history-header = 历史记录
 #   - Simply as "Firefox", moving the verb into each option.
 #     This will result in "Firefox" + "Will remember history", etc.
 #   - As a stand-alone message, for example "Firefox history settings:".
-history-remember-label2 = { -brand-short-name } 将
-# This label is followed, on the same line, by a dropdown list of options
-# (Remember history, etc.).
-# In English it visually creates a full sentence, e.g.
-# "Firefox will" + "Remember history".
-#
-# If this doesn't work for your language, you can translate this message:
-#   - Simply as "Firefox", moving the verb into each option.
-#     This will result in "Firefox" + "Will remember history", etc.
-#   - As a stand-alone message, for example "Firefox history settings:".
 history-remember-label = { -brand-short-name } 将
     .accesskey = w
 history-remember-option-all =
@@ -1603,15 +1606,6 @@ history-dontremember-description4 =
     .description = { -brand-short-name } 将采用与“隐私浏览模式”相同的设置，不会记录您浏览网络的历史。
 history-custom-description4 =
     .aria-label = { history-group.label }
-    .description = { -brand-short-name } 将使用自定义设置处理您的浏览、下载、表单和搜索记录。
-history-remember-description3 =
-    .aria-label = { history-remember-label2 }
-    .description = { -brand-short-name } 将记住您的浏览、下载、表单和搜索记录。
-history-dontremember-description3 =
-    .aria-label = { history-remember-label2 }
-    .description = { -brand-short-name } 将采用与“隐私浏览模式”相同的设置，不会记录您浏览网络的历史。
-history-custom-description3 =
-    .aria-label = { history-remember-label2 }
     .description = { -brand-short-name } 将使用自定义设置处理您的浏览、下载、表单和搜索记录。
 history-remember-description = { -brand-short-name } 将记住您的浏览、下载、表单和搜索记录。
 history-dontremember-description = { -brand-short-name } 将采用与“隐私浏览模式”相同的设置，不会记录您浏览网络的历史。
@@ -1633,19 +1627,29 @@ history-clear-on-close-settings =
 history-clear-button =
     .label = 清除历史记录…
     .accesskey = s
+history-header2 =
+    .heading = 历史记录
+history-section-header =
+    .label = 历史记录
+    .description = 选择关闭浏览器时 { -brand-short-name } 应记住的内容。
+history-custom-section-header =
+    .label = 高级设置
+    .description = 自定义关闭浏览器时 { -brand-short-name } 应记住的内容。
+history-custom-button =
+    .label = 选择您希望 { -brand-short-name } 记住的内容
 history-group =
     .label = 历史记录
+history-remember-option-all2 =
+    .label = 记录历史
 
 ## Privacy Section - Site Data
 
 sitedata-header = Cookie 和网站数据
-sitedata-label =
-    .aria-label = { sitedata-header }
 sitedata-total-size-calculating = 正在计算网站数据和缓存的大小…
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size2 = 您已存储的 Cookie、历史记录、网站数据和缓存目前使用了 <strong>{ $value } { $unit }</strong> 磁盘空间。
+sitedata-total-size3 = 各网站目前使用了 <strong>{ $value } { $unit }</strong> 磁盘空间。
 # Variables:
 #   $value (number) - Value of the unit (for example: 4.6, 500)
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
@@ -1656,6 +1660,9 @@ sitedata-delete-on-close =
     .accesskey = C
 sitedata-delete-on-close-private-browsing3 =
     .message = 根据您的历史记录设置，{ -brand-short-name } 将在关闭浏览器时删除浏览期间产生的 Cookie 和网站数据。
+sitedata-delete-on-close-private-browsing4 =
+    .heading = 不保存历史记录。
+    .message = 关闭浏览器时，{ -brand-short-name } 将清除浏览期间产生的 Cookie 和网站数据。
 sitedata-delete-on-close-private-browsing = 永久启用隐私浏览模式后，每次关闭 { -brand-short-name } 时都会清除 Cookie 和网站数据。
 sitedata-delete-on-close-private-browsing2 = 根据您的历史记录设置，{ -brand-short-name } 将在关闭浏览器时删除浏览期间产生的 Cookie 和网站数据。
 sitedata-allow-cookies-option =
@@ -1701,6 +1708,16 @@ sitedata-cookies-exceptions2 =
     .label = 管理例外
     .accesskey = x
     .description = 您可以指定一律允许或不允许哪些网站使用 Cookie 和网站数据。
+sitedata-heading =
+    .label = 浏览数据
+    .description = 管理 Cookie、历史记录、缓存、网站数据等项目。
+sitedata-settings3 =
+    .label = 清除特定网站的数据
+    .accesskey = s
+sitedata-cookies-exceptions3 =
+    .label = 管理例外
+    .accesskey = x
+    .description = 选择特定网站处理 Cookie 和网站数据的方式。
 cookies-site-data-group =
     .label = Cookie 和网站数据
 
@@ -1971,9 +1988,6 @@ permissions-block-popups-exceptions-button2 =
     .label = 管理弹出式窗口和第三方重定向例外
     .accesskey = E
     .searchkeywords = 弹出式窗口 弹窗 popups
-permissions-addon-install-warning2 =
-    .label = 当网站尝试安装扩展时发出警告
-    .accesskey = W
 permissions-addon-exceptions2 =
     .label = 选择可以安装扩展的网站
     .accesskey = E
@@ -1992,9 +2006,6 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = 例外…
     .accesskey = E
-permissions-header2 =
-    .label = 权限
-    .description = 您授予所浏览网站的权限。
 permissions-location2 =
     .label = 位置
 permissions-localhost2 =
@@ -2086,13 +2097,13 @@ website-advertising-private-attribution-description = 此功能可帮助网站�
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = 安全
-browsing-protection-group =
-    .label = 欺诈内容和危险软件防护
 security-browsing-protection = 欺诈内容和危险软件防护
 security-enable-safe-browsing =
     .label = 拦截危险与诈骗内容
     .accesskey = B
 security-enable-safe-browsing-link = 详细了解
+security-safe-browsing-warning =
+    .message = 关闭此功能会降低对诈骗、恶意网站和危险下载的保护效果。
 security-block-downloads =
     .label = 拦截危险的下载项
     .accesskey = D
@@ -2121,16 +2132,10 @@ space-alert-over-5gb-settings-button =
     .accesskey = O
 space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 运行所需的磁盘空间不足。</strong>网站内容可能无法正常显示。您可以在 设置 > 隐私与安全 > Cookie 和网站数据 中清除已存储的数据。
 space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 运行所需的磁盘空间不足。</strong>网站内容可能无法正常显示。点击“详细了解”了解如何优化您的磁盘空间，从而获得更好的浏览体验。
-certs-description2 =
-    .label = 证书
-    .description = 配置 { -brand-short-name } 用于进行身份验证的证书。
 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS-Only 模式
-httpsonly-label =
-    .aria-label = { httpsonly-header }
-    .description = 仅允许与网站进行安全连接。{ -brand-short-name } 将在进行不安全连接前询问。
 httpsonly-description3 = 仅允许与网站进行安全连接。{ -brand-short-name } 将在进行不安全连接前询问。
 httpsonly-learn-more2 = HTTPS-Only 模式的运作原理
 httpsonly-description = HTTPS 可在 { -brand-short-name } 和您访问的网站之间提供安全、加密的连接。现今，大多数网站都支持 HTTPS，若选择启用 HTTPS-Only 模式，{ -brand-short-name } 将会升级所有连接为 HTTPS。
@@ -2153,8 +2158,6 @@ httpsonly-label2 =
 ## DoH Section
 
 preferences-doh-header = 基于 HTTPS 的 DNS
-dns-over-https-group =
-    .label = 基于 HTTPS 的 DNS
 preferences-doh-description = 基于 HTTPS 的 DNS 会通过加密的连接发送您对域名的请求，从而建立安全 DNS 连接，使他人更难得知您要访问的网站。
 preferences-doh-description2 = 基于 HTTPS 的 DNS 会通过加密的连接发送您对域名的请求，从而提供安全 DNS，使他人更难得知您要访问的网站。
 # Variables:
@@ -2210,6 +2213,12 @@ preferences-doh-exceptions-description = { -brand-short-name } 将不再使用�
 preferences-doh-manage-exceptions =
     .label = 管理例外…
     .accesskey = x
+preferences-doh-advanced-button =
+    .label = 高级设置
+preferences-doh-custom-provider-label =
+    .aria-label = 输入自定义提供商的 URL
+preferences-doh-header2 =
+    .heading = 基于 HTTPS 的 DNS
 
 ## The following strings are used in the Download section of settings
 
@@ -2428,3 +2437,50 @@ save_to = 保存到
 this_desktop = 桌面
 downloads_folder = 下载
 disk_x = %s 盘
+
+## Privacy and security status card
+
+security-privacy-status-ok-label = 增强型跟踪保护已开启
+security-privacy-status-problem-label = 我们发现有些设置会影响您的保护状态
+security-privacy-status-problem-helper-label = 查看问题
+security-privacy-status-update-button-label =
+    .label = 更新 { -brand-short-name }
+security-privacy-issue-card =
+    .heading = 安全警告
+issue-card-reset-button =
+    .label = 重置
+
+## Enhanced Tracking Protection (ETP) status section
+
+preferences-etp-status-advanced-button =
+    .label = 高级设置
+preferences-etp-header =
+    .heading = 增强型跟踪保护
+preferences-etp-customize-button =
+    .label = 自定义跟踪保护
+preferences-etp-reload-tabs-hint =
+    .message = 重新加载标签页以应用这些更改。
+preferences-etp-rfp-warning-message =
+    .message = 您正在使用 Resist Fingerprinting（RFP），这会覆盖 { -brand-short-name } 部分数字指纹跟踪程序保护设置，并可能导致某些网站异常。
+preferences-etp-customize-header =
+    .heading = 自定义跟踪保护
+preferences-etp-reset-standard-button =
+    .label = 重置为标准
+preferences-etp-reset-strict-button =
+    .label = 重置为严格
+preferences-etp-custom-cookies-enabled =
+    .label = Cookie
+preferences-etp-custom-cookie-behavior =
+    .aria-label = Cookie
+preferences-etp-custom-tracking-protection-enabled =
+    .label = 跟踪性内容
+preferences-etp-custom-tracking-protection-enabled-context =
+    .aria-label = 跟踪性内容
+preferences-etp-custom-crypto-mining-protection-enabled =
+    .label = 加密货币挖矿程序
+preferences-etp-custom-known-fingerprinting-protection-enabled =
+    .label = 已知的数字指纹跟踪程序
+preferences-etp-custom-suspect-fingerprinting-protection-enabled =
+    .label = 存疑的数字指纹跟踪程序
+preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
+    .aria-label = 存疑的数字指纹跟踪程序
