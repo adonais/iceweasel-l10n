@@ -55,6 +55,8 @@ fxviewtabrow-move-tab-window = 移動至新視窗
     .accesskey = W
 fxviewtabrow-send-to-device = 傳送到裝置
     .accesskey = n
+fxviewtabrow-send-to-mobile = 傳送到行動裝置
+    .accesskey = n
 fxviewtabrow-send-tab = 將分頁傳送至裝置
     .accesskey = n
 fxviewtabrow-pin-tab = 釘選分頁
@@ -76,3 +78,7 @@ fxviewtabrow-mute-tab-button-no-context =
     .title = 分頁靜音
 fxviewtabrow-unmute-tab-button-no-context =
     .title = 取消分頁靜音
+# The following strings are for displaying elements in Firefox View to prompt users to sign in, enable sync, or pair a device
+fxviewtabrow-send-to-mobile-enable-sync2 = 開啟同步功能即可傳送分頁
+fxviewtabrow-send-to-mobile-connect-phone2 = 連結您的手機
+fxviewtabrow-send-to-mobile-device-missing2 = 沒看到您的裝置嗎？

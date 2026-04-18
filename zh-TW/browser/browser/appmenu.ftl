@@ -23,6 +23,8 @@ appmenuitem-new-private-window =
     .label = 開新隱私視窗
 appmenuitem-history =
     .label = 歷史
+appmenuitem-tab-groups =
+    .label = 分頁群組
 appmenuitem-downloads =
     .label = 下載項目
 appmenuitem-passwords =
@@ -280,6 +282,8 @@ appmenu-help-not-deceptive =
 
 appmenu-customizetoolbar =
     .label = 自訂工具列…
+appmenu-abouttranslations =
+    .label = 翻譯…
 appmenu-developer-tools-subheader = 瀏覽器工具
 appmenu-developer-tools-extensions =
     .label = 開發者專用的擴充套件

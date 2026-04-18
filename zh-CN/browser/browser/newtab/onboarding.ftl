@@ -558,9 +558,15 @@ onboarding-personalization-motivation-other-option = 其他
 ## Onboarding 2026 brand refresh
 
 onboarding-refresh-pin-set-default-subtitle = 我们会保护您的数据，并自动阻止大公司窥探您的浏览活动。
+# "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
+# If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
+onboarding-refresh-pin-set-default-title = Firefox 护您周全
 onboarding-refresh-import-subtitle = 将密码、书签、历史记录等数据搬到这里。
+onboarding-refresh-import-title = 让 { -brand-short-name } 亲切如家
+onboarding-refresh-onboarding-addons-subtitle = 扩展就像“小程序”，可用于定制 { -brand-short-name }，帮助增强隐私保护、提高效率、更改 { -brand-short-name } 外观，还有更多妙用。
 # "Give your browsing a boost" means to enhance or improve the browsing experience
 onboarding-refresh-onboarding-addons-title = 提升浏览体验
+onboarding-refresh-sync-subtitle = 让书签、密码等数据在已登录 { -brand-short-name } 的各设备上触手可得。数据受加密保护，只有您自己能查看。
 onboarding-refresh-sync-title = 畅行千里，同步万物。
 onboarding-refresh-gratitude-subtitle = 感谢您使用 { -brand-short-name }，这是唯一由非营利组织支持的主流浏览器。您的支持激励着我们为更开放、更美好且人人可用的互联网继续奋斗。
 # "has your back" is an idiom suggesting support and protection

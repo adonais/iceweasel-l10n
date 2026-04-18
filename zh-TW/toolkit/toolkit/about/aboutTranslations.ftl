@@ -11,10 +11,6 @@ about-translations-learn-more-link = 更多資訊
 about-translations-unsupported-info-message-2 =
     .heading = 此裝置無法進行翻譯
     .message = 請改用其他裝置進行翻譯。
-# An info message displayed if the device's hardware is not compatible with the Translations feature requirements.
-about-translations-unsupported-info-message =
-    .heading = 此裝置無法進行翻譯。
-    .message = 請改用其他裝置進行翻譯。
 # An info message displayed when translations are disabled and locked by enterprise policy.
 about-translations-policy-disabled-info-message =
     .heading = 您的組織無法使用翻譯功能
@@ -28,11 +24,6 @@ about-translations-feature-blocked-unblock-button = 解除封鎖
 about-translations-language-load-error-message-2 =
     .heading = 無法載入語言清單
     .message = 請檢查網路連線後再試一次。
-about-translations-unsupported-info-button = 更多資訊
-# An error message displayed when the language list fails to load.
-about-translations-language-load-error-message =
-    .heading = 無法載入語言清單。
-    .message = 請檢查網路連線後再試一次。
 about-translations-language-load-error-button = 重試
 # An error message displayed when a translation request fails.
 about-translations-translation-error-heading = 翻譯時發生問題
@@ -41,8 +32,8 @@ about-translations-translation-error-button = 重試
 # An informational message displayed when the detected language is not supported.
 # Variables:
 #   $language (String) - The display name of the detected language.
-about-translations-detected-language-unsupported-heading = 抱歉，我們尚未支援{ $language }
-about-translations-detected-language-unsupported-heading-unknown = 抱歉，我們尚未支援此語言
+about-translations-detected-language-unsupported-heading-2 = 抱歉，我們尚未支援翻譯{ $language }
+about-translations-detected-language-unsupported-heading-unknown-2 = 抱歉，我們尚未支援翻譯這種語言
 about-translations-detected-language-unsupported-subtext = 請選擇另一種語言。
 # Placeholder text shown in the source-language text area when the user has not typed any text.
 about-translations-input-placeholder =

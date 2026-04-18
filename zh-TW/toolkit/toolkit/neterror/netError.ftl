@@ -94,6 +94,10 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } �
 
 neterror-file-not-found-filename = 請檢查檔名是否有大小寫錯誤、拼錯字。
 neterror-file-not-found-moved = 請檢查檔案是否已被移動、改名或刪除。
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } 找不到位於 <strong>{ $path }</strong> 的檔案。不是檔案不存在，就是路徑不正確。
+neterror-file-not-found-what-can-you-do = 若您手動輸入網址，請確認檔名或路徑是否有大小寫錯誤，或是打錯字；若您是開啟書籤或點擊鏈結而來，可能是該檔案已經被移動、更名，或刪除。請使用檔案管理員或近期的搜尋紀錄找出該檔案正確的路徑與名稱。
 neterror-access-denied = 可能是檔案被移走、移除，或存取權限不正確，造成無法存取。
 neterror-unknown-protocol = 您可能需要安裝其他軟體才能開啟此網址。
 neterror-redirect-loop = 有時候停用或拒絕接受 Cookie 會造成此問題。
@@ -141,7 +145,7 @@ neterror-inadequate-security-code = 錯誤代碼：NS_ERROR_NET_INADEQUATE_SECUR
 # Variables:
 # $hostname (String) - Hostname of the website to which the user was trying to connect.
 # $now (Date) - The current datetime, to be formatted as a date
-neterror-clock-skew-error = 您的電腦認為目前時間為 { DATETIME($now, dateStyle: "medium") }，不讓 { -brand-short-name } 建立安全連線。若要造訪 <b>{ $hostname }</b>，請到系統設定中確認日期、時間、時區設定是否正確，然後重新載入 <b>{ $hostname }</b>。
+neterror-clock-skew-error = 您的電腦認為目前時間為 { DATETIME($now, dateStyle: "medium") }，所以 { -brand-short-name } 無法建立安全連線。若要造訪 <b>{ $hostname }</b>，請到系統設定中確認日期、時間、時區設定是否正確，然後重新載入 <b>{ $hostname }</b>。
 neterror-network-protocol-error-intro = 因為偵測到網路通訊協定中的問題，無法顯示您嘗試檢視的頁面。
 neterror-network-protocol-error-contact-website = 請向網站擁有者回報此問題。
 certerror-expired-cert-second-para = 可能是網站的憑證已經過期，讓 { -brand-short-name } 無法安全地連線。若您造訪此網站，攻擊者可能嘗試偷走您的密碼、電子郵件、信用卡資料等個人資訊。
@@ -187,7 +191,16 @@ fp-neterror-illustration-alt =
 fp-neterror-connection-intro = { -brand-short-name } 無法與伺服器 { $hostname } 建立安全連線。
 fp-neterror-offline-intro = { -brand-short-name } 無法連線到位於 <strong>{ $hostname }</strong> 的伺服器
 fp-neterror-net-timeout-intro = 位於 <strong>{ $hostname }</strong> 的伺服器花了太久時間，還是沒有回應。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-http-error-page-intro = <strong>{ $hostname }</strong> 回傳錯誤訊息。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = 位於 <strong>{ $hostname }</strong> 的伺服器回傳了錯誤：{ $responsestatus } { $responsestatustext }
 fp-neterror-coop-coep-intro = 因為此頁面的安全性設定與前一頁不符，{ -brand-short-name } 並未載入此頁面。
+fp-neterror-blocked-by-policy-intro = 您的組織已封鎖存取此網頁或網站。
 fp-neterror-http-auth-disabled-intro = 可能是其他假扮為該網站的有心人，正嘗試偷走您的帳號、密碼、信箱等資料。
 fp-neterror-http-auth-disabled-secure-connection = 此網站要求必須使用安全連線，您無法加入例外造訪此網站。
 fp-neterror-why-did-this-happen = 為什麼會發生？
@@ -203,3 +216,4 @@ fp-neterror-coop-coep-why-did-this-happen-body = 有時網站會設定一些保�
 fp-learn-more-about-https-connections = 了解 HTTPS 連線的更多資訊
 fp-neterror-vpn-error-title = 無法連線至 VPN
 fp-neterror-vpn-error-description = 請稍候幾分鐘再試一次。
+fp-neterror-denied-port-access = 此網址所用的通訊埠 (Port) 通常不是用於網路瀏覽。為了安全性考量，{ -brand-short-name } 已經取消連線要求。

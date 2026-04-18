@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = 設定 WebExtension 可透過 chrome.storage.managed 存取的政策。
+policy-AIControls = 設定 AI 控制。
 policy-AllowedDomainsForApps = 指定允許存取 Google Workspace 的網域。
 policy-AllowFileSelectionDialogs = 允許顯示檔案選擇對話框。
 policy-AppAutoUpdate = 開啟或關閉應用程式自動更新。
@@ -36,6 +37,7 @@ policy-Containers = 設定容器分頁相關政策。
 policy-DisableAccounts = 停用需要帳號才可使用的服務，包含 Sync。
 policy-DisabledCiphers = 停用加密演算法。
 policy-DefaultDownloadDirectory = 設定預設下載資料夾。
+policy-DefaultSerialGuardSetting = 控制是否開放使用 Serial API。
 policy-DisableAppUpdate = 防止瀏覽器更新。
 policy-DisableBuiltinPDFViewer = 停用 { -brand-short-name } 內建的 PDF 閱讀器 PDF.js。
 policy-DisableDefaultBrowserAgent = 不讓預設瀏覽器代理工具作任何事。僅對 Windows 有效，其他平台沒有代理工具可用。
@@ -90,6 +92,7 @@ policy-Homepage = 設定或鎖定首頁。
 policy-HttpAllowlist = 不升級為 HTTPS 連線的來源。
 policy-HttpsOnlyMode = 允許開啟純 HTTPS 模式。
 policy-InstallAddonsPermission = 允許某些網站安裝附加元件。
+policy-IPProtectionAvailable = 防止使用者使用內建 VPN 功能。
 policy-LegacyProfiles = 停用「於每一套安裝使用不同設定檔」的功能。
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -127,6 +130,7 @@ policy-Preferences = 鎖定部分偏好設定的內容。
 policy-PrivateBrowsingModeAvailability = 設定是否可使用隱私瀏覽模式。
 policy-PromptForDownloadLocation = 下載檔案時，詢問要將檔案儲存至何處。
 policy-Proxy = 設定代理伺服器選項。
+policy-RelaunchRequired = 要求 { -brand-short-name } 在指定的時間內重新啟動，並在即將重新啟動前通知使用者。
 policy-RequestedLocales = 為應用程式設定使用的語系清單順序。
 policy-SanitizeOnShutdown2 = 關閉瀏覽器時，清除上網資料。
 policy-SearchBar = 設定搜尋列的預設位置，使用者仍然可以自訂。
@@ -151,3 +155,5 @@ policy-WebsiteFilter = 封鎖網站，不讓使用者開啟。請參考文件取
 policy-Windows10SSO = 允許使用 Windows 單一登入系統，登入微軟、工作單位、學校提供的帳號。
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = 允許使用 Microsoft Entra 帳號單一登入。
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = 開啟或關閉對 XSLTProcessor JavaScript API 與 XSLT 處理指令集的支援。

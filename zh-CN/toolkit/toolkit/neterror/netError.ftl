@@ -25,6 +25,8 @@ neterror-override-exception-button = 接受风险并继续
 neterror-pref-reset-button = 恢复默认设置
 neterror-return-to-previous-page-button = 后退
 neterror-return-to-previous-page-recommended-button = 返回上一页（推荐）
+neterror-try-again-button-2 = 重试
+    .accesskey = T
 neterror-try-again-button = 重试
 neterror-add-exception-button = 总是继续打开此网站
 neterror-settings-button = 更改 DNS 设置
@@ -92,6 +94,10 @@ neterror-dns-not-found-native-fallback-not-confirmed2 = { -brand-short-name } �
 
 neterror-file-not-found-filename = 请检查文件名是否大小写输错，或者有其他输入错误。
 neterror-file-not-found-moved = 请检查文件是否已被移动、重命名或删除。
+# Variables:
+#   $path (String) - Path of the local file that could not be found.
+neterror-file-not-found-intro = { -brand-short-name } 在 <strong>{ $path }</strong> 找不到该文件。该文件可能不存在，或路径不正确。
+neterror-file-not-found-what-can-you-do = 如果您是手动输入地址，请检查文件名或路径中是否存在大小写或拼写错误。如果您是通过保存的书签或链接打开，则文件自保存后可能已被移动、重命名或删除。请尝试使用文件管理器或最近搜索功能定位该文件。
 neterror-access-denied = 文件可能已被删除、移动，或者因文件权限问题被拒绝访问。
 neterror-unknown-protocol = 您可能需要安装其他软件才能打开此网址。
 neterror-redirect-loop = 有时候禁用或拒绝接受 Cookie 会导致此问题。
@@ -176,12 +182,23 @@ neterror-response-status-code = 错误代码：{ $responsestatus } { $responsest
 ## Felt Privacy V1 Strings
 
 fp-neterror-offline-body-title = 您的网络连接似乎出了点问题
+fp-neterror-illustration-alt =
+    .alt = 狐狸看着断开的网线的插图。
 
 ## Variables:
 ##   $hostname (String) - Hostname of the website to which the user was trying to connect.
 
 fp-neterror-connection-intro = { -brand-short-name } 无法与 { $hostname } 的服务器创建安全连接。
 fp-neterror-offline-intro = { -brand-short-name } 无法连接到 <strong>{ $hostname }</strong> 的服务器
+fp-neterror-net-timeout-intro = <strong>{ $hostname }</strong> 的服务器响应时间过长。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-http-error-page-intro = <strong>{ $hostname }</strong> 发回一个错误。
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+#   $responsestatus (Number) - HTTP response status code (e.g., 404).
+#   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
+fp-neterror-http-error-intro = <strong>{ $hostname }</strong> 的服务器发回一个错误：{ $responsestatus } { $responsestatustext }
 fp-neterror-coop-coep-intro = { -brand-short-name } 未加载此页面，因为其安全配置与上个页面似乎不一致。
 fp-neterror-http-auth-disabled-intro = 若有人冒充此网站，其可试图窃取您的用户名、密码、邮箱地址等信息。
 fp-neterror-http-auth-disabled-secure-connection = 此网站需要安全连接，且无法添加例外以访问。
@@ -198,3 +215,4 @@ fp-neterror-coop-coep-why-did-this-happen-body = 有时网站会为自身设置�
 fp-learn-more-about-https-connections = 了解 HTTPS 连接
 fp-neterror-vpn-error-title = 无法连接到 VPN
 fp-neterror-vpn-error-description = 请在几分钟后重试。
+fp-neterror-denied-port-access = 此网址使用了一个通常用于网络浏览以外目的的端口。出于安全原因，{ -brand-short-name } 取消了该请求。

@@ -27,6 +27,8 @@ non-technical-privacy-header = 網站隱私權偏好設定
 # included to facilitate power-user search of the about:preferences page.
 global-privacy-control-search = Global Privacy Control (GPC)
 settings-page-title = 設定
+category-nav-heading =
+    .heading = 設定
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -41,6 +43,8 @@ search-input-box2 =
 managed-notice = 您的瀏覽器受到組織管理。
 managed-notice-info-icon =
     .alt = 資訊
+managed-notice-nav =
+    .label = 您的瀏覽器受到組織管理。
 category-list =
     .aria-label = 分類
 pane-general-title = 一般
@@ -1095,6 +1099,9 @@ search-engine-group =
     .label = 預設搜尋引擎
 search-default-engine =
     .aria-label = 預設搜尋引擎
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = 搜尋
 
 ## Containers Section
 
@@ -1118,11 +1125,18 @@ containers-remove-button =
 
 sync-group-label =
     .label = 同步
+account-group-label2 =
+    .label = 帳號
+account-placeholder2 =
+    .label = 您尚未登入
+    .description = 登入後即可將您的資料用有隱私、加密的方式即時同步到您所有裝置上的 { -brand-short-name }。
 account-group-label =
     .label = { -vendor-short-name } 帳號
 account-placeholder =
     .label = 您尚未登入
     .description = 登入後即可透過有隱私、加密過的方式，將您的資料同步道不同裝置上。
+account-sync-section =
+    .heading = 帳號與同步
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
@@ -1245,6 +1259,9 @@ prefs-syncing-button-2 =
 
 sync-syncing-across-devices-heading = 您連線的裝置會同步下列項目：
 sync-syncing-across-devices-heading-2 = 在不同裝置間同步的資料
+sync-syncing-across-devices-empty-state2 =
+    .label = 管理要同步的資料
+    .description = 您目前沒有同步任何資料。開始同步即可將所有資料同步到您的所有裝置上。
 sync-syncing-across-devices-empty-state =
     .label = 您還沒有同步任何東西。
     .description = 開始同步，就可以將所有資料同步到您所有裝置中。
@@ -1264,6 +1281,8 @@ sync-manage-options =
 sync-manage-options-2 =
     .label = 管理要同步的資料
     .accesskey = M
+settings-sync-disconnect-button =
+    .label = 取消連線
 sync-change-options =
     .label = 修改…
     .accesskey = C
@@ -1998,14 +2017,8 @@ permissions-block-popups-exceptions-button4 =
     .accesskey = E
     .searchkeywords = 彈出型視窗, popups
 permissions-addon-install-warning3 =
-    .label = 網站嘗試安裝擴充套件時，喜善警告
+    .label = 網站嘗試安裝擴充套件時，顯示警告
     .accesskey = W
-# "popup" is a misspelling that is more popular than the correct spelling of
-# "pop-up" so it's included as a search keyword, not displayed in the UI.
-permissions-block-popups-exceptions-button2 =
-    .label = 管理彈出型視窗與第三方重新導向例外
-    .accesskey = E
-    .searchkeywords = popups 彈出 視窗
 permissions-addon-exceptions2 =
     .label = 選擇可以安裝擴充套件的網站
     .accesskey = E
@@ -2060,6 +2073,12 @@ collection-health-report-telemetry-disabled = 將不再允許 { -vendor-short-na
 collection-health-report-telemetry-disabled-link = 了解更多
 backup-multi-profile-warning-message =
     .message = 若要讓此變更在備份中生效，請開啟每個設定檔，並到「設定」當中選擇「立即備份」。
+nimbus-rollouts =
+    .label = 允許 { -brand-short-name } 在新版本推出前改進功能、效能、穩定度
+    .description = 變更將從遠端自動推出。
+addon-recommendations3 =
+    .label = 允許個人化推薦的擴充套件
+    .description = 依照您的使用方式推薦擴充套件，改進您的上網體驗。
 collection-usage-ping =
     .label = 傳送每日使用情況回報給 { -vendor-short-name }
     .accesskey = u
@@ -2105,6 +2124,38 @@ privacy-segmentation-radio-off =
     .label = 使用 { -brand-product-name } 推薦設定
 privacy-segmentation-radio-on =
     .label = 顯示詳細資訊
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = { -brand-short-name } 資料收集與使用
+    .description = 我們盡力提供您不同選擇，也只會收集最少而必須的資料，以用於為所有人改善 { -brand-product-name }。
+    .searchkeywords = telemetry
+data-collection-link = 檢視隱私權公告
+data-collection-preferences-across-profiles =
+    .message = 此設定將套用到此裝置中的所有 { -brand-product-name } 設定檔。
+data-collection-profiles-link = 檢視所有設定檔
+data-collection-health-report-telemetry-disabled =
+    .message = 將不再允許 { -vendor-short-name } 捕捉技術與互動資料，之前收集的資料將於 30 天內刪除。
+data-collection-health-report =
+    .label = 傳送技術與互動資料給 { -vendor-short-name }
+    .accesskey = r
+    .description = 此資料可幫助我們改進 { -brand-product-name } 產品功能、效能與穩定度。
+data-collection-health-report-disabled =
+    .label = 傳送技術與互動資料給 { -vendor-short-name }
+    .accesskey = r
+    .description = 此版本進行編譯設定時，停用了資料回報功能。
+data-collection-run-studies =
+    .label = 允許 { -brand-short-name } 進行功能研究
+    .description = { -brand-short-name } 會隨機選擇使用者來測試功能，幫助為每個人改進品質。
+data-collection-studies-link =
+    .label = 檢視 { -brand-short-name } 所進行的研究
+data-collection-backlogged-crash-reports =
+    .label = 自動傳送錯誤報告
+    .description = 此報告可幫助 { -vendor-short-name } 找出瀏覽器的問題並進行修正。報告內容可能會包含私人或敏感資料。
+    .accesskey = c
+data-collection-usage-ping =
+    .label = 傳送每日使用情況回報給 { -vendor-short-name }
+    .description = 此資訊可幫助 { -vendor-short-name } 估算活躍使用者數。
+    .accesskey = u
 
 ## Privacy Section - Website Advertising Preferences
 

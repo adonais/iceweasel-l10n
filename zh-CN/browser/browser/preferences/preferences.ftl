@@ -27,6 +27,8 @@ non-technical-privacy-header = 网站隐私首选项
 # included to facilitate power-user search of the about:preferences page.
 global-privacy-control-search = Global Privacy Control (GPC)
 settings-page-title = 设置
+category-nav-heading =
+    .heading = 设置
 # This is used to determine the width of the search field in about:preferences,
 # in order to make the entire placeholder string visible
 #
@@ -41,6 +43,8 @@ search-input-box2 =
 managed-notice = 您的浏览器正由组织管理。
 managed-notice-info-icon =
     .alt = 信息
+managed-notice-nav =
+    .label = 您的浏览器正由组织管理。
 category-list =
     .aria-label = 分类
 pane-general-title = 常规
@@ -286,6 +290,8 @@ containers-remove-cancel-button = 不移除此身份
 settings-tabs-show-image-in-preview =
     .label = 悬停在标签页的标签上时显示预览图
     .accessKey = h
+settings-tabs-drag-to-create-tab-groups =
+    .label = 将标签页拖放到一起以创建标签页群组
 browser-layout-header2 =
     .label = 浏览器布局
 browser-layout-horizontal-tabs2 =
@@ -524,7 +530,7 @@ use-system-locale =
 settings-spellcheck-header =
     .label = 拼写检查
 check-user-spelling =
-    .label = 在您输入时检查拼写
+    .label = 输入时检查拼写
     .accesskey = t
 spellcheck-download-dictionaries =
     .label = 下载字典
@@ -800,6 +806,8 @@ network-proxy-connection-settings2 =
 
 home-new-windows-tabs-header = 新窗口和标签页
 home-new-windows-tabs-description2 = 选择您打开主页、新窗口和新标签页时要看到的内容。
+home-section =
+    .heading = 主页与启动
 
 ## Home Section - Default Browser
 
@@ -1118,11 +1126,18 @@ containers-remove-button =
 
 sync-group-label =
     .label = 同步
+account-group-label2 =
+    .label = 账户
+account-placeholder2 =
+    .label = 您尚未登录
+    .description = 登录以加密保护数据、确保数据私密，并可在使用 { -brand-short-name } 的各设备上触手可得。
 account-group-label =
     .label = { -vendor-short-name } 账户
 account-placeholder =
     .label = 您尚未登录
     .description = 登录以跨设备同步。数据将保持私密，并受加密保护。
+account-sync-section =
+    .heading = 账户与同步
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
@@ -1245,6 +1260,9 @@ prefs-syncing-button-2 =
 
 sync-syncing-across-devices-heading = 您目前与已连接的设备同步以下项目：
 sync-syncing-across-devices-heading-2 = 跨设备同步的数据
+sync-syncing-across-devices-empty-state2 =
+    .label = 管理同步的数据
+    .description = 尚未同步任何数据。开始同步，让所有数据在您的各设备上触手可得。
 sync-syncing-across-devices-empty-state =
     .label = 尚未同步任何数据。
     .description = 开始同步即可跨设备使用所有数据。
@@ -1264,6 +1282,8 @@ sync-manage-options =
 sync-manage-options-2 =
     .label = 管理同步的数据
     .accesskey = M
+settings-sync-disconnect-button =
+    .label = 断开连接
 sync-change-options =
     .label = 更改…
     .accesskey = C
@@ -1594,6 +1614,11 @@ history-remember-label = { -brand-short-name } 将
     .accesskey = w
 history-remember-option-all =
     .label = 记录历史
+history-remember-option-never2 =
+    .label = 不记录历史
+    .description = 所以窗口都会像隐私窗口一样运作。启用后，扩展需经允许后才能运行。
+history-remember-option-custom2 =
+    .label = 自定义历史记录
 history-remember-option-never =
     .label = 不记录历史
 history-remember-option-custom =
@@ -1655,6 +1680,9 @@ sitedata-total-size3 = 各网站目前使用了 <strong>{ $value } { $unit }</st
 #   $unit (string) - Name of the unit (for example: "bytes", "KB")
 sitedata-total-size = 您已存储的 Cookie、网站数据和缓存目前使用了 { $value } { $unit } 磁盘空间。
 sitedata-learn-more = 详细了解
+sitedata-delete-on-close2 =
+    .label = 每次关闭 { -brand-short-name } 时清除 Cookie 和网站数据
+    .accesskey = c
 sitedata-delete-on-close =
     .label = 关闭 { -brand-short-name } 时删除 Cookie 与网站数据
     .accesskey = C
@@ -1891,7 +1919,7 @@ content-blocking-convenience-exceptions-3 =
     .label = 修复轻微网站问题
     .description = 取消屏蔽可能包含跟踪器的元素，以恢复文章内视频和评论区等内容。此操作可避免网站出现问题，但会降低保护效果。需配合修复严重问题功能使用。
 content-blocking-baseline-uncheck-warning-dialog-title = 您确定要关闭修复吗？
-content-blocking-baseline-uncheck-warning-dialog-body = 此设置有助于修复最常见的网站问题。关闭此功能后，部分网站可能无法正常运行，且 { -brand-short-name } 将无法协助解决相关问题。
+content-blocking-baseline-uncheck-warning-dialog-body = 此设置有助于修复最常见的网站问题。关闭此功能后，部分网站可能无法正常运作，且 { -brand-short-name } 将无法协助解决相关问题。
 content-blocking-baseline-uncheck-warning-dialog-ok-button = 关闭修复
 content-blocking-baseline-uncheck-warning-dialog-cancel-button = 保持修复
 content-blocking-reload-description = 需要重新加载标签页才能应用更改。
@@ -1984,10 +2012,14 @@ permissions-block-popups2 =
     .accesskey = B
 # "popup" is a misspelling that is more popular than the correct spelling of
 # "pop-up" so it's included as a search keyword, not displayed in the UI.
-permissions-block-popups-exceptions-button2 =
-    .label = 管理弹出式窗口和第三方重定向例外
+permissions-block-popups-exceptions-button4 =
+    .label = 管理例外
+    .description = 添加可以弹出窗口和使用第三方重定向的网站。
     .accesskey = E
-    .searchkeywords = 弹出式窗口 弹窗 popups
+    .searchkeywords = 弹窗, 弹出式窗口, popups
+permissions-addon-install-warning3 =
+    .label = 网站尝试安装扩展时显示警告
+    .accesskey = W
 permissions-addon-exceptions2 =
     .label = 选择可以安装扩展的网站
     .accesskey = E
@@ -2023,6 +2055,9 @@ permissions-speaker2 =
     .label = 扬声器
 permissions-notification2 =
     .label = 通知
+permissions-header3 =
+    .label = 权限
+    .description = 管理网站可以访问、控制或触发的项目。
 
 ## Privacy Section - Data Collection
 
@@ -2037,6 +2072,14 @@ collection-description = 我们力图为您提供选择权，并保证只收集�
 collection-privacy-notice = 隐私声明
 collection-health-report-telemetry-disabled = 您不再允许 { -vendor-short-name } 捕获技术和交互数据。过去收集的所有数据将在 30 天内删除。
 collection-health-report-telemetry-disabled-link = 详细了解
+backup-multi-profile-warning-message =
+    .message = 为确保此项更改包含在您的备份中，请打开每个配置文件并在设置中选择“立即备份”。
+nimbus-rollouts =
+    .label = 允许 { -brand-short-name } 在更新间隔期间改进功能、性能、稳定性。
+    .description = 更改会远程推送。
+addon-recommendations3 =
+    .label = 允许进行个性化扩展推荐
+    .description = 获取扩展推荐，改进浏览体验。
 collection-usage-ping =
     .label = 向 { -vendor-short-name } 发送每日使用情况报告
     .accesskey = u
@@ -2082,6 +2125,38 @@ privacy-segmentation-radio-off =
     .label = 使用 { -brand-product-name } 推荐
 privacy-segmentation-radio-on =
     .label = 显示详细信息
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+data-collection =
+    .label = { -brand-short-name } 数据收集与使用
+    .description = 我们力图为您提供选择权，并保证只以最低限度收集为众人改进 { -brand-product-name } 所必需的数据。
+    .searchkeywords = 遥测
+data-collection-link = 查看隐私声明
+data-collection-preferences-across-profiles =
+    .message = 此处的设置将应用到此设备上的所有 { -brand-product-name } 配置文件。
+data-collection-profiles-link = 查看所有配置文件
+data-collection-health-report-telemetry-disabled =
+    .message = 您不再允许 { -vendor-short-name } 捕获技术和交互数据。过去收集的所有数据将在 30 天内删除。
+data-collection-health-report =
+    .label = 向 { -vendor-short-name } 发送技术与交互数据
+    .accesskey = r
+    .description = 此数据可帮助我们改进 { -brand-product-name } 的功能、性能和稳定性。
+data-collection-health-report-disabled =
+    .label = 向 { -vendor-short-name } 发送技术与交互数据
+    .accesskey = r
+    .description = 此构建配置已禁用数据报告功能。
+data-collection-run-studies =
+    .label = 允许 { -brand-short-name } 运行功能研究
+    .description = { -brand-short-name } 会随机选择用户测试功能，此做法有助于为全体用户改进质量。
+data-collection-studies-link =
+    .label = 查看 { -brand-short-name } 研究
+data-collection-backlogged-crash-reports =
+    .label = 自动发送崩溃报告
+    .description = 此信息可帮助 { -vendor-short-name } 诊断和修复浏览器的问题。报告中可能包含个人或敏感数据。
+    .accesskey = c
+data-collection-usage-ping =
+    .label = 向 { -vendor-short-name } 发送每日使用情况报告
+    .description = 此信息可帮助 { -vendor-short-name } 估算活跃用户数量。
+    .accesskey = u
 
 ## Privacy Section - Website Advertising Preferences
 
@@ -2097,6 +2172,9 @@ website-advertising-private-attribution-description = 此功能可帮助网站�
 ## https://developers.google.com/safe-browsing/developers_guide_v2#AcceptableUsage
 
 security-header = 安全
+browsing-protection-group2 =
+    .label = 诈骗内容和危险软件防护
+    .description = 危险网站和下载内容可能会使您的数据和设备面临风险。{ -brand-short-name } 会自动拦截此类内容，并向您警告风险或流氓软件。
 security-browsing-protection = 欺诈内容和危险软件防护
 security-enable-safe-browsing =
     .label = 拦截危险与诈骗内容
@@ -2130,8 +2208,17 @@ certs-devices-enable-fips = 启用 FIPS
 space-alert-over-5gb-settings-button =
     .label = 打开设置
     .accesskey = O
-space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 运行所需的磁盘空间不足。</strong>网站内容可能无法正常显示。您可以在 设置 > 隐私与安全 > Cookie 和网站数据 中清除已存储的数据。
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 运行所需的磁盘空间不足。</strong>网站内容可能无法正常显示。您可以在“设置”>“隐私与安全”>“Cookie 和网站数据”中清除已存储的数据。
 space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 运行所需的磁盘空间不足。</strong>网站内容可能无法正常显示。点击“详细了解”了解如何优化您的磁盘空间，从而获得更好的浏览体验。
+certs-description3 =
+    .label = 证书
+    .description = 配置 { -brand-short-name } 用于验证安全连接的证书。
+certs-view2 =
+    .label = 管理证书
+    .accesskey = C
+certs-devices2 =
+    .label = 管理安全设备
+    .accesskey = D
 
 ## Privacy Section - HTTPS-Only
 
@@ -2158,6 +2245,9 @@ httpsonly-label2 =
 ## DoH Section
 
 preferences-doh-header = 基于 HTTPS 的 DNS
+dns-over-https-group2 =
+    .label = 基于 HTTPS 的 DNS
+    .description = 基于 HTTPS 的域名系统（DoH）会对网站查询进行加密，使您的互联网服务提供商及其他人更难获知您要访问的网站。
 preferences-doh-description = 基于 HTTPS 的 DNS 会通过加密的连接发送您对域名的请求，从而建立安全 DNS 连接，使他人更难得知您要访问的网站。
 preferences-doh-description2 = 基于 HTTPS 的 DNS 会通过加密的连接发送您对域名的请求，从而提供安全 DNS，使他人更难得知您要访问的网站。
 # Variables:
@@ -2213,10 +2303,67 @@ preferences-doh-exceptions-description = { -brand-short-name } 将不再使用�
 preferences-doh-manage-exceptions =
     .label = 管理例外…
     .accesskey = x
+preferences-doh-overview-default =
+    .label = 默认保护
+    .description = 位于安全 DNS 可用的地区则使用
+preferences-doh-overview-custom =
+    .label = 自定义
+    .description = 始终使用安全 DNS，并自主选择提供商及回退行为。
+preferences-doh-overview-off =
+    .label = 关闭
+    .description = 使用默认 DNS 解析器。
 preferences-doh-advanced-button =
     .label = 高级设置
+preferences-doh-advanced-section =
+    .label = 高级设置
+    .description = 基于 HTTPS 的域名系统（DoH）会对网站查询进行加密，使您的互联网服务提供商及其他人更难获知您要访问的网站。
+preferences-doh-manage-exceptions2 =
+    .label = 管理例外
+    .accesskey = x
+preferences-doh-radio-default =
+    .label = 默认
+    .description = 位于安全 DNS 可用的地区则使用
+preferences-doh-radio-custom =
+    .label = 自定义
+    .description = 始终使用安全 DNS，并自主选择提供商及回退行为
+preferences-doh-radio-off =
+    .label = 关
+    .description = 使用默认 DNS 解析器
+preferences-doh-fallback-label =
+    .label = 安全 DNS 不可用时发出警告
+preferences-doh-status-item-off =
+    .message = 基于 HTTPS 的 DNS 已关闭
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active =
+    .message = 由于尝试使用提供方 { $name } 时遇到错误（{ $reason }），基于 HTTPS 的 DNS 未运作
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+preferences-doh-status-item-not-active-bad-url =
+    .message = 由于收到无效网址（{ $reason }），基于 HTTPS 的 DNS 未运作
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active =
+    .message = 基于 HTTPS 的 DNS 正在使用提供方 { $name }
+# Variables:
+#   $reason (string) - A string representation of the reason DoH is not active. For example NS_ERROR_UNKNOWN_HOST or TRR_RCODE_FAIL.
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-not-active-local =
+    .message = 由于在尝试使用本地提供方 { $name } 时遇到错误（{ $reason }），基于 HTTPS 的 DNS 未运作
+# Variables:
+#   $name (string) - The name of the DNS over HTTPS resolver. If a custom resolver is used, the name will be the domain of the URL.
+preferences-doh-status-item-active-local =
+    .message = 基于 HTTPS 的 DNS 正在使用本地提供方 { $name }
+preferences-doh-select-resolver-label =
+    .label = 选择提供方：
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item =
+    .label = { $name }
+    .tooltiptext = 使用此提供方进行基于 HTTPS 的 DNS 解析
 preferences-doh-custom-provider-label =
-    .aria-label = 输入自定义提供商的 URL
+    .aria-label = 输入自定义提供方的网址
 preferences-doh-header2 =
     .heading = 基于 HTTPS 的 DNS
 
@@ -2230,7 +2377,7 @@ choose-download-folder-title = 选择下载文件夹：
 
 preferences-ai-controls-header =
     .heading = { pane-ai-controls-title }
-preferences-ai-controls-description = { -brand-short-name } 始终尊重您的选择，包括选择是否使用 AI 增强功能。更多控制即将提供。
+preferences-ai-controls-description = { -brand-short-name } 始终尊重您的选择，包括选择是否使用 AI 增强的功能。更多控制即将提供。
 preferences-ai-controls-block-ai-label = 屏蔽 AI 增强功能
 preferences-ai-controls-block-ai =
     .label = { preferences-ai-controls-block-ai-label }
@@ -2440,38 +2587,96 @@ disk_x = %s 盘
 
 ## Privacy and security status card
 
+security-privacy-status-ok-header = { -brand-short-name } 正在防护
+# This is the header above a section telling the user about problems in their settings
+security-privacy-status-problem-header = { -brand-short-name } 安全改进推荐
 security-privacy-status-ok-label = 增强型跟踪保护已开启
 security-privacy-status-problem-label = 我们发现有些设置会影响您的保护状态
 security-privacy-status-problem-helper-label = 查看问题
+security-privacy-status-pending-trackers-label = 正在查询 { -brand-short-name } 上月拦截的跟踪器数量
+# This label tells the user how many trackers we have blocked for them.
+# Variables:
+#   $trackerCount (Number) - Number of trackers we have blocked in the last month
+security-privacy-status-trackers-label = 上月拦截了 { $trackerCount } 个跟踪器
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Strict" in Enhanced Tracking Protection advanced settings
+security-privacy-status-strict-enabled-label = 正在使用<a data-l10n-name="strict-tracking-protection">严格保护</a>
+# This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
+security-privacy-status-custom-enabled-label = 正在使用<a data-l10n-name="custom-tracking-protection">自定义保护</a>
+security-privacy-status-up-to-date-label = 您已安装最新、最安全的 { -brand-short-name } 版本
+security-privacy-status-update-needed-label = { -brand-short-name } 有新版本可用。
+security-privacy-status-update-error-label = { -brand-short-name } 更新时遇到问题
+security-privacy-status-update-checking-label = { -brand-short-name } 正在检查更新
+security-privacy-status-update-needed-description = 更新以获取最新的速度、稳定性和安全性更新。
 security-privacy-status-update-button-label =
     .label = 更新 { -brand-short-name }
+security-privacy-image-warning =
+    .alt = 带有感叹号的盾牌，表示存在安全隐患
+security-privacy-image-ok =
+    .alt = 带有对勾的盾牌，表示没有待解决的安全问题
 security-privacy-issue-card =
     .heading = 安全警告
 issue-card-reset-button =
     .label = 重置
+issue-card-dismiss-button =
+    .tooltiptext = 知道了
+    .aria-label = 知道了
 
 ## Enhanced Tracking Protection (ETP) status section
 
+preferences-etp-status-header =
+    .label = 增强型跟踪保护
+    .description = 网站会使用跟踪器在网络上跟踪您，从而显示恼人的广告。{ -brand-short-name } 可在浏览期间保护您，自动拦截跟踪器，让您能控制自己的数字痕迹。
+preferences-etp-level-standard =
+    .label = 标准（默认）
+    .description = 强大又可靠的保护，与大多数网站顺畅兼容。
+preferences-etp-level-strict =
+    .label = 严格
+    .description = 更强大的保护，可拦截更多跟踪器，但可能导致某些网站异常。
+preferences-etp-level-custom =
+    .label = 定制
+    .description = 选择开启和关闭的保护。
 preferences-etp-status-advanced-button =
     .label = 高级设置
+preferences-etp-status-protections-dashboard-link =
+    .label = 查看个性化保护信息面板
+    .description = 查看 { -brand-short-name } 为您拦截的跟踪器数量，包括社交媒体跟踪器、数字指纹跟踪程序和加密货币挖矿程序。
 preferences-etp-header =
     .heading = 增强型跟踪保护
+preferences-etp-advanced-settings-group =
+    .label = 高级设置
+    .description = 网站会使用跟踪器在网络上跟踪您，从而显示恼人的广告。{ -brand-short-name } 可在浏览期间保护您，自动拦截大多数跟踪器，让您能控制自己的数字痕迹。
 preferences-etp-customize-button =
     .label = 自定义跟踪保护
 preferences-etp-reload-tabs-hint =
     .message = 重新加载标签页以应用这些更改。
+preferences-etp-reload-tabs-hint-button =
+    .label = 重新加载所有标签页
 preferences-etp-rfp-warning-message =
     .message = 您正在使用 Resist Fingerprinting（RFP），这会覆盖 { -brand-short-name } 部分数字指纹跟踪程序保护设置，并可能导致某些网站异常。
+preferences-etp-level-warning-message =
+    .heading = 注意！某些网站可能无法正常运作。
+    .message = 部分网站会将跟踪器嵌入其功能或内容中。{ -brand-short-name } 拦截这些追踪器时，可能导致网站功能异常。您可尝试使用“修复网站问题”功能，或关闭对该网站的跟踪保护。
+preferences-etp-manage-exceptions-button =
+    .label = 管理例外
+    .description = 管理禁用增强型跟踪保护的网站。
 preferences-etp-customize-header =
     .heading = 自定义跟踪保护
+preferences-etp-reset =
+    .label = 重置定制项
+    .description = 将设置恢复为预设的保护级别。
 preferences-etp-reset-standard-button =
     .label = 重置为标准
 preferences-etp-reset-strict-button =
     .label = 重置为严格
+preferences-etp-custom-control-group =
+    .label = 跟踪保护
+    .description = 选择开启和关闭的保护。
 preferences-etp-custom-cookies-enabled =
     .label = Cookie
 preferences-etp-custom-cookie-behavior =
     .aria-label = Cookie
+preferences-etpc-custom-cookie-behavior-accept-all =
+    .label = 允许所有 Cookie
 preferences-etp-custom-tracking-protection-enabled =
     .label = 跟踪性内容
 preferences-etp-custom-tracking-protection-enabled-context =
@@ -2484,3 +2689,33 @@ preferences-etp-custom-suspect-fingerprinting-protection-enabled =
     .label = 存疑的数字指纹跟踪程序
 preferences-etp-custom-suspect-fingerprinting-protection-enabled-context =
     .aria-label = 存疑的数字指纹跟踪程序
+
+## Warnings section
+
+security-privacy-issue-warning-fingerprinters =
+    .label = 未拦截已知的数字指纹跟踪程序
+    .description = 这可能会允许某些追踪器不使用 Cookie 而继续跟踪您。
+security-privacy-issue-warning-third-party-cookies =
+    .label = 第三方 Cookie 已启用
+    .description = 第三方 Cookie 可用于跨网站跟踪您。
+security-privacy-issue-warning-password-manager =
+    .label = 密码管理器已禁用
+    .description = 密码管理器可帮助您为账户存储高强度密码。
+security-privacy-issue-warning-popup-blocker =
+    .label = 弹窗拦截器已禁用
+    .description = 弹窗会干扰浏览，且可能有害。
+security-privacy-issue-warning-extension-install =
+    .label = 网站可以安装扩展
+    .description = 网站可以不经询问直接为 { -brand-short-name } 安装扩展。
+security-privacy-issue-warning-safe-browsing =
+    .label = 未拦截危险与诈骗内容
+    .description = 您将更容易遭遇网站上的诈骗和恶意软件。
+security-privacy-issue-warning-doh =
+    .label = 基于 HTTPS 的 DNS 已禁用
+    .description = 基于 HTTPS 的 DNS 可向您的网络提供商隐藏您访问的网站。
+security-privacy-issue-warning-ech =
+    .label = 加密客户端问候（ECH）已禁用
+    .description = 加密客户端问候可向您的网络提供商隐藏您访问的网站。
+security-privacy-issue-warning-proxy-autodetection =
+    .label = 代理自动配置已启用
+    .description = 代理自动配置可能让不受信任的网络监控您的活动。

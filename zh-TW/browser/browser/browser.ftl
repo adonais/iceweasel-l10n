@@ -140,6 +140,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = 變更您是否要收到來自此網站的通知
 urlbar-midi-notification-anchor =
     .tooltiptext = 開啟 MIDI 面板
+urlbar-serial-notification-anchor =
+    .tooltiptext = 開啟序列埠面板
 urlbar-eme-notification-anchor =
     .tooltiptext = 管理 DRM 軟體使用
 urlbar-web-authn-anchor =
@@ -282,6 +284,8 @@ urlbar-canvas-blocked =
     .tooltiptext = 您已封鎖此網站讀取 canvas 資料的權限。
 urlbar-midi-blocked =
     .tooltiptext = 您已封鎖此網站的 MIDI 存取權限。
+urlbar-serial-blocked =
+    .tooltiptext = 您已封鎖此網站的序列埠存取權限。
 urlbar-install-blocked =
     .tooltiptext = 您已封鎖此網站安裝附加元件。
 # Variables
@@ -295,6 +299,12 @@ urlbar-star-add-bookmark =
 urlbar-split-view-button =
     .tooltiptext = 分割畫面
     .aria-label = 分割畫面
+
+## Searchbar context menu
+
+clear-search-history =
+    .label = 清除搜尋記錄
+    .accesskey = h
 
 ## Page Action Context Menu
 
@@ -404,6 +414,9 @@ quickactions-cmd-help = 說明, 支援, 幫助, 協助, help, support
 # Opens the devtools web inspector
 quickactions-inspector2 = 開啟開發者工具
 quickactions-cmd-inspector2 = 檢測器, 開發者工具, inspector, devtools, dev tools
+# Opens Firefox Library
+quickactions-cmd-library = 收藏庫
+quickactions-library = 開啟收藏庫
 quickactions-cmd-inspector = 檢測器, 開發工具, inspector, devtools
 # Opens about:logins
 quickactions-logins2 = 管理密碼
@@ -637,6 +650,11 @@ sharing-warning-proceed-to-tab =
 sharing-warning-disable-for-session =
     .label = 在此階段停用分享保護
 
+## WebSerial "select a port" popup
+
+webserial-select-port-label = 選擇序列埠：
+webserial-no-ports-available = 無序列埠可以使用
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description2 = 請透過「瀏覽器工具」選單開啟開發者工具，才能使用 F12 快速鍵。
@@ -702,6 +720,8 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 擴充套件:
+urlbar-go-button2 =
+    .title = 按此前往網址列中的網址
 urlbar-go-button =
     .tooltiptext = 按此前往網址列中的網址
 urlbar-page-action-button =
@@ -960,6 +980,39 @@ urlbar-searchmode-button-no-engine =
 urlbar-searchmode-no-keyword =
     .label = 已停用關鍵字搜尋
     .tooltiptext = 已停用關鍵字搜尋
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = { $engine }，挑選一套搜尋引擎
+urlbar-searchmode-button-no-engine2 =
+    .title = 未選擇捷徑，請挑選一個捷徑
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = 已停用關鍵字搜尋
+urlbar-searchmode-dropmarker2 =
+    .title = 挑選一套搜尋引擎
+urlbar-searchmode-bookmarks2 = 書籤
+urlbar-searchmode-tabs2 = 分頁
+urlbar-searchmode-history2 = 瀏覽紀錄
+urlbar-searchmode-actions2 = 動作
+urlbar-searchmode-exit-button2 =
+    .title = 關閉
+urlbar-searchmode-default2 =
+    .title = 預設搜尋引擎
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = 新增「{ $engineName }」
+    .title = 新增「{ $engineName }」搜尋引擎
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = 這次使用下列搜尋引擎搜尋：
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = 使用下列引擎搜尋：
+urlbar-searchmode-popup-search-settings-panelitem = 搜尋設定
+urlbar-searchmode-popup-settings-panelitem = 設定
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -1048,6 +1101,9 @@ fullscreen-warning-no-domain = 此文件已進入全螢幕模式
 fullscreen-exit-button = 離開全螢幕模式（Esc）
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = 離開全螢幕模式（Esc）
+fullscreen-keyboardlock-exit-button = 結束全螢幕（長按 Esc 鍵）
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = 結束全螢幕（長按 esc 鍵）
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"

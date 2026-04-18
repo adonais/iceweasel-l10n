@@ -134,6 +134,21 @@ tab-context-send-to-device =
            *[other] 傳送 { $tabCount } 個分頁到裝置
         }
     .accesskey = n
+# The following string intentionally omits the word "Tab" from the singular and includes it in the plural.
+tab-context-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] 傳送到行動裝置
+           *[other] 傳送 { $tabCount } 個分頁到行動裝置
+        }
+    .accesskey = n
+# The following strings are for displaying elements in the tab context send tab submenu to prompt users to sign in, enable sync, or pair a device
+tab-context-send-to-mobile-enable-sync =
+    .label = 開啟同步功能即可傳送分頁
+tab-context-send-to-mobile-connect-phone =
+    .label = 連結您的手機
+tab-context-send-to-mobile-device-missing =
+    .label = 沒看到您的裝置嗎？
 tab-context-send-tabs-to-device =
     .label =
         { $tabCount ->

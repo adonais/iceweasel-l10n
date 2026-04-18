@@ -26,6 +26,8 @@ ipprotection-title = VPN
 ipprotection-feature-introduction-title = 向您介紹直接內建於瀏覽器的 VPN 功能
 ipprotection-feature-introduction-link-text-2 = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏所在位置，並保護您的資料。
 ipprotection-feature-introduction-link-text-private-browsing-2 = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏所在位置，並保護您的資料，就算在隱私瀏覽視窗中也能受到保護。
+ipprotection-feature-introduction-description-private-browsing = 隱藏您的實際所在位置，就算是在隱私視窗中也能獲得額外保護。
+ipprotection-feature-introduction-description-captive-portal = 隱藏您的實際所在位置，就算是使用公共 Wi-Fi 也能獲得額外保護。
 ipprotection-feature-introduction-button-primary = 下一個
 ipprotection-feature-introduction-button-secondary-not-now = 現在不要
 ipprotection-feature-introduction-button-secondary-no-thanks = 不要，謝謝
@@ -39,6 +41,7 @@ ipprotection-site-settings-callout-button = 知道了！
 ## Panel
 
 unauthenticated-vpn-title = 試用 { -brand-product-name } 的內建 VPN
+unauthenticated-hide-location-message-3 = 使用 { -brand-product-name } 上網時<a data-l10n-name="learn-more-vpn">隱藏您的實際所在位置</a>。
 unauthenticated-hide-location-message-2 = 使用 { -brand-product-name } 上網時，隱藏您的所在位置。
 # Variables
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
@@ -49,11 +52,6 @@ site-exclusion-toggle-enabled-1 =
     .aria-label = 已對此網站開啟 VPN 連線
 site-exclusion-toggle-disabled-1 =
     .label = 使用 VPN 開啟此網站
-    .aria-label = 已對此網站關閉 VPN 連線
-site-exclusion-toggle-label = 使用 VPN 開啟此網站
-site-exclusion-toggle-enabled =
-    .aria-label = 已對此網站開啟 VPN 連線
-site-exclusion-toggle-disabled =
     .aria-label = 已對此網站關閉 VPN 連線
 ipprotection-settings-link =
     .label = 設定
@@ -88,8 +86,11 @@ upgrade-vpn-button = 請試用 { -mozilla-vpn-brand-name }
 
 ipprotection-connection-status-generic-error-title = 無法連線至 VPN
 ipprotection-connection-status-generic-error-description = 請稍候幾分鐘再試一次。
+ipprotection-connection-status-generic-error-try-again = 請稍候再試。
 ipprotection-connection-status-network-error-title = 請檢查您的網際網路連線是否正常
 ipprotection-connection-status-network-error-description = 請連線到網際網路，再嘗試開啟 VPN。
+ipprotection-connection-status-blocked-error-title = 無法使用 VPN
+ipprotection-connection-status-blocked-error-description = 由於此地區的相關法律規定，我們無法提供 VPN 服務。<a data-l10n-name="learn-more-link">更多資訊</a>
 # Variables
 #   $usageLeft (number) - The amount of data a user has left in a month (in GB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
@@ -130,8 +131,6 @@ ip-protection-description =
     .label = VPN
     .description = 內建 VPN 功能，讓您在使用 { -brand-short-name } 加強保護隱私。
 ip-protection-learn-more = 更多資訊
-ip-protection-site-exceptions =
-    .label = 網站設定
 # Variables:
 #   $maxUsage (number) - The bandwidth limit of free VPN, in GB
 ip-protection-not-opted-in-2 =
@@ -161,7 +160,6 @@ ip-protection-exclusions-desc = 對所有網站開啟 VPN 上網，但排除此�
 
 ## IP Protection Bandwidth
 
-ip-protection-bandwidth-header = 每月 VPN 流量
 # Variables
 #   $usageLeft (number) - The amount of data a user has left in a month (in GB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)

@@ -29,6 +29,22 @@ fxa-menu-send-to-device =
         }
 # Variables:
 #   $tabCount (Number): The number of tabs sent to the device.
+# The following string intentionally omits the word "tab" from the singular and includes it in the plural.
+fxa-menu-send-to-mobile =
+    .label =
+        { $tabCount ->
+            [1] 发送到移动设备
+           *[other] 发送 { $tabCount } 个标签页到移动设备
+        }
+# The following strings are for displaying elements in the FxA send tab submenu to prompt users to sign in, enable sync, or pair a device
+fxa-menu-send-to-mobile-enable-sync =
+    .label = 启用同步以发送标签页
+fxa-menu-send-to-mobile-connect-phone =
+    .label = 连接您的手机
+fxa-menu-send-to-mobile-device-missing =
+    .label = 看不到您的设备？
+# Variables:
+#   $tabCount (Number): The number of tabs sent to the device.
 fxa-menu-send-tab-to-device =
     .label = 发送 { $tabCount } 个标签页到设备
 # This is shown dynamically within "Send tab to device" in fxa menu.

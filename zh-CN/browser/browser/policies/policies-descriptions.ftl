@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = 设置 WebExtension 可通过 chrome.storage.managed 访问的策略。
+policy-AIControls = 配置 AI 控制。
 policy-AllowedDomainsForApps = 定义允许访问 Google Workspace 的域。
 policy-AllowFileSelectionDialogs = 允许显示文件选择对话框。
 policy-AppAutoUpdate = 启用或禁用应用程序自动更新。
@@ -90,6 +91,7 @@ policy-Homepage = 设置主页，可选择锁定。
 policy-HttpAllowlist = 不会被升级为 HTTPS 的来源。
 policy-HttpsOnlyMode = 允许启用 HTTPS-Only 模式。
 policy-InstallAddonsPermission = 允许特定网站安装附加组件。
+policy-IPProtectionAvailable = 阻止向用户提供内置 VPN。
 policy-LegacyProfiles = 禁用要求每个安装实例有不同用户配置文件的功能
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -127,6 +129,7 @@ policy-Preferences = 设置并锁定若干首选项的值。
 policy-PrivateBrowsingModeAvailability = 设置隐私浏览模式的可用性。
 policy-PromptForDownloadLocation = 下载前询问文件保存位置。
 policy-Proxy = 配置代理设置
+policy-RelaunchRequired = 要求 { -brand-short-name } 在指定时间段内重启，并通知用户即将进行的重启。
 policy-RequestedLocales = 设置应用程序表明语言区域偏好的语言区域请求列表。
 policy-SanitizeOnShutdown2 = 关机时，清除上网数据。
 policy-SearchBar = 设置搜索栏的默认位置，用户仍可自定义。
@@ -135,6 +138,7 @@ policy-SearchSuggestEnabled = 启用或禁用搜索建议。
 # For more information, see https://wikipedia.org/wiki/PKCS_11
 policy-SecurityDevices2 = 添加或删除 PKCS #11 模块。
 policy-ShowHomeButton = 在工具栏显示“主页”按钮
+policy-SitePolicies = 特定网站策略。
 # ”You represent that...” means ”You confirm/declare that...”
 policy-SkipTermsOfUse2 = 启动时不显示使用条款和隐私声明。通过启用此策略，您声明自己接受使用条款；若您将此浏览器提供给其他人使用，则还需确认自己有权代表所有相关个人接受使用条款。
 policy-SSLVersionMax = 设置最高 SSL 版本。
@@ -150,3 +154,5 @@ policy-WebsiteFilter = 阻止访问某些网站。参阅文档了解该格式的
 policy-Windows10SSO = 允许面向 Microsoft 账户（个人/工作/学校）的 Windows 单点登录。
 # Entra is the name of a Microsoft product.
 policy-MicrosoftEntraSSO = 允许面向 Microsoft Entra 账户的单点登录。
+# Do not translate "XSLTProcessor" as it is the name of an API interface.
+policy-XSLTEnabled = 启用或禁用对 XSLTProcessor JavaScript API 和 XSLT 处理指令的支持。

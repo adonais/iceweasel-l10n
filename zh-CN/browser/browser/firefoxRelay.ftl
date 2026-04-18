@@ -18,14 +18,24 @@ firefox-relay-must-login-to-account = 登录账户以使用您的 { -relay-brand
 firefox-relay-get-unlimited-masks =
     .label = 管理马甲
     .accesskey = M
+# $count (Number) - The number of free email masks the user has used
+firefox-relay-reuse-masks-header = 您已用完 { $count } 个免费马甲邮箱
+# Description following warning that the user has used all their free email masks.
+# The user is presented a list of recently used masks to select, or they can click a button to see all masks.
+firefox-relay-reuse-masks-description-v2 = 您可以重复使用某个马甲，或查看所有马甲来另选一个。
+firefox-relay-reuse-masks-select-label = 选择最近使用的马甲
+firefox-relay-see-all-masks =
+    .label = 查看所有马甲
+    .accesskey = S
+firefox-relay-dismiss =
+    .label = 知道了
+    .accesskey = D
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-1
 firefox-relay-opt-in-title-1 = 保护您的邮箱地址：
-firefox-relay-opt-in-title-2 = 免费获取马甲邮箱
 # This is preceded by firefox-relay-opt-in-title-1 (on a different line), which
 # ends with a colon. You might need to adapt the capitalization of this string.
 firefox-relay-opt-in-subtitle-1 = 使用 { -relay-brand-name } 马甲邮箱
 firefox-relay-use-mask-title-1 = 使用马甲邮箱
-firefox-relay-opt-in-subtitle-2 = 保护收件箱免受垃圾邮件侵扰
 firefox-relay-use-mask-title = 使用 { -relay-brand-name } 马甲邮箱
 # This is followed, on a new line, by firefox-relay-opt-in-subtitle-a
 firefox-relay-opt-in-title-a = 使用免费马甲邮箱，免受垃圾邮件侵扰

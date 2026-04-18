@@ -296,6 +296,12 @@ urlbar-split-view-button =
     .tooltiptext = 分屏视图
     .aria-label = 分屏视图
 
+## Searchbar context menu
+
+clear-search-history =
+    .label = 清空搜索历史
+    .accesskey = H
+
 ## Page Action Context Menu
 
 page-action-manage-extension2 =
@@ -404,6 +410,9 @@ quickactions-cmd-help = 帮助, 支持, help, support
 # Opens the devtools web inspector
 quickactions-inspector2 = 打开开发者工具
 quickactions-cmd-inspector2 = 检查器, 开发者工具, inspector, devtools, dev tools
+# Opens Firefox Library
+quickactions-cmd-library = 我的足迹, 足迹, library
+quickactions-library = 打开“我的足迹”
 quickactions-cmd-inspector = 查看器, 开发工具, inspector, devtools
 # Opens about:logins
 quickactions-logins2 = 管理密码
@@ -698,6 +707,8 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 扩展：
+urlbar-go-button2 =
+    .title = 转到地址栏中指向的网址
 urlbar-go-button =
     .tooltiptext = 转到地址栏中指向的网址
 urlbar-page-action-button =
@@ -944,6 +955,38 @@ urlbar-searchmode-button-no-engine =
 urlbar-searchmode-no-keyword =
     .label = 关键词搜索已禁用
     .tooltiptext = 关键词搜索已禁用
+# Searchmode Switcher button
+# Variables:
+#   $engine (String): the current default search engine.
+urlbar-searchmode-button3 =
+    .title = { $engine }，选取搜索引擎
+urlbar-searchmode-button-no-engine2 =
+    .title = 未选择快捷方式，请选择
+# Refers to the ability to search using keywords in the address bar
+urlbar-searchmode-no-keyword2 =
+    .title = 关键词搜索已禁用
+urlbar-searchmode-dropmarker2 =
+    .title = 选取搜索引擎
+urlbar-searchmode-bookmarks2 = 书签
+urlbar-searchmode-tabs2 = 标签页
+urlbar-searchmode-history2 = 历史记录
+urlbar-searchmode-actions2 = 操作
+urlbar-searchmode-exit-button2 =
+    .title = 关闭
+urlbar-searchmode-default2 =
+    .title = 默认搜索引擎
+# Shown when adding new search engines from the search mode switcher.
+# Variables:
+#  $engineName (String): The name of the search engine.
+urlbar-searchmode-popup-add-engine = 添加“{ $engineName }”
+    .title = 添加搜索引擎“{ $engineName }”
+# Label shown on the top of Searchmode Switcher popup. After this label, the
+# available search engines will be listed.
+urlbar-searchmode-popup-one-off-header = 本次搜索使用：
+# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
+# reset after submitting.
+urlbar-searchmode-popup-header = 搜索引擎：
+urlbar-searchmode-popup-search-settings-panelitem = 搜索设置
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -1147,6 +1190,29 @@ toolbar-button-email-link =
 toolbar-button-logins =
     .label = 密码
     .tooltiptext = 查看并管理您存放的密码
+qrcode-panel-error =
+    .message = 生成二维码失败，请重试。
+qrcode-copy-button =
+    .label = 复制
+qrcode-copy-success =
+    .message = 二维码已复制到剪贴板。
+qrcode-copy-error =
+    .message = 复制二维码失败。
+qrcode-save-button =
+    .label = 保存
+qrcode-save-success =
+    .message = 二维码已保存。
+qrcode-save-error =
+    .message = 保存二维码失败。
+qrcode-save-title = 保存二维码
+qrcode-save-filter-png = PNG 图像
+qrcode-save-filename = qrcode.png
+qrcode-window-title = 二维码
+qrcode-dialog-title = 二维码
+qrcode-image =
+    .aria-label = 二维码
+qrcode-close-button =
+    .aria-label = 关闭
 # Variables:
 #  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
@@ -1187,6 +1253,11 @@ panel-save-update-password = 密码
 # "More" item in macOS share menu
 menu-share-more =
     .label = 更多…
+# Variables:
+#   $count (Number) - The number of links that will be copied.
+menu-share-copy-links =
+    .label = 复制 { $count } 个链接
+    .accesskey = L
 menu-share-copy-link =
     .label = 复制链接
     .accesskey = L

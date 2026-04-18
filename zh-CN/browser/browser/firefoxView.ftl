@@ -113,6 +113,8 @@ firefoxview-history-nav = 历史记录
 firefoxview-history-header = 历史记录
 firefoxview-history-context-delete = 从历史记录中删除
     .accesskey = D
+firefoxview-history-context-forget-site = 抹去此网站相关数据…
+    .accesskey = F
 
 ## Open Tabs in this context refers to all open tabs in the browser
 
@@ -155,6 +157,9 @@ firefoxview-search-text-box-recentbrowsing =
 # Placeholder for the input field to search in history ("search" is a verb).
 firefoxview-search-text-box-history =
     .placeholder = 搜索历史记录
+# Placeholder for the input field to search in bookmarks ("search" is a verb).
+firefoxview-search-text-box-bookmarks =
+    .placeholder = 搜索书签
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
     .placeholder = 搜索最近关闭的标签页
