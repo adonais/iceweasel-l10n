@@ -27,6 +27,8 @@ experimental-features-group-customize-browsing =
     .label = 自訂您的上網體驗
 experimental-features-group-productivity =
     .label = 生產力
+experimental-features-group-newtab-widgets =
+    .label = { -firefox-home-brand-name } 當中的小工具
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = 在側邊欄顯示密碼
@@ -64,15 +66,31 @@ experimental-features-fx-web-apps-description = 將您常造訪的網站放置�
 # Lists Widget
 experimental-features-newtab-widget-lists =
     .label = { -firefox-home-brand-name } 當中的清單
+experimental-features-newtab-widget-lists-new =
+    .label = 清單
 experimental-features-newtab-widget-lists-description = 開啟新分頁時自動列出待辦清單，不論是要打包的項目，還是購物清單都可以在 { -brand-product-name } 當中安排。<a data-l10n-name="connect">分享意見回饋</a>
 # Timer Widget
 experimental-features-newtab-widget-timer =
     .label = { -firefox-home-brand-name } 當中的計時器
+experimental-features-newtab-widget-timer-new =
+    .label = 計時器
 experimental-features-newtab-widget-timer-description = 設定計時器讓您保持專心，並且搖晃視窗請您保持進度，或提醒該小歇一下了。<a data-l10n-name="connect">分享意見回饋</a>
 # Lists and Timer Widget (Combined)
 experimental-features-newtab-widget-lists-and-timer =
     .label = { -firefox-home-brand-name }當中的清單與計時器
 experimental-features-newtab-widget-lists-and-timer-description = 開啟新分頁時自動列出待辦清單，不論是要打包的項目，還是購物清單都可以在 { -brand-product-name } 當中安排。設定計時器讓您保持專心，並且搖晃視窗請您保持進度，或提醒該小歇一下了。<a data-l10n-name="connect">分享意見回饋</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = 天氣預報
+experimental-features-newtab-widget-weather-description = 透過每小時天氣預報，讓您更能掌握今天的天氣。<a data-l10n-name="connect">意見回饋</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = 每日一圖
+experimental-features-newtab-widget-picture-of-the-day-description = 為每一天加上小小驚奇。獲得一張新照片、了解一些豆知識，或快速設定全新背景圖。<a data-l10n-name="connect">意見回饋</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = 時鐘
+experimental-features-newtab-widget-clocks-description = 新增最多四個可自訂暱稱的時鐘，讓您掌握各地時間。<a data-l10n-name="connect">意見回饋</a>
 # Semantic History Search
 experimental-features-semantic-history-search =
     .label = 語意化紀錄搜尋

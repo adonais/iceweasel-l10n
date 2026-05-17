@@ -224,7 +224,7 @@ main-context-menu-media-hide-controls =
     .label = 隐藏控制界面
     .accesskey = C
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = 全屏
@@ -302,6 +302,10 @@ main-context-menu-send-to-device-2 =
 main-context-menu-send-to-mobile-2 =
     .label = 发送到移动设备
     .accesskey = n
+main-context-menu-send-to-mobile-sign-in = 登录以发送标签页
+main-context-menu-send-to-mobile-enable-sync2 = 启用同步以发送标签页
+main-context-menu-send-to-mobile-connect-phone2 = 连接您的手机
+main-context-menu-send-to-mobile-device-missing2 = 看不到您的设备？
 # Displayed within the send tab submenu to prompt users to sign in, enable sync, or pair a device
 main-context-menu-send-to-mobile-enable-sync =
     .label = 启用同步以发送标签页

@@ -27,6 +27,8 @@ experimental-features-group-customize-browsing =
     .label = 定制浏览体验
 experimental-features-group-productivity =
     .label = 效率
+experimental-features-group-newtab-widgets =
+    .label = { -firefox-home-brand-name } 的小部件
 # Contextual Password Manager in sidebar
 experimental-features-contextual-password-manager =
     .label = 在侧栏中显示密码
@@ -64,15 +66,31 @@ experimental-features-fx-web-apps-description = 通过任务栏，以 Web 应用
 # Lists Widget
 experimental-features-newtab-widget-lists =
     .label = { -firefox-home-brand-name }上的清单
+experimental-features-newtab-widget-lists-new =
+    .label = 清单
 experimental-features-newtab-widget-lists-description = 在新标签页中一览待办清单，时刻提醒自己完成任务。从收拾行李到网上购物，都可以在 { -brand-product-name } 中列清单筹划。<a data-l10n-name="connect">分享反馈</a>
 # Timer Widget
 experimental-features-newtab-widget-timer =
     .label = { -firefox-home-brand-name }上的计时器
+experimental-features-newtab-widget-timer-new =
+    .label = 计时器
 experimental-features-newtab-widget-timer-description = 设置计时器，帮助保持专注，促使全心投入，提醒劳逸结合。<a data-l10n-name="connect">分享反馈</a>
 # Lists and Timer Widget (Combined)
 experimental-features-newtab-widget-lists-and-timer =
     .label = { -firefox-home-brand-name }上的清单和计时器
 experimental-features-newtab-widget-lists-and-timer-description = 在新标签页中一览待办清单，时刻提醒自己完成任务。从收拾行李到网上购物，都能在 { -brand-product-name } 中列清单筹划。还可设置计时器，帮助保持专注，促使全心投入，提醒劳逸结合。<a data-l10n-name="connect">分享反馈</a>
+# Weather Widget
+experimental-features-newtab-widget-weather =
+    .label = 天气预报
+experimental-features-newtab-widget-weather-description = 查看逐小时预报，今日天气一目了然。<a data-l10n-name="connect">分享反馈</a>
+# Picture of the Day Widget
+experimental-features-newtab-widget-picture-of-the-day =
+    .label = 每日一图
+experimental-features-newtab-widget-picture-of-the-day-description = 为每一天增添小小惊喜。收取新图片、了解背后趣事，也可快速更换新壁纸。 <a data-l10n-name="connect">分享反馈</a>
+# Clocks Widget
+experimental-features-newtab-widget-clocks =
+    .label = 时钟
+experimental-features-newtab-widget-clocks-description = 添加至多四个时钟，并可自定义昵称，帮助掌握各地时间。<a data-l10n-name="connect">分享反馈</a>
 # Semantic History Search
 experimental-features-semantic-history-search =
     .label = 历史记录语义搜索

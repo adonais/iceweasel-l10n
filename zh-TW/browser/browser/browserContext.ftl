@@ -224,7 +224,7 @@ main-context-menu-media-hide-controls =
     .label = 隱藏控制按鈕
     .accesskey = C
 
-##
+## Displayed within the send tab submenu to prompt users to sign in, enable sync, pair a device, or troubleshoot device issues.
 
 main-context-menu-media-video-fullscreen =
     .label = 全螢幕
@@ -302,6 +302,18 @@ main-context-menu-send-to-device-2 =
 main-context-menu-send-to-mobile-2 =
     .label = 傳送到行動裝置
     .accesskey = n
+main-context-menu-send-to-mobile-sign-in = 登入即可傳送分頁
+main-context-menu-send-to-mobile-enable-sync2 = 開啟同步功能即可傳送分頁
+main-context-menu-send-to-mobile-connect-phone2 = 連結您的手機
+main-context-menu-send-to-mobile-device-missing2 = 沒看到您的裝置嗎？
+main-context-menu-send-to-mobile-sign-in-from-link = 登入即可傳送鏈結
+main-context-menu-send-to-mobile-sign-in-from-page = 登入即可傳送頁面
+main-context-menu-send-to-mobile-enable-sync3 = 開啟 Sync 即可傳送分頁
+main-context-menu-send-to-mobile-enable-sync-from-link = 開啟 Sync 即可傳送鏈結
+main-context-menu-send-to-mobile-enable-sync-from-page = 開啟 Sync 即可傳送頁面
+main-context-menu-send-to-mobile-connect-phone3 = 連結裝置即可傳送分頁
+main-context-menu-send-to-mobile-connect-phone-from-link = 連結裝置即可傳送鏈結
+main-context-menu-send-to-mobile-connect-phone-from-page = 連結裝置即可傳送頁面
 # Displayed within the send tab submenu to prompt users to sign in, enable sync, or pair a device
 main-context-menu-send-to-mobile-enable-sync =
     .label = 開啟同步功能即可傳送分頁

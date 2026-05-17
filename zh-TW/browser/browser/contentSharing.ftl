@@ -1,0 +1,20 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+## Variables
+##   $count (number) - The number of tabs
+
+content-sharing-modal-more-tabs = +{ $count } 個
+content-sharing-tabs-title = { $count } 個分頁
+content-sharing-modal-view-page =
+    .label = 檢視頁面
+content-sharing-modal-copy-link =
+    .label = 複製鏈結
+content-sharing-modal-link-copied =
+    .label = 已複製鏈結
+content-sharing-modal-sign-in =
+    .label = 登入即可分享鏈結
+content-sharing-modal-title = 從任何瀏覽器分享這些鏈結
+content-sharing-modal-description = 為這些鏈結建立可簡單分享的公開頁面。頁面建立後就無法再編輯或刪除，並於 7 天後失效。

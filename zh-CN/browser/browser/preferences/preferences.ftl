@@ -51,20 +51,45 @@ pane-general-title = 常规
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = 主页
+pane-search-title2 = 搜索
+    .title = 搜索
+pane-privacy-title3 = 隐私与安全
+    .title = 隐私与安全
 category-home =
     .tooltiptext = { pane-home-title }
 pane-search-title = 搜索
 category-search =
     .tooltiptext = { pane-search-title }
+pane-privacy-title2 = 隐私与安全
+pane-privacy-section =
+    .heading = 隐私与安全
 pane-privacy-title = 隐私与安全
 category-privacy =
     .tooltiptext = { pane-privacy-title }
 pane-sync-title3 = 同步
+pane-ai-controls-title2 = AI 控制
+    .title = AI 控制
 category-sync3 =
     .tooltiptext = { pane-sync-title3 }
 pane-ai-controls-title = AI 控制
 category-ai-controls =
     .tooltiptext = { pane-ai-controls-title }
+pane-about-firefox-title = 关于 { -brand-short-name }
+    .title = { pane-about-firefox-title }
+pane-appearance-title = 外观
+    .title = { pane-appearance-title }
+pane-downloads-title2 = 下载
+    .title = 下载
+pane-downloads2 =
+    .heading = { pane-downloads-title2 }
+pane-accessibility-title = 无障碍
+    .title = { pane-accessibility-title }
+pane-languages-title2 = 语言
+    .title = 语言
+preferences-languages-header2 =
+    .heading = { pane-languages-title2 }
+settings-pane-labs-title2 = { -firefoxlabs-brand-name }
+    .title = { -firefoxlabs-brand-name }
 pane-experimental-title = { -brand-short-name } 实验
 category-experimental =
     .tooltiptext = { -brand-short-name } 实验
@@ -72,6 +97,8 @@ pane-experimental-subtitle = 三思而后行
 pane-experimental-search-results-header = { -brand-short-name } 实验：三思而后行
 pane-experimental-description2 = 更改高级配置的设置可能会影响 { -brand-short-name } 的性能和安全性。
 settings-pane-labs-title = { -firefoxlabs-brand-name }
+settings-pane-labs-header =
+    .heading = { -firefoxlabs-brand-name }
 settings-category-labs =
     .tooltiptext = { -firefoxlabs-brand-name }
 pane-experimental-description4 = 欢迎试用我们的实验性功能！这些功能尚在开发和改进，可能会影响 { -brand-short-name } 的运作方式。只有在您开启<a data-l10n-name="data-collection">技术和交互数据</a>收集后，我们才会收到有关您使用这些功能的数据。
@@ -79,6 +106,10 @@ pane-experimental-description3 = 欢迎试用我们的实验性功能！这些�
 pane-experimental-reset =
     .label = 恢复默认设置
     .accesskey = R
+help-button-label2 = { -brand-short-name } 帮助
+    .title = { -brand-short-name } 帮助
+addons-button-label2 = 扩展和主题
+    .title = 扩展和主题
 help-button-label = { -brand-short-name } 帮助
 addons-button-label = 扩展和主题
 focus-search =
@@ -247,16 +278,25 @@ confirm-on-quit-with-key =
 warn-on-open-many-tabs =
     .label = 打开多个标签页可能拖慢 { -brand-short-name } 前提醒我
     .accesskey = d
+switch-to-new-tabs-2 =
+    .label = 在新标签页中打开链接或媒体时，立即切换过去
+    .accesskey = h
 switch-to-new-tabs =
     .label = 新建标签页打开链接、图像、媒体时，立即切换过去
     .accesskey = h
 show-tabs-in-taskbar =
     .label = 在 Windows 任务栏上显示标签页预览图
     .accesskey = k
+browser-containers-enabled-2 =
+    .label = 使用身份标签页
+    .accesskey = n
 browser-containers-enabled =
     .label = 启用身份标签页
     .accesskey = n
 browser-containers-learn-more = 详细了解
+browser-containers-settings-2 =
+    .label = 管理设置
+    .accesskey = i
 browser-containers-settings =
     .label = 设置…
     .accesskey = i
@@ -319,6 +359,12 @@ browser-layout-show-sidebar-desc = 快捷使用书签、手机上的标签页、
 ## General Section - Language & Appearance
 
 language-and-appearance-header = 语言与外观
+appearance-group2 =
+    .label = 网站外观
+    .description = 部分网站可更改自身颜色以符合您的偏好。您可选择配色方案。
+preferences-web-appearance-choice-auto3 =
+    .label = 跟随系统
+    .title = 根据系统设置和 { -brand-short-name } 主题，自动更改网站背景和内容。
 appearance-group =
     .label = 网站外观
     .description = 某些网站可依照您的偏好调整自身配色，您可在下方选择要使用的网站配色方案。
@@ -451,6 +497,16 @@ manage-browser-languages-button =
     .accesskey = l
 confirm-browser-language-change-description = 重启 { -brand-short-name } 以应用这些更改
 confirm-browser-language-change-button = 应用并重启浏览器
+browser-language-heading =
+    .label = 浏览器语言
+    .description = 选择用于显示 { -brand-short-name } 菜单、消息、通知的语言。
+browser-language-preferred-label =
+    .label = 首选语言
+browser-language-fallback-label =
+    .label = 后备语言
+    .description = 首选语言未完全本地化时使用。
+browser-language-install-error =
+    .message = { -brand-short-name } 目前无法更新您的语言。请检查您是否已连接到互联网，然后重试。
 translate-web-pages =
     .label = 翻译网页内容
     .accesskey = T
@@ -541,6 +597,16 @@ spellcheck-promo =
 ## General Section - Files and Applications
 
 files-and-applications-title = 文件与应用程序
+download-save-files-header =
+    .label = 保存文件至
+download-save-where-3 =
+    .aria-label = 保存文件至
+download-always-ask-where2 =
+    .label = 下载前询问文件保存位置
+    .accesskey = A
+download-private-browsing-delete2 =
+    .label = 关闭隐私窗口时删除其中的下载项
+    .accesskey = D
 downloads-header-2 =
     .label = 下载
 download-save-where-2 =
@@ -571,6 +637,9 @@ applications-setting =
     .description = 选择 { -brand-short-name } 如何处理这些文件。
 applications-header = 应用程序
 applications-description = 选择 { -brand-short-name } 如何处理这些文件。
+applications-setting2 =
+    .label = 文件与应用程序
+    .description = 选择 { -brand-short-name } 处理下载文件和内容的方式。
 applications-filter =
     .placeholder = 搜索文件类型或应用程序
 applications-type-column =
@@ -644,13 +713,19 @@ applications-use-other-label =
 applications-use-os-default-label =
     .value = { applications-use-os-default.label }
 
-##
+## Firefox updates
 
 applications-handle-new-file-types-description = { -brand-short-name } 应如何处理其他文件？
 applications-save-for-new-types =
     .label = 保存文件
     .accesskey = S
+applications-save-for-new-types2 =
+    .label = 自动保存文件
+    .accesskey = S
 applications-ask-before-handling =
+    .label = 询问要打开还是保存文件
+    .accesskey = A
+applications-ask-before-handling2 =
     .label = 询问要打开还是保存文件
     .accesskey = A
 drm-group =
@@ -665,6 +740,14 @@ update-application-description = 让 { -brand-short-name } 保持最新，持续
 # Variables:
 # $version (string) - Firefox version
 update-application-version = 版本: { $version } <a data-l10n-name="learn-more">新版变化</a>
+update-history-2 =
+    .label = 显示更新历史
+    .accesskey = p
+update-application-installation =
+    .label = 安装
+update-application-auto-2 =
+    .label = 自动安装更新（推荐）
+    .accesskey = A
 update-history =
     .label = 显示更新历史…
     .accesskey = p
@@ -672,6 +755,9 @@ update-application-allow-description = 允许 { -brand-short-name }：
 update-application-auto =
     .label = 自动安装更新（推荐）
     .accesskey = A
+update-application-check-choose-2 =
+    .label = 检查更新，但选择何时安装
+    .accesskey = C
 update-application-check-choose =
     .label = 检查更新，但由您决定是否安装
     .accesskey = C
@@ -681,6 +767,11 @@ update-application-manual =
 update-application-background-enabled =
     .label = 当 { -brand-short-name } 未运行时
     .accesskey = W
+update-application-warning-cross-user-setting-2 =
+    .message = 此设置将影响使用这份 { -brand-short-name } 程序的所有 Windows 账户及 { -brand-short-name } 配置文件。
+update-application-suppress-prompts-2 =
+    .label = 减少更新提醒
+    .accesskey = n
 update-application-warning-cross-user-setting = 此设置将影响使用这份 { -brand-short-name } 程序的所有 Windows 账户及 { -brand-short-name } 配置文件。
 update-application-use-service =
     .label = 使用后台服务静默安装更新
@@ -703,6 +794,21 @@ update-in-progress-ok-button = 放弃
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = 继续
+
+## About Firefox
+
+about-firefox-header =
+    .heading = 关于 { -brand-short-name }
+
+## Firefox updates
+
+update-application-heading =
+    .label = { -brand-short-name } 更新
+    .description = 更新可改进 { -brand-short-name } 的速度、稳定性和安全性。
+update-application-suppress-prompts-heading =
+    .label = 通知
+update-application-updates-managed-by-os =
+    .message = 更新由您的操作系统管理。
 
 ## Firefox support
 
@@ -736,7 +842,7 @@ performance-default-content-process-count =
 performance-group =
     .label = 性能
 
-## General Section - Browsing
+## Accessibility page
 
 browsing-title = 浏览
 browsing-group-label =
@@ -744,6 +850,10 @@ browsing-group-label =
 browsing-use-autoscroll =
     .label = 使用自动滚屏
     .accesskey = a
+keyboard-and-scrolling-group =
+    .label = 键盘导航和滚动
+motion-and-link-group =
+    .label = 滚动和链接样式
 browsing-use-smooth-scrolling =
     .label = 使用平滑滚动
     .accesskey = m
@@ -765,6 +875,11 @@ browsing-use-full-keyboard-navigation =
 browsing-search-on-start-typing =
     .label = 若在文本框外输入，则在页面中查找文本
     .accesskey = x
+settings-media-group =
+    .label = 媒体
+browsing-picture-in-picture-toggle-enabled-2 =
+    .label = 使用画中画
+    .accesskey = e
 browsing-picture-in-picture-toggle-enabled =
     .label = 启用画中画视频控件
     .accesskey = E
@@ -775,6 +890,8 @@ browsing-picture-in-picture-learn-more = 详细了解
 browsing-media-control =
     .label = 通过键盘、耳机或虚拟界面控制媒体
     .accesskey = v
+recommendations-group =
+    .label = 推荐
 browsing-media-control-learn-more = 详细了解
 browsing-cfr-recommendations =
     .label = 在您浏览时推荐扩展
@@ -785,6 +902,22 @@ browsing-cfr-features =
 browsing-cfr-recommendations-learn-more = 详细了解
 browsing-group =
     .label = 浏览
+
+## Accessibility page
+
+preferences-accessibility-header =
+    .heading = 无障碍
+preferences-default-zoom-select =
+    .aria-label = 默认缩放
+preferences-fonts-family =
+    .label = 字体系列
+    .accesskey = D
+preferences-fonts-size =
+    .label = 字体大小
+    .accesskey = s
+preferences-fonts-advanced-settings =
+    .label = 高级设置
+    .accesskey = A
 
 ## General Section - Proxy
 
@@ -963,6 +1096,12 @@ home-prefs-lists-header =
 # Timer is a widget on New Tab, similar to the Pomodoro timer.
 home-prefs-timer-header =
     .label = 计时器
+# Sports is a widget on New Tab showing sports scores and schedules.
+home-prefs-sports-widget-header =
+    .label = 体育
+# Clock is a widget on New Tab that displays time zones around the world.
+home-prefs-clocks-header =
+    .label = 时钟
 # "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
 home-prefs-support-firefox-header =
     .label = 支持 { -brand-product-name }
@@ -976,6 +1115,16 @@ home-prefs-manage-topics-link2 =
 home-prefs-choose-wallpaper-link = 选择壁纸
 home-prefs-choose-wallpaper-link2 =
     .label = 选择壁纸
+# Informational message bar that appears in the Firefox Home section when the options are disabled.
+# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
+# the features in settings.
+home-prefs-firefox-home-disabled-notice =
+    .message = 将新标签页或新窗口设置为 { -firefox-home-brand-name }以使用此功能。
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = 扩展（{ $extension }）
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -1085,6 +1234,7 @@ search-edit-engine =
     .label = 编辑
     .accesskey = E
 search-find-more-link = 寻找更多搜索引擎
+search-filtering-for-add-engine = 添加搜索引擎
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = 关键词重复
@@ -1103,6 +1253,9 @@ search-engine-group =
     .label = 默认搜索引擎
 search-default-engine =
     .aria-label = 默认搜索引擎
+# Header for the search section ("search" is a noun).
+search-section =
+    .heading = 搜索
 
 ## Containers Section
 
@@ -1131,13 +1284,10 @@ account-group-label2 =
 account-placeholder2 =
     .label = 您尚未登录
     .description = 登录以加密保护数据、确保数据私密，并可在使用 { -brand-short-name } 的各设备上触手可得。
-account-group-label =
-    .label = { -vendor-short-name } 账户
-account-placeholder =
-    .label = 您尚未登录
-    .description = 登录以跨设备同步。数据将保持私密，并受加密保护。
 account-sync-section =
     .heading = 账户与同步
+pane-account-sync-title2 = 账户与同步
+    .title = 账户与同步
 
 ## Firefox account - Signed out. Note that "Sync" and "Firefox account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
@@ -1263,9 +1413,6 @@ sync-syncing-across-devices-heading-2 = 跨设备同步的数据
 sync-syncing-across-devices-empty-state2 =
     .label = 管理同步的数据
     .description = 尚未同步任何数据。开始同步，让所有数据在您的各设备上触手可得。
-sync-syncing-across-devices-empty-state =
-    .label = 尚未同步任何数据。
-    .description = 开始同步即可跨设备使用所有数据。
 sync-currently-syncing-bookmarks = 书签
 sync-currently-syncing-history = 历史记录
 sync-currently-syncing-tabs = 打开的标签页
@@ -1394,7 +1541,7 @@ forms-ask-to-save-logins =
     .label = 向您询问是否保存网站的登录名和密码
     .accesskey = r
 
-## Privacy Section - Passwords
+## Privacy Panel Settings
 
 # "Logins" is the former term for "Passwords". Users should find password settings
 # by searching for the former term "logins". It's not displayed in the UI.
@@ -1495,6 +1642,17 @@ forms-windows-sso =
 forms-windows-sso-learn-more-link = 详细了解
 forms-windows-sso-desc = 在您的设备设置中管理账户
 windows-passkey-settings-label = 在系统设置中管理通行密钥
+
+## Privacy Panel Settings
+
+privacy-panel-settings-header =
+    .label = 隐私面板设置
+    .description = { -brand-short-name } 可帮助您在上网时保护个人信息。
+# By “breach message” we mean the UI messaging shown when Firefox detects that a
+# site the user has interacted with has been involved in a known data breach
+privacy-panel-breach-alerts =
+    .label = 显示外泄事件消息
+    .accesskey = s
 
 ## OS Authentication dialog
 
@@ -2058,6 +2216,10 @@ permissions-notification2 =
 permissions-header3 =
     .label = 权限
     .description = 管理网站可以访问、控制或触发的项目。
+permissions-data-section =
+    .heading = 权限与数据
+pane-permissions-data-title2 = 权限与数据
+    .title = 权限与数据
 
 ## Privacy Section - Data Collection
 
@@ -2098,9 +2260,6 @@ collection-studies-description = 抢先体验尚未全面推出的功能和概�
 collection-studies =
     .label = 允许 { -brand-short-name } 安装并运行一些研究项目
 collection-studies-link = 查看 { -brand-short-name } 研究
-nimbus-rollouts-enabled =
-    .label = 允许 { -brand-short-name } 在更新间隔期间改进功能、性能、稳定性。
-nimbus-rollouts-enabled-description = 更改会远程进行。
 addon-recommendations2 =
     .label = 允许进行个性化扩展推荐
 addon-recommendations-description = 获取扩展推荐，改进浏览体验。
@@ -2111,6 +2270,12 @@ collection-backlogged-crash-reports2 =
     .label = 自动发送崩溃报告
     .accesskey = c
 collection-backlogged-crash-reports-description = 此信息可帮助 { -vendor-short-name } 诊断和修复浏览器的问题。报告中可能包含个人或敏感数据。
+# Promotional message displayed in the Settings panes to inform users of the new redesign
+settings-redesign-promo =
+    .heading = 外观焕新，设置依旧。
+    .message = 我们重新排列了本页面，使其更易于浏览和探索。您的个人设置没有改变，所有项目都保留在此。提示：使用搜索，可直接跳到所需设置。
+settings-redesign-promo-dismiss-button =
+    .label = 知道了
 addon-recommendations =
     .label = 允许 { -brand-short-name } 提供个性化扩展推荐
 addon-recommendations-link = 详细了解
@@ -2367,11 +2532,37 @@ preferences-doh-custom-provider-label =
 preferences-doh-header2 =
     .heading = 基于 HTTPS 的 DNS
 
+## Connection and software security section
+
+preferences-connection-header =
+    .heading = 连接与软件安全
+preferences-connection-link-section =
+    .label = 连接与软件安全
+    .description = 了解保持安全连接、拦截有害软件，以及验证网站的方式
+preferences-connection-link-button =
+    .label = 高级设置
+
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = 桌面
 downloads-folder-name = 下载
 choose-download-folder-title = 选择下载文件夹：
+
+## Appearance page
+
+preferences-appearance-header =
+    .heading = 外观
+browser-theme-group =
+    .label = 浏览器主题
+    .description = 按照您的方式为 { -brand-short-name } 设计风格。主题颜色将应用于工具栏、菜单和消息。
+browser-theme-manage-link =
+    .label = 管理 { -brand-short-name } 主题
+related-settings-group =
+    .label = 相关设置
+related-settings-accessibility-link =
+    .label = 在无障碍部分中自定义缩放和字体设置
+related-settings-home-link =
+    .label = 定制 { -firefox-home-brand-name }
 
 ## AI controls page
 
@@ -2431,8 +2622,10 @@ preferences-ai-controls-block-confirmation-cancel =
     .label = 取消
 preferences-ai-controls-block-confirmation-confirm =
     .label = 屏蔽
+preferences-ai-controls-header2 =
+    .heading = { pane-ai-controls-title2 }
 
-pane-iceweasel-title = Iceweasel
+pane-iceweasel-title = 冰鼬
 category-iceweasel =
     .tooltiptext = 浏览器内部功能更改，易于访问
 iceweasel-header = Iceweasel 选项

@@ -236,6 +236,14 @@ tab-context-unnamed-group =
     .label = 未命名群組
 tab-group-name-default = 未命名群組
 
+## Tab Groups
+## Variables:
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = 分頁群組
+
 ## When collapsed, the tab group label's aria-description will indicate
 ## whether the hover menu is open or closed.
 
@@ -278,6 +286,14 @@ tab-group-editor-action-new-tab =
     .label = 在群組中開啟新分頁
 tab-group-editor-action-new-window =
     .label = 將群組移動至新視窗
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] 複製群組中的鏈結
+           *[other] 複製群組中的 { $linkCount } 的鏈結
+        }
 tab-group-editor-action-save =
     .label = 儲存並關閉群組
 tab-group-editor-action-ungroup =
@@ -287,6 +303,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = 完成
     .accessKey = D
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = 分享分頁群組
 tab-context-reopen-tab-group =
     .label = 重新開啟分頁群組
 # Variables:
@@ -335,9 +354,6 @@ tab-group-context-open-saved-group-in-new-window =
 tab-context-add-note =
     .label = 新增註記
     .accesskey = A
-tab-context-update-note =
-    .label = 更新註記
-    .accesskey = U
 tab-context-edit-note =
     .label = 編輯註記
     .accesskey = E

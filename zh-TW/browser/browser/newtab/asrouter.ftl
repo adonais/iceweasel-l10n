@@ -412,6 +412,14 @@ windows-10-eos-feature-toast-subtitle = 應使用者要求，{ -brand-product-na
 windows-10-eos-feature-toast-whats-new-button = 看看有什麼新鮮事
 windows-10-eos-feature-toast-dismiss-button = 知道了！
 
+## Windows 10 EoS Global Infobar
+
+windows-10-eos-global-infobar-title = <strong>Microsoft 已不再支援 Windows 10。</strong>請備份您的資訊，讓 { -brand-product-name } 為 Windows 11 準備就緒。
+windows-10-eos-global-infobar-primary-button = 開啟備份
+    .accesskey = T
+windows-10-eos-global-infobar-learn-more-link = 更多資訊
+    .accessKey = L
+
 ## ETP (Enhanced Tracking Protection) Strict exceptions infobar
 ##
 ## These strings are displayed in an infobar notification that appears when
@@ -440,3 +448,13 @@ set-default-menu-message-row-layout-subtitle-variant =
     }
 set-default-menu-message-primary-button = 設為預設瀏覽器
 set-default-menu-message-primary-button-variant = 設為主要瀏覽器
+
+## Firefox Relay 50 Masks Announcement
+
+# "on us" in this context means "for free" or "at no cost"
+relay-50-masks-announcement-title = 50 組轉寄信箱，我們招待
+relay-50-masks-announcement-subtitle = 現在起，您會獲得 50 組免費轉寄信箱（原本是 5 組）。為每個帳號使用獨立的轉寄信箱，保護您實際電子郵件地址的隱私。
+relay-50-masks-announcement-primary-button = 前往 { -relay-brand-name }
+    .accesskey = G
+relay-50-masks-announcement-secondary-button = 知道了！
+    .accesskey = D

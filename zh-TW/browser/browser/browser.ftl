@@ -377,7 +377,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = 檢視附加元件
@@ -421,6 +421,12 @@ quickactions-cmd-inspector = 檢測器, 開發工具, inspector, devtools
 # Opens about:logins
 quickactions-logins2 = 管理密碼
 quickactions-cmd-logins = 登入資訊, 密碼, 帳號, logins, passwords
+# Mutes all tabs playing audio
+quickactions-mute = 將正在播放音訊的分頁靜音
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = 靜音,噓
 # Opens about:addons page in the plugins section
 quickactions-plugins = 管理外掛程式
 quickactions-cmd-plugins = 外掛程式, plugins
@@ -545,9 +551,11 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = 您並未安全地連線至此網站。
 identity-connection-verified = 您正安全地連線至此網站。
 identity-ev-owner-label = 憑證簽發給：
+identity-verifier-label = 驗證機構：
 # "qualified" here refers to the qualified website authentication certificate presented by the site.
 identity-etsi = 符合歐盟（EU）2024/1183 法規規範。
 identity-description-custom-root2 = Mozilla 不認識此憑證簽發者，可能是由您的作業系統或網路管理員所加入的。
+identity-cert-exception-overridden = 您已將此網站加入例外清單。
 identity-remove-cert-exception =
     .label = 移除例外
     .accesskey = R
@@ -950,23 +958,11 @@ urlbar-searchmode-actions =
     .label = 動作
 urlbar-searchmode-exit-button =
     .tooltiptext = 關閉
-urlbar-searchmode-default =
-    .tooltiptext = 預設搜尋引擎
-# Label shown on the top of Searchmode Switcher popup. After this label, the
-# available search engines will be listed.
-urlbar-searchmode-popup-description-menucaption =
-    .label = 這次使用下列搜尋引擎搜尋：
-# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
-# reset after submitting.
-urlbar-searchmode-popup-sticky-description-menucaption =
-    .label = 使用下列引擎搜尋：
 # Label shown on the top of Searchmode Switcher popup. After this label, the
 # available search engines will be listed.
 urlbar-searchmode-popup-description = 這次使用下列搜尋引擎搜尋：
 urlbar-searchmode-popup-search-settings-menuitem =
     .label = 搜尋設定
-# Label shown next to a new search engine in the Searchmode Switcher popup to promote it.
-urlbar-searchmode-new = 新增
 # Searchmode Switcher button
 # Variables:
 #   $engine (String): the current default search engine.
@@ -976,10 +972,6 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = 未選擇捷徑，請挑選一個捷徑
     .tooltiptext = 未選擇捷徑，請挑選一個捷徑
-# Refers to the ability to search using keywords in the address bar
-urlbar-searchmode-no-keyword =
-    .label = 已停用關鍵字搜尋
-    .tooltiptext = 已停用關鍵字搜尋
 # Searchmode Switcher button
 # Variables:
 #   $engine (String): the current default search engine.
@@ -1028,6 +1020,21 @@ urlbar-result-action-switch-to-tabgroup = 切換到 { $group }
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = 開啟 { $group }
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = 用新分頁開啟
+    .accesskey = w
+urlbar-view-context-menu-open-in-container-tab =
+    .label = 用新容器分頁開啟
+    .accesskey = i
+urlbar-view-context-menu-open-in-window =
+    .label = 用新視窗開啟
+    .accesskey = N
+urlbar-view-context-menu-open-in-private-window =
+    .label = 用新隱私視窗開啟
+    .accesskey = P
 
 ## Labels shown above groups of urlbar results
 
@@ -1255,6 +1262,9 @@ toolbar-button-open-file =
 toolbar-button-synced-tabs =
     .label = 同步的分頁
     .tooltiptext = 顯示來自其他裝置的分頁
+toolbar-button-send-tab =
+    .label = 傳送分頁
+    .tooltiptext = 將目前分頁傳送到另一台裝置
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
@@ -1263,6 +1273,9 @@ toolbar-button-new-private-window =
 toolbar-button-share-tab =
     .label = 分享
     .tooltiptext = 分享此頁面
+toolbar-button-tab-groups =
+    .label = 分頁群組
+    .tooltiptext = 顯示您的分頁群組
 
 ## EME notification panel
 
@@ -1282,6 +1295,8 @@ panel-save-update-password = 密碼
 # "More" item in macOS share menu
 menu-share-more =
     .label = 更多…
+menu-share-windows =
+    .label = 更多選項
 # Variables:
 #   $count (Number) - The number of links that will be copied.
 menu-share-copy-links =
@@ -1443,6 +1458,8 @@ unified-extensions-button-blocklisted =
 reset-pbm-toolbar-button =
     .label = 結束隱私瀏覽階段
     .tooltiptext = 結束隱私瀏覽階段
+reset-pbm-panel-heading2 = 要清除資料並重新開始隱私瀏覽階段嗎？
+reset-pbm-panel-description2 = 不用關閉隱私瀏覽視窗，即可清除瀏覽紀錄、Cookie 以及所有其他網站資料。
 reset-pbm-panel-heading = 要結束隱私瀏覽階段嗎？
 reset-pbm-panel-description = 將關閉所有隱私分頁，並清除瀏覽紀錄、Cookie 及其他網站資料。
 reset-pbm-panel-always-ask-checkbox =
@@ -1451,10 +1468,16 @@ reset-pbm-panel-always-ask-checkbox =
 reset-pbm-panel-cancel-button =
     .label = 取消
     .accesskey = C
+reset-pbm-panel-confirm-button2 =
+    .label = 清除隱私瀏覽階段
+    .accesskey = l
 reset-pbm-panel-confirm-button =
     .label = 清除瀏覽階段資料
     .accesskey = D
 reset-pbm-panel-complete = 已刪除瀏覽階段資料
+reset-pbm-toolbar-button2 =
+    .label = 清除隱私瀏覽階段
+    .tooltiptext = 清除隱私瀏覽階段
 
 ## Autorefresh blocker
 
@@ -1637,4 +1660,18 @@ trustpanel-fingerprinter-list-header = 下列網站嘗試對您建立數位指�
 trustpanel-cryptominer-blocking-tab-header = { -brand-product-name } 已封鎖 { $count } 組加密貨幣採礦程式
 trustpanel-cryptominer-not-blocking-tab-header = { -brand-product-name } 已放行 { $count } 組加密貨幣採礦程式
 trustpanel-cryptominer-tab-list-header = 下列網站嘗試挖礦：
+# "account on this site" refers to the (breached) site the user is currently visiting, not a Mozilla Monitor account.
+trustpanel-breachalerts-anonymous-breached-header = 有在這個網站註冊過帳號嗎？
+trustpanel-breachalerts-anonymous-breached-description = { -brand-product-name } 發現此網站在過去 12 個月內曾發生資料外洩事件，看看您是否受到影響。
+trustpanel-breachalerts-anonymous-breached-button-dismiss = 知道了！
+trustpanel-breachalerts-anonymous-breached-button-check-monitor = 進行免費掃描
 trustpanel-blocker-section-header2 = 已封鎖此網站上的 <span data-l10n-name="count">{ $count }</span> 組追蹤器
+
+## Reduced Protection Infobar ("ReducedProtectionNotification.sys.mjs")
+
+# "temporarily lower your tracking protection" refers to temporarily decreasing the amount of tracking protection.
+reduced-protection-infobar-message = <strong>網站看來怪怪的？</strong>請重新載入頁面以暫時降低追蹤保護等級。
+reduced-protection-infobar-reload-button = 重新載入
+    .accesskey = R
+reduced-protection-infobar-never-show-button = 不要再顯示
+    .accesskey = D

@@ -190,15 +190,17 @@ fp-neterror-illustration-alt =
 
 fp-neterror-connection-intro = { -brand-short-name } 無法與伺服器 { $hostname } 建立安全連線。
 fp-neterror-offline-intro = { -brand-short-name } 無法連線到位於 <strong>{ $hostname }</strong> 的伺服器
+fp-neterror-offline-intro-2 = { -brand-short-name } 無法連線到位於 <strong>{ $hostname }</strong> 的伺服器。
 fp-neterror-net-timeout-intro = 位於 <strong>{ $hostname }</strong> 的伺服器花了太久時間，還是沒有回應。
-# Variables:
-#   $hostname (String) - Hostname of the website to which the user was trying to connect.
-fp-neterror-http-error-page-intro = <strong>{ $hostname }</strong> 回傳錯誤訊息。
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
 #   $responsestatus (Number) - HTTP response status code (e.g., 404).
 #   $responsestatustext (String) - HTTP response status text (e.g., "Not Found", always in English).
 fp-neterror-http-error-intro = 位於 <strong>{ $hostname }</strong> 的伺服器回傳了錯誤：{ $responsestatus } { $responsestatustext }
+# Variables:
+#   $hostname (String) - Hostname of the website to which the user was trying to connect.
+fp-neterror-invalid-header-value-intro = <strong>{ $hostname }</strong> 送回了網頁安全標準不允許的含有空白字元的檔頭。
+fp-neterror-content-encoding-intro = 您嘗試檢視的頁面無法顯示，因為其中使用了無效或不支援的壓縮類型。
 fp-neterror-coop-coep-intro = 因為此頁面的安全性設定與前一頁不符，{ -brand-short-name } 並未載入此頁面。
 fp-neterror-blocked-by-policy-intro = 您的組織已封鎖存取此網頁或網站。
 fp-neterror-http-auth-disabled-intro = 可能是其他假扮為該網站的有心人，正嘗試偷走您的帳號、密碼、信箱等資料。

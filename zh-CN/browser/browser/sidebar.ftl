@@ -58,6 +58,8 @@ sidebar-customize-firefox-tools-header =
 sidebar-customize-firefox-settings = 管理 { -brand-short-name } 设置
 sidebar-vertical-tabs =
     .label = 垂直标签页
+sidebar-settings2 =
+    .label = 设置
 sidebar-settings =
     .label = 侧栏设置
 sidebar-hide-tabs-and-sidebar =
@@ -70,7 +72,11 @@ sidebar-show-on-the-left =
 # hovers over it.
 expand-sidebar-on-hover =
     .label = 悬停时展开侧栏
+sidebar-manage-extensions2 = 管理所有扩展
 sidebar-manage-extensions = 管理扩展
+sidebar-customize-extensions-header2 = 扩展
+sidebar-customize-firefox-tools-header2 =
+    .label = 工具
 
 ## Labels for sidebar context menu items
 

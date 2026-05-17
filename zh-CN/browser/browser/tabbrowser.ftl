@@ -224,6 +224,9 @@ tab-group-editor-color-selector2-gray = 灰色
     .title = 灰色
 tab-group-editor-color-selector2-red = 红色
     .title = 红色
+tab-group-menu-closed-tab-group =
+    .label = { $tabGroupName }
+    .title = { $tabGroupName } — 已关闭
 tab-group-description = { $tabGroupName } — 标签页群组
 tab-group-label-tooltip-collapsed = { $tabGroupName } — 已折叠
 tab-group-label-tooltip-expanded = { $tabGroupName } — 已展开
@@ -232,6 +235,14 @@ tab-group-preview-name =
 tab-context-unnamed-group =
     .label = 未命名群组
 tab-group-name-default = 未命名群组
+
+## Tab Groups
+## Variables:
+##  $tabGroupName (String): The name of the tab group. See also tab-group-name-default, which will be
+##                          used when the group's name is empty.
+
+# Title placed over a list of all of the user's tab groups
+tab-groups-list-title = 标签页群组
 
 ## When collapsed, the tab group label's aria-description will indicate
 ## whether the hover menu is open or closed.
@@ -275,6 +286,14 @@ tab-group-editor-action-new-tab =
     .label = 在群组中新建标签页
 tab-group-editor-action-new-window =
     .label = 移动群组到新窗口
+# Variables:
+#  $linkCount (Number): the number of shareable links in the group.
+tab-group-editor-action-copy-links =
+    .label =
+        { $linkCount ->
+            [1] 复制群组中的链接
+           *[other] 复制群组中的 { $linkCount } 个链接
+        }
 tab-group-editor-action-save =
     .label = 保存群组并关闭
 tab-group-editor-action-ungroup =
@@ -284,6 +303,9 @@ tab-group-editor-action-delete =
 tab-group-editor-done =
     .label = 完成
     .accessKey = D
+# Share is a verb here. Meaning to "Share" the "tab group"
+tab-group-editor-action-share-tab-group =
+    .label = 分享标签页群组
 tab-context-reopen-tab-group =
     .label = 重新打开标签页群组
 # Variables:
@@ -332,9 +354,6 @@ tab-group-context-open-saved-group-in-new-window =
 tab-context-add-note =
     .label = 添加备注
     .accesskey = A
-tab-context-update-note =
-    .label = 更新备注
-    .accesskey = U
 tab-context-edit-note =
     .label = 编辑备注
     .accesskey = E
@@ -351,6 +370,12 @@ tab-note-editor-button-cancel =
 tab-note-editor-button-save =
     .label = 保存
     .accesskey = S
+tab-note-editor-button-delete =
+    .title = 删除备注
+    .aria-label = 删除备注
+    .accesskey = D
+tab-note-preview-edit-icon =
+    .alt = 编辑备注
 # Link to show the full tab note in case it was truncated.
 tab-note-preview-expand = 详细了解
 tab-note-panel-add-note-new-badge =

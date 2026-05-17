@@ -140,6 +140,8 @@ urlbar-web-notification-anchor =
     .tooltiptext = 更改您是否接收该网站发来的通知
 urlbar-midi-notification-anchor =
     .tooltiptext = 打开 MIDI 面板
+urlbar-serial-notification-anchor =
+    .tooltiptext = 打开串行端口面板
 urlbar-eme-notification-anchor =
     .tooltiptext = 管理 DRM 软件使用
 urlbar-web-authn-anchor =
@@ -282,6 +284,8 @@ urlbar-canvas-blocked =
     .tooltiptext = 您已禁止此网站获取 Canvas 数据。
 urlbar-midi-blocked =
     .tooltiptext = 您已阻止此网站访问 MIDI。
+urlbar-serial-blocked =
+    .tooltiptext = 您已阻止此网站访问串行端口。
 urlbar-install-blocked =
     .tooltiptext = 您已阻止此网站安装附加组件。
 # Variables
@@ -373,7 +377,7 @@ search-one-offs-actions =
 
 ## QuickActions are shown in the urlbar as the user types a matching string
 ## The -cmd- strings are comma separated list of keywords that will match
-## the action.
+## the action. English commas should be used, i.e. ,
 
 # Opens the about:addons page in the home / recommendations section
 quickactions-addons = 查看附加组件
@@ -409,7 +413,7 @@ quickactions-help = { -brand-product-name } 帮助
 quickactions-cmd-help = 帮助, 支持, help, support
 # Opens the devtools web inspector
 quickactions-inspector2 = 打开开发者工具
-quickactions-cmd-inspector2 = 检查器, 开发者工具, inspector, devtools, dev tools
+quickactions-cmd-inspector2 = 查看器, 开发者工具, inspector, devtools, dev tools
 # Opens Firefox Library
 quickactions-cmd-library = 我的足迹, 足迹, library
 quickactions-library = 打开“我的足迹”
@@ -417,6 +421,12 @@ quickactions-cmd-inspector = 查看器, 开发工具, inspector, devtools
 # Opens about:logins
 quickactions-logins2 = 管理密码
 quickactions-cmd-logins = 登录信息, 密码, logins, passwords
+# Mutes all tabs playing audio
+quickactions-mute = 静音正在播放音频的标签页
+# List of words that would trigger the "mute tabs" action from the address bar.
+# Replace with idiomatic expressions in your language to silence something or
+# someone.
+quickactions-cmd-mute = 静音, 关闭声音, mute, shush, sssssh
 # Opens about:addons page in the plugins section
 quickactions-plugins = 管理插件
 quickactions-cmd-plugins = 插件, plugins
@@ -537,9 +547,11 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = 您并未安全地连接至此网站。
 identity-connection-verified = 您已安全地连接至此网站。
 identity-ev-owner-label = 证书颁发给：
+identity-verifier-label = 验证者：
 # "qualified" here refers to the qualified website authentication certificate presented by the site.
 identity-etsi = 符合 (EU) 2024/1183 法规规范。
 identity-description-custom-root2 = Mozilla 不认识此证书颁发者。它可能是由您的操作系统或管理员身份添加。
+identity-cert-exception-overridden = 您已将此网站加入安全例外。
 identity-remove-cert-exception =
     .label = 移除例外
     .accesskey = R
@@ -641,6 +653,11 @@ sharing-warning-proceed-to-tab =
     .label = 继续前往标签页
 sharing-warning-disable-for-session =
     .label = 在本次会话期间禁用共享保护
+
+## WebSerial "select a port" popup
+
+webserial-select-port-label = 选择串行端口：
+webserial-no-ports-available = 无可用串行端口
 
 ## DevTools F12 popup
 
@@ -925,23 +942,11 @@ urlbar-searchmode-actions =
     .label = 操作
 urlbar-searchmode-exit-button =
     .tooltiptext = 关闭
-urlbar-searchmode-default =
-    .tooltiptext = 默认搜索引擎
-# Label shown on the top of Searchmode Switcher popup. After this label, the
-# available search engines will be listed.
-urlbar-searchmode-popup-description-menucaption =
-    .label = 本次搜索使用：
-# Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
-# reset after submitting.
-urlbar-searchmode-popup-sticky-description-menucaption =
-    .label = 搜索引擎：
 # Label shown on the top of Searchmode Switcher popup. After this label, the
 # available search engines will be listed.
 urlbar-searchmode-popup-description = 本次搜索使用：
 urlbar-searchmode-popup-search-settings-menuitem =
     .label = 搜索设置
-# Label shown next to a new search engine in the Searchmode Switcher popup to promote it.
-urlbar-searchmode-new = 新
 # Searchmode Switcher button
 # Variables:
 #   $engine (String): the current default search engine.
@@ -951,10 +956,6 @@ urlbar-searchmode-button2 =
 urlbar-searchmode-button-no-engine =
     .label = 未选择快捷方式，请选择
     .tooltiptext = 未选择快捷方式，请选择
-# Refers to the ability to search using keywords in the address bar
-urlbar-searchmode-no-keyword =
-    .label = 关键词搜索已禁用
-    .tooltiptext = 关键词搜索已禁用
 # Searchmode Switcher button
 # Variables:
 #   $engine (String): the current default search engine.
@@ -987,6 +988,7 @@ urlbar-searchmode-popup-one-off-header = 本次搜索使用：
 # reset after submitting.
 urlbar-searchmode-popup-header = 搜索引擎：
 urlbar-searchmode-popup-search-settings-panelitem = 搜索设置
+urlbar-searchmode-popup-settings-panelitem = 设置
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -1002,6 +1004,21 @@ urlbar-result-action-switch-to-tabgroup = 切换到“{ $group }”
 # Label for a quickaction result used to re-opan a saved tab group.
 #  $group (String): the name of the tab group to re-open
 urlbar-result-action-open-saved-tabgroup = 打开“{ $group }”
+
+## Used in the context menu in urlbar view.
+
+urlbar-view-context-menu-open-in-tab =
+    .label = 新建标签页打开
+    .accesskey = w
+urlbar-view-context-menu-open-in-container-tab =
+    .label = 新建身份标签页打开
+    .accesskey = i
+urlbar-view-context-menu-open-in-window =
+    .label = 新建窗口打开
+    .accesskey = N
+urlbar-view-context-menu-open-in-private-window =
+    .label = 新建隐私窗口打开
+    .accesskey = P
 
 ## Labels shown above groups of urlbar results
 
@@ -1075,6 +1092,9 @@ fullscreen-warning-no-domain = 此文档已进入全屏模式
 fullscreen-exit-button = 退出全屏模式 (Esc)
 # "esc" is lowercase on mac keyboards, but uppercase elsewhere.
 fullscreen-exit-mac-button = 退出全屏模式 (esc)
+fullscreen-keyboardlock-exit-button = 退出全屏（长按 Esc）
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-keyboardlock-exit-mac-button = 退出全屏（长按 Esc）
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
@@ -1234,6 +1254,9 @@ toolbar-button-new-private-window =
 toolbar-button-share-tab =
     .label = 共享
     .tooltiptext = 共享此页面
+toolbar-button-tab-groups =
+    .label = 标签页群组
+    .tooltiptext = 显示标签页群组
 
 ## EME notification panel
 
@@ -1253,6 +1276,8 @@ panel-save-update-password = 密码
 # "More" item in macOS share menu
 menu-share-more =
     .label = 更多…
+menu-share-windows =
+    .label = 更多选项
 # Variables:
 #   $count (Number) - The number of links that will be copied.
 menu-share-copy-links =
@@ -1410,6 +1435,8 @@ unified-extensions-button-blocklisted =
 reset-pbm-toolbar-button =
     .label = 结束隐私浏览
     .tooltiptext = 结束隐私浏览
+reset-pbm-panel-heading2 = 确定要清除数据并开始新的隐私浏览吗？
+reset-pbm-panel-description2 = 这将删除历史记录、Cookie 以及其他所有网站数据，但不关闭隐私窗口。
 reset-pbm-panel-heading = 要结束隐私浏览吗？
 reset-pbm-panel-description = 关闭所有隐私标签页，并删除历史记录和 Cookie 等所有网站数据。
 reset-pbm-panel-always-ask-checkbox =
@@ -1418,6 +1445,9 @@ reset-pbm-panel-always-ask-checkbox =
 reset-pbm-panel-cancel-button =
     .label = 取消
     .accesskey = C
+reset-pbm-panel-confirm-button2 =
+    .label = 清除本次隐私浏览
+    .accesskey = l
 reset-pbm-panel-confirm-button =
     .label = 删除本次浏览数据
     .accesskey = D
@@ -1600,4 +1630,18 @@ trustpanel-fingerprinter-list-header = 这些网站正试图跟踪您的数字�
 trustpanel-cryptominer-blocking-tab-header = { -brand-product-name } 已拦截 { $count } 个加密货币挖矿程序
 trustpanel-cryptominer-not-blocking-tab-header = { -brand-product-name } 已允许 { $count } 个加密货币挖矿程序
 trustpanel-cryptominer-tab-list-header = 这些网站正试图挖掘加密货币：
+# "account on this site" refers to the (breached) site the user is currently visiting, not a Mozilla Monitor account.
+trustpanel-breachalerts-anonymous-breached-header = 在这个网站注册过账户吗？
+trustpanel-breachalerts-anonymous-breached-description = { -brand-product-name } 发现此网站在 12 个月内发生过数据外泄事件，请检查您是否受影响。
+trustpanel-breachalerts-anonymous-breached-button-dismiss = 知道了
+trustpanel-breachalerts-anonymous-breached-button-check-monitor = 开始免费扫描
 trustpanel-blocker-section-header2 = 已在此网站上拦截 <span data-l10n-name="count">{ $count }</span> 个跟踪器
+
+## Reduced Protection Infobar ("ReducedProtectionNotification.sys.mjs")
+
+# "temporarily lower your tracking protection" refers to temporarily decreasing the amount of tracking protection.
+reduced-protection-infobar-message = <strong>网站功能异常？</strong>重新加载页面以暂时降低跟踪保护等级。
+reduced-protection-infobar-reload-button = 重新加载
+    .accesskey = R
+reduced-protection-infobar-never-show-button = 不再显示
+    .accesskey = D
