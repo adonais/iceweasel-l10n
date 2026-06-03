@@ -27,7 +27,7 @@ ipprotection-feature-introduction-title = 欢迎连接 VPN，现已内置于浏�
 ipprotection-feature-introduction-link-text-2 = 使用全新的<a data-l10n-name="learn-more-vpn">内置 VPN</a> 隐藏真实位置、保护个人数据。
 # Used for callout for users who expressed interest in privacy in onboarding
 ipprotection-feature-introduction-title-privacy = 再添加一层隐私保护
-ipprotection-feature-introduction-link-text-privacy = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的内置 VPN</a> 有助于保护您的浏览。5 个位置任您选择，让浏览更私密。
+ipprotection-feature-introduction-link-text-privacy-1 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的内置 VPN</a> 有助于保护您的浏览。多个位置任您选择，让浏览更私密。
 ipprotection-feature-introduction-link-text-private-browsing-2 = 即使是在隐私窗口，使用全新的<a data-l10n-name="learn-more-vpn">内置 VPN</a> 也能隐藏真实位置、保护个人数据。
 ipprotection-feature-introduction-description-private-browsing = 即使是在隐私窗口，也能隐藏真实位置，获得额外保护。
 # Used for callout shown on login to public wi-fi through a captive portal
@@ -35,12 +35,22 @@ ipprotection-feature-introduction-title-captive-portal = 正在使用公共 Wi-F
 # Used for discovery callouts for both captive portal login and private browsing
 ipprotection-feature-introduction-link-text-captive-portal = 5 个位置任您选择，隐藏真实浏览位置，获得<a data-l10n-name="learn-more-vpn">额外隐私保护</a>。
 ipprotection-feature-introduction-description-captive-portal = 即使使用公共 Wi-Fi，也能隐藏真实位置，获得额外保护。
+# Used for discovery callouts for both captive portal login and private browsing
+ipprotection-feature-introduction-link-text-captive-portal-1 = 多个位置任您选择，隐藏真实浏览位置，获得<a data-l10n-name="learn-more-vpn">额外隐私保护</a>。
 ipprotection-feature-introduction-button-primary = 下一步
 ipprotection-feature-introduction-button-secondary-not-now = 暂时不要
+ipprotection-feature-introduction-button-secondary-not-now-menuitem =
+    .label = 暂时不要
 ipprotection-feature-introduction-button-secondary-no-thanks = 不了，谢谢
+ipprotection-feature-introduction-button-secondary-no-thanks-menuitem =
+    .label = 不了，谢谢
 ipprotection-feature-introduction-button-secondary-remove = 从工具栏移除 VPN
 ipprotection-feature-introduction-button-secondary-remove-1 =
     .label = 从工具栏移除 VPN
+
+## Feature introduction callout
+
+ipprotection-feature-introduction-link-text-privacy = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的内置 VPN</a> 有助于保护您的浏览。5 个位置任您选择，让浏览更私密。
 
 ## Site settings callout
 
@@ -52,6 +62,7 @@ ipprotection-site-settings-callout-button = 知道了
 
 ipprotection-location-selection-callout-title = 新功能：随心变换您的位置
 ipprotection-location-selection-callout-description = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的内置 VPN</a> 可让您从 5 个浏览位置中选择，或者由我们选择最快的一个。
+ipprotection-location-selection-callout-description-1 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的内置 VPN</a> 可让您从多个浏览位置中选择，或者由我们选择最快的一个。
 ipprotection-location-selection-callout-primary-button = 试试看
 ipprotection-location-selection-callout-secondary-button = 知道了
 
@@ -65,6 +76,7 @@ unauthenticated-choose-location-message = 从 5 个位置中选择，或者由 {
 # Variables
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 unauthenticated-bandwidth-limit-message = 每月可免费获得 { $maxUsage } GB VPN 流量
+unauthenticated-choose-location-message-1 = 从多个位置中选择，或者由 { -brand-product-name } 选择最快的一个。
 unauthenticated-get-started = 开始使用
 unauthenticated-terms-of-service-privacy-notice = 若继续，即表示您同意我们的<a data-l10n-name="vpn-terms-of-service">服务条款</a>和<a data-l10n-name="vpn-privacy-notice">隐私声明</a>。
 site-exclusion-toggle-enabled-1 =
@@ -106,6 +118,7 @@ ipprotection-connection-status-connecting-1 = VPN 正在连接…
 # The button displays the selected VPN location.
 # This shows the default selection, "Recommended" which is the recommended location as determined by Firefox.
 ipprotection-recommended-location-button = 位置：推荐
+ipprotection-recommended-location-description = 由 { -brand-product-name } 查找最快的位置
 ipprotection-recommended-location-badge = 新
 # Variables
 #   $country (string) - The country selected for the VPN server location
@@ -114,6 +127,9 @@ ipprotection-locations-subview =
     .title = 选择位置
 ipprotection-locations-subview-description = 选择通过其他位置浏览。
 ipprotecion-locations-subview-recommended-label = 推荐
+ipprotection-locations-subview-recommended-description = 查找最快的位置
+# Label shown next to a VPN location that the user cannot select.
+ipprotection-locations-unavailable-label = 不可用
 ipprotection-locations-subview-promo =
     .heading = { -mozilla-vpn-brand-name } 让保护更进一步
     .message = 从 300 多个位置中选择，并在最多 5 台设备上保护您的所有应用。
@@ -149,13 +165,13 @@ ipprotection-connection-status-blocked-error-description = 当地法律未允许
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 ipprotection-message-bandwidth-warning =
     .heading = VPN 流量即将用尽
-    .message = 本月剩余 { $usageLeft } / { $maxUsage } GB。
+    .message = 本月剩余 { $usageLeft } GB/{ $maxUsage } GB。
 # Variables
 #   $usageLeft (number) - The amount of data a user has left in a month (in MB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 ipprotection-message-bandwidth-warning-mb =
     .heading = VPN 流量即将用尽
-    .message = 本月剩余 { $usageLeft } / { $maxUsage } GB。
+    .message = 本月剩余 { $usageLeft } GB/{ $maxUsage } GB。
 ipprotection-message-continuous-onboarding-intro = 开启 VPN，隐藏真实位置，为浏览添一层加密保护。
 ipprotection-message-continuous-onboarding-autostart = 将 VPN <a data-l10n-name="setting-link">设为打开 { -brand-short-name } 时自动开启</a>，添一层保护。
 ipprotection-message-continuous-onboarding-site-settings = { -brand-short-name } 将记住您设置为使用 VPN 的网站。您随时可在<a data-l10n-name="setting-link">设置</a>中更新网站。
@@ -229,19 +245,19 @@ ip-protection-exclusions-desc = 将为不在此列表中的所有网站使用 VP
 # Variables
 #   $usageLeft (string) - The amount of data a user has left in a month (in GB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
-ip-protection-bandwidth-left-this-month-gb = 本月剩余 { $usageLeft } / { $maxUsage } GB
+ip-protection-bandwidth-left-this-month-gb = 本月剩余 { $usageLeft } GB/{ $maxUsage } GB
 # Variables
 #   $usageLeft (string) - The amount of data a user has left in a month (in GB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
-ip-protection-bandwidth-left-gb = 剩余 { $usageLeft } / { $maxUsage } GB
+ip-protection-bandwidth-left-gb = 剩余 { $usageLeft } GB/{ $maxUsage } GB
 # Variables
 #   $usageLeft (number) - The amount of data a user has left in a month (in MB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
-ip-protection-bandwidth-left-this-month-mb = 本月剩余 { $usageLeft } MB / { $maxUsage } GB
+ip-protection-bandwidth-left-this-month-mb = 本月剩余 { $usageLeft } MB/{ $maxUsage } GB
 # Variables
 #   $usageLeft (number) - The amount of data a user has left in a month (in MB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
-ip-protection-bandwidth-left-mb = 剩余 { $usageLeft } MB / { $maxUsage } GB
+ip-protection-bandwidth-left-mb = 剩余 { $usageLeft } MB/{ $maxUsage } GB
 # Variables
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 ip-protection-bandwidth-hit-for-the-month = 您已用完全部 { $maxUsage } GB VPN 流量，使用权限将于下个月重置。

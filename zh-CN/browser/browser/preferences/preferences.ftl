@@ -51,6 +51,8 @@ pane-general-title = 常规
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = 主页
+pane-home-startup-title2 = 主页与启动
+    .title = 主页与启动
 pane-search-title2 = 搜索
     .title = 搜索
 pane-privacy-title3 = 隐私与安全
@@ -119,7 +121,7 @@ close-button =
 do-not-track-removal2 =
     .label = 我们已不再支持“请勿跟踪”信号
 applications-setting-new-file-types =
-    .label = { -brand-short-name } 应如何处理其他文件？
+    .label = { -brand-short-name } 处理其他文件的方式
 
 ## Browser Restart Dialog
 
@@ -234,6 +236,10 @@ preferences-profile-to-copy =
 # to make a copy of that profile.
 preferences-copy-profile-select = 选择配置文件
 preferences-copy-profile-button = 复制
+tabs-browsing-section =
+    .heading = 标签页与浏览
+pane-tabs-browsing-title2 = 标签页与浏览
+    .title = 标签页与浏览
 tabs-group-header2 =
     .label = 标签页
 tabs-opening-heading =
@@ -345,6 +351,8 @@ browser-layout-vertical-tabs2 =
 browser-layout-show-sidebar2 =
     .label = 显示侧栏
     .description = 快捷使用书签、手机上的标签页、AI 聊天机器人等内容，无需分心于其他界面。
+page-navigation-group =
+    .label = 页面导航
 browser-layout-header = 浏览器布局
 browser-layout-horizontal-tabs =
     .label = 水平标签页
@@ -462,6 +470,8 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = 仅缩放文本
     .accesskey = t
+preferences-text-zoom-override-warning2 =
+    .message = 若开启“仅缩放文本”且默认缩放比例非 100%，部分网站可能无法正确显示内容。
 preferences-text-zoom-override-warning =
     .message = 警告：若选择“仅缩放文本”，而默认缩放比例不设为 100%，则可能导致某些网站或内容异常。
 language-header = 语言
@@ -715,7 +725,7 @@ applications-use-os-default-label =
 
 ## Firefox updates
 
-applications-handle-new-file-types-description = { -brand-short-name } 应如何处理其他文件？
+applications-handle-new-file-types-description = { -brand-short-name } 处理其他文件的方式
 applications-save-for-new-types =
     .label = 保存文件
     .accesskey = S
@@ -1743,6 +1753,10 @@ addresses-no-addresses-stored-message =
 address-moz-box-item =
     .label = { $name }
     .description = { $address }
+pane-passwords-autofill-title2 = 密码与自动填写
+    .title = 密码与自动填写
+preferences-passwords-autofill-header =
+    .heading = 密码与自动填写
 # These values are displayed for each credit card record listed on the Manage Payment methods
 # settings page.
 # Variables:
@@ -2554,7 +2568,7 @@ preferences-appearance-header =
     .heading = 外观
 browser-theme-group =
     .label = 浏览器主题
-    .description = 按照您的方式为 { -brand-short-name } 设计风格。主题颜色将应用于工具栏、菜单和消息。
+    .description = 按您喜好，为 { -brand-short-name } 赋予风格。主题色将应用到工具栏、菜单和消息。
 browser-theme-manage-link =
     .label = 管理 { -brand-short-name } 主题
 related-settings-group =
@@ -2563,6 +2577,8 @@ related-settings-accessibility-link =
     .label = 在无障碍部分中自定义缩放和字体设置
 related-settings-home-link =
     .label = 定制 { -firefox-home-brand-name }
+related-settings-tabs-browsing-link =
+    .label = 定制浏览器布局
 
 ## AI controls page
 
@@ -2795,7 +2811,7 @@ security-privacy-status-trackers-label = 上月拦截了 { $trackerCount } 个�
 security-privacy-status-strict-enabled-label = 正在使用<a data-l10n-name="strict-tracking-protection">严格保护</a>
 # This string appears under "Enhanced Tracking Protection is on" when a user has enabled "Custom" in Enhanced Tracking Protection advanced settings
 security-privacy-status-custom-enabled-label = 正在使用<a data-l10n-name="custom-tracking-protection">自定义保护</a>
-security-privacy-status-up-to-date-label = 您已安装最新、最安全的 { -brand-short-name } 版本
+security-privacy-status-up-to-date-label = 已安装最新、最安全的 { -brand-short-name } 版本
 security-privacy-status-update-needed-label = { -brand-short-name } 有新版本可用。
 security-privacy-status-update-error-label = { -brand-short-name } 更新时遇到问题
 security-privacy-status-update-checking-label = { -brand-short-name } 正在检查更新
@@ -2868,6 +2884,18 @@ preferences-etp-custom-cookies-enabled =
     .label = Cookie
 preferences-etp-custom-cookie-behavior =
     .aria-label = Cookie
+preferences-etp-custom-cookie-behavior-accept-all =
+    .label = 允许所有 Cookie
+preferences-etp-custom-cookie-behavior-block-cross-site-cookies =
+    .label = 拦截跨站 Cookie
+preferences-etp-custom-cookie-behavior-isolate-cross-site-cookies =
+    .label = 隔离跨站 Cookie
+preferences-etp-custom-cookie-behavior-block-unvisited =
+    .label = 拦截来自未访问网站的 Cookie
+preferences-etp-custom-cookie-behavior-block-all-cross-site-cookies =
+    .label = 拦截所有跨站 Cookie（可能导致网站异常）
+preferences-etp-custom-cookie-behavior-block-all =
+    .label = 拦截所有 Cookie（将会导致网站异常）
 preferences-etpc-custom-cookie-behavior-accept-all =
     .label = 允许所有 Cookie
 preferences-etp-custom-tracking-protection-enabled =

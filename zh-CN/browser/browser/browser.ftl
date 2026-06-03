@@ -414,6 +414,9 @@ quickactions-cmd-help = 帮助, 支持, help, support
 # Opens the devtools web inspector
 quickactions-inspector2 = 打开开发者工具
 quickactions-cmd-inspector2 = 查看器, 开发者工具, inspector, devtools, dev tools
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = 取色
+quickactions-cmd-colorpicker = 取色器, 拾色器, 吸管, 滴管, 选取颜色, color picker, eyedropper, pick color
 # Opens Firefox Library
 quickactions-cmd-library = 我的足迹, 足迹, library
 quickactions-library = 打开“我的足迹”
@@ -470,6 +473,9 @@ quickactions-cmd-update = 更新, update
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = 查看页面源代码
 quickactions-cmd-viewsource2 = 查看源代码, 源代码, 页面源代码, 查看源码, 源码, 页面源码, view source, source, page source
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = 打开 { -firefoxlabs-brand-name }
+quickactions-cmd-labs = 实验室, 实验, labs, experiment
 quickactions-cmd-viewsource = 查看源代码, 查看源码, 源代码, 源码, view source, source
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
@@ -1190,7 +1196,7 @@ repair-text-encoding-button =
     .label = 修复文字编码
     .tooltiptext = 根据页面内容猜测正确的文字编码
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1246,6 +1252,9 @@ toolbar-button-open-file =
 toolbar-button-synced-tabs =
     .label = 同步的标签页
     .tooltiptext = 显示来自其他设备的标签页
+toolbar-button-send-tab =
+    .label = 发送标签页
+    .tooltiptext = 发送当前标签页到其他设备
 # Variables
 # $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
@@ -1257,6 +1266,11 @@ toolbar-button-share-tab =
 toolbar-button-tab-groups =
     .label = 标签页群组
     .tooltiptext = 显示标签页群组
+
+## Default filenames used when saving a QR code. The file extension (.png)
+## is added automatically.
+
+qrcode-save-filename-base = qrcode
 
 ## EME notification panel
 
@@ -1451,7 +1465,10 @@ reset-pbm-panel-confirm-button2 =
 reset-pbm-panel-confirm-button =
     .label = 删除本次浏览数据
     .accesskey = D
-reset-pbm-panel-complete = 隐私浏览数据已删除
+reset-pbm-panel-complete = 本次隐私浏览数据已删除
+reset-pbm-toolbar-button2 =
+    .label = 清除本次隐私浏览
+    .tooltiptext = 清除本次隐私浏览
 
 ## Autorefresh blocker
 
@@ -1572,7 +1589,7 @@ trustpanel-connection-label-secure = 连接安全
 trustpanel-connection-label-insecure = 连接不安全
 trustpanel-header-enabled = { -brand-product-name } 正在防护
 trustpanel-description-enabled2 = 您已受保护。若发现异常，我们将提醒。
-trustpanel-header-enabled-insecure = 请谨慎浏览此网站
+trustpanel-header-enabled-insecure = 谨慎使用此网站
 trustpanel-description-enabled-insecure = { -brand-product-name } 发现可疑情况。
 trustpanel-header-disabled = 您已关闭保护
 trustpanel-description-disabled = { -brand-product-name } 已暂停保护，建议重新启用。

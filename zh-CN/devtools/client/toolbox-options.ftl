@@ -38,6 +38,10 @@ options-show-user-agent-shadow-dom-tooltip =
 options-collapse-attrs-label = 截短 DOM 属性
 options-collapse-attrs-tooltip =
     .title = 截短查看器中的长属性
+# The label for the checkbox option to enable the display of comments in the Inspector
+options-show-comments-label = 显示注释
+options-show-comments-tooltip =
+    .title = 在查看器中显示注释节点
 # The label for the checkbox option to enable the "drag to update" feature
 options-inspector-draggable-properties-label = 点击并拖动编辑大小值
 options-inspector-draggable-properties-tooltip =
@@ -157,3 +161,13 @@ options-context-triggers-page-refresh = * 仅限当前会话，将重新加载�
 # The message shown for settings that trigger page reload
 # This appears underneath the applicable options (e.g. options-show-user-agent-shadow-dom-label).
 options-context-triggers-page-refresh-persists = （将重新加载页面）
+# This is used to add a * marker to the label for the Options Panel tool checkbox for the
+# tool which is not supported for the current toolbox target.
+# Variables:
+#   $toolLabel (String): The name of the tool not being supported
+options-tool-not-supported-marker = { $toolLabel } *
+# Used as a label for auto theme
+options-auto-theme-label = 自动
+# This is the text that appears in the settings panel for panel that will be removed in future releases.
+# This entire text is treated as a link to an MDN page.
+options-deprecation-notice = 已弃用。详细了解…

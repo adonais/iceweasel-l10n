@@ -414,6 +414,9 @@ quickactions-cmd-help = 說明, 支援, 幫助, 協助, help, support
 # Opens the devtools web inspector
 quickactions-inspector2 = 開啟開發者工具
 quickactions-cmd-inspector2 = 檢測器, 開發者工具, inspector, devtools, dev tools
+# Opens the devtools eyedropper to pick a color from the page
+quickactions-colorpicker = 挑選色彩
+quickactions-cmd-colorpicker = 取色器, 挑色器, 拾色器, 顏色選擇器, 挑選顏色, 滴管, color picker, eyedropper, pick color
 # Opens Firefox Library
 quickactions-cmd-library = 收藏庫
 quickactions-library = 開啟收藏庫
@@ -470,6 +473,9 @@ quickactions-cmd-update = 更新, update
 # Opens the view-source UI with current pages source
 quickactions-viewsource2 = 檢視原始碼
 quickactions-cmd-viewsource2 = 原始碼, 檢視原始碼, 源碼, 頁面原始碼, view source, source, page source
+# Opens about:preferences:experimental (Firefox Labs)
+quickactions-labs = 開啟 { -firefoxlabs-brand-name }
+quickactions-cmd-labs = 實驗, 實驗室, 測試, 搶先, labs, experiment
 quickactions-cmd-viewsource = 檢視原始碼, 原始碼, view source, source
 # Tooltip text for the help button shown in the result.
 quickactions-learn-more =
@@ -1206,7 +1212,7 @@ repair-text-encoding-button =
     .label = 修復文字編碼
     .tooltiptext = 根據訊息內容猜測正確的文字編碼
 
-## Customize Toolbar Buttons
+##
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1276,6 +1282,14 @@ toolbar-button-share-tab =
 toolbar-button-tab-groups =
     .label = 分頁群組
     .tooltiptext = 顯示您的分頁群組
+
+## Default filenames used when saving a QR code. The file extension (.png)
+## is added automatically.
+
+qrcode-save-filename-base = qrcode
+# Variables:
+#  $domain (String): The current page's domain used in the suggested filename.
+qrcode-save-filename-with-domain-base = qrcode-{ $domain }
 
 ## EME notification panel
 
