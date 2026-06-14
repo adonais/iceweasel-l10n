@@ -162,6 +162,24 @@ windows-10-eos-sync-callout-primary-advance-button-label = 下一步
 link-preview-onboarding-callout-title = 新功能：長按鏈結即可預覽內容
 link-preview-onboarding-callout-description = 檢視簡短描述、閱讀時間等資訊，讓您決定該鏈結是否值得一點。也可以用滑鼠右鍵檢視。
 
+## Tab Groups Onboarding Strings
+## These strings appear in a callout shown to users to introduce tab groups,
+## a feature that lets people organize related tabs into named collections.
+## Translators should feel free to adapt these strings to phrasing that sounds
+## natural in their language rather than translating literally — the goal is
+## an inviting, conversational tone, not a word-for-word match.
+
+# "Cut the clutter" is an English idiom meaning "reduce visual mess." Please
+# adapt to a phrase that conveys the idea of cleaning up or organizing a busy
+# tab strip in a way that sounds natural in your language.
+tab-groups-2026-onboarding-callout-title = 使用分頁群組避免畫面雜亂
+# "Drag more in as you go" means users can add additional tabs to the group
+# over time, while they’re working. Please adapt for natural phrasing.
+tab-groups-2026-onboarding-callout-subtitle = 依照工作或主題幫分頁分組，可以隨時再拖曳更多進去。
+# Button label — keep short (ideally under ~15 characters) so it fits in the
+# callout UI. "Start a group" means "create a new tab group."
+tab-groups-2026-onboarding-cta-button = 建立群組
+
 ## Sidebar Strings
 
 sidebar-button-callout-title = 在側邊欄顯示分頁標題
@@ -250,6 +268,6 @@ actions-callout-title = 完成常見任務或存取基礎設定
 # These example text inputs correlate to the the following strings
 # (either matching the whole string, or the first word of the string).
 # "print" - quickactions-cmd-print
-# "clear" - quickactions-cmd-clearrecenthistory
+# "clear" - quickactions-cmd-clearrecenthistory2
 # When localizing, ensure the translations match to ensure the action button appears as expected.
 actions-callout-subtitle = 可以試著輸入「print」來列印網頁，或輸入「clear」來清除瀏覽紀錄。

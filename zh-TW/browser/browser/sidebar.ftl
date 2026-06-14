@@ -7,6 +7,8 @@ menu-view-genai-chat =
 menu-view-contextual-password-manager =
     .label = 密碼
 # Label for the Open Tabs entry in the View > Sidebars menu bar menu.
+# "Open Tabs" is a noun phrase referring to the tabs currently open in
+# the browser, not an instruction to open tabs.
 menu-view-open-tabs =
     .label = 開啟分頁
 sidebar-options-menu-button =
@@ -76,7 +78,6 @@ sidebar-show-on-the-left =
 expand-sidebar-on-hover =
     .label = 在滑鼠移到上方時展開
 sidebar-manage-extensions2 = 管理所有擴充套件
-sidebar-manage-extensions = 管理擴充套件
 sidebar-customize-extensions-header2 = 擴充套件
 sidebar-customize-firefox-tools-header2 =
     .label = 工具
@@ -221,6 +222,22 @@ sidebar-syncedtabs-title = 其他裝置的分頁
 # Title of the Open Tabs sidebar panel. "Open tabs" refers to the tabs
 # currently open in the browser.
 sidebar-opentabs-title = 開啟分頁
+# Title attribute for the pinned tabs section in the Open Tabs sidebar
+# panel.
+sidebar-opentabs-pinned-tabs =
+    .title = 釘選分頁
+# Heading shown above the tab list for the currently focused window
+# in the Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-current-window-header =
+    .heading = 視窗 { $winID }（目前視窗）
+# Heading shown above the tab list for a non-focused window in the
+# Open Tabs sidebar panel.
+# Variables:
+#   $winID (Number) - The position of the window in the open windows list.
+sidebar-opentabs-window-header =
+    .heading = 視窗 { $winID }
 
 ## Context for closing synced tabs when hovering over the items
 

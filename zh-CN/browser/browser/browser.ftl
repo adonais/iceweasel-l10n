@@ -391,6 +391,7 @@ quickactions-bookmarks2 = 管理书签
 quickactions-cmd-bookmarks = 书签, bookmarks
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = 清除最近的历史记录
+quickactions-cmd-clearrecenthistory2 = Cookie, 清除 Cookies, 缓存, 清除缓存, 浏览数据, 清除浏览数据, 历史, 历史记录, 清除最近历史, 清除最近历史记录, cookies, clear cookies, cache, clear cache, browsing data, clear browsing data, history, clear recent history
 quickactions-cmd-clearrecenthistory = 清除, 清除最近的历史记录, 历史记录, 历史, clear recent history, history
 # Opens a SUMO article explaining how to clear history
 quickactions-clearhistory = 清除历史
@@ -1271,6 +1272,9 @@ toolbar-button-tab-groups =
 ## is added automatically.
 
 qrcode-save-filename-base = qrcode
+# Variables:
+#  $domain (String): The current page's domain used in the suggested filename.
+qrcode-save-filename-with-domain-base = 二维码-{ $domain }
 
 ## EME notification panel
 
@@ -1284,6 +1288,10 @@ eme-notifications-drm-content-playing-dismiss-accesskey = D
 
 panel-save-update-username = 用户名
 panel-save-update-password = 密码
+panel-save-update-username-2 =
+    .label = 用户名
+panel-save-update-password-2 =
+    .label = 密码
 
 ##
 

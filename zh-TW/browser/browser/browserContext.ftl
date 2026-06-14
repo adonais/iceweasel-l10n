@@ -314,13 +314,6 @@ main-context-menu-send-to-mobile-enable-sync-from-page = 開啟 Sync 即可傳�
 main-context-menu-send-to-mobile-connect-phone3 = 連結裝置即可傳送分頁
 main-context-menu-send-to-mobile-connect-phone-from-link = 連結裝置即可傳送鏈結
 main-context-menu-send-to-mobile-connect-phone-from-page = 連結裝置即可傳送頁面
-# Displayed within the send tab submenu to prompt users to sign in, enable sync, or pair a device
-main-context-menu-send-to-mobile-enable-sync =
-    .label = 開啟同步功能即可傳送分頁
-main-context-menu-send-to-mobile-connect-phone =
-    .label = 連結您的手機
-main-context-menu-send-to-mobile-device-missing =
-    .label = 沒看到您的裝置嗎？
 main-context-menu-save-to-pocket =
     .label = 將頁面儲存至 { -pocket-brand-name }
     .accesskey = k

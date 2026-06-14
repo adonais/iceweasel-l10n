@@ -314,13 +314,6 @@ main-context-menu-send-to-mobile-enable-sync-from-page = 开启同步以发送�
 main-context-menu-send-to-mobile-connect-phone3 = 连接设备以发送标签页
 main-context-menu-send-to-mobile-connect-phone-from-link = 连接设备以发送链接
 main-context-menu-send-to-mobile-connect-phone-from-page = 连接设备以发送页面
-# Displayed within the send tab submenu to prompt users to sign in, enable sync, or pair a device
-main-context-menu-send-to-mobile-enable-sync =
-    .label = 启用同步以发送标签页
-main-context-menu-send-to-mobile-connect-phone =
-    .label = 连接您的手机
-main-context-menu-send-to-mobile-device-missing =
-    .label = 看不到您的设备？
 main-context-menu-save-to-pocket =
     .label = 保存页面到 { -pocket-brand-name }
     .accesskey = k

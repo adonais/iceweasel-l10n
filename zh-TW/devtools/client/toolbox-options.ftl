@@ -115,6 +115,40 @@ options-sourceeditor-tabsize-label = Tab 大小
 options-sourceeditor-keybinding-label = Keybinding
 options-sourceeditor-keybinding-default-label = 預設
 
+## Local Mode section
+
+# The heading
+options-local-mode-label = 本機模式
+options-local-mode-only-work-locally = 本機模式僅可於本機端使用，會在對遠端環境除錯時關閉
+options-local-mode-behavior = 本機模式允許您透過 https 網址載入本機檔案，而不需依賴任何外部軟體。網址僅可透過開啟開發者工具的分頁載入。
+options-local-mode-domain-label = 自訂網域：
+options-local-mode-origin-input =
+    .placeholder = 本機對映來源
+# Errors shown when the origin input has an error
+options-local-mode-origin-conflict = 此來源與另一個現有的對映來源相衝突
+options-local-mode-origin-invalid = 此來源無效
+options-local-mode-folder-label = 本機資料夾：
+options-local-mode-choose-folder = 瀏覽…
+    .title = 請選擇要用來提供對映的本地端資料夾
+# Dialog's title when picking a folder for a mapping
+# Variables:
+#   $url (String): The url for the mapping being configured
+options-local-mode-choose-folder-picker-title = 請選擇下列網址的本機模式資料夾：{ $url }
+# Error shown when the folder is invalid
+# (can easily be triggered when using about:config and changing underlying mappings prefs)
+options-local-mode-folder-invalid = 此資料夾不存在或無效。
+options-local-mode-toggle =
+    .title = 切換此本機對映
+options-local-mode-toggle-enable = 啟用
+options-local-mode-toggle-disable = 停用
+options-local-mode-navigate-to =
+    .title = 導航至此對映網址
+# Dialog message prompted when clicking on the Delete button
+# Variables:
+#   $mappingOrigin (String): The origin for the mapping
+options-local-mode-confirm-deletion = 您想要移除「{ $mappingOrigin }」對映嗎？
+options-local-mode-new-mapping = 新增本機對映
+
 ## Advanced section
 
 # The heading (this item is also used in perftools.ftl)
