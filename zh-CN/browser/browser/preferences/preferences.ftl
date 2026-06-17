@@ -2620,7 +2620,7 @@ preferences-ai-controls-header2 =
     .heading = { pane-ai-controls-title2 }
 
 pane-iceweasel-title = 冰鼬
-pane-iceweasel-title2 = Iceweasel
+pane-iceweasel-title2 = 冰鼬
     .title = 冰鼬浏览器额外的特性
 iceweasel-header = Iceweasel 选项
 iceweasel-warning-title = 注意！
