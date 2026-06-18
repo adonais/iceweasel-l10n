@@ -2710,8 +2710,8 @@ iceweasel-libportable-description = libportable 庫額外提供的功能
 iceweasel-libportable-warning1 = 即時生效需要Upcheck支持，不要刪除它。
 iceweasel-libportable-upcheck-description = Upcheck隨瀏覽器啟動，24小時檢測一次，不會帶來額外消耗。
 iceweasel-libportable-upcheck-warning1 = 如果出現提示更新失敗，你需要在下載目錄手動解壓包到安裝目錄。
-iceweasel-libportable-ubo-description = 在瀏覽器中安裝 uBlock Origin 擴展。
-iceweasel-libportable-ubo-warning1 = 需重啟。過濾規則越多，占用的內存也就越高。
+iceweasel-libportable-ubo-description = 在瀏覽器中安裝 uBlock Origin 擴展，需重啟。
+iceweasel-libportable-ubo-warning1 = 當你在擴展管理器卸載此擴展時，需取消此選項。
 iceweasel-libportable-chrome-description =
     腳本文件會在后臺安裝到瀏覽器目錄，如果你原先存在userChrome環境，將不會安裝。<br>
     新的腳本文件支持Luajit，可以使用FFI調用系統原生API。
