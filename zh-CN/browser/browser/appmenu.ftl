@@ -15,6 +15,10 @@ appmenuitem-banner-update-unsupported =
     .label = 无法更新 — 系统不兼容
 appmenuitem-banner-update-restart =
     .label = 有可用更新 — 立即重启
+appmenu-nova-fxa-sign-in = 登录
+appmenu-nova-switch-device-promo =
+    .message = 即将换用新设备？别忘了带上 { -brand-short-name }！
+appmenu-nova-switch-device-link = 如何迁移您的数据
 appmenuitem-new-tab =
     .label = 新建标签页
 appmenuitem-new-window =
@@ -284,6 +288,8 @@ appmenu-customizetoolbar =
     .label = 定制工具栏…
 appmenu-abouttranslations =
     .label = 翻译…
+appmenu-edit-pdf =
+    .label = 编辑 PDF…
 appmenu-developer-tools-subheader = 浏览器工具
 appmenu-developer-tools-extensions =
     .label = 面向开发者的扩展
@@ -293,15 +299,24 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = 登录账户
+appmenuitem-monitor-title2 = 抢先作出反应，阻断身份盗用
+appmenuitem-monitor-description2 = 接收数据外泄事件警报
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 接收数据外泄警报
 appmenuitem-relay-title = { -relay-brand-short-name }
+appmenuitem-relay-title2 = 保密您的邮箱地址
+appmenuitem-relay-description2 = 保护收件箱免受垃圾邮件侵扰
 appmenuitem-relay-description = 掩藏真实邮箱地址和电话号码
 appmenuitem-services-relay-description = 打开马甲邮箱面板
+appmenuitem-vpn-title2 = 使用 { -mozilla-vpn-brand-name } 隐藏真实位置
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description-2 = 获取全方位设备保护
 appmenuitem-vpn-description = 保护在线活动
 appmenu-services-header = 我的服务
+# "Mozilla" is intentionally hardcoded to prevent forks from replacing it
+# with their own vendor name, since these tools are created and maintained by
+# Mozilla.
+appmenu-other-protection-header3 = 隐私保护工具
 # "Mozilla" is intentionally hardcoded to prevent forks from replacing it
 # with their own vendor name, since these tools are created and maintained by
 # Mozilla.

@@ -24,10 +24,16 @@ ipprotection-title = VPN
 ## Buttons used for all feature introduction callouts
 
 ipprotection-feature-introduction-title = 欢迎连接 VPN，现已内置于浏览器
+ipprotection-feature-introduction-title-1 = 试用 { -brand-product-name } 的内置 VPN
 ipprotection-feature-introduction-link-text-2 = 使用全新的<a data-l10n-name="learn-more-vpn">内置 VPN</a> 隐藏真实位置、保护个人数据。
 # Used for callout for users who expressed interest in privacy in onboarding
 ipprotection-feature-introduction-title-privacy = 再添加一层隐私保护
 ipprotection-feature-introduction-link-text-privacy-1 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的内置 VPN</a> 有助于保护您的浏览。多个位置任您选择，让浏览更私密。
+ipprotection-feature-introduction-link-text-privacy-2 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的内置 VPN</a> 有助于保护您的浏览。多个位置任您选择，让浏览更私密。
+ipprotection-feature-introduction-link-text-privacy-3 = 多个位置任您选择，隐藏真实浏览位置，获得<a data-l10n-name="learn-more-vpn">额外隐私保护</a>。
+ipprotection-feature-introduction-text-summer-promo-1 = 开启此功能，浏览更私密。即日起至 8 月 31 日可<a data-l10n-name="summer-promo-link">获取无限带宽</a>，并解锁更多浏览位置。
+ipprotection-feature-introduction-title-summer-promo = 出门旅行，隐私随行。
+ipprotection-feature-introduction-description-summer-promo = { -brand-product-name } 的内置 VPN 伴您行万里路。即日起至 8 月 31 日，解锁更多位置，获取无限带宽。
 ipprotection-feature-introduction-link-text-private-browsing-2 = 即使是在隐私窗口，使用全新的<a data-l10n-name="learn-more-vpn">内置 VPN</a> 也能隐藏真实位置、保护个人数据。
 ipprotection-feature-introduction-description-private-browsing = 即使是在隐私窗口，也能隐藏真实位置，获得额外保护。
 # Used for callout shown on login to public wi-fi through a captive portal
@@ -45,6 +51,8 @@ ipprotection-feature-introduction-button-secondary-no-thanks-menuitem =
 ipprotection-feature-introduction-button-secondary-remove = 从工具栏移除 VPN
 ipprotection-feature-introduction-button-secondary-remove-1 =
     .label = 从工具栏移除 VPN
+ipprotection-feature-introduction-button-open-vpn = 打开 VPN
+ipprotection-feature-introduction-button-get-started = 开始使用
 
 ## Site settings callout
 
@@ -114,6 +122,11 @@ ipprotection-locations-subview-description = 选择通过其他位置浏览。
 ipprotecion-locations-subview-recommended-label = 推荐
 ipprotection-locations-subview-recommended-description = 查找最快的位置
 # Label shown next to a VPN location that the user cannot select.
+# The aria-label is for accessibility, and should communicate that the
+# location is unavailable and the button is disabled.
+ipprotection-locations-unavailable-label-1 = 不可用
+    .aria-label = 目前因不可用而为关闭状态
+# Label shown next to a VPN location that the user cannot select.
 ipprotection-locations-unavailable-label = 不可用
 ipprotection-locations-subview-promo =
     .heading = { -mozilla-vpn-brand-name } 让保护更进一步
@@ -157,6 +170,9 @@ ipprotection-message-continuous-onboarding-intro = 开启 VPN，隐藏真实位�
 ipprotection-message-continuous-onboarding-autostart = 将 VPN <a data-l10n-name="setting-link">设为打开 { -brand-short-name } 时自动开启</a>，添一层保护。
 ipprotection-message-continuous-onboarding-site-settings = { -brand-short-name } 将记住您设置为使用 VPN 的网站。您随时可在<a data-l10n-name="setting-link">设置</a>中更新网站。
 confirmation-hint-ipprotection-navigated-to-excluded-site = VPN 已为此网站关闭
+ipprotection-open-button = 打开 { -brand-product-name }
+ipprotection-come-back-title = 继续试用内置VPN
+ipprotection-message-body-hide-location = 在 { -brand-product-name } 中浏览时隐藏您的位置，更好地保护隐私和控制权。
 ipprotection-connection-status-generic-error-title-1 = 无法连接 VPN
     .aria-label = 无法连接 VPN
 
@@ -222,6 +238,11 @@ ip-protection-exclusions-desc = 将为不在此列表中的所有网站使用 VP
 #   $usageLeft (string) - The amount of data a user has left in a month (in GB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 ip-protection-bandwidth-left-this-month-gb = 本月剩余 { $usageLeft } GB/{ $maxUsage } GB
+# The text inside the <span> is emphasized to highlight the amount of data left.
+# Variables
+#   $usageLeft (string) - The amount of data a user has left in a month (in GB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-gb-1 = 剩余 <span data-l10n-name="usage">{ $usageLeft } GB</span>/{ $maxUsage } GB
 # Variables
 #   $usageLeft (string) - The amount of data a user has left in a month (in GB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
@@ -230,6 +251,11 @@ ip-protection-bandwidth-left-gb = 剩余 { $usageLeft } GB/{ $maxUsage } GB
 #   $usageLeft (number) - The amount of data a user has left in a month (in MB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 ip-protection-bandwidth-left-this-month-mb = 本月剩余 { $usageLeft } MB/{ $maxUsage } GB
+# The text inside the <span> is emphasized to highlight the amount of data left.
+# Variables
+#   $usageLeft (number) - The amount of data a user has left in a month (in MB)
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-bandwidth-left-mb-1 = 剩余 <span data-l10n-name="usage">{ $usageLeft } MB</span>/{ $maxUsage } GB
 # Variables
 #   $usageLeft (number) - The amount of data a user has left in a month (in MB)
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)

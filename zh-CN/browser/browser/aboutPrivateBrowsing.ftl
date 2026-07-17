@@ -78,3 +78,13 @@ about-private-browsing-cookie-banners-promo-body = 我们现在可自动拒绝�
 about-private-browsing-felt-privacy-v1-info-header = 不在设备上留痕迹
 about-private-browsing-felt-privacy-v1-info-body = { -brand-short-name } 会在您关闭所有隐私窗口后删除 Cookie、历史记录、网站数据。
 about-private-browsing-felt-privacy-v1-info-link = 谁有可能看到我的活动？
+
+## Strings for the Nova redesign of about:privatebrowsing
+
+about-private-browsing-nova-info-body = 关闭所有隐私窗口时将删除 Cookie、历史记录和网站数据。
+about-private-browsing-nova-info-link = 谁依然可能看到我的活动？
+# "You're off the record" is an English idiom meant to communicate that you
+# are not being recorded. If there is not a comparable phrase in the locale,
+# fall back to "Your browsing will be deleted"
+about-private-browsing-nova-info-header = 您的浏览不会被记录
+about-private-browsing-nova-info-subheader = 关闭此窗口后，所有搜索记录和登录状态都将被清除。 { -brand-short-name } 内置的保护功能（例如拦截跟踪器）也在此窗口生效。

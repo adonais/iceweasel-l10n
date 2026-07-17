@@ -195,6 +195,34 @@ urlbar-result-menu-button =
     .title = 開啟選單
 urlbar-result-menu-button-feedback = 意見回饋
     .title = 開啟選單
+urlbar-result-menu-learn-more2 = 了解更多
+    .accesskey = L
+urlbar-result-menu-remove-from-history2 = 從紀錄移除
+    .accesskey = Ｒ
+urlbar-result-menu-tip-get-help2 = 取得幫助
+    .accesskey = h
+urlbar-result-menu-dismiss-suggestion2 = 忽略此建議
+    .accesskey = D
+urlbar-result-menu-manage-firefox-suggest2 = 管理 { -firefox-suggest-brand-name }
+    .accesskey = M
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = 回報位置不準確
+urlbar-result-menu-show-less-frequently2 = 減少顯示
+urlbar-result-menu-dont-show-weather-suggestions2 = 不要顯示天氣建議
+# Shown in the urlbar input field context menu to dismiss an adaptive autofill
+# suggestion.
+urlbar-input-dismiss-autofill =
+    .label = 忽略此建議
+    .accesskey = i
+# Shown in the urlbar input field context menu to remove an adaptive autofill
+# URL from history.
+urlbar-input-remove-from-history =
+    .label = 從紀錄移除
+    .accesskey = e
 urlbar-result-menu-learn-more =
     .label = 了解更多
     .accesskey = L
@@ -385,6 +413,9 @@ quickactions-addons = 檢視附加元件
 # applicable to your language, only use the correct spelling (don't repeat the
 # same word).
 quickactions-cmd-addons3 = 擴充套件, 佈景主題, 布景主題, 附加元件, 套件, 外掛, extensions, themes, addons, add-ons
+# Opens preferences page at AI controls
+quickactions-manageai = 管理 AI 控制選項
+quickactions-cmd-manageai = 停用 AI, 關閉 AI, 管理 AI, disable ai, off ai, manage ai
 quickactions-cmd-addons2 = 附加元件, 套件, 外掛, add-ons, addons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = 管理書籤
@@ -440,6 +471,9 @@ quickactions-cmd-print = 列印, print
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = 儲存頁面為 PDF 檔
 quickactions-cmd-savepdf2 = PDF, 儲存頁面, 另存頁面, save page
+# Opens about:pdf, the PDF editor landing page
+quickactions-editpdf = 開啟 PDF 編輯器
+quickactions-cmd-editpdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = 開啟隱私視窗
 quickactions-cmd-private = 隱私瀏覽, 無痕模式, private browsing
@@ -744,8 +778,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = 在網址列顯示網址
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -870,6 +905,66 @@ urlbar-result-weather-provider-sponsored = { $provider }∙贊助資訊
 # Used for asking AI assistant chat.
 urlbar-result-action-ai-chat = 詢問
 
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
+
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative = 您上次於 { $date } 造訪
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days = 您上次於 { $daysAgo } 天前造訪
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks = 您上次於 { $weeksAgo } 週前造訪
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months = 您上次於 { $monthsAgo } 個月前造訪
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute = 您上次於 { $date } 造訪
+# This explanation is used when the result is bookmarked. The date will be
+# formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-bookmarked = 於 { $date } 加入書籤
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative-2 = 上次於{ $date }造訪
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days-2 = 上次於 { $daysAgo } 天前造訪
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks-2 = 上次於 { $weeksAgo } 週前造訪
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months-2 = 上次於 { $monthsAgo } 個月前造訪
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute-2 = 上次於 { $date } 造訪
+
 ## These strings are used for Realtime suggestions in the urlbar.
 ## Market refers to stocks, indexes, and funds.
 
@@ -882,6 +977,9 @@ urlbar-result-realtime-opt-in-allow = 顯示搜尋建議
 # This string is shown in split button to dismiss activation the Realtime suggestion.
 urlbar-result-realtime-opt-in-not-now = 現在不要
 urlbar-result-realtime-opt-in-dismiss = 知道了！
+urlbar-result-realtime-opt-in-dismiss-all2 = 不要顯示這些建議
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = 不要顯示金融市場建議
 urlbar-result-realtime-opt-in-dismiss-all =
     .label = 不要顯示這些建議
 # This string is shown in the result menu.
@@ -991,6 +1089,14 @@ urlbar-searchmode-no-keyword2 =
     .title = 已停用關鍵字搜尋
 urlbar-searchmode-dropmarker2 =
     .title = 挑選一套搜尋引擎
+urlbar-searchmode-bookmarks3 = 書籤
+    .accesskey = B
+urlbar-searchmode-tabs3 = 分頁
+    .accesskey = T
+urlbar-searchmode-history3 = 瀏覽紀錄
+    .accesskey = H
+urlbar-searchmode-actions3 = 動作
+    .accesskey = A
 urlbar-searchmode-bookmarks2 = 書籤
 urlbar-searchmode-tabs2 = 分頁
 urlbar-searchmode-history2 = 瀏覽紀錄
@@ -1010,6 +1116,10 @@ urlbar-searchmode-popup-one-off-header = 這次使用下列搜尋引擎搜尋：
 # Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
 # reset after submitting.
 urlbar-searchmode-popup-header = 使用下列引擎搜尋：
+urlbar-searchmode-popup-search-settings = 搜尋設定
+    .accesskey = S
+urlbar-searchmode-popup-settings = 設定
+    .accesskey = S
 urlbar-searchmode-popup-search-settings-panelitem = 搜尋設定
 urlbar-searchmode-popup-settings-panelitem = 設定
 
@@ -1068,6 +1178,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = { $engine } 上的熱門趨勢
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = 不要顯示搜尋趨勢
+    .accesskey = D
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = 贊助項目

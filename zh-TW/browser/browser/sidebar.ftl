@@ -13,6 +13,9 @@ menu-view-open-tabs =
     .label = 開啟分頁
 sidebar-options-menu-button =
     .title = 開啟選單
+# Accessible label for the splitter used to resize the sidebar.
+sidebar-resize-splitter =
+    .aria-label = 調整側邊欄大小
 
 ## Labels for sidebar history panel
 
@@ -69,6 +72,8 @@ sidebar-settings =
     .label = 側邊欄選項
 sidebar-hide-tabs-and-sidebar =
     .label = 隱藏分頁與側邊欄
+sidebar-open-tools-from-sidebar =
+    .label = 從側邊欄開啟工具
 sidebar-show-on-the-right =
     .label = 將側邊欄移至右方
 sidebar-show-on-the-left =
@@ -238,6 +243,7 @@ sidebar-opentabs-current-window-header =
 #   $winID (Number) - The position of the window in the open windows list.
 sidebar-opentabs-window-header =
     .heading = 視窗 { $winID }
+sidebar-bookmarks-title = 書籤
 
 ## Context for closing synced tabs when hovering over the items
 

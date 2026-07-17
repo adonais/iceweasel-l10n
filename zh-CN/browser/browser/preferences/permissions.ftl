@@ -40,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = 移除全部网站
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = 保存更改
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = 保存更改
     .buttonaccesskeyaccept = S
@@ -87,6 +90,13 @@ permissions-exceptions-cookie-window2 =
     .title = 例外 - Cookie 和网站数据
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = 您可以指定一律允许或不允许哪些网站使用 Cookie 和网站数据。请输入所要指定的完整网址，然后点击“阻止”、“此次浏览期间允许”或“允许”。
+
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .style = { permissions-window2.style }
+    .title = 例外 - 关闭时清除历史记录
+permissions-exceptions-shutdown-clearing-desc = 您可以指定 { -brand-short-name } 在关闭并清除历史记录时，允许保留数据的网站。请输入要管理的网站的确切地址，然后点击“允许”。
 
 ## Exceptions - HTTPS-Only Mode
 

@@ -293,6 +293,20 @@ launch-on-login-infobar-final-message = <strong>想在重启电脑后自动打�
 launch-on-login-infobar-final-reject-button = 不了，谢谢
     .accesskey = N
 
+## Launch on login spotlight
+##
+## Shown as a spotlight message when the user closes the browser, offering to set
+## { -brand-short-name } to launch when the computer starts up.
+
+launch-on-login-spotlight-title = 要在下次启动电脑时打开 { -brand-short-name } 吗？
+launch-on-login-spotlight-startup-checkbox = 开机时启动 { -brand-short-name }
+launch-on-login-spotlight-pin-taskbar-checkbox = 固定到任务栏
+# This checkbox label intentionally matches “startup-restore-windows-and-tabs”
+# in the Settings (preferences.ftl). Localizers can reuse the existing
+# translation suggested by translation memory.
+launch-on-login-spotlight-restore-checkbox = 打开先前的窗口和标签页
+launch-on-login-spotlight-primary-button = 保存并关闭 { -brand-short-name }
+
 ## Tail Fox Set Default Spotlight
 
 # This title is displayed together with the picture of a running fox with a long tail.
@@ -446,8 +460,19 @@ set-default-menu-message-row-layout-subtitle-variant =
         [macos] 将 { -brand-short-name } 设为默认浏览器并在程序坞中保留，方便随手开启。
        *[other] 将 { -brand-short-name } 设为默认浏览器并固定到任务栏，方便随手开启。
     }
+set-default-menu-message-split-layout-title =
+    { PLATFORM() ->
+        [macos] 让 { -brand-short-name } 触手可及
+       *[other] 用 { -brand-short-name } 打开所有链接
+    }
+set-default-menu-message-split-layout-subtitle =
+    { PLATFORM() ->
+        [macos] 设为默认浏览器并在程序坞中保留
+       *[other] 获得更快浏览速度和自动隐私保护。
+    }
 set-default-menu-message-primary-button = 设为默认浏览器
 set-default-menu-message-primary-button-variant = 设为主浏览器
+set-default-menu-message-primary-button-short-variant = 将 { -brand-short-name } 设为默认浏览器
 
 ## Firefox Relay 50 Masks Announcement
 
@@ -458,3 +483,11 @@ relay-50-masks-announcement-primary-button = 前往 { -relay-brand-name }
     .accesskey = G
 relay-50-masks-announcement-secondary-button = 知道了
     .accesskey = D
+
+## Nova Early Access Infobar
+
+nova-early-access-infobar-title = <strong>{ -brand-product-name } 外观焕新</strong>，将于今年晚些时候推出。您正在预览尚未完善的早期版本。
+nova-early-access-share-feedback-link = 分享反馈
+    .accesskey = S
+nova-early-access-infobar-primary-button = 知道了
+    .accesskey = G

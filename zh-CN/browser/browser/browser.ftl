@@ -195,6 +195,24 @@ urlbar-result-menu-button =
     .title = 打开菜单
 urlbar-result-menu-button-feedback = 意见反馈
     .title = 打开菜单
+urlbar-result-menu-learn-more2 = 详细了解
+    .accesskey = L
+urlbar-result-menu-remove-from-history2 = 从历史记录移除
+    .accesskey = R
+urlbar-result-menu-tip-get-help2 = 获取帮助
+    .accesskey = h
+urlbar-result-menu-dismiss-suggestion2 = 忽略此建议
+    .accesskey = D
+urlbar-result-menu-manage-firefox-suggest2 = 管理 { -firefox-suggest-brand-name }
+    .accesskey = M
+# Some urlbar suggestions show the user's approximate location as automatically
+# detected by Firefox (e.g., weather suggestions), and this menu item lets the
+# user tell Firefox that the location is not accurate. Typically the location
+# will be a city name, or a city name combined with the name of its parent
+# administrative division (e.g., a province, prefecture, or state).
+urlbar-result-menu-report-inaccurate-location2 = 报告位置不准确
+urlbar-result-menu-show-less-frequently2 = 减少显示
+urlbar-result-menu-dont-show-weather-suggestions2 = 不再显示天气建议
 urlbar-result-menu-learn-more =
     .label = 详细了解
     .accesskey = L
@@ -385,6 +403,9 @@ quickactions-addons = 查看附加组件
 # applicable to your language, only use the correct spelling (don't repeat the
 # same word).
 quickactions-cmd-addons3 = 扩展, 主题, 附加组件, extensions, themes, addons, add-ons
+# Opens preferences page at AI controls
+quickactions-manageai = 管理 AI 控制
+quickactions-cmd-manageai = 禁用 ai, 关闭 ai, 管理 ai, disable ai, off ai, manage ai
 quickactions-cmd-addons2 = 附加组件, add-ons
 # Opens the bookmarks library window
 quickactions-bookmarks2 = 管理书签
@@ -440,6 +461,9 @@ quickactions-cmd-print = 打印, print
 # Opens the print dialog at the save to PDF option
 quickactions-savepdf = 另存页面为 PDF
 quickactions-cmd-savepdf2 = pdf, 保存页面, save page
+# Opens about:pdf, the PDF editor landing page
+quickactions-editpdf = 打开 PDF 编辑器
+quickactions-cmd-editpdf = pdf
 # Opens a new private browsing window
 quickactions-private2 = 打开隐私窗口
 quickactions-cmd-private = 隐私浏览, private browsing
@@ -740,8 +764,9 @@ urlbar-page-action-button =
 urlbar-revert-button =
     .tooltiptext = 在地址栏中显示网址
 
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
 
 # Used when the private browsing engine differs from the default engine.
 # The "with" format was chosen because the search engine name can end with
@@ -866,6 +891,66 @@ urlbar-result-weather-provider-sponsored = { $provider } · 赞助
 # Used for asking AI assistant chat.
 urlbar-result-action-ai-chat = 询问
 
+## "Last visited" and "bookmarked" explanation strings. For bookmarks and urlbar
+## results with last-visited dates like history and top sites, these strings
+## explain why the result is shown.
+
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative = 上次访问：{ $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days = 上次访问于 { $daysAgo } 天前
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks = 上次访问于 { $weeksAgo } 周前
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months = 上次访问于 { $monthsAgo } 个月前
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute = 上次访问于 { $date }
+# This explanation is used when the result is bookmarked. The date will be
+# formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-bookmarked = 书签添加于 { $date }
+# This explanation is used when the last-visited date is formatted as one of the
+# following relative dates: "yesterday", "today"
+# Variables:
+#   $date (string) - A localized relative date string
+urlbar-result-explanation-last-visited-relative-2 = 上次访问：{ $date }
+# This explanation is used when the last-visited date is a small number of days
+# in the past.
+# Variables:
+#   $daysAgo (number) - The number of days ago
+urlbar-result-explanation-last-visited-days-2 = 上次访问：{ $daysAgo } 天前
+# This explanation is used when the last-visited date is a small number of weeks
+# in the past.
+# Variables:
+#   $weeksAgo (number) - The number of weeks ago
+urlbar-result-explanation-last-visited-weeks-2 = 上次访问：{ $weeksAgo } 周前
+# This explanation is used when the last-visited date is a small number of
+# months in the past.
+# Variables:
+#   $monthsAgo (number) - The number of months ago
+urlbar-result-explanation-last-visited-months-2 = 上次访问：{ $monthsAgo } 个月前
+# This explanation is used when the last-visited date is further in the past.
+# The date will be formatted as an absolute date like: "11 May", "11 May 2026"
+# Variables:
+#   $date (string) - A localized absolute date string
+urlbar-result-explanation-last-visited-absolute-2 = 上次访问：{ $date }
+
 ## These strings are used for Realtime suggestions in the urlbar.
 ## Market refers to stocks, indexes, and funds.
 
@@ -878,6 +963,9 @@ urlbar-result-realtime-opt-in-allow = 显示建议
 # This string is shown in split button to dismiss activation the Realtime suggestion.
 urlbar-result-realtime-opt-in-not-now = 暂时不要
 urlbar-result-realtime-opt-in-dismiss = 知道了
+urlbar-result-realtime-opt-in-dismiss-all2 = 不再显示此类建议
+# This string is shown in the result menu.
+urlbar-result-menu-dont-show-market2 = 不再显示市场建议
 urlbar-result-realtime-opt-in-dismiss-all =
     .label = 不再显示此类建议
 # This string is shown in the result menu.
@@ -1052,6 +1140,9 @@ urlbar-group-recent-searches =
 #  $engine (String): the name of the search engine providing the trending suggestions
 urlbar-group-trending =
     .label = { $engine } 热门搜索
+# The result menu labels shown next to trending results.
+urlbar-result-menu-trending-dont-show2 = 不再显示热门搜索
+    .accesskey = D
 # Label shown above sponsored suggestions in the urlbar results.
 urlbar-group-sponsored =
     .label = 赞助推广

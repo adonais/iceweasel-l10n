@@ -39,6 +39,8 @@ tabbrowser-close-tabs-tooltip =
     .label = 关闭 { $tabCount } 个标签页
 tab-splitview-splitter =
     .aria-label = 调整分屏标签页大小
+tab-devtools-splitter =
+    .aria-label = 调整开发者工具面板大小
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -153,9 +155,15 @@ tabbrowser-customizemode-tab-title = 定制 { -brand-short-name }
 tabbrowser-context-mute-tab =
     .label = 静音标签页
     .accesskey = M
+tabbrowser-context-mute-tab2 =
+    .label = 静音
+    .accesskey = M
 tabbrowser-context-unmute-tab =
     .label = 取消静音标签页
     .accesskey = M
+tabbrowser-context-unmute-tab2 =
+    .label = 取消静音
+    .accesskey = m
 # The accesskey should match the accesskey for tabbrowser-context-mute-tab
 tabbrowser-context-mute-selected-tabs =
     .label = 静音标签页

@@ -293,6 +293,20 @@ launch-on-login-infobar-final-message = <strong>要在每次電腦開機時自�
 launch-on-login-infobar-final-reject-button = 不要，謝謝
     .accesskey = N
 
+## Launch on login spotlight
+##
+## Shown as a spotlight message when the user closes the browser, offering to set
+## { -brand-short-name } to launch when the computer starts up.
+
+launch-on-login-spotlight-title = 要在您的電腦開機時自動開啟 { -brand-short-name } 嗎？
+launch-on-login-spotlight-startup-checkbox = 於開機時啟動 { -brand-short-name }
+launch-on-login-spotlight-pin-taskbar-checkbox = 釘選到工作列
+# This checkbox label intentionally matches “startup-restore-windows-and-tabs”
+# in the Settings (preferences.ftl). Localizers can reuse the existing
+# translation suggested by translation memory.
+launch-on-login-spotlight-restore-checkbox = 開啟先前的視窗與分頁
+launch-on-login-spotlight-primary-button = 儲存並關閉 { -brand-short-name }
+
 ## Tail Fox Set Default Spotlight
 
 # This title is displayed together with the picture of a running fox with a long tail.
@@ -446,8 +460,19 @@ set-default-menu-message-row-layout-subtitle-variant =
         [macos] 將 { -brand-short-name } 設為預設瀏覽器並保留在您的 Dock，方便隨手開啟。
        *[other] 將 { -brand-short-name } 設為預設瀏覽器並保留在您的工具列，方便隨手開啟。
     }
+set-default-menu-message-split-layout-title =
+    { PLATFORM() ->
+        [macos] 將 { -brand-short-name } 設為預設程式
+       *[other] 用 { -brand-short-name } 開啟所有鏈結
+    }
+set-default-menu-message-split-layout-subtitle =
+    { PLATFORM() ->
+        [macos] 設為預設程式，並放置於 Dock 中。
+       *[other] 讓上網更快、自動保護您的隱私。
+    }
 set-default-menu-message-primary-button = 設為預設瀏覽器
 set-default-menu-message-primary-button-variant = 設為主要瀏覽器
+set-default-menu-message-primary-button-short-variant = 將 { -brand-short-name } 設為預設瀏覽器
 
 ## Firefox Relay 50 Masks Announcement
 
@@ -466,3 +491,10 @@ nova-early-access-share-feedback-link = 分享意見回饋
     .accesskey = S
 nova-early-access-infobar-primary-button = 知道了！
     .accesskey = G
+
+## App Exit Spotlight dialog
+
+app-exit-spotlight-title = 要在每次登入 Windows 時啟動 { -brand-short-name } 嗎？
+app-exit-spotlight-checkbox-launch-on-login = 開機時啟動 { -brand-short-name }
+app-exit-spotlight-checkbox-pin-to-taskbar = 釘選到您的工作列
+app-exit-spotlight-primary-button = 儲存並關閉 { -brand-short-name }

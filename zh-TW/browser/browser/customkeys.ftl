@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Added shortcuts:
+
 customkeys-title = 快速鍵
 customkeys-search = 搜尋：
 customkeys-change = 變更
@@ -54,6 +57,54 @@ customkeys-nav-select-last-tab = 前往最後一個分頁
 customkeys-nav-toggle-mute = 靜音/取消靜音
 customkeys-edit-find-previous = 找前一個
 customkeys-tools-screenshot = 拍攝畫面擷圖
+customkeys-category-navigation-2 =
+    .heading = 導覽
 customkeys-caution-message = 此功能還在實驗中，可能無法如預期運作。
 # Displayed in the new key field when the key that was pressed isn't valid.
 customkeys-key-invalid = 無效
+customkeys-shortcut-unassigned =
+    .placeholder = 新增快速鍵
+# Variables:
+# $keyLabel (string) - The name of the shortcut, e.g. “New Tab”.
+customkeys-shortcut-input = { $keyLabel } 的快速鍵
+customkeys-key-edit =
+    .aria-label = 編輯
+    .tooltiptext = 編輯
+customkeys-key-clear =
+    .aria-label = 清除
+    .tooltiptext = 清除
+customkeys-key-reset =
+    .aria-label = 回復
+    .tooltiptext = 回復
+
+## Shortcut actions
+
+customkeys-key-new =
+    .label = 按下新按鍵：
+
+## Confirmation dialogs
+
+customkeys-conflict-confirm-title = 要移除另一個快速鍵嗎？
+# Variables
+# $conflict (string) - The title of the conflicting shortcut.
+customkeys-conflict-confirm-body = 這組按鍵已被「{ $conflict }」使用。
+customkeys-conflict-confirm-button-confirm = 還是使用
+customkeys-conflict-confirm-button-cancel = 取消
+customkeys-reset-all-confirm-title = 確認要還原預設值嗎？
+customkeys-reset-all-confirm-body = 將移除所有您自訂的快速鍵。
+customkeys-reset-all-confirm-button-confirm = 還原預設值
+customkeys-reset-all-confirm-button-cancel = 取消
+
+## Sidebar
+
+customkeys-sidebar =
+    .aria-label = 側邊欄
+customkeys-title-heading =
+    .heading = 快速鍵
+# Search is a verb, as in "search through shortcuts".
+customkeys-search-input =
+    .aria-label = 搜尋快速鍵
+    .placeholder = 搜尋快速鍵
+customkeys-description = 控制您如何移動游標以及與 { -brand-short-name } 互動。
+customkeys-support-link-text = 更多資訊
+customkeys-reset-all-button = 還原預設值

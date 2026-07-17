@@ -40,6 +40,9 @@ permissions-remove =
 permissions-remove-all =
     .label = 移除所有網站
     .accesskey = e
+permissions-save-changes-2 =
+    .buttonlabelaccept = 儲存變更
+    .buttonaccesskeyaccept = S
 permission-dialog =
     .buttonlabelaccept = 儲存變更
     .buttonaccesskeyaccept = S
@@ -87,6 +90,13 @@ permissions-exceptions-cookie-window2 =
     .title = 例外 - Cookie 與網站資料
     .style = { permissions-window2.style }
 permissions-exceptions-cookie-desc = 您可以指定哪些網站是否可以設定 Cookie 和儲存網站資料。請在下方輸入要指定的完整網址，然後點擊「封鎖」、「此次瀏覽階段允許」或「允許」。
+
+## Exceptions - Clear on Shutdown
+
+permissions-exceptions-shutdown-clearing-window =
+    .style = { permissions-window2.style }
+    .title = 例外 - 結束瀏覽器時清除上網紀錄
+permissions-exceptions-shutdown-clearing-desc = 您可以指定在關閉 { -brand-short-name } 並清除瀏覽紀錄時，要保留哪些網站的資料。請輸入完整網址後按「允許」。
 
 ## Exceptions - HTTPS-Only Mode
 

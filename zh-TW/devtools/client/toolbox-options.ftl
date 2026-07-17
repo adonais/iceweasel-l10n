@@ -76,6 +76,35 @@ options-webconsole-split-console-label = 啟用分割主控台
 options-webconsole-split-console-tooltip =
     .title = 使用 Esc 鍵開啟分割主控台
 
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = 網路監測器
+# The label for the input defining the limit of stored request and response body size
+options-netmonitor-body-limit-label = 最大請求與回覆內容大小（設定為 0 則不限制）：
+options-netmonitor-body-limit-tooltip =
+    .title = 在網路監測器中顯示或下載超過指定大小的請求或回應內容時就自動截斷。設定為 0 則不限制。
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = 無限制
+options-netmonitor-body-limit-button =
+    .title = 編輯最大請求/回覆內容大小。
+options-netmonitor-body-limit-restore-default =
+    .title = 還原最大請求/回覆內容大小的預設值。
+options-netmonitor-body-limit-set =
+    .title = 將目前輸入的值設定為最大請求/回覆內容大小。
+
+## Experimental section
+
+# The heading
+options-experimental-label = 實驗功能
+# The label for the checkbox that toggles showing stylesheets in the debugger
+options-stylesheets-in-the-debugger-label = 在除錯器中顯示樣式表
+options-stylesheets-in-the-debugger-tooltip =
+    .title = 於除錯器中列出並檢視樣式表
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = （需要重新開啟工具箱）
+
 ## Style Editor section
 
 # The heading
