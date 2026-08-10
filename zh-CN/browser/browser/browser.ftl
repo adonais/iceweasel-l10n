@@ -48,6 +48,8 @@ browser-main-window-title = { -brand-full-name }
 # The non-variable portion of this MUST match the translation of
 # "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
 private-browsing-shortcut-text-2 = { -brand-shortcut-name } 隐私浏览
+# This MUST match the translation of "BRIEF_APP_DESC" in custom.properties
+browser-shortcut-description = 浏览快如风，隐私不透风
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -126,6 +128,15 @@ popups-infobar-dont-show-message2 =
 edit-popup-settings2 =
     .label = 管理弹出式窗口和第三方重定向设置…
     .accesskey = M
+# Variables
+#   $count (number) - The number of blocked trackers on this page. Please leave the mention of blocked trackers out when there are none.
+urlbar-identity-button2 =
+    .aria-label =
+        { $count ->
+            [0] 查看网站信息
+            [1] 查看网站信息（已拦截 1 个跟踪器）
+           *[other] 查看网站信息（已拦截 { $count } 个跟踪器）
+        }
 
 ##
 
@@ -213,6 +224,16 @@ urlbar-result-menu-manage-firefox-suggest2 = 管理 { -firefox-suggest-brand-nam
 urlbar-result-menu-report-inaccurate-location2 = 报告位置不准确
 urlbar-result-menu-show-less-frequently2 = 减少显示
 urlbar-result-menu-dont-show-weather-suggestions2 = 不再显示天气建议
+# Shown in the urlbar input field context menu to dismiss an adaptive autofill
+# suggestion.
+urlbar-input-dismiss-autofill =
+    .label = 忽略此建议 (i)
+    .accesskey = i
+# Shown in the urlbar input field context menu to remove an adaptive autofill
+# URL from history.
+urlbar-input-remove-from-history =
+    .label = 从历史记录中移除
+    .accesskey = e
 urlbar-result-menu-learn-more =
     .label = 详细了解
     .accesskey = L
@@ -577,6 +598,7 @@ identity-clear-site-data =
     .label = 清除 Cookie 和网站数据…
 identity-connection-not-secure-security-view = 您并未安全地连接至此网站。
 identity-connection-verified = 您已安全地连接至此网站。
+identity-verifier-label2 = 验证者：
 identity-ev-owner-label = 证书颁发给：
 identity-verifier-label = 验证者：
 # "qualified" here refers to the qualified website authentication certificate presented by the site.
@@ -596,6 +618,7 @@ identity-description-passive-loaded-insecure2 = 此网站包含不安全的内�
 identity-description-passive-loaded-mixed2 = 尽管 { -brand-short-name } 已拦截部分内容，但页面上仍有内容不安全（例如图像）。
 identity-description-active-loaded = 此网站包含不安全内容（例如脚本），并且您至它的连接非私密。
 identity-description-active-loaded-insecure = 您提供给此网站的信息（例如密码、聊天消息、信用卡等）可能会被其他人看到。
+identity-description-tls-key-logging-heading = 您的连接可能不私密
 identity-disable-mixed-content-blocking =
     .label = 暂时解除保护
     .accesskey = D
@@ -930,6 +953,13 @@ urlbar-result-explanation-bookmarked = 书签添加于 { $date }
 # Variables:
 #   $date (string) - A localized relative date string
 urlbar-result-explanation-last-visited-relative-2 = 上次访问：{ $date }
+# This explanation is used when the last-visited date is a small number of days,
+# weeks, or months in the past.
+# Variables:
+#   $date (string) - A localized relative date string like one of the following:
+#                    "6 days ago", "1 week ago", "4 weeks ago", "1 month ago",
+#                    "11 months ago"
+urlbar-result-explanation-last-visited-days-weeks-months-ago = 上次访问：{ $date }
 # This explanation is used when the last-visited date is a small number of days
 # in the past.
 # Variables:
@@ -1063,6 +1093,14 @@ urlbar-searchmode-no-keyword2 =
     .title = 关键词搜索已禁用
 urlbar-searchmode-dropmarker2 =
     .title = 选取搜索引擎
+urlbar-searchmode-bookmarks3 = 书签
+    .accesskey = B
+urlbar-searchmode-tabs3 = 标签页
+    .accesskey = T
+urlbar-searchmode-history3 = 历史记录
+    .accesskey = H
+urlbar-searchmode-actions3 = 操作
+    .accesskey = A
 urlbar-searchmode-bookmarks2 = 书签
 urlbar-searchmode-tabs2 = 标签页
 urlbar-searchmode-history2 = 历史记录
@@ -1082,6 +1120,10 @@ urlbar-searchmode-popup-one-off-header = 本次搜索使用：
 # Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
 # reset after submitting.
 urlbar-searchmode-popup-header = 搜索引擎：
+urlbar-searchmode-popup-search-settings = 搜索设置
+    .accesskey = S
+urlbar-searchmode-popup-settings = 设置
+    .accesskey = S
 urlbar-searchmode-popup-search-settings-panelitem = 搜索设置
 urlbar-searchmode-popup-settings-panelitem = 设置
 
@@ -1318,13 +1360,6 @@ qrcode-copy-error =
     .message = 复制二维码失败。
 qrcode-save-button =
     .label = 保存
-qrcode-save-success =
-    .message = 二维码已保存。
-qrcode-save-error =
-    .message = 保存二维码失败。
-qrcode-save-title = 保存二维码
-qrcode-save-filter-png = PNG 图像
-qrcode-save-filename = qrcode.png
 qrcode-window-title = 二维码
 qrcode-dialog-title = 二维码
 qrcode-image =
@@ -1502,6 +1537,11 @@ private-browsing-indicator-label = 隐私浏览
 # Tooltip for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-tooltip =
     .tooltiptext = 隐私浏览
+# Tooltip for the private browsing indicator button that opens the info panel.
+private-browsing-indicator-button =
+    .tooltiptext = 隐私浏览信息
+# Title shown in the private browsing info panel.
+private-browsing-info-panel-title = 您已进入隐私窗口
 # Tooltip for the indicator shown in the window titlebar when content analysis is active.
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
@@ -1718,6 +1758,10 @@ trustpanel-blocker-header =
 # Keep this string as short as possible, this is displayed in the URL bar
 # use a synonym for "safe" or "private" if "secure" is too long.
 urlbar-trust-icon-notsecure-label = 不安全
+# Keep this string as short as possible, this is displayed in the URL bar
+# Variables
+#  $count (number): the number of trackers blocked.
+urlbar-trust-icon-trackers-blocked-longform-label = 已拦截 { $count } 个跟踪器
 
 ## Variables
 ##  $count (String): the number of trackers blocked.

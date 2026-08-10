@@ -48,6 +48,8 @@ browser-main-window-title = { -brand-full-name }
 # The non-variable portion of this MUST match the translation of
 # "PRIVATE_BROWSING_SHORTCUT_TITLE" in custom.properties
 private-browsing-shortcut-text-2 = { -brand-shortcut-name } 隱私瀏覽模式
+# This MUST match the translation of "BRIEF_APP_DESC" in custom.properties
+browser-shortcut-description = 又快又有隱私地上網
 # These are the default window titles everywhere except macOS.
 # .data-title-default and .data-title-private are used when the web content
 # opened has no title:
@@ -126,6 +128,15 @@ popups-infobar-dont-show-message2 =
 edit-popup-settings2 =
     .label = 管理彈出型視窗與第三方重新導向選項…
     .accesskey = M
+# Variables
+#   $count (number) - The number of blocked trackers on this page. Please leave the mention of blocked trackers out when there are none.
+urlbar-identity-button2 =
+    .aria-label =
+        { $count ->
+            [0] 檢視網站資訊
+            [1] 檢視網站資訊（已封鎖 1 組追蹤器）
+           *[other] 檢視網站資訊（已封鎖 { $count } 組追蹤器）
+        }
 
 ##
 
@@ -591,6 +602,8 @@ identity-clear-site-data =
     .label = 清除 Cookie 與網站資料…
 identity-connection-not-secure-security-view = 您並未安全地連線至此網站。
 identity-connection-verified = 您正安全地連線至此網站。
+identity-ev-owner-label2 = 憑證簽發給
+identity-verifier-label2 = 驗證機構
 identity-ev-owner-label = 憑證簽發給：
 identity-verifier-label = 驗證機構：
 # "qualified" here refers to the qualified website authentication certificate presented by the site.
@@ -610,6 +623,8 @@ identity-description-passive-loaded-insecure2 = 此網站包含不安全的內�
 identity-description-passive-loaded-mixed2 = 雖然 { -brand-short-name } 已經封鎖部分內容，但頁面中還是有不安全的內容（例如圖片）。
 identity-description-active-loaded = 此網站包含不安全的內容（例如指令碼），與其之間的連線並不私密。
 identity-description-active-loaded-insecure = 您提供給此網站的資訊（例如密碼、訊息、信用卡號等等）可能會被其他人看到。
+identity-description-tls-key-logging-heading = 您的連線可能不私密
+identity-description-tls-key-logging-message = 其他應用程式或服務可能會看到您與此網站間的加密傳輸資料。
 identity-disable-mixed-content-blocking =
     .label = 暫時停止保護
     .accesskey = D
@@ -944,6 +959,13 @@ urlbar-result-explanation-bookmarked = 於 { $date } 加入書籤
 # Variables:
 #   $date (string) - A localized relative date string
 urlbar-result-explanation-last-visited-relative-2 = 上次於{ $date }造訪
+# This explanation is used when the last-visited date is a small number of days,
+# weeks, or months in the past.
+# Variables:
+#   $date (string) - A localized relative date string like one of the following:
+#                    "6 days ago", "1 week ago", "4 weeks ago", "1 month ago",
+#                    "11 months ago"
+urlbar-result-explanation-last-visited-days-weeks-months-ago = 上次於 { $date } 造訪
 # This explanation is used when the last-visited date is a small number of days
 # in the past.
 # Variables:
@@ -1115,7 +1137,7 @@ urlbar-searchmode-popup-add-engine = 新增「{ $engineName }」
 urlbar-searchmode-popup-one-off-header = 這次使用下列搜尋引擎搜尋：
 # Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
 # reset after submitting.
-urlbar-searchmode-popup-header = 使用下列引擎搜尋：
+urlbar-searchmode-popup-header = 使用其他引擎搜尋：
 urlbar-searchmode-popup-search-settings = 搜尋設定
     .accesskey = S
 urlbar-searchmode-popup-settings = 設定
@@ -1356,13 +1378,6 @@ qrcode-copy-error =
     .message = QR Code 複製失敗。
 qrcode-save-button =
     .label = 儲存
-qrcode-save-success =
-    .message = 已儲存 QR Code。
-qrcode-save-error =
-    .message = QR Code 儲存失敗。
-qrcode-save-title = 儲存 QR Code
-qrcode-save-filter-png = PNG 圖片
-qrcode-save-filename = qrcode.png
 qrcode-window-title = QR Code
 qrcode-dialog-title = QR Code
 qrcode-image =
@@ -1544,6 +1559,14 @@ private-browsing-indicator-label = 隱私瀏覽
 # Tooltip for the indicator shown in the private browsing window titlebar.
 private-browsing-indicator-tooltip =
     .tooltiptext = 隱私瀏覽模式
+# Tooltip for the private browsing indicator button that opens the info panel.
+private-browsing-indicator-button =
+    .tooltiptext = 隱私瀏覽資訊
+# Title shown in the private browsing info panel.
+private-browsing-info-panel-title = 您在隱私瀏覽視窗當中
+# Body copy shown in the private browsing info panel. The learn-more link text
+# is embedded in the sentence.
+private-browsing-info-panel-description = 此功能可幫助您隱藏本裝置上的瀏覽紀錄，不被其他人看見，但無法讓您在網路上完全隱身。<a data-l10n-name="learn-more">還有誰可能看得到我的上網行為？</a>
 # Tooltip for the indicator shown in the window titlebar when content analysis is active.
 # Variables:
 #   $agentName (String): The name of the DLP agent that is connected
@@ -1764,6 +1787,10 @@ trustpanel-blocker-header =
 # Keep this string as short as possible, this is displayed in the URL bar
 # use a synonym for "safe" or "private" if "secure" is too long.
 urlbar-trust-icon-notsecure-label = 不安全
+# Keep this string as short as possible, this is displayed in the URL bar
+# Variables
+#  $count (number): the number of trackers blocked.
+urlbar-trust-icon-trackers-blocked-longform-label = 已封鎖 { $count } 組追蹤器
 
 ## Variables
 ##  $count (String): the number of trackers blocked.

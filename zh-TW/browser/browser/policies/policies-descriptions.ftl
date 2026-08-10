@@ -30,6 +30,10 @@ policy-BlockAboutSupport = 防止開啟 about:support 頁面。
 policy-Bookmarks = 在書籤工具列、選單或當中的資料夾建立書籤。
 policy-CaptivePortal = 開啟或關閉支援 Captive portal。
 policy-CertificatesDescription = 新增憑證，或使用內建憑證。
+# CNSA 2.0 is the United States National Security Agency's Commercial National
+# Security Algorithm Suite 2.0. ML-KEM-1024 is a post-quantum key agreement
+# algorithm. Neither should be translated.
+policy-CNSA2KeyAgreementEnabled = 開啟 TLS 的 CNSA 2.0 ML-KEM-1024 金鑰協定。
 policy-ContentAnalysis = 啟用或停用與資料外洩防護軟體之間的連線。
 policy-Cookies = 允許或拒絕網站設定 Cookie。
 # Containers in this context is referring to container tabs in Firefox.
@@ -53,6 +57,7 @@ policy-DisableFirefoxScreenshots = 停用 Firefox Screenshots 功能。
 policy-DisableFirefoxStudies = 防止 { -brand-short-name } 進行使用者研究。
 policy-DisableForgetButton = 防止使用「忘記」功能。
 policy-DisableFormHistory = 不要記住搜尋與表單填寫紀錄。
+policy-DisableLaunchOnLogin = 防止 { -brand-short-name } 在使用者登入時自動啟動。
 policy-DisablePrimaryPasswordCreation = 若為 true，將無法建立主控密碼。
 policy-DisablePasswordReveal = 不允許於儲存的登入資訊畫面中顯示密碼。
 policy-DisablePocket2 = 停用儲存網頁到 { -pocket-brand-name } 的功能。

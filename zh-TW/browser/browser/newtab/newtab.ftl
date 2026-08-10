@@ -289,6 +289,8 @@ newtab-privacy-message-first-protection-cta = 檢視保護成果
 newtab-stocks-menu-search = 搜尋個股代碼
 # Context menu item linking to more information about the Stocks widget.
 newtab-stocks-menu-learn-more = 更多資訊
+# Shown in the Stocks widget when its data could not be loaded.
+newtab-stocks-error-not-available = 無法提供股市資料。
 # "Stocks widget options" is an icon-only button in the widget toolbar — the
 # attributes are consumed as tooltip/screen-reader label only. The button
 # never renders visible text.
@@ -405,6 +407,7 @@ newtab-topsites-url-input =
     .placeholder = 輸入或貼上網址
 newtab-topsites-url-validation = 請輸入有效的網址
 newtab-topsites-image-url-label = 自訂圖片網址
+newtab-topsites-use-custom-image-link = 使用自訂圖片
 newtab-topsites-use-image-link = 使用自訂圖片…
 newtab-topsites-image-validation = 圖片載入失敗，請改用不同網址。
 
@@ -438,6 +441,23 @@ newtab-topsite-sponsored = 贊助項目
 topsite-label-pinned =
     .aria-label = { $title }（已釘選）
     .title = { $title }
+
+## Top Sites - Web notifications hover card
+
+# Variables:
+#   $site (string) - The label or hostname of the site the notifications are from.
+newtab-topsites-hover-card-header = 來自 { $site } 的通知
+# Relative time shown for a notification posted less than a minute ago.
+newtab-topsites-hover-card-just-now = 剛剛
+newtab-topsites-hover-card-mark-all-read =
+    .title = 全部標示為已讀
+    .aria-label = 全部標示為已讀
+newtab-topsites-hover-card-settings =
+    .title = 通知設定
+    .aria-label = 通知設定
+newtab-topsites-hover-card-dismiss =
+    .title = 知道了！
+    .aria-label = 知道了！
 
 ## Context Menu - Action Tooltips.
 
@@ -644,7 +664,7 @@ newtab-pocket-onboarding-cta = { -pocket-brand-name } 為您探索不同的線�
 newtab-error-fallback-info = 唉唷，載入內容時發生錯誤。
 newtab-error-fallback-refresh-link = 請重新整理頁面再試一次。
 
-## Customization Menu
+## New Tab Appearance (browser theme picker)
 
 newtab-custom-shortcuts-title = 捷徑
 newtab-custom-shortcuts-subtitle = 您儲存或造訪過的網站
@@ -654,6 +674,9 @@ newtab-custom-shortcuts-toggle =
     .description = 您儲存或造訪過的網站
 newtab-custom-shortcuts-nova =
     .label = 捷徑
+newtab-custom-web-notifications-toggle =
+    .label = 網頁通知
+    .description = 在捷徑中顯示來自該網站的通知
 newtab-custom-row-description =
     .description = 資料列數
 # Variables
@@ -699,8 +722,6 @@ newtab-custom-widget-lists-toggle =
     .label = 清單
 newtab-custom-widget-timer-toggle =
     .label = 計時器
-newtab-custom-widget-sports-toggle =
-    .label = 世界盃足球賽
 newtab-custom-widget-clock-toggle =
     .label = 時鐘
 newtab-custom-widget-sports-toggle2 =
@@ -724,9 +745,34 @@ newtab-custom-close-menu-button =
 newtab-custom-close-button = 關閉
 newtab-custom-settings = 管理更多設定
 
+## New Tab Appearance (browser theme picker)
+
+# Title of the browser theme ("Appearance") section in the customize panel.
+newtab-custom-appearance-section-title = 外觀設定
+# Button that opens the full browser theme selection view.
+newtab-appearance-more-themes-button =
+    .label = 看更多佈景主題
+# Title of the full theme selection sub-panel, also used as its back button label.
+newtab-appearance-manage-title = { -brand-product-name } 佈景主題
+# Header for the list of the user's already-installed themes in the full theme panel.
+newtab-appearance-your-themes-header = 您的佈景主題
+# Button that enables an already-installed theme.
+newtab-appearance-enable-theme-button =
+    .label = 啟用
+# Button that disables the active theme and reverts to the default.
+newtab-appearance-disable-theme-button =
+    .label = 停用
+# Button that installs a theme.
+newtab-appearance-install-theme-button =
+    .label = 安裝佈景主題
+# Button/link on the full theme panel that opens the complete list of available themes.
+newtab-appearance-explore-more-themes-button = 探索更多佈景主題
+
 ## New Tab Wallpapers
 
+#  (developer note): @nova-cleanup(remove-string): Remove old "Wallpapers" heading string once Nova lands. The newtab-wallpaper-toggle-title string will take over
 newtab-wallpaper-title = 背景圖
+#  (developer note): @nova-cleanup(remove-string): Remove string once Nova lands. Nova has no reset button; the wallpapers toggle handles reset
 newtab-wallpaper-reset = 還原為預設值
 #  (developer note): @nova-cleanup(remove-string): Remove old "Upload an image" string once Nova lands. The new "Add an image"  string will take over
 newtab-wallpaper-upload-image = 上傳圖片
@@ -1263,8 +1309,6 @@ newtab-sports-widget-menu-learn-more = 更多資訊
 # “Keep tabs on” is an informal expression meaning to stay updated on, stay informed on, or regularly follow something (in this case, World Cup matches and updates).
 newtab-sports-widget-keep-tabs = 獲得世界盃賽事的最新資訊
 newtab-sports-widget-get-updates = 獲得即時比賽資訊與更多資訊。
-newtab-sports-widget-view-schedule =
-    .label = 檢視賽程
 newtab-sports-widget-follow-teams =
     .label = 關注球隊
 newtab-sports-widget-view-matches =
@@ -1576,6 +1620,26 @@ newtab-clock-widget-edit-clock-form =
 # It means "results of the search", not "search within the results".
 newtab-clock-widget-search-results =
     .aria-label = 搜尋結果
+# Fallback row in the search results that lets the user add a city that is
+# not in the list. $city (String) is the text the user has typed.
+newtab-clock-widget-add-custom = 將「{ $city }」新增為自訂時鐘
+# Text field for the display name of a user-added custom clock.
+newtab-clock-widget-custom-city-input =
+    .label = 城市名稱
+    .aria-label = 城市名稱
+    .placeholder = 命名此時鐘
+# Searchable time-zone field shown when adding a custom clock. The user
+# types a city they know and picks it to set the clock's time zone.
+newtab-clock-widget-custom-timezone-input =
+    .label = 時區
+    .aria-label = 時區
+    .placeholder = 搜尋城市名稱、時區名稱或 UTC 時差
+newtab-clock-widget-custom-zone-results =
+    .aria-label = 時區搜尋結果
+# Shown in the time-zone picker when the search matches no time zones.
+newtab-clock-widget-custom-zone-no-results = 沒有符合的時區
+# Returns from the custom clock form back to the city search.
+newtab-clock-widget-custom-back = 返回
 # Shown in place of the search results when the user's query does not match any
 # supported city — e.g. typing a misspelled name or a place not in the IANA
 # time zone list.
@@ -1588,3 +1652,105 @@ newtab-clock-widget-menu-button =
     .aria-label = 開啟時鐘選單
 # $nickname (String) - The user-defined nickname for a saved clock location (e.g., "Home", "Office").
 newtab-clock-widget-label-nickname-with-value = 暱稱：{ $nickname }
+# Curated World Clock city names. The value is the city name shown on the
+# clock; translate to your locale's usual spelling for the city.
+newtab-clock-city-us-new-york = 紐約
+newtab-clock-city-us-los-angeles = 洛杉磯
+newtab-clock-city-us-chicago = 芝加哥
+newtab-clock-city-us-san-francisco = 舊金山
+newtab-clock-city-us-san-diego = 聖地牙哥
+newtab-clock-city-us-dallas = 達拉斯
+newtab-clock-city-us-houston = 休士頓
+newtab-clock-city-us-philadelphia = 費城
+newtab-clock-city-us-atlanta = 亞特蘭大
+newtab-clock-city-us-washington-dc = 華盛頓特區
+newtab-clock-city-us-boston = 波士頓
+newtab-clock-city-us-miami = 邁阿密
+newtab-clock-city-us-seattle = 西雅圖
+newtab-clock-city-us-denver = 丹佛
+newtab-clock-city-us-honolulu = 檀香山
+newtab-clock-city-us-anchorage = 安克拉治
+newtab-clock-city-de-berlin = 柏林
+newtab-clock-city-de-munich = 慕尼黑
+newtab-clock-city-de-frankfurt = 法蘭克福
+newtab-clock-city-de-hamburg = 漢堡
+newtab-clock-city-fr-paris = 巴黎
+newtab-clock-city-fr-lyon = 里昂
+newtab-clock-city-fr-marseille = 馬賽
+newtab-clock-city-fr-toulouse = 土魯斯
+newtab-clock-city-in-kolkata = 加爾各答
+newtab-clock-city-in-mumbai = 孟買
+newtab-clock-city-in-delhi = 德里
+newtab-clock-city-in-bangalore = 邦加羅爾
+newtab-clock-city-cn-shanghai = 上海
+newtab-clock-city-cn-beijing = 北京
+newtab-clock-city-cn-shenzhen = 深圳
+newtab-clock-city-br-sao-paulo = 聖保羅
+newtab-clock-city-br-rio-de-janeiro = 里約熱內盧
+newtab-clock-city-br-brasilia = 巴西利亞
+newtab-clock-city-id-jakarta = 雅加達
+newtab-clock-city-id-surabaya = 泗水
+newtab-clock-city-id-makassar = 望加錫
+newtab-clock-city-ca-toronto = 多倫多
+newtab-clock-city-ca-montreal = 蒙特婁
+newtab-clock-city-ca-vancouver = 溫哥華
+newtab-clock-city-au-sydney = 雪梨
+newtab-clock-city-au-perth = 伯斯
+newtab-clock-city-au-adelaide = 阿得雷德
+newtab-clock-city-pl-warsaw = 華沙
+newtab-clock-city-pl-krakow = 克拉科夫
+newtab-clock-city-jp-tokyo = 東京
+newtab-clock-city-jp-osaka = 大阪
+newtab-clock-city-mx-mexico-city = 墨西哥城
+newtab-clock-city-mx-guadalajara = 瓜達拉哈拉
+newtab-clock-city-it-rome = 羅馬
+newtab-clock-city-it-milan = 米蘭
+newtab-clock-city-ru-moscow = 莫斯科
+newtab-clock-city-ru-saint-petersburg = 聖彼得堡
+newtab-clock-city-gb-london = 倫敦
+newtab-clock-city-gb-birmingham = 伯明罕
+newtab-clock-city-es-madrid = 馬德里
+newtab-clock-city-es-barcelona = 巴塞隆納
+newtab-clock-city-nl-amsterdam = 阿姆斯特丹
+newtab-clock-city-ch-zurich = 蘇黎世
+newtab-clock-city-at-vienna = 維也納
+newtab-clock-city-cz-prague = 布拉格
+newtab-clock-city-ar-buenos-aires = 布宜諾斯艾利斯
+newtab-clock-city-gr-athens = 雅典
+newtab-clock-city-hu-budapest = 布達佩斯
+newtab-clock-city-be-brussels = 布魯塞爾
+newtab-clock-city-ua-kyiv = 基輔
+newtab-clock-city-fi-helsinki = 赫爾辛基
+newtab-clock-city-co-bogota = 波哥大
+newtab-clock-city-ph-manila = 馬尼拉
+newtab-clock-city-tr-istanbul = 伊斯坦堡
+newtab-clock-city-my-kuala-lumpur = 吉隆坡
+newtab-clock-city-eg-cairo = 開羅
+newtab-clock-city-se-stockholm = 斯德哥爾摩
+newtab-clock-city-ro-bucharest = 布加勒斯特
+newtab-clock-city-th-bangkok = 曼谷
+newtab-clock-city-ng-lagos = 拉哥斯
+newtab-clock-city-tw-taipei = 台北
+newtab-clock-city-za-johannesburg = 約翰尼斯堡
+newtab-clock-city-cl-santiago = 聖地牙哥
+newtab-clock-city-pk-karachi = 喀拉蚩
+newtab-clock-city-bg-sofia = 索菲亞
+newtab-clock-city-sg-singapore = 新加坡
+newtab-clock-city-hk-hong-kong = 香港
+newtab-clock-city-sa-riyadh = 利雅德
+newtab-clock-city-dk-copenhagen = 哥本哈根
+newtab-clock-city-pe-lima = 利馬
+newtab-clock-city-ke-nairobi = 奈洛比
+newtab-clock-city-nz-auckland = 奧克蘭
+newtab-clock-city-kr-seoul = 首爾
+newtab-clock-city-lt-vilnius = 維爾紐斯
+newtab-clock-city-ie-dublin = 都柏林
+newtab-clock-city-ae-dubai = 杜拜
+newtab-clock-city-lv-riga = 里加
+newtab-clock-city-pt-lisbon = 里斯本
+newtab-clock-city-ir-tehran = 德黑蘭
+newtab-clock-city-bd-dhaka = 達卡
+newtab-clock-city-ec-guayaquil = 惠夜基
+newtab-clock-city-vn-ho-chi-minh-city = 胡志明市
+newtab-clock-city-np-kathmandu = 加德滿都
+newtab-clock-city-mm-yangon = 仰光

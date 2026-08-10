@@ -38,7 +38,7 @@ pippki-reset-password-confirmation-message = 您的主密码已重置。
 download-cert-window2 =
     .title = 下载证书
     .style = min-width: 46em
-download-cert-message = 您被要求信任一个新的数字证书认证机构（CA）。
+download-cert-message = 您被要求信任一个新的证书颁发机构（CA）。
 download-cert-trust-ssl =
     .label = 信任由此证书颁发机构来标识网站。
 download-cert-trust-email =
@@ -46,12 +46,12 @@ download-cert-trust-email =
 download-cert-message-desc = 在信任此证书颁发机构之前，您应该检查它的证书、策略和它的手续（如果有的话）。
 download-cert-view-cert =
     .label = 查看
-download-cert-view-text = 检查CA证书
+download-cert-view-text = 检查 CA 证书
 
 ## Client Authentication Ask dialog
 
 client-auth-window =
-    .title = 使用确认请求
+    .title = 用户识别请求
 client-auth-site-description = 此站点请求您用证书来标识您自己：
 client-auth-choose-cert = 选择一个证书作为标识：
 client-auth-send-no-certificate =

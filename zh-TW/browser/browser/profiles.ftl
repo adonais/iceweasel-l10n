@@ -33,6 +33,8 @@ edit-profile-page-profile-name-label = 設定檔名稱
 edit-profile-page-theme-header-2 =
     .label = 佈景主題
 edit-profile-page-explore-themes = 探索更多佈景主題
+edit-profile-page-desktop-shortcut-toggle-2 =
+    .label = 建立桌面捷徑
 edit-profile-page-desktop-shortcut-header = 建立桌面捷徑
 edit-profile-page-desktop-shortcut-toggle =
     .aria-label = 建立桌面捷徑
@@ -40,6 +42,8 @@ edit-profile-page-avatar-header-2 =
     .label = 圖示
 edit-profile-page-delete-button =
     .label = 刪除
+edit-profile-page-avatar-selector-opener-button =
+    .title = 編輯大頭照
 edit-profile-page-avatar-selector-opener-link = 編輯
 avatar-selector-icon-tab = 圖示
 avatar-selector-custom-tab = 自訂
@@ -93,6 +97,9 @@ delete-profile-logins = 密碼
 # Variables
 #   $profilename (String) - The name of the profile.
 delete-profile-page-title-2 = 刪除「{ $profilename }」原則
+# Variables
+#   $profilename (String) - The name of the profile.
+delete-profile-header-2 = 要刪除「{ $profilename }」設定檔嗎？
 
 ##
 

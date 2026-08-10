@@ -179,6 +179,10 @@ migration-wizard-progress-icon-in-progress =
 migration-wizard-progress-icon-completed =
     .aria-label = 已完成
 migration-safari-password-import-header = 從 Safari 匯入密碼
+migration-safari-password-import-post-sequoia-step1 = 開啟您 Mac 上的<a data-l10n-name="macos-passwords-app">「密碼」應用程式</a>
+migration-safari-password-import-post-sequoia-step2 = 從畫面頂端的選單列選擇「檔案」>「將所有密碼輸出到檔案…」
+migration-safari-password-import-post-sequoia-step3 = 儲存檔案
+migration-safari-password-import-post-sequoia-step4 = 選擇您儲存的檔案
 migration-safari-password-import-steps-header = 若要匯入 Safari 密碼:
 migration-safari-password-import-step1 = 在 Safari 點擊「Safari」選單，然後點擊「偏好設定 > 密碼」
 migration-safari-password-import-step2 = 選擇 <img data-l10n-name="safari-icon-3dots"/> 按鈕，然後選擇「匯出所有密碼」
@@ -191,6 +195,7 @@ migration-chrome-windows-password-import-step2 = 點擊選單中的「設定」�
 migration-chrome-windows-password-import-step3 = 選擇「下載檔案」然後儲存到您的裝置上。
 migration-chrome-windows-password-import-step4 = 回到此處，然後點擊「選擇檔案」，選擇剛剛儲存的檔案即可匯入。
 migration-manual-password-import-skip-button = 略過
+migration-manual-password-import-cancel-button = 取消
 migration-manual-password-import-select-button = 選擇檔案
 migration-safari-password-import-skip-button = 略過
 migration-safari-password-import-select-button = 選擇檔案

@@ -96,6 +96,9 @@ home-prefs-clocks-header =
 # Privacy is a widget on New Tab that shows tracking protection activity.
 home-prefs-privacy-header =
     .label = 隐私保护
+# Crossword is a widget on New Tab that shows a daily crossword puzzle.
+home-prefs-crossword-widget-header =
+    .label = 填字游戏
 # Stocks is a widget on New Tab that shows stock ticker prices.
 home-prefs-stocks-header =
     .label = 股市
@@ -172,6 +175,13 @@ newtab-privacy-menu-learn-more = 详细了解
 # Variables:
 #   $count (number) - Number of trackers blocked today
 newtab-privacy-trackers-blocked-today = 今天拦截的跟踪器数量
+# Second line of the readout, under the large number and "Trackers blocked
+# today". Counts the sites those trackers were blocked on. The English is
+# shortened from "Blocked across { $count } sites" — translate it that fuller way
+# if the short fragment doesn't work in your language.
+# Variables:
+#   $count (number) - Number of sites where trackers were blocked
+newtab-privacy-across-sites = 包含 { $count } 个网站
 
 ## Privacy widget — empty state
 
@@ -191,10 +201,12 @@ newtab-privacy-message-info-8 = 使用 { -brand-short-name } 浏览，即是在�
 newtab-privacy-message-info-8-cta = 详细了解
 newtab-privacy-message-info-9 = 将 { -brand-short-name } 设为默认浏览器，享受内置隐私保护。
 newtab-privacy-message-info-9-cta = 设为默认
+newtab-privacy-message-info-10 = 将密码保存在 { -brand-short-name } 中，即可随时随地取用高强度且唯一的登录信息。
 newtab-privacy-message-info-10-cta = 转到密码
 newtab-privacy-message-info-11 = 了解 { -brand-short-name } 如何帮助您更私密地浏览。
 newtab-privacy-message-info-11-cta = 详细了解
 newtab-privacy-message-info-12 = 使用限量数据流量套餐时，拦截跟踪器有助于节省带宽。
+newtab-privacy-message-info-13 = { -brand-short-name } 会拦截跟踪器，从而释放带宽，让流播放更流畅。
 
 ## Privacy widget — promotional messages
 ##
@@ -245,6 +257,15 @@ newtab-stocks-widget-menu-button =
 # Heading for the Stocks widget.
 newtab-stocks-widget-title = 股市
 
+## Screen-reader summary of a stock ticker.
+## Variables:
+##   $name (String) - the full fund/ETF name, e.g. "SPDR S&P 500 ETF Trust".
+##   $change (String) - the day's percentage change, e.g. "+2.1%".
+##   $price (String) - the last price, e.g. "$559.44".
+
+# Stock didn't change during the day
+newtab-stocks-ticker-status-flat = { $name }，平盘，{ $change }，{ $price }
+
 ## Strings for the Picture of the Day widget
 
 # Title shown at the top of the widget, with the source name appended.
@@ -289,6 +310,11 @@ newtab-picture-menu-learn-more = 详细了解
 newtab-picture-show-button =
     .title = 显示今日图片
     .aria-label = 显示今日图片
+# Shown when there is no new picture to display yet.
+newtab-picture-check-back = 明天再来看看有没有新照片吧
+# Screen-reader text alternative for the picture; fallback used when the source
+# provides no localized description.
+newtab-picture-image-alt = 维基共享资源 · 每日一图
 
 ## Search box component.
 
@@ -333,6 +359,7 @@ newtab-topsites-url-input =
     .placeholder = 输入或粘贴网址
 newtab-topsites-url-validation = 需要有效的网址
 newtab-topsites-image-url-label = 自定义图像网址
+newtab-topsites-use-custom-image-link = 使用自定义图像
 newtab-topsites-use-image-link = 使用自定义图像…
 newtab-topsites-image-validation = 图像加载失败。请尝试其他网址。
 
@@ -571,7 +598,7 @@ newtab-pocket-onboarding-cta = { -pocket-brand-name } 探索各种各样的出�
 newtab-error-fallback-info = 哎呀，加载内容时发生错误。
 newtab-error-fallback-refresh-link = 刷新页面以重试。
 
-## Customization Menu
+## New Tab Appearance (browser theme picker)
 
 newtab-custom-shortcuts-title = 快捷方式
 newtab-custom-shortcuts-subtitle = 您保存或访问过的网站
@@ -624,8 +651,6 @@ newtab-custom-widget-lists-toggle =
     .label = 清单
 newtab-custom-widget-timer-toggle =
     .label = 计时器
-newtab-custom-widget-sports-toggle =
-    .label = 世界杯
 newtab-custom-widget-clock-toggle =
     .label = 时钟
 newtab-custom-widget-sports-toggle2 =
@@ -651,7 +676,9 @@ newtab-custom-settings = 管理更多设置
 
 ## New Tab Wallpapers
 
+#  (developer note): @nova-cleanup(remove-string): Remove old "Wallpapers" heading string once Nova lands. The newtab-wallpaper-toggle-title string will take over
 newtab-wallpaper-title = 壁纸
+#  (developer note): @nova-cleanup(remove-string): Remove string once Nova lands. Nova has no reset button; the wallpapers toggle handles reset
 newtab-wallpaper-reset = 重置为默认设置
 #  (developer note): @nova-cleanup(remove-string): Remove old "Upload an image" string once Nova lands. The new "Add an image"  string will take over
 newtab-wallpaper-upload-image = 上传图像
@@ -1185,8 +1212,6 @@ newtab-sports-widget-menu-learn-more = 详细了解
 # “Keep tabs on” is an informal expression meaning to stay updated on, stay informed on, or regularly follow something (in this case, World Cup matches and updates).
 newtab-sports-widget-keep-tabs = 全程关注世界杯
 newtab-sports-widget-get-updates = 获取实时赛况等信息。
-newtab-sports-widget-view-schedule =
-    .label = 查看赛程
 newtab-sports-widget-follow-teams =
     .label = 关注球队
 newtab-sports-widget-view-matches =
@@ -1217,7 +1242,7 @@ newtab-sports-widget-show-less =
 newtab-sports-widget-followed-only-toggle =
     .label = 仅显示关注的球队
 # Status shown when more matches are being fetched.
-newtab-sports-widget-loading-more = 正加载更多匹配项…
+newtab-sports-widget-loading-more = 正在加载更多比赛…
 # Watch is a verb (as in watch matches online).
 newtab-sports-widget-watch =
     .label = 观看
@@ -1310,6 +1335,8 @@ newtab-sports-widget-match-penalties = 点球决胜
 # Separator shown between two teams in a placeholder match row when no upcoming
 # match details are available yet.
 newtab-sports-widget-match-vs = vs
+# Note shown in the Upcoming tab when no match details are available yet.
+newtab-sports-widget-no-upcoming-matches = 敬请期待下一场比赛的详情
 
 ## Sports widget live-games pagination. Shown when 2+ matches are live at the same time
 
@@ -1397,6 +1424,7 @@ newtab-sports-widget-message-wallpapers-title = 换上新壁纸，迎接世界�
 newtab-sports-widget-message-wallpapers-body = 赛事期间，将赛场活力注入浏览器
 newtab-sports-widget-message-wallpapers-cta = 选择壁纸
 newtab-sports-widget-message-wallpapers-semifinals-title = 换上新壁纸，迎接半决赛
+newtab-sports-widget-message-wallpapers-semifinals-body = 迎接最盛大的世界杯比赛。
 newtab-sports-widget-message-add-widgets-cta =
     .label = 添加小组件
 newtab-sports-widget-message-day-in-play-title = 使用 { -brand-product-name } 小组件，全天候关注精彩赛事
@@ -1406,9 +1434,10 @@ newtab-sports-widget-message-explore-widgets-cta =
 
 ## Survey prompts shown after the World Cup to gather feedback on the widgets experience.
 
-newtab-sports-widget-message-survey-title = 帮助我们改进小部件
+newtab-sports-widget-message-survey-title = 帮助我们改进小组件
 newtab-sports-widget-message-survey-body = 世界杯已落下帷幕，欢迎分享您对此次体验的反馈。
 newtab-sports-widget-message-survey-widget-title = 世界杯小组件使用体验如何？
+newtab-sports-widget-message-survey-widget-body = 分享您的反馈意见可帮助我们改进未来的小组件。后续，欢迎体验新的小组件。
 newtab-sports-widget-message-survey-cta =
     .label = 填写问卷
 
@@ -1506,3 +1535,105 @@ newtab-clock-widget-menu-button =
     .aria-label = 打开时钟菜单
 # $nickname (String) - The user-defined nickname for a saved clock location (e.g., "Home", "Office").
 newtab-clock-widget-label-nickname-with-value = 别名：{ $nickname }
+# Curated World Clock city names. The value is the city name shown on the
+# clock; translate to your locale's usual spelling for the city.
+newtab-clock-city-us-new-york = 纽约
+newtab-clock-city-us-los-angeles = 洛杉矶
+newtab-clock-city-us-chicago = 芝加哥
+newtab-clock-city-us-san-francisco = 旧金山
+newtab-clock-city-us-san-diego = 圣迭戈
+newtab-clock-city-us-dallas = 达拉斯
+newtab-clock-city-us-houston = 休斯敦
+newtab-clock-city-us-philadelphia = 费城
+newtab-clock-city-us-atlanta = 亚特兰大
+newtab-clock-city-us-washington-dc = 华盛顿哥伦比亚特区
+newtab-clock-city-us-boston = 波士顿
+newtab-clock-city-us-miami = 迈阿密
+newtab-clock-city-us-seattle = 西雅图
+newtab-clock-city-us-denver = 丹佛
+newtab-clock-city-us-honolulu = 火奴鲁鲁
+newtab-clock-city-us-anchorage = 安克雷奇
+newtab-clock-city-de-berlin = 柏林
+newtab-clock-city-de-munich = 慕尼黑
+newtab-clock-city-de-frankfurt = 美因河畔法兰克福
+newtab-clock-city-de-hamburg = 汉堡
+newtab-clock-city-fr-paris = 巴黎
+newtab-clock-city-fr-lyon = 里昂
+newtab-clock-city-fr-marseille = 马赛
+newtab-clock-city-fr-toulouse = 图卢兹
+newtab-clock-city-in-kolkata = 加尔各答
+newtab-clock-city-in-mumbai = 孟买
+newtab-clock-city-in-delhi = 德里
+newtab-clock-city-in-bangalore = 班加罗尔
+newtab-clock-city-cn-shanghai = 上海
+newtab-clock-city-cn-beijing = 北京
+newtab-clock-city-cn-shenzhen = 深圳
+newtab-clock-city-br-sao-paulo = 圣保罗
+newtab-clock-city-br-rio-de-janeiro = 里约热内卢
+newtab-clock-city-br-brasilia = 巴西利亚
+newtab-clock-city-id-jakarta = 雅加达
+newtab-clock-city-id-surabaya = 泗水
+newtab-clock-city-id-makassar = 望加锡
+newtab-clock-city-ca-toronto = 多伦多
+newtab-clock-city-ca-montreal = 蒙特利尔
+newtab-clock-city-ca-vancouver = 温哥华
+newtab-clock-city-au-sydney = 悉尼
+newtab-clock-city-au-perth = 珀斯
+newtab-clock-city-au-adelaide = 阿德莱德
+newtab-clock-city-pl-warsaw = 华沙
+newtab-clock-city-pl-krakow = 克拉科夫
+newtab-clock-city-jp-tokyo = 东京
+newtab-clock-city-jp-osaka = 大阪
+newtab-clock-city-mx-mexico-city = 墨西哥城
+newtab-clock-city-mx-guadalajara = 瓜达拉哈拉
+newtab-clock-city-it-rome = 罗马
+newtab-clock-city-it-milan = 米兰
+newtab-clock-city-ru-moscow = 莫斯科
+newtab-clock-city-ru-saint-petersburg = 圣彼得堡
+newtab-clock-city-gb-london = 伦敦
+newtab-clock-city-gb-birmingham = 伯明翰
+newtab-clock-city-es-madrid = 马德里
+newtab-clock-city-es-barcelona = 巴塞罗那
+newtab-clock-city-nl-amsterdam = 阿姆斯特丹
+newtab-clock-city-ch-zurich = 苏黎世
+newtab-clock-city-at-vienna = 维也纳
+newtab-clock-city-cz-prague = 布拉格
+newtab-clock-city-ar-buenos-aires = 布宜诺斯艾利斯
+newtab-clock-city-gr-athens = 雅典
+newtab-clock-city-hu-budapest = 布达佩斯
+newtab-clock-city-be-brussels = 布鲁塞尔
+newtab-clock-city-ua-kyiv = 基辅
+newtab-clock-city-fi-helsinki = 赫尔辛基
+newtab-clock-city-co-bogota = 波哥大
+newtab-clock-city-ph-manila = 马尼拉
+newtab-clock-city-tr-istanbul = 伊斯坦布尔
+newtab-clock-city-my-kuala-lumpur = 吉隆坡
+newtab-clock-city-eg-cairo = 开罗
+newtab-clock-city-se-stockholm = 斯德哥尔摩
+newtab-clock-city-ro-bucharest = 布加勒斯特
+newtab-clock-city-th-bangkok = 曼谷
+newtab-clock-city-ng-lagos = 拉各斯
+newtab-clock-city-tw-taipei = 台北
+newtab-clock-city-za-johannesburg = 约翰内斯堡
+newtab-clock-city-cl-santiago = 圣地亚哥
+newtab-clock-city-pk-karachi = 卡拉奇
+newtab-clock-city-bg-sofia = 索非亚
+newtab-clock-city-sg-singapore = 新加坡
+newtab-clock-city-hk-hong-kong = 香港
+newtab-clock-city-sa-riyadh = 利雅得
+newtab-clock-city-dk-copenhagen = 哥本哈根
+newtab-clock-city-pe-lima = 利马
+newtab-clock-city-ke-nairobi = 内罗毕
+newtab-clock-city-nz-auckland = 奧克蘭
+newtab-clock-city-kr-seoul = 首尔
+newtab-clock-city-lt-vilnius = 维尔纽斯
+newtab-clock-city-ie-dublin = 都柏林
+newtab-clock-city-ae-dubai = 迪拜
+newtab-clock-city-lv-riga = 里加
+newtab-clock-city-pt-lisbon = 里斯本
+newtab-clock-city-ir-tehran = 德黑兰
+newtab-clock-city-bd-dhaka = 达卡
+newtab-clock-city-ec-guayaquil = 瓜亚基尔
+newtab-clock-city-vn-ho-chi-minh-city = 胡志明市
+newtab-clock-city-np-kathmandu = 加德满都
+newtab-clock-city-mm-yangon = 仰光

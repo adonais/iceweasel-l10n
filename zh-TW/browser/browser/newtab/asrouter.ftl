@@ -293,6 +293,20 @@ launch-on-login-infobar-final-message = <strong>要在每次電腦開機時自�
 launch-on-login-infobar-final-reject-button = 不要，謝謝
     .accesskey = N
 
+## Launch on login "show and tell" infobar notification
+##
+## Shown after Firefox has automatically launched at Windows sign-in (an
+## experiment enabled launch-on-login for the user), informing them that this
+## happened and letting them keep it on or turn it off.
+
+# "settings" refers to the Firefox settings (about:preferences), where
+# launch-on-login can be toggled, not the Windows system settings.
+launch-on-login-autostart-infobar-message = 現在起，{ -brand-short-name } 會在您登入 Windows 時自動啟動。之後也可以到「設定」調整此行為。
+launch-on-login-autostart-infobar-keep-button = 保持開啟
+    .accesskey = K
+launch-on-login-autostart-infobar-turn-off-button = 關閉
+    .accesskey = T
+
 ## Launch on login spotlight
 ##
 ## Shown as a spotlight message when the user closes the browser, offering to set
@@ -492,9 +506,20 @@ nova-early-access-share-feedback-link = 分享意見回饋
 nova-early-access-infobar-primary-button = 知道了！
     .accesskey = G
 
-## App Exit Spotlight dialog
+## Firefox launch options spotlight
+##
+## Shown as a spotlight prompt on browser close or launch, offering
+## launch-on-login, taskbar pinning, and session restore.
 
-app-exit-spotlight-title = 要在每次登入 Windows 時啟動 { -brand-short-name } 嗎？
-app-exit-spotlight-checkbox-launch-on-login = 開機時啟動 { -brand-short-name }
-app-exit-spotlight-checkbox-pin-to-taskbar = 釘選到您的工作列
-app-exit-spotlight-primary-button = 儲存並關閉 { -brand-short-name }
+launch-options-spotlight-title-launch-on-login = 要在每次登入 Windows 時啟動 { -brand-short-name } 嗎？
+launch-options-spotlight-title-session-restore = 要在重新啟動 { -brand-short-name } 時重新開啟瀏覽階段嗎？
+launch-options-spotlight-checkbox-launch-on-login = 開機時啟動 { -brand-short-name }
+launch-options-spotlight-checkbox-pin-to-taskbar = 釘選到您的工作列
+# Shown on the browser-close prompt only
+launch-options-spotlight-checkbox-restore-current = 重新開啟目前的視窗與分頁
+# Shown on the browser-launch prompt only
+launch-options-spotlight-checkbox-restore-previous = 重新開啟先前的視窗與分頁
+# Primary button on the browser-close prompt
+launch-options-spotlight-primary-button-close = 儲存並關閉 { -brand-short-name }
+# Primary button on the browser-launch prompt
+launch-options-spotlight-primary-button-launch = 儲存並繼續

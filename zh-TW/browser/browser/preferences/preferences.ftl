@@ -945,11 +945,7 @@ set-as-my-default-browser-2 =
 ## Custom Homepage subpage
 
 home-homepage-mode-label = 首頁與新視窗
-home-homepage-new-windows =
-    .label = 新視窗
 home-newtabs-mode-label = 新分頁
-home-homepage-new-tabs =
-    .label = 新分頁
 home-restore-defaults =
     .label = 回復為預設值
     .accesskey = R
@@ -964,9 +960,6 @@ home-homepage-custom-url =
 # This button is shown when the homepage is managed by an extension and is placed below extension-controlling-homepage.
 home-homepage-manage-extension-button =
     .label = 管理擴充套件
-# This option leads to the "Custom Homepage" subpage
-home-homepage-custom-homepage-button =
-    .label = 選擇特定網站
 # This string has a special case for '1' and [other] (default). If necessary for
 # your language, you can add {$tabCount} to your translations and use the
 # standard CLDR forms, or only use the form for [other] if both strings should
@@ -982,59 +975,23 @@ choose-bookmark =
     .label = 使用書籤…
     .accesskey = B
 
-## Home Section - Home Page Customization
-
-home-homepage-title =
-    .label = 首頁
-
 ## Custom Homepage subpage
 
 home-custom-homepage-header = 自訂首頁
 home-custom-homepage-subpage =
     .heading = 自訂首頁
-# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
-home-custom-homepage-card-header =
-    .label = 網站網址
-home-custom-homepage-address =
-    .placeholder = 請輸入網址
-home-custom-homepage-address-button =
-    .label = 新增網址
-# Shown when no custom websites/URLs to use as a homepage have been added yet
-home-custom-homepage-no-results =
-    .label = 尚未加入任何網站。
-home-custom-homepage-delete-address-button =
-    .aria-label = 刪除地址
-    .title = 刪除地址
-# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
-# to replace the current home page with a currently open page or bookmark.
-home-custom-homepage-replace-with-prompt =
-    .label = 取代為
-# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
-home-custom-homepage-current-pages-button =
-    .label = 目前開啟的頁面
-# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
-home-custom-homepage-bookmarks-button =
-    .label = 書籤…
 
 ## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header2 = { -firefox-home-brand-name }內容
 home-prefs-content-description2 = 選擇要在您的 { -firefox-home-brand-name }畫面顯示哪些內容。
-home-prefs-firefox-logo-header =
-    .label = { -brand-short-name } 圖示
 home-prefs-search-header =
     .label = 網頁搜尋
-home-prefs-search-header2 =
-    .label = 搜尋
 home-prefs-shortcuts-header =
     .label = 捷徑
 home-prefs-shortcuts-description = 您儲存或造訪過的網站
-home-prefs-shortcuts-select =
-    .aria-label = 捷徑
 home-prefs-shortcuts-by-option-sponsored =
     .label = 贊助捷徑
-home-prefs-content-header =
-    .label = { -firefox-home-brand-name }
 
 ## Home Section - Firefox Home Content Customization
 
@@ -1047,9 +1004,6 @@ home-prefs-recommended-by-description-generic = 由 { -brand-product-name } 產�
 home-prefs-stories-header =
     .label = 文章
 home-prefs-stories-description = 依照您的上網行為，提供個人化文章推薦
-home-prefs-stories-header2 =
-    .label = 文章
-    .description = 由 { -brand-product-name } 產品家族精選的內容文章
 
 ##
 
@@ -1069,8 +1023,6 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-recent-activity-header =
     .label = 近期動態
 home-prefs-recent-activity-description = 近期造訪過的網站與內容精選
-home-prefs-recent-activity-select =
-    .aria-label = 近期動態
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -1082,43 +1034,13 @@ home-prefs-weather-header =
     .label = 天氣
 home-prefs-weather-description = 快速了解本日天氣
 home-prefs-weather-learn-more-link = 更多資訊
-home-prefs-widgets-header =
-    .label = 小工具
-# Lists is a widget on New Tab, similar to a to-do widget
-home-prefs-lists-header =
-    .label = 清單
-# Timer is a widget on New Tab, similar to the Pomodoro timer.
-home-prefs-timer-header =
-    .label = 計時器
-# Sports is a widget on New Tab showing sports scores and schedules.
-home-prefs-sports-widget-header =
-    .label = 運動賽事
-# Clock is a widget on New Tab that displays time zones around the world.
-home-prefs-clocks-header =
-    .label = 時鐘
 # "Support" here means to help sustain or contribute to something, especially through funding or sponsorship.
 home-prefs-support-firefox-header =
     .label = 支持 { -brand-product-name }
 home-prefs-mission-message = 贊助商支持我們打造出一個更好的網路環境的使命
 home-prefs-mission-message-learn-more-link = 看看是如何達成的
-home-prefs-mission-message2 =
-    .message = 贊助商支持我們打造出一個更好的網路環境的使命。
 home-prefs-manage-topics-link = 管理主題
-home-prefs-manage-topics-link2 =
-    .label = 管理主題
 home-prefs-choose-wallpaper-link = 挑選一張背景圖
-home-prefs-choose-wallpaper-link2 =
-    .label = 挑選一張背景圖
-# Informational message bar that appears in the Firefox Home section when the options are disabled.
-# The user must select Firefox Home as their homepage for either new tabs or new windows to enable
-# the features in settings.
-home-prefs-firefox-home-disabled-notice =
-    .message = 若要使用這些功能，請將新分頁或新視窗設定為 { -firefox-home-brand-name }。
-# Dropdown option shown when an extension replaces the contents of new windows or tabs.
-# Variables:
-#   $extension (string) - Name of the extension
-home-prefs-homepage-extension-option =
-    .label = 擴充套件（{ $extension }）
 # Variables:
 #   $num (number) - Number of rows displayed
 home-prefs-sections-rows-option =
@@ -1260,8 +1182,6 @@ search-section =
 containers-back-button2 =
     .aria-label = 回到選項頁面
 containers-header = 容器分頁
-containers-section-header =
-    .heading = 容器分頁
 containers-add-button =
     .label = 新增容器
     .accesskey = A
@@ -1759,13 +1679,27 @@ autofill-addresses-manage-addresses-title =
 # This message is displayed when no addresses are stored in Firefox
 addresses-no-addresses-stored-message =
     .label = 未新增地址
-# These values are displayed for each address record listed on the "Manage addresses and more" subpage.
-# Variables:
-#   $name (string) - The name associated with the address
-#   $address (string) - The address
-address-moz-box-item =
-    .label = { $name }
-    .description = { $address }
+personal-info-group =
+    .label = 個人資訊
+autofill-personal-info-checkbox-message =
+    .label = 儲存並自動填寫個人資訊
+autofill-personal-info-manage-button =
+    .label = 管理個人資訊
+passports-list-header =
+    .label = 護照資訊
+passports-delete-passport-button-label =
+    .aria-label = 刪除
+passports-edit-passport-button-label =
+    .aria-label = 編輯
+passports-delete-passport-prompt-title = 要刪除這組護照資訊嗎？
+passports-delete-passport-prompt-confirm-button = 刪除
+passports-delete-passport-prompt-cancel-button = 取消
+autofill-passports-add-button = 新增護照資訊
+autofill-personal-info-manage-title =
+    .heading = 管理個人資訊
+# This message is displayed when no passports are stored in Firefox
+passports-no-passports-stored-message =
+    .label = 未加入護照資訊
 pane-passwords-autofill-title2 = 密碼與自動填寫
     .title = 密碼與自動填寫
 preferences-passwords-autofill-header =
@@ -2626,7 +2560,7 @@ preferences-ai-controls-block-ai =
     .label = { preferences-ai-controls-block-ai-label }
 preferences-ai-controls-block-ai-description = 封鎖的話，代表您不會在 { -brand-short-name } 看到目前已有，或新推出的 AI 擴充功能，或是任何有關這些功能的彈出提示。若需有關包含哪些功能、如何控制傳統機器學習技術的相關功能（如搜尋建議）的相關資訊，<a data-l10n-name="link">請參考此處</a>。
 preferences-ai-controls-blocked-message =
-    .message = 預設會封鎖目前與新推出的 AI 擴充功能，可使用下列控制設定針對特定功能解除封鎖。
+    .message = 預設會封鎖目前提供與新推出的 AI 擴充功能，可使用下列控制元件解除封鎖特定功能。
 preferences-ai-controls-on-device-group =
     .label = 本機裝置上的 AI
     .description = 這些功能會下載小型 AI 模型到您的裝置上運作，這樣可以幫助保護您的隱私。
@@ -2643,6 +2577,9 @@ preferences-ai-controls-tab-group-suggestions-control =
 preferences-ai-controls-key-points-control =
     .label = 預覽鏈結當中的重點資訊
     .description = 在開啟鏈結之前先看一下快速摘要。
+preferences-ai-controls-sidebar-chatbot-group-2 =
+    .label = 側邊欄中的 AI 聊天機器人
+    .description = 一邊上網一邊與機器人對話。可從 Anthropic Claude、ChatGPT、Copilot、Google Gemini 及 Mistral Vibe 任選一套。
 preferences-ai-controls-sidebar-chatbot-group =
     .label = 側邊欄中的 AI 聊天機器人
     .description = 上網時也在畫面中留一塊空間給聊天機器人。從 Anthropic Claude、ChatGPT、Copilot、Google Gemini 及 Le Chat Mistral 當中挑選一套。
@@ -2753,7 +2690,7 @@ iceweasel-libportable-description = libportable 庫額外提供的功能
 iceweasel-libportable-warning1 = 即時生效需要Upcheck支持，不要刪除它。
 iceweasel-libportable-upcheck-description = Upcheck隨瀏覽器啟動，24小時檢測一次，不會帶來額外消耗。
 iceweasel-libportable-upcheck-warning1 = 建議中國大陸用戶手動啟用[Update]下的faster選項，可緩解更新失敗的問題。
-iceweasel-libportable-ubo-description = 在瀏覽器中安裝 uBlock Origin 擴展，需重啟。
+iceweasel-libportable-ubo-description = 在瀏覽器中安裝 ublock origin 擴展，需重啟。
 iceweasel-libportable-ubo-warning1 = 當你在擴展管理器卸載此擴展時，需取消此選項。
 iceweasel-libportable-chrome-description =
     腳本文件會在后臺安裝到瀏覽器目錄，如果你原先存在userChrome環境，將不會安裝。<br>
@@ -2764,7 +2701,7 @@ iceweasel-libportable-download-description =
     downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下載,<br>
     同時也支持瀏覽器下載項。 你需要先啟用userChrome環境。
 iceweasel-libportable-download-warning1 = 你也可以很方便的手動整合下載器, 見項目 Issues 說明。
-iceweasel-libportable-download-pop = downloadUpcheck安裝成功<br>重啟瀏覽器后生效
+iceweasel-libportable-download-pop = 腳本安裝成功<br>重啟瀏覽器后生效
 iceweasel-libportable-download-needed = 下載失敗或者沒有啟用userChrome環境
 iceweasel-libportable-bosskey-description = 默認Ctrl+Shift+~，portable.ini 可修改快捷鍵。
 iceweasel-libportable-bosskey-warning1 = 你需要防止快捷鍵與其他應用沖突。
@@ -2882,6 +2819,8 @@ preferences-etp-level-custom =
     .description = 自行決定開關哪些保護項目。
 preferences-etp-status-advanced-button =
     .label = 進階設定
+preferences-etp-tracker-count-enabled =
+    .label = 在網址列顯示追蹤器封鎖數量
 preferences-etp-status-protections-dashboard-link =
     .label = 檢視您的個人化保護儀表板
     .description = 看看 { -brand-short-name } 已為您封鎖多少社群媒體追蹤器、數位指紋追蹤程式、加密貨幣採礦程式等類型的追蹤器。
@@ -2965,6 +2904,12 @@ security-privacy-issue-warning-extension-install =
 security-privacy-issue-warning-safe-browsing =
     .label = 不封鎖危險或詐騙內容
     .description = 您暴露到詐騙與惡意軟體網站的機會將增加。
+security-privacy-issue-warning-doh2 =
+    .label = 已停用 DNS over HTTPS
+    .description = DNS over HTTPS 可幫助您對電信業者隱藏您將造訪的網站資訊。
+security-privacy-issue-warning-ech2 =
+    .label = 已停用 Encrypted Client Hello
+    .description = Encrypted Client Hello 可幫助您對電信業者隱藏您將造訪的網站資訊。
 security-privacy-issue-warning-doh =
     .label = 已停用 DNS over HTTPS
     .description = DNS over HTTPS 可對您的電信業者隱藏您造訪過的網站。
@@ -2974,3 +2919,15 @@ security-privacy-issue-warning-ech =
 security-privacy-issue-warning-proxy-autodetection =
     .label = 已開啟 Proxy 自動設定
     .description = Proxy 自動設定功能可能會讓未受信任的網路監控您的上網行為。
+
+## Referrals Section
+
+# The header in settings with link to the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+referrals-section-header =
+    .label = 分享 { -brand-short-name }
+    .description = 邀請其他人選用將隱私看得最重要的瀏覽器。
+# Link that opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+referrals-link =
+    .label = 分享 { -brand-short-name }

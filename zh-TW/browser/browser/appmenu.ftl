@@ -49,8 +49,15 @@ appmenuitem-translate =
     .label = 翻譯此頁…
 appmenuitem-zoom =
     .value = 縮放
+# This menu item opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+appmenuitem-referrals =
+    .label = 分享 { -brand-product-name }
 appmenuitem-more-tools =
     .label = 更多工具
+# Menu combining the previous "Help" menu and report broken site
+appmenuitem-help-and-report =
+    .label = 說明與檢舉
 appmenuitem-help =
     .label = 說明
 appmenuitem-exit2 =
@@ -109,6 +116,40 @@ appmenu-remote-tabs-unverified = 需要驗證您的帳號。
 appmenuitem-fxa-toolbar-sync-now2 = 立刻同步
 appmenuitem-fxa-sign-in = 登入 { -brand-product-name }
 appmenuitem-fxa-manage-account = 管理帳號
+fxa-menu-sync-status-on = 已開啟同步
+fxa-menu-sync-status-off = 已關閉同步
+# Shown as a secondary label under "Sync is Off" when the user is signed in but
+# sync is turned off.
+fxa-menu-sync-off-data-description = 未同步您的資料
+# Button shown next to "Sync is Off" when the user is signed in but sync is
+# turned off. Turns syncing on by opening sync preferences.
+fxa-menu-sync-status-turn-on-button =
+    .label = 開啟
+# Shown as a secondary label under "Sync is Off" when the user needs to sign in
+# (again) for sync to work.
+fxa-menu-sync-off-signin-description = 登入 Sync
+# Sync is a verb, short for synchronize.
+# Variables:
+#   $deviceName (String): The name of the local device.
+fxa-menu-sync-device-now = 立即同步 { $deviceName }
+fxa-menu-manage-sync-settings =
+    .label = 管理同步設定
+fxa-menu-add-device =
+    .label = 新增裝置
+fxa-menu-manage-devices =
+    .label = 管理您的裝置
+fxa-menu-device-missing =
+    .label = 沒看到您的裝置嗎？
+# Mozilla account menu item when selected opens a panel with all devices synced to the user's account
+fxa-menu-all-devices =
+    .label = 所有裝置
+# Mozilla account panel title which shows all devices synced to a user's account
+fxa-menu-all-devices-panel =
+    .title = 所有裝置
+fxa-menu-get-firefox-mobile =
+    .label = 下載 { -brand-product-name } for Android 或 iOS
+fxa-menu-secure-sync-subpanel =
+    .title = 安全同步
 appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-account-header = 帳號
 # Variables
@@ -118,6 +159,12 @@ appmenu-fxa-last-sync = 上次同步於 { $time }
     .label = 上次同步於 { $time }
 appmenu-fxa-sync-and-save-data2 = 同步並儲存資料
 appmenu-fxa-signed-in-label = 登入
+# Sign-in promo shown in the app menu when signed out and no menu message or
+# update banner is present, prompting the user to sign in and sync.
+appmenu-fxa-sign-in-promo-heading = 登入 Sync
+appmenu-fxa-sign-in-promo-message = 在所有地方能使用您的資料
+appmenu-fxa-sign-in-promo-button =
+    .label = 登入
 appmenu-fxa-setup-sync =
     .label = 開啟同步…
 appmenu-fxa-setup-sync-new = 開啟
@@ -229,7 +276,7 @@ profiler-popup-presets-web-compat-label =
 profiler-popup-presets-custom-label =
     .label = 自訂
 
-## History panel
+##
 
 appmenu-manage-history =
     .label = 管理歷史
@@ -246,6 +293,27 @@ appmenu-recently-closed-windows =
 appmenu-search-history =
     .label = 搜尋紀錄
 
+## Sync promo shown at the bottom of the History and Bookmarks panels. Its
+## variant depends on the user's account and Sync state. The sign-in heading and
+## all three call-to-action labels are shared by both panels; the remaining
+## headings are specific to the panel they appear in.
+
+appmenu-sync-promo-signin =
+    .heading = 在不同裝置間保持同步
+appmenu-sync-promo-signin-cta = 登入
+appmenu-sync-promo-turnonsync =
+    .heading = 同步您的分頁與瀏覽紀錄
+appmenu-sync-promo-turnonsync-cta = 開啟同步
+# This refers to getting tabs from your mobile device via sync
+appmenu-sync-promo-connectdevice =
+    .heading = 開啟您行動裝置上的分頁
+appmenu-sync-promo-connectdevice-cta = 連結裝置
+appmenu-bookmarks-sync-promo-turnonsync =
+    .heading = 把書籤隨身帶著走
+# This refers to having your bookmarks available on your mobile device via sync
+appmenu-bookmarks-sync-promo-connectdevice =
+    .heading = 書籤隨身帶著走
+
 ## Help panel
 
 appmenu-help-header =
@@ -253,6 +321,11 @@ appmenu-help-header =
 appmenu-about =
     .label = 關於 { -brand-shorter-name }
     .accesskey = A
+# This menu item opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+appmenu-referrals =
+    .label = 分享 { -brand-shorter-name }
+    .accesskey = r
 appmenu-get-help =
     .label = 取得幫助
     .accesskey = H
@@ -266,6 +339,9 @@ appmenu-help-share-ideas =
     .accesskey = S
 appmenu-help-switch-device =
     .label = 切換至新裝置
+# Menu header for combination of "Help" menu and report broken site
+appmenu-help-and-report-header =
+    .title = 說明與檢舉
 
 ## appmenu-help-enter-troubleshoot-mode and appmenu-help-exit-troubleshoot-mode
 ## are mutually exclusive, so it's possible to use the same accesskey for both.
@@ -306,14 +382,21 @@ appmenuitem-report-broken-site =
 appmenuitem-sign-in-account = 登入您的帳號
 appmenuitem-monitor-title2 = 比身分盜用更搶先一步
 appmenuitem-monitor-description2 = 訂閱資料外洩事件警報
+# Shown in place of appmenuitem-monitor-title2 when the user has signed up for Monitor.
+appmenuitem-monitor-title-signed-in = { -monitor-brand-short-name } 資料外洩警報
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 獲得資料外洩警報
 appmenuitem-relay-title = { -relay-brand-short-name }
 appmenuitem-relay-title2 = 保護您電子郵件地址的隱私
 appmenuitem-relay-description2 = 幫助防止收到垃圾信
+# Shown in place of appmenuitem-relay-title2 when the user has signed up for Relay.
+appmenuitem-relay-title-signed-in = 檢視轉寄信箱
 appmenuitem-relay-description = 隱藏您的實際信箱與電話號碼
 appmenuitem-services-relay-description = 啟動轉寄信箱儀錶板
 appmenuitem-vpn-title2 = 使用 { -mozilla-vpn-brand-name } 隱藏您的實際位置
+appmenuitem-vpn-description4 = 為所有應用程式與裝置獲得更多一層保護
+# Shown in place of appmenuitem-vpn-title2 when the user has signed up for VPN.
+appmenuitem-vpn-title-signed-in = 開啟 { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description3 = 讓您上網更不容易被追蹤
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description-2 = 獲得完整裝置保護
@@ -336,9 +419,45 @@ appmenu-manage-profiles =
     .label = 管理設定檔
 appmenu-copy-profile =
     .label = 複製這組設定檔
+appmenu-create-profile2 =
+    .label = 建立新設定檔
 appmenu-create-profile =
     .label = 新增設定檔
 appmenu-edit-profile =
     .aria-label = 編輯設定檔
+appmenu-edit-this-profile =
+    .label = 編輯此設定檔
+appmenu-profile-current-in-use = 目前使用的設定檔
+fxa-menu-create-profile-subpanel =
+    .title = 建立新設定檔
+fxa-menu-create-profile-heading = 使用新設定檔，升級您的上網體驗
+fxa-menu-create-profile-description = 將您工作與私人上網的書籤、密碼、瀏覽紀錄分開管理。
+fxa-menu-create-profile-confirm =
+    .label = 建立新設定檔
+fxa-menu-create-profile-learn-more =
+    .label = 設定檔是什麼？
+# Button in the account menu that links to the Referrals page
+appmenuitem-share-firefox-title = 分享 { -brand-short-name }
+appmenuitem-share-firefox-description = 邀請其他人選用將隱私看得最重要的瀏覽器
 appmenu-profiles-2 =
     .label = 設定檔
+appmenu-profiles-header = 設定檔
+appmenu-all-profiles =
+    .label = 所有設定檔
+appmenu-secure-sync-header = 安全同步
+# Panel shown when clicking a synced device in the Mozilla account menu.
+# The .title attribute sets the panel header text.
+fxa-menu-device-recent-tabs-panel =
+    .title = 近期的分頁
+# Button at the bottom of the per-device recent tabs subpanel.
+# Variables:
+#   $tabCount (Number): Total number of synced tabs on the device.
+fxa-menu-device-view-all-synced-tabs =
+    .label =
+        { $tabCount ->
+            [one] 檢視 { $tabCount } 個同步的分頁
+           *[other] 檢視全部 { $tabCount } 個同步的分頁
+        }
+# Button in the recent tabs sub-panel that sends the current page to the synced device.
+fxa-menu-device-send-current-page =
+    .label = 將目前頁面傳送到此裝置

@@ -137,7 +137,7 @@ spotlight-public-wifi-vpn-link = 暂时不要
 ## Emotive Continuous Onboarding
 
 spotlight-better-internet-header = 更好的互联网，始于你我
-spotlight-better-internet-body = 当您使用 { -brand-short-name }，即代表您投票支持一个人人可用、处处可及，能够造福于所有人的的互联网。
+spotlight-better-internet-body = 当您使用 { -brand-short-name }，即代表您投票支持一个人人可用、处处可及，能够造福于所有人的互联网。
 spotlight-peace-mind-header = 保护您是我的职责
 spotlight-peace-mind-body = { -brand-short-name } 为每位用户月均拦截超过 3,000 个跟踪器。您良好的互联网体验，不应受到任何破坏，尤其是影响隐私的跟踪器。
 spotlight-pin-primary-button =
@@ -491,3 +491,20 @@ nova-early-access-share-feedback-link = 分享反馈
     .accesskey = S
 nova-early-access-infobar-primary-button = 知道了
     .accesskey = G
+
+## Firefox launch options spotlight
+##
+## Shown as a spotlight prompt on browser close or launch, offering
+## launch-on-login, taskbar pinning, and session restore.
+
+launch-options-spotlight-title-session-restore = 要在 { -brand-short-name } 重启时恢复浏览状态吗？
+launch-options-spotlight-checkbox-launch-on-login = 开机时启动 { -brand-short-name }
+launch-options-spotlight-checkbox-pin-to-taskbar = 固定到任务栏
+# Shown on the browser-close prompt only
+launch-options-spotlight-checkbox-restore-current = 重新打开当前口和标签页
+# Shown on the browser-launch prompt only
+launch-options-spotlight-checkbox-restore-previous = 重新打开先前窗口和标签页
+# Primary button on the browser-close prompt
+launch-options-spotlight-primary-button-close = 保存并关闭 { -brand-short-name }
+# Primary button on the browser-launch prompt
+launch-options-spotlight-primary-button-launch = 保存并继续

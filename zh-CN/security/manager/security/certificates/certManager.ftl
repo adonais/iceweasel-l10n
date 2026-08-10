@@ -24,9 +24,9 @@ certmgr-edit-ca-cert2 =
     .style = min-width: 48em;
 certmgr-edit-cert-edit-trust = 编辑信任设置：
 certmgr-edit-cert-trust-ssl =
-    .label = 此证书可以标识网站。
+    .label = 此证书可以识别网站。
 certmgr-edit-cert-trust-email =
-    .label = 此证书可以标识电子邮件用户。
+    .label = 此证书可以识别电子邮件用户。
 certmgr-delete-cert2 =
     .title = 删除证书
     .style = min-width: 48em; min-height: 24em;
@@ -110,20 +110,20 @@ choose-p12-restore-file-dialog = 要导入的证书文件
 
 file-browse-certificate-spec = 证书文件
 import-ca-certs-prompt = 请选择要导入的包含 CA 证书的文件
-import-email-cert-prompt = 请选择包含要导入的包含某人邮件证书的文件
+import-email-cert-prompt = 选择包含某人电子邮件证书的文件以导入
 
 ## For editing certificates trust
 
 # Variables:
 #   $certName: the name of certificate
-edit-trust-ca = 此证书“{ $certName }”代表了一个数字证书颁发机构（CA）。
+edit-trust-ca = 此证书“{ $certName }”代表了一个证书颁发机构。
 
 ## For Deleting Certificates
 
 delete-user-cert-title =
     .title = 删除您的证书
 delete-user-cert-confirm = 您确定要删除这些证书吗？
-delete-user-cert-impact = 如果您删除了某个您自己的证书，您将无法使用它来标识你自己。
+delete-user-cert-impact = 如果您删除了某个您自己的证书，您将无法再用它来标识自己。
 delete-ssl-override-title =
     .title = 删除服务器证书例外
 delete-ssl-override-confirm = 您确定要删除此服务器例外吗？
@@ -131,7 +131,7 @@ delete-ssl-override-impact = 如果您删除一个服务器例外，下次您再
 delete-ca-cert-title =
     .title = 删除或不信任 CA 证书
 delete-ca-cert-confirm = 您已请求删除这些 CA 证书。内置的证书将被取消所有信任使操作达到同样的效果。您确认要删除或取消信任吗？
-delete-ca-cert-impact = 如果您删除或不信任证书一个颁发机构（CA）证书，本应用程序将不再信任由该 CA 颁发的任何证书.
+delete-ca-cert-impact = 如果您删除或取消信任一个证书颁发机构（CA）颁发的证书，本应用程序将不再信任由该 CA 颁发的任何证书。
 delete-email-cert-title =
     .title = 删除电子邮件证书
 delete-email-cert-confirm = 您确定要删除这些人的电子邮件证书吗？
@@ -163,7 +163,7 @@ add-exception-domain-mismatch-long = 证书属于其他网站，有可能是某�
 add-exception-expired-short = 过时的信息
 add-exception-expired-long = 该证书目前无效。它可能已被失窃或遗失，并可能被某人用于冒充此网站。
 add-exception-unverified-or-bad-signature-short = 未知标识
-add-exception-unverified-or-bad-signature-long = 无法核实此证书是否由受信任的颁发机构以安全方式签署，因此不能信任此证书。
+add-exception-unverified-or-bad-signature-long = 无法核实此证书是否由受信任的颁发机构以安全方式签名，因此不能信任此证书。
 add-exception-valid-short = 有效的证书
 add-exception-valid-long = 此站点提供了有效、已验证的标识。因此无添加例外的必要。
 add-exception-checking-short = 正在检查信息

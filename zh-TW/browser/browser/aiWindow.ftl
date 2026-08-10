@@ -22,13 +22,10 @@ menu-history-chats =
 menu-history-chats-recent =
     .label = 近期聊天紀錄
 smartwindow-fullpage-heading = { -smart-window-brand-name }
-smartwindow-document-title = 開新分頁
+smartwindow-document-title = 新分頁
 
 ## Smart Window Toggle Button
 
-toolbar-button-ai-window-toggle =
-    .label = 視窗欸型
-    .tooltiptext = 切換使用智慧或傳統視窗。
 ai-window-toggleview-switch-classic =
     .label = 傳統視窗
     .value = 傳統視窗
@@ -47,6 +44,9 @@ ai-window-toggleview-open-private =
     .label = 開新隱私視窗
 ai-window-toggleview-status-label-active = { -smart-window-brand-name }
 ai-window-toggleview-status-label-inactive = 傳統視窗
+toolbar-switcher-customizable-label =
+    .label = { -smart-window-brand-name } 切換器
+    .tooltiptext = 切換使用智慧或傳統視窗。
 
 ## Input CTA
 
@@ -60,7 +60,7 @@ aiwindow-input-cta-menu-label-chat = 詢問
 aiwindow-input-cta-menu-label-navigate = 前往網站
 # $searchEngineName (string) - The name of the default search engine
 aiwindow-input-cta-menu-label-search = 使用 { $searchEngineName } 搜尋
-aiwindow-input-cta-menu-label-search-with = 使用下列引擎搜尋…
+aiwindow-input-cta-menu-label-search-with = 使用其他引擎搜尋…
 aiwindow-input-cta-search-submenu-header = 搜尋
 aiwindow-input-cta-stop-button =
     .title = 停止回應
@@ -171,6 +171,12 @@ aiwindow-firstrun-default-checkbox-description = 可隨時到設定中切換。
 smartwindow-ask-button =
     .label = 詢問
 
+## Group My Tabs Toolbar Button
+
+smartwindow-group-tabs-button =
+    .label = 將我的分頁分組
+    .tooltiptext = 將我的分頁分組
+
 ## Memories toggle button
 
 aiwindow-memories-on =
@@ -191,6 +197,35 @@ aiwindow-new-chat =
 aiwindow-close-sidebar =
     .aria-label = 關閉
     .tooltiptext = 關閉
+
+## Chat History Menu
+## The menu opened from the "..." button next to the new chat button. Its main
+## view links to the chat history subview and Smart Window settings; the chat
+## history subview lists recent chats and a shortcut to all chats.
+
+aiwindow-history-menu =
+    .aria-label = 更多選項
+    .tooltiptext = 更多選項
+aiwindow-history-menu-chat-history = 聊天紀錄
+aiwindow-history-menu-back =
+    .aria-label = 返回
+    .tooltiptext = 返回
+aiwindow-history-menu-view-all-chats = 檢視所有聊天記錄
+aiwindow-history-menu-settings = { -smart-window-brand-name }設定
+
+## Fullpage top actions
+## Labeled buttons shown at the top of the fullpage Smart Window.
+
+aiwindow-fullpage-new-chat =
+    .label = 新增聊天對話
+aiwindow-fullpage-chat-history =
+    .label = 聊天紀錄
+# "More" is the label for a button that opens a menu of additional Smart Window
+# options (currently Smart Window settings) — i.e. "more actions/options", not
+# more content or more chat history.
+aiwindow-fullpage-more =
+    .label = 更多
+    .title = 更多
 
 ## Sign out dialog
 

@@ -33,6 +33,8 @@ edit-profile-page-profile-name-label = 配置文件名
 edit-profile-page-theme-header-2 =
     .label = 主题
 edit-profile-page-explore-themes = 探索更多主题
+edit-profile-page-desktop-shortcut-toggle-2 =
+    .label = 创建桌面快捷方式
 edit-profile-page-desktop-shortcut-header = 创建桌面快捷方式
 edit-profile-page-desktop-shortcut-toggle =
     .aria-label = 创建桌面快捷方式
@@ -221,7 +223,7 @@ star-avatar-alt =
 video-game-controller-avatar-alt =
     .alt = 视频游戏控制器
 custom-avatar-alt =
-    .alt = 自定义头像
+    .alt = 自定义图标
 # Globe refers to the generic globe/world icon that appears in browser tabs when a website doesn't have its own favicon.
 globe-avatar-alt =
     .alt = 地球

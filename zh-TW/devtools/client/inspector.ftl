@@ -20,3 +20,36 @@ colorpicker-tooltip-hue-slider-title = 色調
 colorpicker-tooltip-alpha-slider-title = 透​明度
 # A text for the toggle for the element-specific pseudo-classes panel.
 inspector-element-specific-pseudo-classes-heading = 特定元素的 pseudo-classes
+# A title text for the light color scheme emulation options
+inspector-color-scheme-emulation-light =
+    .title = 切換頁面的亮色色彩配色模擬
+# A title text for the dark color scheme emulation options
+inspector-color-scheme-emulation-dark =
+    .title = 切換頁面的暗色色彩配色模擬
+# A title text for the emulation panel toggle button in the Rule View toolbar
+# that toggles the emulation features panel.
+inspector-emulation-panel-toggle =
+    .title = 切換 CSS 模擬功能
+    .aria-label = 切換 CSS 模擬功能
+inspector-emulation-panel-color-scheme = 配色模擬
+# A label text for the print emulation options
+inspector-emulation-panel-print = 啟用
+    .aria-label = 開啟列印媒體模擬功能
+# A label text for the light color scheme emulation radio button option.
+inspector-emulation-panel-color-scheme-light = 亮色
+    .aria-label = 開啟亮色配色模擬功能
+# A label text for the dark color scheme emulation radio button option.
+inspector-emulation-panel-color-scheme-dark = 暗色
+    .aria-label = 開啟暗色配色模擬功能
+# A label text for the no color scheme emulation radio button option (uses user's preference).
+inspector-emulation-panel-color-scheme-none = 不模擬
+    .aria-label = 關閉配色模擬功能
+# A label text for the reduced motion emulation radio button option.
+inspector-emulation-panel-reduced-motion-reduce = 減少
+    .aria-label = 啟用減少動畫模擬功能
+# A label text for the no preference for reduced motion emulation radio button option.
+inspector-emulation-panel-reduced-motion-no-preference = 無偏好
+    .aria-label = 不偏好減少動畫模擬功能
+# A label text for the no reduced motion emulation radio button option (uses user's preference).
+inspector-emulation-panel-reduced-motion-none = 不模擬
+    .aria-label = 停用減少動畫模擬功能

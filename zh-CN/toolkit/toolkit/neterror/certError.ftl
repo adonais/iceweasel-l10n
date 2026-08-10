@@ -5,9 +5,9 @@
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
 cert-error-intro = { $hostname } 使用了无效的安全证书。
-cert-error-mitm-intro = 各个网站通过证书证明自己的身份，而证书由受信任的数字证书颁发机构颁发。
-cert-error-mitm-mozilla = { -brand-short-name } 由非营利的 Mozilla 提供支持。Mozilla 管理一组完全开放的数字证书认证机构（CA）存储库。该存储库帮助确保这些数字证书认证机构遵循最佳实践，以保障用户的安全。
-cert-error-mitm-connection = { -brand-short-name } 使用 Mozilla 的数字证书认证机构存储库来验证连接是否安全，而非用户操作系统所提供的证书库。因此，如果您的防病毒软件或网络使用不在 Mozilla 数字证书认证机构列表中的机构所颁发的证书来拦截网络流量，该连接被视为不安全。
+cert-error-mitm-intro = 各个网站通过证书证明自己的身份，而证书由证书颁发机构颁发。
+cert-error-mitm-mozilla = { -brand-short-name } 由非营利的 Mozilla 提供支持。Mozilla 管理一组完全开放的证书颁发机构（CA）存储库。该存储库帮助确保这些证书颁发机构遵循最佳实践，以保障用户的安全。
+cert-error-mitm-connection = { -brand-short-name } 使用 Mozilla 的证书颁发机构存储库来验证连接是否安全，而非使用用户操作系统所提供的证书库。因此，如果您的防病毒软件或网络使用不在 Mozilla 证书颁发机构存储库中的机构所颁发的安全性证书来拦截网络流量，该连接会被视为不安全。
 cert-error-trust-unknown-issuer-intro = 可能有人试图冒充该网站，您不应该继续访问。
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
@@ -57,7 +57,7 @@ cert-error-code-prefix-link = 错误代码：<a data-l10n-name="error-code-link"
 cert-error-ssl-connection-error = 连接到 { $hostname } 时发生错误。{ $errorMessage }
 # Variables:
 #   $hostname (string) - Hostname of the website with cert error.
-cert-error-symantec-distrust-description = 各个网站通过证书证明自己的身份，而证书由受信任的数字证书颁发机构颁发。大多数浏览器已不再信任由 GeoTrust、RapidSSL、Symantec、Thawte 以及 VeriSign 颁发的证书。{ $hostname } 使用了由上述机构之一颁发的证书，因而网站身份无法证实。
+cert-error-symantec-distrust-description = 各个网站通过证书证明自己的身份，而证书由证书颁发机构颁发。大多数浏览器已不再信任由 GeoTrust、RapidSSL、Symantec、Thawte 以及 VeriSign 颁发的证书。{ $hostname } 使用了由上述机构之一颁发的证书，因而网站身份无法证实。
 cert-error-symantec-distrust-admin = 您可以向网站管理员反馈此问题。
 cert-error-old-tls-version = 此网站可能不支持 TLS 1.2 协议，而这是 { -brand-short-name } 支持的最低版本。
 # Variables:
@@ -85,32 +85,32 @@ fp-certerror-revoked-what-can-you-do-body = 这很可能是网站自身存在问
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
 #   $validHosts (String) - Valid hostnames.
-fp-certerror-bad-domain-why-dangerous-body = 此网站已被设置为仅允许安全连接，但其证书存在问题，可能有恶意人士正试图冒充此网站。各个网站通过证书授权机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，它使用的证书对 { $hostname } 无效。此证书仅对以下网站有效：{ $validHosts }
+fp-certerror-bad-domain-why-dangerous-body = 此网站已被设置为仅允许安全连接，但其证书存在问题，可能有恶意人士正试图冒充此网站。各个网站通过证书颁发机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，它使用的证书对 { $hostname } 无效。此证书仅对以下网站有效：{ $validHosts }
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
-fp-certerror-bad-domain-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。各个网站通过证书授权机构颁发的证书证明自己声称的身份。但如果您使用的是企业网络，则您的支持团队可能可以提供更多信息。如果您使用了反病毒软件，请尝试搜索可能存在的冲突和已知问题。
+fp-certerror-bad-domain-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。各个网站通过证书颁发机构颁发的证书证明自己声称的身份。但如果您使用的是企业网络，则您的支持团队可能可以提供更多信息。如果您使用了反病毒软件，请尝试搜索可能存在的冲突和已知问题。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $hostname (String) - Hostname of the website to which the user was trying to connect.
-fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } 向您警告此网站的风险，因为颁发提供给 { $hostname } 的证书的证书授权机构已不再受信任。
+fp-certerror-untrusted-issuer-why-dangerous-body = { -brand-short-name } 向您警告此网站的风险，因为颁发提供给 { $hostname } 的证书的证书颁发机构已不再受信任。
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-untrusted-issuer-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。您可向网站的管理员了解此问题的处理进展。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
-fp-certerror-unknown-issuer-why-dangerous-body = 此网站的证书存在问题，可能有恶意人士正试图冒充此网站。各个网站通过证书授权机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，可能是因为无法识别证书的颁发者、证书通过自签名得来，或者网站未发送我们信任的中间证书。
+fp-certerror-unknown-issuer-why-dangerous-body = 此网站的证书存在问题，可能有恶意人士正试图冒充此网站。各个网站通过证书颁发机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，可能是因为无法识别证书的颁发者、证书通过自签名得来，或者网站未发送我们信任的中间证书。
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-unknown-issuer-what-can-you-do-body = 这很可能是网站自身存在问题，无法通过您的操作解决。但如果您使用的是企业网络，则您的支持团队可能可以提供更多信息。如果您使用了反病毒软件，则可能需要进行配置以与 { -brand-short-name } 兼容。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
-fp-certerror-self-signed-why-dangerous-body = 因为此网站的证书存在问题。各个网站通过证书授权机构颁发的证书证明自己声称的身份。此网站的证书通过自签名得来，而非由受认可的证书授权机构颁发。默认设置下，我们不信任此证书。
+fp-certerror-self-signed-why-dangerous-body = 因为此网站的证书存在问题。各个网站通过证书颁发机构颁发的证书证明自己声称的身份。此网站的证书通过自签名得来，而非由受认可的证书颁发机构颁发。默认设置下，我们不信任此证书。
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 fp-certerror-self-signed-what-can-you-do-body = 这很可能是网站自身存在问题，您能进行的操作有限。
 fp-certerror-self-signed-important-note = 【重要提示】如果您正尝试通过企业内网访问此网站，则您所在组织的 IT 职员可能使用了自签名证书。他们可为您检查证书的真实性。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $date (Date) - Certificate expiration date.
-fp-certerror-expired-why-dangerous-body = 各个网站通过证书授权机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，因为其证书似乎已于 { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } 过期。
+fp-certerror-expired-why-dangerous-body = 各个网站通过证书颁发机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，因为其证书似乎已于 { DATETIME($date, day: "numeric", year: "numeric", month: "numeric") } 过期。
 # This string appears after the following string: "What makes the site look dangerous?" (fp-certerror-why-site-dangerous)
 # Variables:
 #   $date (Date) - Certificate start date.
-fp-certerror-not-yet-valid-why-dangerous-body = 各个网站通过证书授权机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，因为其证书需到 { DATETIME($date, month: "numeric", day: "numeric", year: "numeric") } 才开始生效。
+fp-certerror-not-yet-valid-why-dangerous-body = 各个网站通过证书颁发机构颁发的证书证明自己声称的身份。{ -brand-short-name } 不能信任此网站，因为其证书需到 { DATETIME($date, day: "numeric", year: "numeric", month: "numeric") } 才开始生效。
 # This string appears after the following string: "What can you do about it?" (fp-certerror-what-can-you-do)
 # Variables:
 #   $date (Date) - Clock date.
@@ -164,11 +164,11 @@ cert-error-path-len-constraint-invalid = { -brand-short-name } 已拦截您对�
 cert-error-invalid-key = { -brand-short-name } 已拦截您对该网站的访问，因为提供给 { $hostname } 的证书存在无效密钥。这很可能是因为密钥长度过短，无法确保安全。
 cert-error-unknown-critical-extension = { -brand-short-name } 已拦截您对该网站的访问，因为提供给 { $hostname } 的证书包含不受支持的关键扩展。
 cert-error-extension-value-invalid = { -brand-short-name } 已拦截您对该网站的访问，因为提供给 { $hostname } 的证书包含无效扩展。
-cert-error-untrusted-issuer = { -brand-short-name } 已拦截您对该网站的访问，因为颁发提供给 { $hostname } 的证书的证书授权机构已不再受信任。
+cert-error-untrusted-issuer = { -brand-short-name } 已拦截您对该网站的访问，因为颁发提供给 { $hostname } 的证书的证书颁发机构已不再受信任。
 cert-error-untrusted-cert = { -brand-short-name } 已拦截您对该网站的访问，因为提供给 { $hostname } 的证书已被标记为不可信。
 cert-error-invalid-integer-encoding = { -brand-short-name } 已拦截您对该网站的访问，因为提供给 { $hostname } 的证书包含无效的整数编码。造成此情况的常见因素包括：负值序列号、负 RSA 模数，以及冗余整数编码。
 cert-error-unsupported-keyalg = { -brand-short-name } 已拦截您对该网站的访问，因为提供给 { $hostname } 的证书存在不受支持的密钥类型。
-cert-error-issuer-no-longer-trusted = { -brand-short-name } 已拦截您对该网站的访问，因为颁发提供给 { $hostname } 的证书的证书授权机构已不再受信任。
+cert-error-issuer-no-longer-trusted = { -brand-short-name } 已拦截您对该网站的访问，因为颁发提供给 { $hostname } 的证书的证书颁发机构已不再受信任。
 cert-error-signature-algorithm-mismatch = { -brand-short-name } 已拦截您对该网站的访问，因为提供给 { $hostname } 的证书的签名算法与其签名算法字段信息不一致。
 
 ## Messages used for certificate error titles

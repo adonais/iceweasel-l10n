@@ -12,6 +12,10 @@ menu-application-settings =
     .label = 選項…
 menu-application-set-as-default =
     .label = 將 { -brand-shorter-name } 設為預設瀏覽器
+# This menu item opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+menu-application-referrals =
+    .label = 分享 { -brand-shorter-name }
 menu-application-services =
     .label = 服務
 menu-application-hide-this =
@@ -214,6 +218,8 @@ menu-history-show-all-history =
     .label = 顯示所有瀏覽記錄
 menu-history-clear-recent-history =
     .label = 清除最近的歷史記錄…
+menu-history-remote-tabs-promo =
+    .label = 來自其他裝置的分頁
 menu-history-synced-tabs =
     .label = 同步的分頁
 menu-history-restore-last-session =
@@ -235,6 +241,8 @@ menu-bookmarks-menu =
     .accesskey = B
 menu-bookmarks-manage =
     .label = 管理書籤
+menu-bookmarks-remote-tabs-promo =
+    .label = 將書籤同步至行動裝置
 menu-bookmark-tab =
     .label = 將目前分頁加入書籤…
 menu-edit-bookmark =
@@ -370,3 +378,7 @@ menu-help-not-deceptive =
     .accesskey = d
 menu-report-broken-site =
     .label = 回報網站問題
+# This menu item opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+menu-referrals =
+    .label = 分享 { -brand-shorter-name }
