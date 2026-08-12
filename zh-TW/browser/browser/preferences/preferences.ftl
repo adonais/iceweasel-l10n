@@ -1449,6 +1449,10 @@ iceweasel-libportable-ubo-checkbox =
     .label = 安裝 ublock origin
 iceweasel-libportable-chrome-checkbox =
     .label = 啟用userChrome環境與鼠標手勢
+iceweasel-libportable-mousegestures-checkbox =
+    .label = 啟用鼠標手勢
+iceweasel-libportable-ucaddons-checkbox =
+    .label = 啟用userChrome圖形頁面管理
 iceweasel-libportable-download-checkbox =
     .label = 啟用downloadUpcheck接管瀏覽器下載
 iceweasel-libportable-bosskey-checkbox =
@@ -1494,16 +1498,13 @@ iceweasel-libportable-upcheck-description = Upcheck隨瀏覽器啟動，24小時
 iceweasel-libportable-upcheck-warning1 = 建議中國大陸用戶手動啟用[Update]下的faster選項，可緩解更新失敗的問題。
 iceweasel-libportable-ghproxy-description = gh-proxy加速Iceweasel更新以及腳本下載, 建議中國國內用戶開啟。
 iceweasel-libportable-ghproxy-warning1 = gh-proxy提供免費服務, 可能面臨不穩定的問題。
-iceweasel-libportable-ubo-description = 在瀏覽器中安裝 uBlock Origin 擴展，需重啟。
+iceweasel-libportable-ubo-description = 在瀏覽器中安裝 ublock-origin 擴展，需重啟。
 iceweasel-libportable-ubo-warning1 = 當你在擴展管理器卸載此擴展時，需取消此選項。
-iceweasel-libportable-chrome-description =
-    腳本文件會在后臺安裝到瀏覽器目錄，如果你原先存在userChrome環境，將不會安裝。<br>
-    新的腳本文件支持Luajit，可以使用FFI調用系統原生API。
-iceweasel-libportable-chrome-warning1 = 用戶腳本可能存在兼容性問題，請積極參與開源社區。如果你禁用此項，請先備份好你原先的腳本文件。
+iceweasel-libportable-chrome-description = 腳本文件會在后臺安裝到瀏覽器目錄，如果你原先存在userChrome環境，將不會安裝。
 iceweasel-libportable-chrome-pop = userChrome環境安裝成功<br>重啟瀏覽器后生效
-iceweasel-libportable-download-description =
-    downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下載,<br>
-    同時也支持瀏覽器下載項。 你需要先啟用userChrome環境。
+iceweasel-libportable-mousegestures-description = 支持luajit腳本，你可按自己的要求，自行修改鼠標手勢腳本。
+iceweasel-libportable-ucaddons-description = 在附加組件頁面增加UC腳本管理菜單。
+iceweasel-libportable-download-description = downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下載。
 iceweasel-libportable-download-warning1 = 你也可以很方便的手動整合下載器, 見項目 Issues 說明。
 iceweasel-libportable-download-pop = downloadUpcheck安裝成功<br>重啟瀏覽器后生效
 iceweasel-libportable-download-needed = 下載失敗或者沒有啟用userChrome環境
@@ -1515,6 +1516,22 @@ iceweasel-footer = 有用的鏈接
 iceweasel-config-link = 訪問 Iceweasel 項目
 iceweasel-open-profile = 打開用戶配置文件目錄
 iceweasel-restart-profile = 重啟瀏覽器
+
+iceweasel_addons_seteditorpath = 請打開about:config頁面并設置view_source.editor.path的值為編輯器路徑
+iceweasel_addons_edit = 編輯
+iceweasel_addons_browsedirectory = 瀏覽路徑
+iceweasel_addons_openurl = 打開安裝網址
+iceweasel_addons_copyname = 復制名稱
+iceweasel_addons_userchromejs = UC 腳本
+iceweasel_addons_path = 路徑
+iceweasel_addons_installpage = 安裝頁面
+iceweasel_addons_homepage = 主頁
+
+iceweasel_addons_mousegestures_description = 自定義鼠標手勢
+iceweasel_addons_downloadupcheck_description = 多下載器整合
+iceweasel_addons_autoactivatetab_description = 鼠標懸停在分頁上自動激活該分頁
+iceweasel_addons_rightclickclosetab_description = 右鍵點擊分頁關閉當前分頁
+
 mouse_gestures_go_back = 后退
 mouse_gestures_go_forward = 前進
 mouse_gestures_scroll_up = 向上滾動
@@ -1558,7 +1575,7 @@ download_by_default = 使用默認工具下載
 default_download_manager = %s（默認）
 default_download_auto = （自動選擇）
 file_not_found = 文件不存在：%s
-about_download_plus = 關于 DownloadPlus
+about_download_plus = 關于 DownloadUpcheck
 added_download = 已加入下載 ...
 complete_link = 鏈接：
 copy_link = 復制鏈接
