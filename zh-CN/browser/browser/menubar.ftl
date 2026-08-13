@@ -12,6 +12,10 @@ menu-application-settings =
     .label = 设置…
 menu-application-set-as-default =
     .label = 将 { -brand-shorter-name } 设为默认浏览器
+# This menu item opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+menu-application-referrals =
+    .label = 分享 { -brand-shorter-name }
 menu-application-services =
     .label = 服务
 menu-application-hide-this =
@@ -214,6 +218,8 @@ menu-history-show-all-history =
     .label = 管理所有历史记录
 menu-history-clear-recent-history =
     .label = 清除最近的历史记录…
+menu-history-remote-tabs-promo =
+    .label = 其他设备的标签页
 menu-history-synced-tabs =
     .label = 同步的标签页
 menu-history-restore-last-session =
@@ -235,6 +241,8 @@ menu-bookmarks-menu =
     .accesskey = B
 menu-bookmarks-manage =
     .label = 管理书签
+menu-bookmarks-remote-tabs-promo =
+    .label = 将书签同步到移动设备
 menu-bookmark-tab =
     .label = 为当前标签页添加书签…
 menu-edit-bookmark =
@@ -370,3 +378,7 @@ menu-help-not-deceptive =
     .accesskey = d
 menu-report-broken-site =
     .label = 反馈网站问题
+# This menu item opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+menu-referrals =
+    .label = 分享 { -brand-shorter-name }

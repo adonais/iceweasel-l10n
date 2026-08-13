@@ -601,6 +601,7 @@ smartwindow-existing-user-fx-tou-go-back = 返回
 ## Smart Window about:welcome screen
 
 smartwindow-onboarding-title = 将{ -smart-window-brand-name }设为默认窗口
+smartwindow-onboarding-subtitle = 摘要、比较、提问，顺手就办到。
 smartwindow-onboarding-primary-button = 继续
 # Kit is referring to the Firefox mascot
 smartwindow-onboarding-image-alt =
@@ -616,3 +617,9 @@ smartwindow-sidebar-auto-open-callout-accepted-title = 助理将默认关闭
 smartwindow-sidebar-auto-open-callout-accepted-subtitle = 您可以在任意页面上使用“询问”来打开它。可随时在<a data-l10n-name="settings">设置</a>中更改此决定。
 smartwindow-sidebar-auto-open-callout-rejected-title = 知道了
 smartwindow-sidebar-auto-open-callout-rejected-subtitle = 如果您改变了主意，可随时在<a data-l10n-name="settings">设置</a>中更新默认设置。
+
+## Theme Picker screen strings
+
+onboarding-theme-picker-title = 选取主题
+onboarding-theme-picker-subtitle = 为 { -brand-short-name } 添一抹色彩。
+onboarding-theme-picker-button-label = 保存并继续

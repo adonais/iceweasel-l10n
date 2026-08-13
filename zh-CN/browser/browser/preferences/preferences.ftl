@@ -191,6 +191,10 @@ windows-launch-on-login =
     .label = 启动电脑时自动打开 { -brand-short-name }
     .accesskey = O
 windows-launch-on-login-disabled = 此首选项在 Windows 中被禁用。请在系统设置中打开<a data-l10n-name="startup-link">启动应用</a>以更改。
+# Option to also opens a new tab, in addition to restoring previous tabs and windows
+windows-launch-on-login-open-new-tab =
+    .label = 同时打开新标签页
+    .accesskey = n
 windows-launch-on-login-profile-disabled = 在“选择用户配置文件”窗口中勾选“{ profile-manager-use-selected.label }”以启用此首选项。
 startup-restore-warn-on-quit =
     .label = 退出浏览器时向您确认
@@ -978,6 +982,43 @@ use-current-pages =
 choose-bookmark =
     .label = 使用书签…
     .accesskey = B
+home-homepage-title =
+    .label = 主页
+home-homepage-new-windows =
+    .label = 新窗口
+home-homepage-new-tabs =
+    .label = 新标签页
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = 选择特定网站
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = 网址
+home-custom-homepage-address =
+    .placeholder = 输入地址
+home-custom-homepage-address-button =
+    .label = 添加地址
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = 未添加网站。
+home-custom-homepage-delete-address-button =
+    .aria-label = 删除地址
+    .title = 删除地址
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = 替换为
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = 当前打开的页面
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = 书签…
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = 扩展（{ $extension }）
 
 ## Custom Homepage subpage
 
@@ -1679,6 +1720,27 @@ autofill-addresses-manage-addresses-title =
 # This message is displayed when no addresses are stored in Firefox
 addresses-no-addresses-stored-message =
     .label = 未添加地址
+personal-info-group =
+    .label = 个人信息
+autofill-personal-info-checkbox-message =
+    .label = 保存并自动填写个人信息
+autofill-personal-info-manage-button =
+    .label = 管理个人信息
+passports-list-header =
+    .label = 护照
+passports-delete-passport-button-label =
+    .aria-label = 删除
+passports-edit-passport-button-label =
+    .aria-label = 编辑
+passports-delete-passport-prompt-title = 确定要删除此护照吗？
+passports-delete-passport-prompt-confirm-button = 删除
+passports-delete-passport-prompt-cancel-button = 取消
+autofill-passports-add-button = 添加新护照
+autofill-personal-info-manage-title =
+    .heading = 管理个人信息
+# This message is displayed when no passports are stored in Firefox
+passports-no-passports-stored-message =
+    .label = 未添加护照
 pane-passwords-autofill-title2 = 密码与自动填写
     .title = 密码与自动填写
 preferences-passwords-autofill-header =
@@ -2556,6 +2618,9 @@ preferences-ai-controls-tab-group-suggestions-control =
 preferences-ai-controls-key-points-control =
     .label = 链接预览中的要点
     .description = 打开链接前快速查看摘要。
+preferences-ai-controls-sidebar-chatbot-group-2 =
+    .label = 侧栏中 AI 聊天机器人的提供方
+    .description = 同屏使用聊天机器人和浏览网页，可选择 Anthropic Claude、ChatGPT、Copilot、Google Gemini 或 Mistral Vibe。
 preferences-ai-controls-sidebar-chatbot-group =
     .label = 侧栏中 AI 聊天机器人的提供方
     .description = 同屏使用聊天机器人和浏览网页，可选择 Anthropic Claude、ChatGPT、Copilot、Google Gemini 或 Le Chat Mistral。
@@ -2668,14 +2733,10 @@ iceweasel-libportable-upcheck-description = Upcheck随浏览器启动，24小时
 iceweasel-libportable-upcheck-warning1 = 建议中国大陆用户手动启用[Update]下的faster选项，可缓解更新失败的问题。
 iceweasel-libportable-ubo-description = 在浏览器中安装 ublock origin 扩展，需重启。
 iceweasel-libportable-ubo-warning1 = 当你在扩展管理器卸载此扩展时，需取消此选项。
-iceweasel-libportable-chrome-description =
-    脚本文件会在后台安装到浏览器目录，如果你原先存在userChrome环境，将不会安装。<br>
-    新的脚本文件支持Luajit，可以使用FFI调用系统原生API。
-iceweasel-libportable-chrome-warning1 = 用户脚本可能存在兼容性问题，请积极参与开源社区。如果你禁用此项，请先备份好你原先的脚本文件。
+iceweasel-libportable-chrome-description = 脚本文件会在后台安装到浏览器目录，如果你原先存在userChrome环境，将不会安装。
+iceweasel-libportable-chrome-warning1 = 用户脚本可能存在兼容性问题，请积极参与开源社区。
 iceweasel-libportable-chrome-pop = userChrome环境安装成功<br>重启浏览器后生效
-iceweasel-libportable-download-description =
-    downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下载,<br>
-    同时也支持浏览器下载项。 你需要先启用userChrome环境。
+iceweasel-libportable-download-description = downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下载。
 iceweasel-libportable-download-warning1 = 你也可以很方便的手动整合下载器, 见项目 Issues 说明。
 iceweasel-libportable-download-pop = 脚本安装成功<br>重启浏览器后生效
 iceweasel-libportable-download-needed = 下载失败或者没有启用userChrome环境
@@ -2683,10 +2744,114 @@ iceweasel-libportable-bosskey-description = 默认Ctrl+Shift+~，portable.ini �
 iceweasel-libportable-bosskey-warning1 = 你需要防止快捷键与其他应用冲突。
 iceweasel-libportable-ontabs-description = 对应 portable.ini 中的 OnTabs 选项。
 iceweasel-libportable-ontabs-warning1 = Ontabs使用Automation技术对标签页进行操作。
-iceweasel-footer = 有用的链接
-iceweasel-config-link = 访问 Iceweasel 项目
-iceweasel-open-profile = 打开用户配置文件目录
-iceweasel-restart-profile = 重启浏览器
+
+iceweasel-header2 =
+    .label = Iceweasel 选项
+iceweasel-header3 =
+    .heading = 冰鼬
+iceweasel-extension-update-checkbox2 =
+    .label = 自动更新附加组件
+    .description = 无需手动干预即可保持扩展程序最新。这对您的安全很有利。
+iceweasel-autocopy-checkbox2 =
+    .label = 启用中键粘贴
+    .description = 选择一些文本复制，然后用鼠标中键粘贴。
+iceweasel-ipv6-checkbox2 =
+    .label = 启用 IPv6
+    .description = 允许 Iceweasel 使用 IPv6 连接。
+iceweasel-javascript-checkbox2 =
+    .label = 禁用 Javascript
+    .description = JavaScript是网页的重要组成部分。 但有时候我们可能需要临时禁用它，之后记得开启。
+iceweasel-taskbartabs-checkbox2 =
+    .label = 隐藏地址栏 TaskbarTabs 按钮
+    .description = Mozilla 开发的新功能就是为了让人们禁用它。
+iceweasel-searchhand-checkbox2 =
+    .label = 恢复搜索移交功能
+    .description = 在新标签页搜索时移交到地址栏。 我们默认禁用, 你可以恢复它。
+iceweasel-tabcompactmode-checkbox2 =
+    .label = 恢复标签栏紧凑模式
+    .description = 恢复旧版设计的标签栏与地址栏高度。
+iceweasel-lastclose-checkbox2 =
+    .label = 保留最后一个新标签页
+    .description = 关闭最后一个标签页时不关闭浏览器。
+iceweasel-tips-checkbox2 =
+    .label = 允许标签页上的消息提示框
+    .description = 当禁用标签页预览时，我们也禁用了标签页消息提示框。
+iceweasel-styling-checkbox2 =
+    .label = 允许 userChrome.css 自定义
+    .description = 如果要使用手动加载的主题自定义界面，请启用此选项。
+
+iceweasel-libportable-heading2 =
+    .label = libportable 选项
+iceweasel-libportable-upcheck-checkbox2 =
+    .label = 启用Iceweasel自动更新
+    .description = Upcheck随浏览器启动，24小时检测一次，不会带来额外消耗。
+iceweasel-libportable-ghproxy-checkbox2 =
+    .label = 启用gh-proxy加速
+    .description = 使用gh-proxy加速服务, 建议中国国内用户开启。
+iceweasel-libportable-bosskey-checkbox2 =
+    .label = 启用老板键
+    .description = 默认Ctrl+Shift+~，portable.ini 可修改快捷键。
+iceweasel-libportable-ontabs-checkbox2 =
+    .label = 启用标签页功能
+    .description = Ontabs使用Automation技术对标签页进行操作。
+iceweasel-libportable-ontabs-checkbox3 =
+    .label = 启用标签页功能
+    .description = 使用UC脚本对标签页进行操作，需重启。
+iceweasel-hover-activate2 =
+    .label = 鼠标悬停激活标签页
+iceweasel-double-click-close2 =
+    .label = 鼠标左键双击关闭标签页
+iceweasel-double-click-new2 =
+    .label = 鼠标左键双击标签栏时新建标签页
+iceweasel-mouse-hover-close2 =
+    .label = 鼠标悬停在关闭按钮时关闭标签页
+iceweasel-mouse-hover-new2 =
+    .label = 鼠标悬停在新建按钮时新建标签页
+iceweasel-right-click-close2 =
+    .label = 鼠标右键单击标签时关闭标签页
+iceweasel-right-click-recover2 =
+    .label = 鼠标右键单击标签栏空白处时恢复标签页
+iceweasel-libportable-ucaddons-checkbox2 =
+    .label = 启用userChrome图形页面管理
+    .description = 在附加组件页面增加UC脚本管理菜单。
+iceweasel-libportable-download-checkbox2 =
+    .label = 启用downloadUpcheck接管浏览器下载
+    .description = downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下载
+iceweasel-libportable-ubo-checkbox2 =
+    .label = 安装 ublock origin
+    .description = 在浏览器中安装 ublock origin 扩展，需重启。
+iceweasel-libportable-chrome-checkbox2 =
+    .label = 启用userChrome环境
+    .description = 脚本文件会在后台安装，如果你原先存在userChrome环境，将不会安装。
+iceweasel-libportable-mousegestures-checkbox2 =
+    .label = 启用鼠标手势
+    .description = 支持luajit脚本，你可按自己的要求，自行修改鼠标手势脚本。
+
+iceweasel-footer2 =
+  .label = 有用的链接
+iceweasel-config-link2 =
+  .label = 访问 Iceweasel 项目
+iceweasel-open-profile2 =
+  .label = 打开用户配置文件目录
+iceweasel-open-keybord2 =
+  .label = 打开键盘快捷键设置页
+iceweasel-restart-profile2 =
+  .label = 重启浏览器
+
+iceweasel_addons_seteditorpath = 请打开about:config页面并设置view_source.editor.path的值为编辑器路径
+iceweasel_addons_edit = 编辑
+iceweasel_addons_browsedirectory = 浏览路径
+iceweasel_addons_openurl = 打开安装网址
+iceweasel_addons_copyname = 复制名称
+iceweasel_addons_userchromejs = UC 脚本
+iceweasel_addons_path = 路径
+iceweasel_addons_installpage = 安装页面
+iceweasel_addons_homepage = 主页
+iceweasel_addons_mousegestures_description = 自定义鼠标手势
+iceweasel_addons_downloadupcheck_description = 多下载器整合
+iceweasel_addons_autoactivatetab_description = 鼠标悬停在标签页上自动激活该标签
+iceweasel_addons_rightclickclosetab_description = 右键点击标签页关闭当前标签
+
 mouse_gestures_go_back = 后退
 mouse_gestures_go_forward = 前进
 mouse_gestures_scroll_up = 向上滚动
@@ -2721,6 +2886,7 @@ mouse_gestures_previous_page = 上一页
 mouse_gestures_next_page = 下一页
 mouse_gestures_known_gesture = 手势:
 mouse_gestures_unknown_gesture = 未知手势:
+
 downloadplusbtn = DownloadPlus
 download_enhance_click = 下载增强，点击可切换默认下载工具
 reload_download_managers = 刷新下载工具
@@ -2730,7 +2896,7 @@ download_by_default = 使用默认工具下载
 default_download_manager = %s（默认）
 default_download_auto = （自动选择）
 file_not_found = 文件不存在：%s
-about_download_plus = 关于 DownloadPlus
+about_download_plus = 关于 DownloadUpcheck
 added_download = 已加入下载 ...
 complete_link = 链接：
 copy_link = 复制链接
@@ -2795,6 +2961,8 @@ preferences-etp-level-custom =
     .description = 选择开启和关闭的保护。
 preferences-etp-status-advanced-button =
     .label = 高级设置
+preferences-etp-tracker-count-enabled =
+    .label = 在地址栏显示拦截的跟踪器
 preferences-etp-status-protections-dashboard-link =
     .label = 查看个性化保护信息面板
     .description = 查看 { -brand-short-name } 为您拦截的跟踪器数量，包括社交媒体跟踪器、数字指纹跟踪程序和加密货币挖矿程序。
@@ -2878,6 +3046,12 @@ security-privacy-issue-warning-extension-install =
 security-privacy-issue-warning-safe-browsing =
     .label = 未拦截危险与诈骗内容
     .description = 您将更容易遭遇网站上的诈骗和恶意软件。
+security-privacy-issue-warning-doh2 =
+    .label = 基于 HTTPS 的 DNS 已禁用
+    .description = 基于 HTTPS 的 DNS 可帮助您对网络提供商隐藏即将访问的网站。
+security-privacy-issue-warning-ech2 =
+    .label = 加密客户端问候（ECH）已禁用
+    .description = 加密客户端问候可帮助您对网络提供商隐藏即将访问的网站。
 security-privacy-issue-warning-doh =
     .label = 基于 HTTPS 的 DNS 已禁用
     .description = 基于 HTTPS 的 DNS 可向您的网络提供商隐藏您访问的网站。
@@ -2887,3 +3061,15 @@ security-privacy-issue-warning-ech =
 security-privacy-issue-warning-proxy-autodetection =
     .label = 代理自动配置已启用
     .description = 代理自动配置可能让不受信任的网络监控您的活动。
+
+## Referrals Section
+
+# The header in settings with link to the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+referrals-section-header =
+    .label = 分享 { -brand-short-name }
+    .description = 邀请其他人选择隐私为先的浏览器。
+# Link that opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+referrals-link =
+    .label = 分享 { -brand-short-name }

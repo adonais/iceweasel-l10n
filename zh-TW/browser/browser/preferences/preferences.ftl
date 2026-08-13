@@ -974,6 +974,43 @@ use-current-pages =
 choose-bookmark =
     .label = 使用書籤…
     .accesskey = B
+home-homepage-title =
+    .label = 首頁
+home-homepage-new-windows =
+    .label = 新視窗
+home-homepage-new-tabs =
+    .label = 新分頁
+# This option leads to the "Custom Homepage" subpage
+home-homepage-custom-homepage-button =
+    .label = 選擇特定網站
+# Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
+home-custom-homepage-card-header =
+    .label = 網站網址
+home-custom-homepage-address =
+    .placeholder = 請輸入網址
+home-custom-homepage-address-button =
+    .label = 新增網址
+# Shown when no custom websites/URLs to use as a homepage have been added yet
+home-custom-homepage-no-results =
+    .label = 尚未加入任何網站。
+home-custom-homepage-delete-address-button =
+    .aria-label = 刪除地址
+    .title = 刪除地址
+# Further options to use when setting the home page. Two action buttons are placed in line with this prompt
+# to replace the current home page with a currently open page or bookmark.
+home-custom-homepage-replace-with-prompt =
+    .label = 取代為
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-current-pages-button =
+    .label = 目前開啟的頁面
+# Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
+home-custom-homepage-bookmarks-button =
+    .label = 書籤…
+# Dropdown option shown when an extension replaces the contents of new windows or tabs.
+# Variables:
+#   $extension (string) - Name of the extension
+home-prefs-homepage-extension-option =
+    .label = 擴充套件（{ $extension }）
 
 ## Custom Homepage subpage
 
@@ -2692,14 +2729,10 @@ iceweasel-libportable-upcheck-description = Upcheck隨瀏覽器啟動，24小時
 iceweasel-libportable-upcheck-warning1 = 建議中國大陸用戶手動啟用[Update]下的faster選項，可緩解更新失敗的問題。
 iceweasel-libportable-ubo-description = 在瀏覽器中安裝 ublock origin 擴展，需重啟。
 iceweasel-libportable-ubo-warning1 = 當你在擴展管理器卸載此擴展時，需取消此選項。
-iceweasel-libportable-chrome-description =
-    腳本文件會在后臺安裝到瀏覽器目錄，如果你原先存在userChrome環境，將不會安裝。<br>
-    新的腳本文件支持Luajit，可以使用FFI調用系統原生API。
-iceweasel-libportable-chrome-warning1 = 用戶腳本可能存在兼容性問題，請積極參與開源社區。如果你禁用此項，請先備份好你原先的腳本文件。
+iceweasel-libportable-chrome-description = 腳本文件會在后臺安裝到瀏覽器目錄，如果你原先存在userChrome環境，將不會安裝。
+iceweasel-libportable-chrome-warning1 = 用戶腳本可能存在兼容性問題，請積極參與開源社區。
 iceweasel-libportable-chrome-pop = userChrome環境安裝成功<br>重啟瀏覽器后生效
-iceweasel-libportable-download-description =
-    downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下載,<br>
-    同時也支持瀏覽器下載項。 你需要先啟用userChrome環境。
+iceweasel-libportable-download-description = downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下載。
 iceweasel-libportable-download-warning1 = 你也可以很方便的手動整合下載器, 見項目 Issues 說明。
 iceweasel-libportable-download-pop = 腳本安裝成功<br>重啟瀏覽器后生效
 iceweasel-libportable-download-needed = 下載失敗或者沒有啟用userChrome環境
@@ -2707,10 +2740,114 @@ iceweasel-libportable-bosskey-description = 默認Ctrl+Shift+~，portable.ini �
 iceweasel-libportable-bosskey-warning1 = 你需要防止快捷鍵與其他應用沖突。
 iceweasel-libportable-ontabs-description = 對應 portable.ini 中的 OnTabs 選項。
 iceweasel-libportable-ontabs-warning1 = Ontabs使用Automation技術對分頁進行操作。
-iceweasel-footer = 有用的鏈接
-iceweasel-config-link = 訪問 Iceweasel 項目
-iceweasel-open-profile = 打開用戶配置文件目錄
-iceweasel-restart-profile = 重啟瀏覽器
+
+iceweasel-header2 =
+    .label = Iceweasel 選項
+iceweasel-header3 =
+    .heading = 冰鼬
+iceweasel-extension-update-checkbox2 =
+    .label = 自動更新附加組件
+    .description = 無需手動干預即可保持擴展程序最新。這對您的安全很有利。
+iceweasel-autocopy-checkbox2 =
+    .label = 啟用中鍵粘貼
+    .description = 選擇一些文本復制，然后用鼠標中鍵粘貼。
+iceweasel-ipv6-checkbox2 =
+    .label = 啟用 IPv6
+    .description = 允許 Iceweasel 使用 IPv6 連接。
+iceweasel-javascript-checkbox2 =
+    .label = 禁用 Javascript
+    .description = JavaScript是網頁的重要組成部分。 但有時候我們可能需要臨時禁用它，之后記得開啟。
+iceweasel-taskbartabs-checkbox2 =
+    .label = 隱藏地址欄 TaskbarTabs 按鈕
+    .description = Mozilla 開發的新功能就是為了讓人們禁用它。
+iceweasel-searchhand-checkbox2 =
+    .label = 恢復搜索移交功能
+    .description = 在新分頁搜索時移交到地址欄。 我們默認禁用, 你可以恢復它。
+iceweasel-tabcompactmode-checkbox2 =
+    .label = 恢復分頁欄緊湊模式
+    .description = 恢復舊版設計的分頁欄與地址欄高度。
+iceweasel-lastclose-checkbox2 =
+    .label = 保留最后一個新分頁
+    .description = 關閉最后一個分頁時不關閉瀏覽器。
+iceweasel-tips-checkbox2 =
+    .label = 允許分頁上的消息提示框
+    .description = 當禁用分頁預覽時，我們也禁用了分頁消息提示框。
+iceweasel-styling-checkbox2 =
+    .label = 允許 userChrome.css 自定義
+    .description = 如果要使用手動加載的主題自定義界面，請啟用此選項。
+
+iceweasel-libportable-heading2 =
+    .label = libportable 選項
+iceweasel-libportable-upcheck-checkbox2 =
+    .label = 啟用Iceweasel自動更新
+    .description = Upcheck隨瀏覽器啟動，24小時檢測一次，不會帶來額外消耗。
+iceweasel-libportable-ghproxy-checkbox2 =
+    .label = 啟用gh-proxy加速
+    .description = 使用gh-proxy加速服務, 建議中國國內用戶開啟。
+iceweasel-libportable-bosskey-checkbox2 =
+    .label = 啟用老板鍵
+    .description = 默認Ctrl+Shift+~，portable.ini 可修改快捷鍵。
+iceweasel-libportable-ontabs-checkbox2 =
+    .label = 啟用分頁功能
+    .description = Ontabs使用Automation技術對分頁進行操作。
+iceweasel-libportable-ontabs-checkbox3 =
+    .label = 啟用分頁功能
+    .description = 使用UC腳本對分頁進行操作，需重啟。
+iceweasel-hover-activate2 =
+    .label = 鼠標懸停激活分頁
+iceweasel-double-click-close2 =
+    .label = 鼠標左鍵雙擊關閉分頁
+iceweasel-double-click-new2 =
+    .label = 鼠標左鍵雙擊分頁欄時新建分頁
+iceweasel-mouse-hover-close2 =
+    .label = 鼠標懸停在關閉按鈕時關閉分頁
+iceweasel-mouse-hover-new2 =
+    .label = 鼠標懸停在新建按鈕時新建分頁
+iceweasel-right-click-close2 =
+    .label = 鼠標右鍵單擊分頁時關閉分頁
+iceweasel-right-click-recover2 =
+    .label = 鼠標右鍵單擊分頁欄空白處時恢復分頁
+iceweasel-libportable-ucaddons-checkbox2 =
+    .label = 啟用userChrome圖形頁面管理
+    .description = 在附加組件頁面增加UC腳本管理菜單。
+iceweasel-libportable-download-checkbox2 =
+    .label = 啟用downloadUpcheck接管瀏覽器下載
+    .description = downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下載
+iceweasel-libportable-ubo-checkbox2 =
+    .label = 安裝 ublock origin
+    .description = 在瀏覽器中安裝 ublock origin 擴展，需重啟。
+iceweasel-libportable-chrome-checkbox2 =
+    .label = 啟用userChrome環境
+    .description = 腳本文件會在后臺安裝，如果你原先存在userChrome環境，將不會安裝。
+iceweasel-libportable-mousegestures-checkbox2 =
+    .label = 啟用鼠標手勢
+    .description = 支持luajit腳本，你可按自己的要求，自行修改鼠標手勢腳本。
+
+iceweasel-footer2 =
+  .label = 有用的鏈接
+iceweasel-config-link2 =
+  .label = 訪問 Iceweasel 項目
+iceweasel-open-profile2 =
+  .label = 打開用戶配置文件目錄
+iceweasel-open-keybord2 =
+  .label = 打開鍵盤快捷鍵設置頁
+iceweasel-restart-profile2 =
+  .label = 重啟瀏覽器
+
+iceweasel_addons_seteditorpath = 請打開about:config頁面并設置view_source.editor.path的值為編輯器路徑
+iceweasel_addons_edit = 編輯
+iceweasel_addons_browsedirectory = 瀏覽路徑
+iceweasel_addons_openurl = 打開安裝網址
+iceweasel_addons_copyname = 復制名稱
+iceweasel_addons_userchromejs = UC 腳本
+iceweasel_addons_path = 路徑
+iceweasel_addons_installpage = 安裝頁面
+iceweasel_addons_homepage = 主頁
+iceweasel_addons_mousegestures_description = 自定義鼠標手勢
+iceweasel_addons_downloadupcheck_description = 多下載器整合
+iceweasel_addons_autoactivatetab_description = 鼠標懸停在分頁上自動激活該分頁
+iceweasel_addons_rightclickclosetab_description = 右鍵點擊分頁關閉當前分頁
+
 mouse_gestures_go_back = 后退
 mouse_gestures_go_forward = 前進
 mouse_gestures_scroll_up = 向上滾動
@@ -2745,6 +2882,7 @@ mouse_gestures_previous_page = 上一頁
 mouse_gestures_next_page = 下一頁
 mouse_gestures_known_gesture = 手勢:
 mouse_gestures_unknown_gesture = 未知手勢:
+
 downloadplusbtn = DownloadPlus
 download_enhance_click = 下載增強，點擊可切換默認下載工具
 reload_download_managers = 刷新下載工具
@@ -2754,7 +2892,7 @@ download_by_default = 使用默認工具下載
 default_download_manager = %s（默認）
 default_download_auto = （自動選擇）
 file_not_found = 文件不存在：%s
-about_download_plus = 關于 DownloadPlus
+about_download_plus = 關于 DownloadUpcheck
 added_download = 已加入下載 ...
 complete_link = 鏈接：
 copy_link = 復制鏈接
