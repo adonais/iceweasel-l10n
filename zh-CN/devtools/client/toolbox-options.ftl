@@ -76,6 +76,21 @@ options-webconsole-split-console-label = 启用分离式控制台
 options-webconsole-split-console-tooltip =
     .title = 使用 ESC 键打开分离式控制台
 
+## Network Monitor section
+
+# The heading
+options-netmonitor-label = 网络监视器
+# Text shown in the input when there is no limitation (instead of showing "0")
+options-netmonitor-body-limit-unlimited-label = 无限制
+
+## Experimental section
+
+# The heading
+options-experimental-label = 实验性功能
+# The message shown for settings that indicates that the attached setting requires the
+# toolbox to be reopened to take effect.
+options-reopen-toolbox-message = （需要重新打开工具箱）
+
 ## Style Editor section
 
 # The heading
@@ -117,6 +132,9 @@ options-sourceeditor-keybinding-default-label = 默认设置
 
 ## Local Mode section
 
+# The heading
+options-local-mode-label = 本地模式
+options-local-mode-folder-label = 本地文件夹：
 # Error shown when the folder is invalid
 # (can easily be triggered when using about:config and changing underlying mappings prefs)
 options-local-mode-folder-invalid = 文件夹不存在或无效。

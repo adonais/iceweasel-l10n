@@ -298,10 +298,15 @@ appmenu-search-history =
 ## all three call-to-action labels are shared by both panels; the remaining
 ## headings are specific to the panel they appear in.
 
+appmenu-sync-promo-signin =
+    .heading = 跨设备保持同步
 appmenu-sync-promo-signin-cta = 登录
 appmenu-sync-promo-turnonsync =
     .heading = 同步标签页和历史记录
 appmenu-sync-promo-turnonsync-cta = 开启同步
+# This refers to getting tabs from your mobile device via sync
+appmenu-sync-promo-connectdevice =
+    .heading = 获取移动设备上的标签页
 appmenu-sync-promo-connectdevice-cta = 连接设备
 appmenu-bookmarks-sync-promo-turnonsync =
     .heading = 书签随身带着走
@@ -389,6 +394,7 @@ appmenuitem-relay-title-signed-in = 查看马甲邮箱
 appmenuitem-relay-description = 掩藏真实邮箱地址和电话号码
 appmenuitem-services-relay-description = 打开马甲邮箱面板
 appmenuitem-vpn-title2 = 使用 { -mozilla-vpn-brand-name } 隐藏真实位置
+appmenuitem-vpn-description3 = 让您的浏览难觅踪迹
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description-2 = 获取全方位设备保护
 appmenuitem-vpn-description = 保护在线活动
@@ -411,7 +417,7 @@ appmenu-manage-profiles =
 appmenu-copy-profile =
     .label = 复制此配置文件
 appmenu-create-profile2 =
-    .label = 创建新配置文件
+    .label = 新建配置文件
 appmenu-create-profile =
     .label = 新建配置文件
 appmenu-edit-profile =
@@ -420,10 +426,11 @@ appmenu-edit-this-profile =
     .label = 编辑此配置文件
 appmenu-profile-current-in-use = 当前使用的配置文件
 fxa-menu-create-profile-subpanel =
-    .title = 创建新配置文件
-fxa-menu-create-profile-heading = 创建新配置文件，提升浏览体验
+    .title = 新建配置文件
+fxa-menu-create-profile-heading = 新建配置文件，提升浏览体验
+fxa-menu-create-profile-description = 分隔办公和私人浏览体验，让各情境下的书签、密码、历史记录互不相通。
 fxa-menu-create-profile-confirm =
-    .label = 创建新配置文件
+    .label = 新建配置文件
 fxa-menu-create-profile-learn-more =
     .label = 什么是配置文件？
 # Button in the account menu that links to the Referrals page

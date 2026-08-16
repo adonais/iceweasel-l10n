@@ -118,6 +118,9 @@ appmenuitem-fxa-sign-in = 登入 { -brand-product-name }
 appmenuitem-fxa-manage-account = 管理帳號
 fxa-menu-sync-status-on = 已開啟同步
 fxa-menu-sync-status-off = 已關閉同步
+# Shown in place of "Sync is Off" on the sync status button when the user has
+# never signed in. Sync is a verb, short for synchronize.
+fxa-menu-sync-your-data = 同步您的資料
 # Shown as a secondary label under "Sync is Off" when the user is signed in but
 # sync is turned off.
 fxa-menu-sync-off-data-description = 未同步您的資料
@@ -394,9 +397,9 @@ appmenuitem-relay-title-signed-in = 檢視轉寄信箱
 appmenuitem-relay-description = 隱藏您的實際信箱與電話號碼
 appmenuitem-services-relay-description = 啟動轉寄信箱儀錶板
 appmenuitem-vpn-title2 = 使用 { -mozilla-vpn-brand-name } 隱藏您的實際位置
-appmenuitem-vpn-description4 = 為所有應用程式與裝置獲得更多一層保護
+appmenuitem-vpn-description5 = 在其他裝置也獲得更多一層保護
 # Shown in place of appmenuitem-vpn-title2 when the user has signed up for VPN.
-appmenuitem-vpn-title-signed-in = 開啟 { -mozilla-vpn-brand-name }
+appmenuitem-vpn-title-signed-in1 = 下載 { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description3 = 讓您上網更不容易被追蹤
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description-2 = 獲得完整裝置保護

@@ -34,6 +34,43 @@ neterror-view-certificate-link = 檢視憑證
 neterror-trr-continue-this-time = 這次先繼續
 neterror-disable-native-feedback-warning = 總是繼續
 
+## Search call-to-action shown on the online dnsNotFound error page when
+## browser.netError.searchCTA.enabled is true. Offers a one-click web search
+## derived from the address that failed to resolve.
+
+neterror-search-cta-title = 無法連線至此網站
+# $domain (String) - The host of the address that failed to load, including any
+# subdomains, for example "docs.example.com".
+neterror-search-cta-intro = 無法連線至位於 { $domain } 的伺服器。
+# Heading above the list of recovery hints on the search CTA error page.
+neterror-search-cta-things-to-try = 可嘗試下列步驟：
+neterror-search-cta-hint-check-address = 再次確認網站網址
+# Shown when no Search button is offered, so no specific query can be named.
+neterror-search-cta-hint-search = 到網路上搜尋該網站
+# Shown when the Search button is offered, naming the exact query it will run.
+# $query (String) - The search query derived from the address that failed to
+# load, for example "best hiking boots reviews". The query and the quotation
+# marks around it are emphasized.
+neterror-search-cta-hint-search-query = 在網路上搜尋<strong>「{ $query }」</strong>
+# .tooltiptext doubles as the button's accessible description, so it explains
+# that results open in a new tab.
+neterror-search-cta-search-button =
+    .label = 搜尋
+    .accesskey = S
+    .tooltiptext = 用新分頁開啟搜尋結果
+neterror-search-cta-reload-button =
+    .label = 重新載入
+    .accesskey = R
+# Shown in place of the Search button while the search option is being prepared.
+neterror-search-cta-loading = 載入中
+# Shown in place of the Search button when the user clicks it but connectivity
+# has dropped since the page loaded, so the search cannot be performed.
+neterror-search-cta-offline = 您看起來處於離線狀態，重新連線後再試一次。
+# $error (String) - The error code, for example "dnsNotFound".
+neterror-search-cta-error-code = 錯誤碼：{ $error }
+# The search CTA's own "Learn more" link text (no trailing ellipsis).
+neterror-search-cta-learn-more = 更多資訊
+
 ##
 
 neterror-pref-reset = 看來可能是您的網路安全設定造成此問題，您是否要恢復預設設定值？

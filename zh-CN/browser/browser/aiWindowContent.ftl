@@ -47,11 +47,11 @@ aiwindow-copy-table =
     .tooltiptext = 复制表格
 aiwindow-table-scroll-indicator = 滚动查看更多内容
 aiwindow-thumbs-up =
-    .aria-label = 分享好评
-    .tooltiptext = 分享好评
+    .aria-label = 点赞
+    .tooltiptext = 点赞
 aiwindow-thumbs-down =
-    .aria-label = 分享差评
-    .tooltiptext = 分享差评
+    .aria-label = 点踩
+    .tooltiptext = 点踩
 aiwindow-applied-memories-popover =
     .aria-label = 记忆面板
 aiwindow-applied-memories-list =
@@ -85,23 +85,52 @@ smartwindow-nl-undo-button =
 smart-window-closed-tabs-label = 已关闭 { $count } 个标签页
 smart-window-closed-tabs-summary = 完成！标签页已关闭。
 smart-window-closed-tabs-row-label = 已关闭标签页
+smart-window-closed-and-restored-label = 已关闭标签页，后又恢复
 smart-window-restored-row-label = 已恢复 { $count } 个标签页
+smart-window-restore-success-summary = 已关闭标签页，后又恢复。
 smart-window-cancelled-label = 请求已取消。
 # Button label - "Group" is a verb (action to group tabs)
 smart-window-confirm-group-tab = 创建群组
 # Button label - "Group" is a verb (action to group tabs)
 smart-window-confirm-group-tabs = 将 { $count } 个标签页创建群组
+# Button label - "Open" is a verb (action to open, then group, tabs)
+smart-window-confirm-open-tab = 打开
+# Button label - "Open" is a verb (action to open, then group, tabs)
+smart-window-confirm-open-tabs = 打开 { $count } 个标签页
 # Action result labels for grouped tabs
 # Variables
 #   $count (number) - Number of tabs grouped
 smart-window-grouped-tabs-label = 已将 { $count } 个标签页创建群组
+# Fallback name used in place of $label above when the model didn't provide
+# one for the tab group.
+smart-window-default-tab-group-label = 标签页群组
 # Variables
 #   $count (number) - Number of tabs grouped
 #   $label (string) - The label of the tab group
 smart-window-grouped-tabs-summary = 已创建群组“{ $label }”并添加 { $count } 个标签页。
 smart-window-grouped-tabs-row-label = 已将标签页创建群组
+# Action result labels for opened (and grouped) tabs
+# Variables
+#   $count (number) - Number of tabs opened
+smart-window-opened-tabs-label = 已打开 { $count } 个标签页
+# Variables
+#   $count (number) - Number of tabs opened
+smart-window-opened-tabs-summary-single = 已打开 { $count } 个标签页。
+# Variables
+#   $count (number) - Number of tabs opened
+#   $label (string) - The label of the tab group
+smart-window-opened-tabs-summary-group = 已创建群组“{ $label }”并打开 { $count } 个标签页。
+smart-window-opened-tabs-row-label = 打开的标签页
+# Action result labels for switching to a single already-open tab
+smart-window-switched-tab-label = 已切换标签页
+# Variables
+#   $title (String) - Title of the tab switched to
+smart-window-switched-tab-summary = 已切换到“{ $title }”。
 # Action result labels for ungrouped tabs
 smart-window-grouped-and-ungrouped-label = 已将标签页取消分组
+# Variables
+#   $count (number) - Number of tabs ungrouped
+smart-window-ungroup-success-summary = 已将 { $count } 个标签页创建群组，后又取消分组。
 smart-window-ungrouped-row-label = 已将 { $count } 个标签页取消分组
 
 ## Action log
@@ -115,6 +144,14 @@ action-log-reading-page = 正在读取页面
 action-log-read-page = 已读取页面
 action-log-searching-web = 正在搜索网页
 action-log-searched-web = 已搜索网页
+# Exa is the name of a third-party web search API and a brand name that
+# should not be translated. The <a> wraps "Exa" as a link to a support
+# article explaining the third-party web search integration.
+action-log-searching-web-with-exa = 正在使用 <a data-l10n-name="exa-link">Exa</a> 在网上搜索
+# Exa is the name of a third-party web search API and a brand name that
+# should not be translated. The <a> wraps "Exa" as a link to a support
+# article explaining the third-party web search integration.
+action-log-searched-web-with-exa = 已使用 <a data-l10n-name="exa-link">Exa</a> 在网上搜索
 action-log-checking-memories = 正在检查记忆
 action-log-checked-memories = 已检查记忆
 action-log-searching-settings = 正在搜索设置
@@ -133,3 +170,10 @@ action-log-completed-steps = 已完成 { $count } 个步骤
 # current tab on the user’s behalf. Communicates both that the tab’s content
 # changed and that the assistant is reviewing the results before responding.
 smartwindow-search-loader-text = 已加载此标签页中的搜索结果。正在分析…
+
+## Citations
+
+# Label for the button that reveals overflowing citation sources.
+# Variables:
+#   $count (Number) - Number of the additional hidden sources
+smartwindow-assistant-citations-more-label = +其他 { $count } 个

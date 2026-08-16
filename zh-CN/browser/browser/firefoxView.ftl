@@ -50,6 +50,7 @@ firefoxview-tabpickup-synctabs-primarybutton-2 = 开启标签页同步
 firefoxview-syncedtabs-synctabs-header = 更新您的同步设置
 firefoxview-syncedtabs-synctabs-description = 要查看来自其他设备的标签页，您需要同步打开的标签页。
 firefoxview-syncedtabs-synctabs-header-2 = 标签页同步已关闭
+firefoxview-syncedtabs-synctabs-description-2 = 重新开启同步，即可获取您在其他设备上的所有标签页。
 firefoxview-syncedtabs-loading-header = 正在同步
 firefoxview-syncedtabs-loading-description = 完成后即可看到其他设备上打开的标签页，请稍后回来查看。
 firefoxview-syncedtabs-loading-header-2 = 正在获取标签页…
@@ -63,6 +64,7 @@ firefoxview-tabpickup-network-offline-header = 请检查您的互联网连接
 firefoxview-tabpickup-network-offline-description = 若您正在使用防火墙或代理，请检查 { -brand-short-name } 是否有联网权限。
 firefoxview-tabpickup-network-offline-primarybutton = 重试
 firefoxview-tabpickup-network-offline-header-2 = { -brand-short-name } 目前无法连接
+firefoxview-tabpickup-network-offline-description-2 = 您可能已离线，或某些问题影响了连接。
 firefoxview-tabpickup-sync-error-header = 同步时遇到问题
 firefoxview-tabpickup-generic-sync-error-description = { -brand-short-name } 目前无法连接到同步服务，请稍后再试。
 # “Sync hit a snag” means that the sync process is having a problem and can’t connect.
@@ -77,6 +79,7 @@ firefoxview-tabpickup-password-locked-description = 若要接收您的标签页�
 firefoxview-tabpickup-password-locked-link = 详细了解
 firefoxview-tabpickup-password-locked-primarybutton = 请输入主密码
 firefoxview-syncedtab-password-locked-link = <a data-l10n-name="syncedtab-password-locked-link">详细了解</a>
+firefoxview-tabpickup-password-locked-header-2 = 使用主密码解锁标签页
 firefoxview-tabpickup-signed-out-header = 登录以重新连接
 firefoxview-tabpickup-signed-out-description = 登录 { -fxaccount-brand-name }即可重新连接并接收标签页。
 firefoxview-tabpickup-signed-out-description2 = 登录账户即可重新连接并接收标签页。

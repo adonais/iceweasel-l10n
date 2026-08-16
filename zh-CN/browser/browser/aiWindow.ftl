@@ -44,6 +44,9 @@ ai-window-toggleview-open-private =
     .label = 新建隐私窗口
 ai-window-toggleview-status-label-active = { -smart-window-brand-name }
 ai-window-toggleview-status-label-inactive = 经典窗口
+toolbar-switcher-customizable-label =
+    .label = { -smart-window-brand-name } 切换器
+    .tooltiptext = 切换使用智能和经典窗口
 
 ## Input CTA
 
@@ -92,15 +95,23 @@ aiwindow-website-chip-remove-button =
 
 aiwindow-firstrun-title = 欢迎使用{ -smart-window-brand-name }
 aiwindow-firstrun-model-title = 您侧重于哪一需求？
+aiwindow-firstrun-model-title-v2 = 选择模型开始使用
 aiwindow-firstrun-model-subtitle = 选择驱动{ -smart-window-brand-name }的模型。以后可随时切换。
 aiwindow-firstrun-model-fast-label = 快速
 aiwindow-firstrun-model-fast-body = 迅捷回答
+# $shortName (string) - The short name of the model version
+aiwindow-firstrun-model-fast-label-v2 = 快速：{ $shortName }
+aiwindow-firstrun-model-fast-body-v2 = 最适合日常快速对话
 # $model (string) - The name of the AI model
 # $ownerName (string) - The name of the model owner/provider
 # $shortName (string) - The short name of the model version
 aiwindow-firstrun-model-chip-subtitle = { $ownerName } 的 { $model } 模型
 aiwindow-firstrun-model-allpurpose-label = 灵活
 aiwindow-firstrun-model-allpurpose-body = 满足大多数需求
+# $shortName (string) - The short name of the model version
+aiwindow-firstrun-model-flexible-label = 灵活：{ $shortName }
+# Recommended represents the chat brand and model we recommend for users. Only affects European users.
+aiwindow-firstrun-model-recommended = 推荐
 aiwindow-firstrun-model-personal-label = 个人化
 aiwindow-firstrun-model-personal-body = 提供最懂您的回答
 aiwindow-firstrun-button = 开始使用
@@ -113,12 +124,12 @@ aiwindow-input-model-select-button-label-fast = 快速
 aiwindow-input-model-select-button-label-allpurpose = 灵活
 aiwindow-input-model-select-button-label-personal = 个人化
 aiwindow-input-model-select-button-label-custom = 自定义
-aiwindow-input-model-select-button-description-custom = 自行选择大语言模型
+aiwindow-input-model-select-button-description-custom = 使用您自己的大语言模型
 # Variables:
 # $ownerName (string) - The name of the model owner/provider
 # $model (string) - The model name
 aiwindow-input-model-select-menu-item-description = { $ownerName } { $model }
-aiwindow-input-model-select-menu-item-description-custom = 自行选择大语言模型
+aiwindow-input-model-select-menu-item-description-custom = 使用您自己的大语言模型
 aiwindow-input-model-select-default-badge =
     .label = 默认
     .title = 已选择的默认模型
@@ -191,6 +202,8 @@ aiwindow-history-menu-settings = { -smart-window-brand-name }设置
 ## Fullpage top actions
 ## Labeled buttons shown at the top of the fullpage Smart Window.
 
+aiwindow-fullpage-new-chat =
+    .label = 开启新对话
 aiwindow-fullpage-chat-history =
     .label = 聊天记录
 # "More" is the label for a button that opens a menu of additional Smart Window
@@ -222,7 +235,7 @@ smartwindow-footer-history =
 ## Disclaimer
 ## Text displayed to user to warn user about potential mistakes.
 
-smartwindow-disclaimer = AI 可能会出错。
+smartwindow-disclaimer = AI 有可能会出错。
 
 ## FirefoxView Chats
 ## Chats in this context refers to chats saved from the Smart Window Assistant
@@ -332,7 +345,10 @@ aiwindow-ai-chat-grid-grid-view =
 
 aiwindow-starter-writing-first-draft = 撰写初稿
 aiwindow-starter-writing-improve = 润色文笔
+aiwindow-starter-writing-proofread = 核对消息
+aiwindow-starter-planning-simplify = 简化主题
 aiwindow-starter-planning-brainstorm = 集思广益
 aiwindow-starter-planning-plan = 帮助制定计划
 aiwindow-starter-browsing-history = 查找历史标签页
 aiwindow-starter-browsing-summarize = 生成标签页摘要
+aiwindow-starter-browsing-compare = 比较标签页
