@@ -1240,6 +1240,12 @@ containers-add-button2 =
 containers-new-tab-check3 =
     .label = 選擇要分別使用哪個容器來開啟分頁
     .accesskey = S
+# Checkbox in the Containers settings. By default, when a link is opened from
+# another application, Firefox tries to pick a matching container for it. When
+# this checkbox is checked, such links always open outside of any container.
+containers-external-links-check =
+    .label = 不要將來自外部應用程式的鏈結放入容器開啟
+    .accesskey = D
 containers-new-tab-check2 =
     .label = 選擇要分別使用哪個容器來開啟分頁
     .accesskey = S
@@ -1247,6 +1253,18 @@ containers-new-tab-check2 =
 containers-settings-button2 =
     .title = 設定
 containers-remove-button3 =
+    .title = 刪除
+containers-sites-card-header =
+    .label = 特定網站容器
+    .description = 為特定網站選擇容器，{ -brand-short-name } 就會使用該容器開啟該網站。
+containers-sites-add-button =
+    .label = 新增網站
+    .accesskey = w
+# The dropdown that picks which container a site opens in.
+# Variables:
+#   $site (string) - Domain of the website, for example “example.com”.
+containers-site-container-select = { $site } 的容器
+containers-site-remove-button =
     .title = 刪除
 containers-remove-button2 =
     .title = 移除
@@ -3069,3 +3087,12 @@ referrals-section-header =
 # use the browser. "Share" here means recommending or referring the browser
 referrals-link =
     .label = 分享 { -brand-short-name }
+# The header in settings with link to the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+referrals-section-header2 =
+    .label = 分享 { -brand-product-name }
+    .description = 邀請其他人選用將隱私看得最重要的瀏覽器。
+# Link that opens the referral page, where the user can invite others to
+# use the browser. "Share" here means recommending or referring the browser
+referrals-link2 =
+    .label = 分享 { -brand-product-name }
