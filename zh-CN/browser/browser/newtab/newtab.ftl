@@ -835,6 +835,10 @@ feature-highlight-wallpaper =
 
 newtab-wallpaper-category-title-firefox = { -brand-product-name }
 
+iceweasel-external-wallpapers =
+    .label = 获取远程壁纸
+    .description = 需重启动浏览器
+
 ## Celestial
 
 # “Celestial” referring to astronomy; positioned in or relating to the sky,
