@@ -60,10 +60,11 @@ aiwindow-input-cta-menu-label-chat = 询问
 aiwindow-input-cta-menu-label-navigate = 前往网站
 # $searchEngineName (string) - The name of the default search engine
 aiwindow-input-cta-menu-label-search = 用 { $searchEngineName } 搜索
+aiwindow-input-cta-menu-label-search-with = 本次搜索使用…
 aiwindow-input-cta-search-submenu-header = 搜索
 aiwindow-input-cta-stop-button =
-    .title = 停止回复
     .aria-label = 停止生成回复
+    .title = 停止回复
 
 ## Smartbar
 
@@ -76,6 +77,7 @@ smartbar-placeholder-hint-4 = 网上搜索…
 
 ## Mentions
 
+smartbar-mention-typing-placeholder = 引用标签页或网站
 smartbar-mentions-list-no-results-label = 未找到结果
 smartbar-mentions-list-recent-tabs-label = 近期标签页
 
@@ -87,6 +89,7 @@ smartbar-context-menu-button =
 
 ## Website Chip
 
+aiwindow-website-chip-placeholder = 引用标签页或网站
 aiwindow-website-chip-history-deleted = 已删除历史记录
 aiwindow-website-chip-remove-button =
     .aria-label = 移除
@@ -97,6 +100,7 @@ aiwindow-firstrun-title = 欢迎使用{ -smart-window-brand-name }
 aiwindow-firstrun-model-title = 您侧重于哪一需求？
 aiwindow-firstrun-model-title-v2 = 选择模型开始使用
 aiwindow-firstrun-model-subtitle = 选择驱动{ -smart-window-brand-name }的模型。以后可随时切换。
+aiwindow-firstrun-model-subtitle-v2 = 所有模型都可为您生成摘要、进行对比、跨标签页搜罗内容。以后随时可以切换。
 aiwindow-firstrun-model-fast-label = 快速
 aiwindow-firstrun-model-fast-body = 迅捷回答
 # $shortName (string) - The short name of the model version
@@ -110,10 +114,13 @@ aiwindow-firstrun-model-allpurpose-label = 灵活
 aiwindow-firstrun-model-allpurpose-body = 满足大多数需求
 # $shortName (string) - The short name of the model version
 aiwindow-firstrun-model-flexible-label = 灵活：{ $shortName }
+aiwindow-firstrun-model-flexible-body = 各种任务都能应对
 # Recommended represents the chat brand and model we recommend for users. Only affects European users.
 aiwindow-firstrun-model-recommended = 推荐
 aiwindow-firstrun-model-personal-label = 个人化
 aiwindow-firstrun-model-personal-body = 提供最懂您的回答
+# $shortName (string) - The short name of the model version
+aiwindow-firstrun-model-personal-label-v2 = 个人化：{ $shortName }
 aiwindow-firstrun-button = 开始使用
 aiwindow-firstrun-back-button = 后退
 aiwindow-firstrun-next-button = 下一步
@@ -224,12 +231,12 @@ smartwindow-switch-to-smart-window = 切换为{ -smart-window-brand-name }
 ## Fullpage Footer Actions
 
 smartwindow-footer-chats =
-    .label = 聊天
     .aria-label = 聊天
+    .label = 聊天
     .tooltiptext = 聊天
 smartwindow-footer-history =
-    .label = 历史记录
     .aria-label = 历史记录
+    .label = 历史记录
     .tooltiptext = 历史记录
 
 ## Disclaimer
@@ -255,7 +262,7 @@ firefoxview-search-text-box-chats =
 firefoxview-chat-date-today = 今天 - { DATETIME($date, dateStyle: "full") }
 firefoxview-chat-date-yesterday = 昨天 - { DATETIME($date, dateStyle: "full") }
 firefoxview-chat-date-this-month = { DATETIME($date, dateStyle: "full") }
-firefoxview-chat-date-prev-month = { DATETIME($date, year: "numeric", month: "long") }
+firefoxview-chat-date-prev-month = { DATETIME($date, month: "long", year: "numeric") }
 
 ## Message displayed in Firefox View when the user has no chat data
 
@@ -263,10 +270,6 @@ firefoxview-chats-empty-header = 继续之前的聊天
 firefoxview-chats-empty-description = 使用{ -smart-window-brand-name }时，您的聊天将保存在这里。
 
 ## Count displayed in fxview chat search results
-
-
-# Variables:
-#   $count (Number) - The number of chats matching the search query.
 
 firefoxview-search-chat-results-count = { $count } 个聊天
 
@@ -280,11 +283,11 @@ item-history-downloads-and-chat-description = 清除网站、下载、聊天记�
 ## Natural Language Interactions
 
 smart-window-confirm-select-all =
-    .label = 全选
     .aria-label = 全选
+    .label = 全选
 smart-window-confirm-deselect-all =
-    .label = 全部取消
     .aria-label = 全部取消
+    .label = 全部取消
 smart-window-close-confirm =
     .aria-label = 取消请求并关闭
     .tooltiptext = 取消请求并关闭
