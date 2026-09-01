@@ -199,6 +199,12 @@ newtab-privacy-across-sites = 跨 { $count } 個網站
 # Shown when no trackers have been blocked yet today.
 newtab-privacy-empty = 隨您上網，{ -brand-short-name } 會自動封鎖追蹤器。將在此處看到封鎖狀況。
 
+## Privacy widget — Enhanced Tracking Protection off state
+
+# Shown when the user has turned off the Enhanced Tracking Protection setting.
+newtab-privacy-etp-off-faster-browsing = 上網更快，追蹤器更少。
+newtab-privacy-etp-off-turn-on-tracking = 到設定開啟追蹤保護，即可開始封鎖。
+
 ## Privacy widget — informational messages
 ##
 ## Rotating "info" secondary messages. Each message has a body plus a matched
@@ -986,7 +992,7 @@ iceweasel-external-wallpapers =
 # “Celestial” referring to astronomy; positioned in or relating to the sky,
 # or outer space as observed in astronomy.
 # Not to be confused with religious definition of the word.
-newtab-wallpaper-category-title-celestial = 天空
+newtab-wallpaper-category-title-celestial = 天文
 newtab-wallpaper-celestial-lunar-eclipse = 月食
 newtab-wallpaper-celestial-earth-night = 從低地球軌道拍攝的夜晚照片
 newtab-wallpaper-celestial-starry-sky = 星空
