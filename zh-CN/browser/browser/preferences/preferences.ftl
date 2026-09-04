@@ -2857,6 +2857,7 @@ mouse_gestures_update_title = 版本检测
 mouse_gestures_update_err = 更新服务器连接错误!
 mouse_gestures_update_laster = 你使用的已经是最新版本!
 mouse_gestures_update_new = 服务端发布了新版本!
+mouse_gestures_update_new2 = 服务端发布了新版本, 前往下载?
 mouse_gestures_nocache_exit = 重启浏览器(清除userChrome.js缓存)
 mouse_gestures_download_dir = 打开下载目录
 mouse_gestures_aria2_webui = 访问 Aria2 WebUI
