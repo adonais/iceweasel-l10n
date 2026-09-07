@@ -31,6 +31,9 @@ address-capture-save-button =
 address-capture-not-now-button =
     .label = 暂时不要
     .accessKey = N
+address-capture-never-save-addresses-button =
+    .label = 永不保存地址
+    .accessKey = v
 address-capture-never-save-button =
     .label = 永不保存
     .accessKey = v
@@ -61,11 +64,6 @@ autofill-address-name = 姓名
 autofill-address-organization = 组织
 autofill-address-street-address = 街道地址
 autofill-address-street = 街道地址
-
-## Labels for address fields (e.g. for a mailing address) used as part of the form
-## autofill feature. For more information on the address structure (e.g. levels),
-## see also https://developers.google.com/maps/documentation/javascript/geocoding
-
 # Used in Iran (IR), Mexico (MX) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-neighborhood = 街区
 # Used in Malaysia (MY) as sublocality (civil entity below a locality, e.g. within a city).
@@ -73,11 +71,6 @@ autofill-address-village-township = 村或乡镇
 autofill-address-island = 岛
 # Used in Ireland (IE) as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-townland = 镇
-
-## Labels for address fields (e.g. for a mailing address) used as part of the form
-## autofill feature. For more information on the address structure (e.g. levels),
-## see also https://developers.google.com/maps/documentation/javascript/geocoding
-
 autofill-address-city = 市
 # Used in Hong Kong (HK), Sudan (SD), Syria (SY), Türkiye (TR) as as secondary address information (2 levels below the country level).
 # Used in Korea as sublocality (civil entity below a locality, e.g. within a city).
@@ -87,11 +80,6 @@ autofill-address-post-town = 邮镇
 # Used in Australia (AU) as as secondary address information (below the country level).
 # Used for international addresses as sublocality (civil entity below a locality, e.g. within a city).
 autofill-address-suburb = 市郊
-
-## Labels for address fields (e.g. for a mailing address) used as part of the form
-## autofill feature. For more information on the address structure (e.g. levels),
-## see also https://developers.google.com/maps/documentation/javascript/geocoding
-
 autofill-address-province = 省
 autofill-address-state = 州
 autofill-address-county = 县
@@ -109,11 +97,6 @@ autofill-address-department = 省
 autofill-address-emirate = 酋长国
 # Used in Russia (RU), Ukraine (UA) as primary address information (1 level below the country level).
 autofill-address-oblast = 州
-
-## Labels for address fields (e.g. for a mailing address) used as part of the form
-## autofill feature. For more information on the address structure (e.g. levels),
-## see also https://developers.google.com/maps/documentation/javascript/geocoding
-
 # Postal code field used in India (IN).
 autofill-address-pin = 邮政编码
 autofill-address-postal-code = 邮政编码
@@ -132,6 +115,7 @@ autofill-address-tel = 电话号码
 autofill-address-email = 邮箱地址
 autofill-cancel-button = 取消
 autofill-save-button = 保存
+autofill-country-warning-message-2 = 表单自动填写目前仅部分国家/地区可用。
 autofill-country-warning-message = 表单自动填写目前仅部分国家/地区可用。
 # The dialog title for creating credit cards in browser preferences.
 autofill-add-new-card-title = 添加新信用卡
@@ -162,6 +146,10 @@ autofill-card-expires-year-2 =
     .label = 到期年
 autofill-card-billing-address-2 =
     .label = 账单地址
+# "CVV" is a common abbreviation for the security code printed on a payment
+# card. Use whichever abbreviation is most familiar in your locale.
+autofill-card-security-code =
+    .label = 安全码（CVV）
 autofill-card-name-on-card = 卡面姓名
 autofill-card-expires-month = 到期月
 autofill-card-expires-year = 到期年

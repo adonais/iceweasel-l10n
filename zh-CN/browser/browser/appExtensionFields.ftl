@@ -15,6 +15,11 @@ extension-firefox-compact-dark-description = 深邃配色的主题。
 extension-firefox-alpenglow-name = Firefox 染山霞
 extension-firefox-alpenglow-description = 使用多彩按钮、菜单、窗口外观。
 
+## Theme names shown in the Firefox Themes picker in about:addons and theme add-on card,
+## and new default-theme description for the theme add-on card.
+
+extension-default-theme-description2 = 灰紫配色，平衡又亲切，尽显 { -brand-product-name } 经典风范。
+
 ## Theme labels
 ## These are short, evocative names for color themes in Firefox. Each name
 ## suggests a color through nature or fire imagery rather than naming the color
@@ -36,15 +41,15 @@ extension-nova-flare-name = 耀光
 # Name for a soft purple theme. Refers to the lavender flower.
 extension-nova-lavender-name = 草紫
 # Name for a medium purple theme. Refers to the sky just after sunset.
-extension-nova-dusk-name = 暮紫
+extension-nova-dusk-name = 薄暮
 # Name for a medium blue theme. Refers to a sheltered body of water.
-extension-nova-lagoon-name = 湖蓝
+extension-nova-lagoon-name = 潟湖
 # Name for a green theme. Refers to pine trees.
-extension-nova-pine-name = 松绿
+extension-nova-pine-name = 苍松
 # Name for a soft teal theme. Refers to ocean tides.
 extension-nova-tide-name = 潮汐
 # Name for a medium-dark gray theme. Refers to the gray residue left by fire.
-extension-nova-ash-name = 苍灰
+extension-nova-ash-name = 烬灰
 # Name for a warm gray-beige theme. Refers to the hazy color of smoke.
 extension-nova-smoke-name = 青烟
 

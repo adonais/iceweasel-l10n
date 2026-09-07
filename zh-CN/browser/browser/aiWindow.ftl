@@ -45,7 +45,7 @@ ai-window-toggleview-open-private =
 ai-window-toggleview-status-label-active = { -smart-window-brand-name }
 ai-window-toggleview-status-label-inactive = 经典窗口
 toolbar-switcher-customizable-label =
-    .label = { -smart-window-brand-name } 切换器
+    .label = { -smart-window-brand-name }切换菜单
     .tooltiptext = 切换使用智能和经典窗口
 
 ## Input CTA
@@ -102,7 +102,7 @@ aiwindow-firstrun-model-title-v2 = 选择模型开始使用
 aiwindow-firstrun-model-subtitle = 选择驱动{ -smart-window-brand-name }的模型。以后可随时切换。
 aiwindow-firstrun-model-subtitle-v2 = 所有模型都可为您生成摘要、进行对比、跨标签页搜罗内容。以后随时可以切换。
 aiwindow-firstrun-model-fast-label = 快速
-aiwindow-firstrun-model-fast-body = 迅捷回答
+aiwindow-firstrun-model-fast-body = 迅敏回答
 # $shortName (string) - The short name of the model version
 aiwindow-firstrun-model-fast-label-v2 = 快速：{ $shortName }
 aiwindow-firstrun-model-fast-body-v2 = 最适合日常快速对话
@@ -121,6 +121,7 @@ aiwindow-firstrun-model-personal-label = 个人化
 aiwindow-firstrun-model-personal-body = 提供最懂您的回答
 # $shortName (string) - The short name of the model version
 aiwindow-firstrun-model-personal-label-v2 = 个人化：{ $shortName }
+aiwindow-firstrun-model-personal-body-v2 = 为提供个性化帮助而构建，支持多种语言。
 aiwindow-firstrun-button = 开始使用
 aiwindow-firstrun-back-button = 后退
 aiwindow-firstrun-next-button = 下一步
@@ -152,9 +153,9 @@ aiwindow-firstrun-memories-relevance-title = 回答更相关
 aiwindow-firstrun-memories-relevance-body = 从浏览活动学习后，{ -smart-window-brand-name }更能顾全大局。
 aiwindow-firstrun-memories-privacy-title = 以隐私为念
 aiwindow-firstrun-memories-privacy-body = 记忆存储在此设备上，可以随时删除或关闭。
-aiwindow-firstrun-memories-choose-label = 选择{ -smart-window-brand-name }学习的内容
+aiwindow-firstrun-memories-choose-label = 选择{ -smart-window-brand-name }学习的来源
 aiwindow-firstrun-memories-checkbox-chats = { -smart-window-brand-name }中的聊天
-aiwindow-firstrun-memories-checkbox-browsing = 全 { -brand-product-name } 中的浏览活动
+aiwindow-firstrun-memories-checkbox-browsing = { -brand-product-name } 中的浏览活动
 aiwindow-firstrun-memories-update-settings = 可随时在设置中更新。
 aiwindow-firstrun-memories-no-create = 明白，{ -smart-window-brand-name } 将不会创建记忆。您随时可在设置中更新。
 
@@ -348,10 +349,20 @@ aiwindow-ai-chat-grid-grid-view =
 
 aiwindow-starter-writing-first-draft = 撰写初稿
 aiwindow-starter-writing-improve = 润色文笔
-aiwindow-starter-writing-proofread = 核对消息
+aiwindow-starter-writing-proofread = 校对邮件
 aiwindow-starter-planning-simplify = 简化主题
 aiwindow-starter-planning-brainstorm = 集思广益
 aiwindow-starter-planning-plan = 帮助制定计划
 aiwindow-starter-browsing-history = 查找历史标签页
 aiwindow-starter-browsing-summarize = 生成标签页摘要
 aiwindow-starter-browsing-compare = 比较标签页
+
+## Conversation Starter Scroll Buttons
+## Scrolls the conversation-starter pill row toward its start/end.
+
+# Dismisses a "pick up where you left off" resume-activity suggestion pill.
+# Variables:
+#   $text (String) - The suggestion headline being dismissed
+aiwindow-starter-dismiss =
+    .aria-label = 忽略{ $text }
+    .title = 忽略{ $text }

@@ -105,6 +105,9 @@ home-prefs-stocks-header =
 # Picture of the day is a widget on New Tab that shows a daily Wikimedia Commons image.
 home-prefs-picture-header =
     .label = 每日一图
+# Recent searches is a widget on New Tab that shows the user's recent searches.
+home-prefs-recent-searches-header =
+    .label = 近期搜索
 home-prefs-mission-message2 =
     .message = 建设一个更好的互联网的使命，离不开我们赞助商的支持。
 home-prefs-manage-topics-link2 =
@@ -164,6 +167,10 @@ home-prefs-mission-message-learn-more-link-srd = 了解其方式
 
 # Context menu item linking to more information about the Privacy widget.
 newtab-privacy-menu-learn-more = 详细了解
+# Accessible name for the Privacy widget container. The widget shows no visible
+# title, so screen readers rely on this label to identify it.
+newtab-privacy-widget-label =
+    .aria-label = 隐私
 
 ## Privacy widget — count readout
 
@@ -187,6 +194,16 @@ newtab-privacy-across-sites = 包含 { $count } 个网站
 
 # Shown when no trackers have been blocked yet today.
 newtab-privacy-empty = { -brand-short-name } 会在您浏览时拦截跟踪器。拦截情况将显示在这里。
+# Shown when no trackers have been blocked yet today.
+newtab-privacy-empty-state = { -brand-short-name } 会自动拦截跟踪器，更好地保护您的活动隐私。
+# "A running tally" is an informal way to say a total that keeps updating as it goes.
+# Here we are referring to the number of trackers blocked, which increases as the user browses.
+# An alternative can be "See a running total here"
+newtab-privacy-empty-state-tally = 在此查看实时累计数量。
+
+## Privacy widget — Enhanced Tracking Protection off state
+
+newtab-privacy-etp-off-turn-on-tracking = 前往“设置”开启跟踪保护，即可开始拦截。
 
 ## Privacy widget — informational messages
 ##
@@ -195,13 +212,19 @@ newtab-privacy-empty = { -brand-short-name } 会在您浏览时拦截跟踪器�
 ## yet; the labels are authored so the pairing is ready).
 
 newtab-privacy-message-info-1 = { -brand-short-name } 会在您浏览时自动拦截跟踪器。
+newtab-privacy-message-info-1-cta = 查看保护情况
 newtab-privacy-message-info-2 = 拦截跟踪器有助于阻止大公司在网络上跟踪您。
+newtab-privacy-message-info-2-cta = 查看保护信息
 newtab-privacy-message-info-3 = 许多网站都藏有跟踪器，使得您未曾打过交道的公司也可以在网络上跟踪您。
+newtab-privacy-message-info-3-cta = 查看保护信息
 newtab-privacy-message-info-4 = 选择 { -brand-short-name }，即是选择无需您费心的保护功能。
+newtab-privacy-message-info-4-cta = 查看保护信息
 newtab-privacy-message-info-5 = 拦截跟踪器后，大公司将更难跨网站跟踪您。
+newtab-privacy-message-info-5-cta = 查看保护信息
 newtab-privacy-message-info-6 = 用 { -brand-short-name } 守护您的数据。我们绝不会出售您的数据，无论其他浏览器作何选择。
 newtab-privacy-message-info-6-cta = 详细了解
 newtab-privacy-message-info-7 = 看看 { -brand-short-name } 拦截了哪些跟踪器。
+newtab-privacy-message-info-7-cta = 查看保护信息
 newtab-privacy-message-info-8 = 使用 { -brand-short-name } 浏览，即是在支持 { -vendor-short-name } 的使命：建设更好的网络。
 newtab-privacy-message-info-8-cta = 详细了解
 newtab-privacy-message-info-9 = 将 { -brand-short-name } 设为默认浏览器，享受内置隐私保护。
@@ -211,7 +234,9 @@ newtab-privacy-message-info-10-cta = 转到密码
 newtab-privacy-message-info-11 = 了解 { -brand-short-name } 如何帮助您更私密地浏览。
 newtab-privacy-message-info-11-cta = 详细了解
 newtab-privacy-message-info-12 = 使用限量数据流量套餐时，拦截跟踪器有助于节省带宽。
+newtab-privacy-message-info-12-cta = 查看保护信息
 newtab-privacy-message-info-13 = { -brand-short-name } 会拦截跟踪器，从而释放带宽，让流播放更流畅。
+newtab-privacy-message-info-13-cta = 查看保护信息
 
 ## Privacy widget — promotional messages
 ##
@@ -244,11 +269,24 @@ newtab-privacy-message-promo-relay-3-cta = 获取马甲邮箱
 ## Earned "celebration" moments (milestones, daily cap, streak, first
 ## protection). Count-bearing ones interpolate { $count }.
 
+newtab-privacy-message-milestone-week-cta = 查看保护信息
 # Variables:
 #   $count (number) - Trackers blocked this month
 newtab-privacy-message-milestone-month = 本月已拦截 { $count } 个跟踪器。隐私一小步，心安一大步。
+newtab-privacy-message-milestone-month-cta = 查看保护信息
+# Variables:
+#   $count (number) - Trackers blocked this year
+newtab-privacy-message-milestone-year = 今年已拦截 { $count } 个跟踪器。这一年对您的隐私保护，卓有成效。
+newtab-privacy-message-milestone-year-cta = 查看保护信息
+newtab-privacy-message-milestone-total-cta = 查看保护信息
+newtab-privacy-message-daily-cap-cta = 查看保护信息
+# Variables:
+#   $count (number) - Consecutive days the user has had trackers blocked
+newtab-privacy-message-streak = 您已连续受保护 { $count } 天。
+newtab-privacy-message-streak-cta = 查看保护信息
 # Shown the first time the tracker count goes above zero.
 newtab-privacy-message-first-protection = 继续浏览，{ -brand-short-name } 将持续拦截。
+newtab-privacy-message-first-protection-cta = 查看保护信息
 
 ## Strings for the Stocks widget
 
@@ -267,6 +305,16 @@ newtab-stocks-widget-menu-button =
 # Accessible name for the Stocks widget; hidden because the list dropdown is
 # shown in place of the title.
 newtab-stocks-widget-title = 股市
+# "Markets" is the default list of market ETFs. The value is shown in the menu,
+# and .label is shown on the button that opens it.
+newtab-stocks-list-markets = 市场
+    .label = 市场
+# "Watchlist" is the user's list of stocks to follow. The value is shown in the
+# menu, and .label is shown on the button that opens it.
+newtab-stocks-list-watchlist = 关注列表
+    .label = 关注列表
+# Context menu item that opens the stock search (by company name or ticker symbol).
+newtab-stocks-menu-search-stocks = 搜索名称或代码
 
 ## Screen-reader summary of a stock ticker.
 ## Variables:
@@ -281,8 +329,52 @@ newtab-stocks-ticker-status-down = { $name }，下跌 { $change }，{ $price }
 # Stock didn't change during the day
 newtab-stocks-ticker-status-flat = { $name }，平盘，{ $change }，{ $price }
 
+## Stocks widget watchlist add and remove controls
+
+# Tooltip and screen-reader label for the button that adds a stock to the watchlist.
+# The button shows only an icon and never renders visible text.
+# Variables:
+#   $name (String) - the fund/ETF name, e.g. "SPDR S&P 500 ETF Trust".
+newtab-stocks-add-to-watchlist =
+    .aria-label = 添加 { $name } 到关注列表
+    .title = 添加 { $name } 到关注列表
+# Tooltip and screen-reader label for the button that removes a stock from the watchlist.
+# The button shows only an icon and never renders visible text.
+# Variables:
+#   $name (String) - the fund/ETF name.
+newtab-stocks-remove-from-watchlist =
+    .aria-label = 从关注列表中移除“{ $name }”
+    .title = 从关注列表中移除“{ $name }”
+# Visually hidden text on a Markets row whose stock is already in the watchlist, so
+# screen readers announce that it is saved. Removal happens on the Watchlist tab.
+# Variables:
+#   $name (String) - the fund/ETF name.
+newtab-stocks-in-watchlist = “{ $name }”已在关注列表中
+# Announced to screen readers after a stock is added to the watchlist.
+# Variables:
+#   $name (String) - the fund/ETF name.
+newtab-stocks-added-to-watchlist = 已将“{ $name }”添加到关注列表
+# Announced to screen readers after a stock is removed from the watchlist.
+# Variables:
+#   $name (String) - the fund/ETF name.
+newtab-stocks-removed-from-watchlist = 已将“{ $name }”从关注列表移除
+
 ## Stocks widget ticker search
 
+# Placeholder and screen-reader label for the ticker search input.
+newtab-stocks-search-input =
+    .aria-label = 搜索名称或代码
+    .placeholder = 搜索名称或代码
+# "Search results" is the accessible label for the list of tickers matching the
+# search. It means "results of the search", not "search within the results".
+newtab-stocks-search-results =
+    .aria-label = 搜索结果
+# "Back" is an icon-only button in the search panel header that returns to the
+# widget — the attributes are consumed as tooltip/screen-reader label only. The
+# button never renders visible text.
+newtab-stocks-search-back-button =
+    .aria-label = 返回
+    .title = 返回
 # Shown when a ticker search returns no matching symbols.
 # Variables:
 #   $query (String) - the text the user searched for.
@@ -345,6 +437,22 @@ newtab-picture-check-back = 明天再来看看有没有新照片吧
 # Screen-reader text alternative for the picture; fallback used when the source
 # provides no localized description.
 newtab-picture-image-alt = 维基共享资源 · 每日一图
+
+## Strings for the Recent Searches widget
+
+# Widget heading; also the widget's accessible name.
+newtab-recent-searches-widget-title = 近期搜索
+# Screen reader label for the widget's icon-only menu button.
+newtab-recent-searches-widget-menu-button =
+    .aria-label = “近期搜索”选项
+# Context menu item linking to more information about the widget.
+newtab-recent-searches-menu-learn-more = 详细了解
+
+## Strings for the navigable panels that new tab content area can be
+## split into.
+
+newtab-spaces-tab-stories = 文章
+newtab-spaces-tab-widgets = 小组件
 
 ## Search box component.
 
@@ -609,10 +717,16 @@ newtab-discovery-empty-section-topstories-timed-out = 哎呀！无法完全加�
 
 # Button that goes to the previous carousel slide.
 newtab-carousel-previous =
-    .aria-label = 上一页
+    .aria-label = 上一篇
 # Button that goes to the next carousel slide.
 newtab-carousel-next =
-    .aria-label = 下一页
+    .aria-label = 上一篇
+# Button that pauses autoplay on the carousel.
+newtab-carousel-pause =
+    .aria-label = 暂停自动播放
+# Button that resumes autoplay on the carousel.
+newtab-carousel-play =
+    .aria-label = 恢复自动播放
 
 ## Pocket Content Section.
 
@@ -719,6 +833,8 @@ newtab-custom-widget-stocks-toggle =
     .label = 股市
 newtab-custom-widget-picture-toggle =
     .label = 每日一图
+newtab-custom-widget-recent-searches-toggle =
+    .label = 近期搜索
 newtab-custom-widget-section-title = 小组件
 newtab-custom-widget-section-toggle =
     .label = 小组件
@@ -783,6 +899,52 @@ newtab-wallpaper-dark-mountain = 山地景观
 newtab-wallpaper-dark-city = 紫色城市景观
 newtab-wallpaper-dark-fox-anniversary = 树林旁边人行道上的狐狸
 newtab-wallpaper-light-fox-anniversary = 迷蒙山景中草地上的狐狸
+# Goes back from a wallpaper category to the Customize panel. Shown as an
+# arrow with no text, so this is read by screen readers only.
+newtab-wallpaper-category-back =
+    .aria-label = 返回“定制”
+
+## "Your images" is the folder of wallpapers someone has saved. A saved wallpaper
+## can be a file they uploaded, a Picture of the Day they chose to keep, or a
+## Firefox wallpaper kept for them when it was retired.
+
+newtab-wallpaper-your-images = 您的图片
+# Accessible name for the tile that opens the "Your images" folder in the
+# wallpaper picker. The tile shows one of the saved images and has no text of
+# its own, so this is all a screen reader has to go on.
+newtab-wallpaper-your-images-folder =
+    .aria-label = 您保存的图片、壁纸
+# Read by screen readers for a saved image that has a name of its own: a kept
+# Picture of the Day, or a Firefox wallpaper kept when it was retired. An image
+# someone added themselves is numbered instead, see the string below.
+# Variables:
+#   $name (string) - The picture's own title, or the Firefox wallpaper's name
+newtab-wallpaper-your-images-item = { $name }
+# Read by screen readers for an image someone added themselves. Firefox counts
+# these as they are saved rather than keeping the name of their file.
+# Variables:
+#   $number (number) - Which saved image this is, counting from one
+newtab-wallpaper-your-images-item-numbered = 图片 { $number }
+# Each saved image has its own remove button. The tooltip stays short because
+# a name can be long and some locales put it before the verb, which would push
+# "remove" out of view. The full name is on the label a screen reader reads.
+# Variables:
+#   $name (string) - The picture's own title, or the Firefox wallpaper's name
+newtab-wallpaper-remove-image =
+    .aria-label = 移除“{ $name }”
+    .title = 移除图片
+# The remove button for an image someone added themselves. .title is the
+# tooltip and .aria-label is what a screen reader reads.
+# Variables:
+#   $number (number) - Which saved image this is, counting from one
+newtab-wallpaper-remove-image-numbered =
+    .aria-label = 移除图片 { $number }
+    .title = 移除图片 { $number }
+newtab-wallpaper-remove-image-title = 确定要移除图片吗？
+# "This action" refers to removing a saved wallpaper image.
+newtab-wallpaper-remove-image-body = 此操作不可撤销。
+newtab-wallpaper-remove-image-confirm = 移除
+newtab-wallpaper-remove-image-cancel = 取消
 
 ## Solid Colors
 
@@ -880,6 +1042,9 @@ newtab-weather-menu-change-location = 更改位置
 newtab-weather-change-location-search-input-placeholder =
     .aria-label = 搜索位置
     .placeholder = 搜索位置
+newtab-weather-cancel-input =
+    .aria-label = 取消
+    .title = 取消
 # "Current" refers to the user's physical/geographic location detected via geolocation.
 newtab-weather-change-location-search-use-current =
     .label = 使用当前位置
@@ -984,6 +1149,14 @@ newtab-section-unfollow-button-label =
 # A modal may appear next to the Follow button, directing users to try out the feature
 newtab-section-follow-highlight-title = 优化推荐内容
 newtab-section-follow-highlight-subtitle = 随心所好，悦见更多。
+
+## Topic navigation
+## A row of buttons above the stories, each scrolling the page to that topic's section.
+
+newtab-topic-navigation-label =
+    .aria-label = 主题
+# Opens a menu listing the topics that did not fit in the row.
+newtab-topic-navigation-more-button = 更多
 
 ## Button to block/unblock listed topics
 ## "Block", "unblocked", and "blocked" are social media terms that refer to hiding a section of stories.
@@ -1123,6 +1296,10 @@ newtab-widget-lists-menu-create = 创建新清单
 newtab-widget-lists-menu-delete = 删除此清单
 newtab-widget-lists-menu-copy = 复制清单到剪贴板
 newtab-widget-lists-menu-learn-more = 详细了解
+# "Change" is a verb here: the button switches which list is shown
+newtab-widget-lists-change-list =
+    .aria-label = 更改清单
+    .title = 更改清单
 newtab-widget-lists-button-add-item = 添加项目
 newtab-widget-lists-input-add-an-item2 =
     .aria-label = 添加项目
@@ -1182,6 +1359,11 @@ newtab-widget-section-maximize =
 newtab-widget-section-minimize =
     .aria-label = 将所有小组件收缩为紧凑大小
     .title = 最小化小组件
+# Shown on the widgets section header button while the section is
+# auto-minimized to its title row, to open the section back up.
+newtab-widget-section-show-widgets =
+    .aria-label = 显示小组件版块
+    .title = 显示小组件
 newtab-widget-section-menu-button =
     .aria-label = 打开小组件菜单
     .title = 小组件菜单
@@ -1654,7 +1836,7 @@ newtab-clock-city-us-honolulu = 火奴鲁鲁
 newtab-clock-city-us-anchorage = 安克雷奇
 newtab-clock-city-de-berlin = 柏林
 newtab-clock-city-de-munich = 慕尼黑
-newtab-clock-city-de-frankfurt = 美因河畔法兰克福
+newtab-clock-city-de-frankfurt = 法兰克福
 newtab-clock-city-de-hamburg = 汉堡
 newtab-clock-city-fr-paris = 巴黎
 newtab-clock-city-fr-lyon = 里昂
