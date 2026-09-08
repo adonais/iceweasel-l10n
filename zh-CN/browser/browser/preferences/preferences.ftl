@@ -2227,9 +2227,6 @@ pane-permissions-data-title2 = 权限与数据
 
 ## Privacy Section - Data Collection
 
-collection-header = { -brand-short-name } 数据收集与使用
-collection-header2 = { -brand-short-name } 数据收集与使用
-    .searchkeywords = 遥测
 preferences-collection-description = 我们力图为您提供选择权，并保证只以最低限度收集为众人改进 { -brand-product-name } 所必需的数据。
 preferences-collection-privacy-notice = 查看隐私声明
 preferences-across-profiles = 此处的设置将应用到此设备上的所有 { -brand-product-name } 配置文件。
@@ -2242,7 +2239,7 @@ backup-multi-profile-warning-message =
     .message = 为确保此项更改包含在您的备份中，请打开每个配置文件并在设置中选择“立即备份”。
 nimbus-rollouts =
     .description = 更改会远程推送。
-    .label = 允许 { -brand-short-name } 在更新间隔期间改进功能、性能、稳定性。
+    .label = 允许 { -vendor-short-name } 在更新间隔期间改进功能、性能、稳定性。
 addon-recommendations3 =
     .description = 获取扩展推荐，改进浏览体验。
     .label = 允许进行个性化扩展推荐
@@ -2297,7 +2294,7 @@ privacy-segmentation-radio-on =
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 data-collection =
     .description = 我们力图为您提供选择权，并保证只以最低限度收集为众人改进 { -brand-product-name } 所必需的数据。
-    .label = { -brand-short-name } 数据收集与使用
+    .label = { -vendor-short-name } 数据收集与使用
     .searchkeywords = 遥测
 data-collection-link = 查看隐私声明
 data-collection-preferences-across-profiles =
@@ -2314,7 +2311,7 @@ data-collection-health-report-disabled =
     .label = 向 { -vendor-short-name } 发送技术与交互数据
     .accesskey = r
 data-collection-run-studies =
-    .description = { -brand-short-name } 会随机选择用户测试功能，此做法有助于为全体用户改进质量。
+    .description = { -vendor-short-name } 会随机选择用户测试功能，此做法有助于为全体用户改进质量。
     .label = 允许 { -brand-short-name } 运行功能研究
 data-collection-studies-link =
     .label = 查看 { -brand-short-name } 研究

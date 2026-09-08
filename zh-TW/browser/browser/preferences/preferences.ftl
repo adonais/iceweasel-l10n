@@ -2228,9 +2228,6 @@ pane-permissions-data-title2 = 權限與資料
 
 ## Privacy Section - Data Collection
 
-collection-header = { -brand-short-name } 資料收集與使用
-collection-header2 = { -brand-short-name } 資料收集與使用
-    .searchkeywords = telemetry
 preferences-collection-description = 我們盡力提供您不同選擇，也只會收集最少而必須的資料，以用於為所有人改善 { -brand-product-name }。
 preferences-collection-privacy-notice = 檢視隱私權公告
 preferences-across-profiles = 此設定將套用到此裝置中的所有 { -brand-product-name } 設定檔。
@@ -2243,7 +2240,7 @@ backup-multi-profile-warning-message =
     .message = 若要讓此變更在備份中生效，請開啟每個設定檔，並到「設定」當中選擇「立即備份」。
 nimbus-rollouts =
     .description = 變更將從遠端自動推出。
-    .label = 允許 { -brand-short-name } 在新版本推出前改進功能、效能、穩定度
+    .label = 允許 { -vendor-short-name } 在新版本推出前改進功能、效能、穩定度
 addon-recommendations3 =
     .description = 依照您的使用方式推薦擴充套件，改進您的上網體驗。
     .label = 允許個人化推薦的擴充套件
@@ -2298,7 +2295,7 @@ privacy-segmentation-radio-on =
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 data-collection =
     .description = 我們盡力提供您不同選擇，也只會收集最少而必須的資料，以用於為所有人改善 { -brand-product-name }。
-    .label = { -brand-short-name } 資料收集與使用
+    .label = { -vendor-short-name } 資料收集與使用
     .searchkeywords = telemetry
 data-collection-link = 檢視隱私權公告
 data-collection-preferences-across-profiles =
@@ -2315,7 +2312,7 @@ data-collection-health-report-disabled =
     .label = 傳送技術與互動資料給 { -vendor-short-name }
     .accesskey = r
 data-collection-run-studies =
-    .description = { -brand-short-name } 會隨機選擇使用者來測試功能，幫助為每個人改進品質。
+    .description = { -vendor-short-name } 會隨機選擇使用者來測試功能，幫助為每個人改進品質。
     .label = 允許 { -brand-short-name } 進行功能研究
 data-collection-studies-link =
     .label = 檢視 { -brand-short-name } 所進行的研究
