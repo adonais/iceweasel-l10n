@@ -1145,6 +1145,14 @@ urlbar-view-context-menu-open-in-window =
 urlbar-view-context-menu-open-in-private-window =
     .label = 用新隱私視窗開啟
     .accesskey = P
+urlbar-view-context-menu-open-in-tab2 = 用新分頁開啟
+    .accesskey = w
+urlbar-view-context-menu-open-in-container-tab2 = 用新容器分頁開啟
+    .accesskey = i
+urlbar-view-context-menu-open-in-window2 = 用新視窗開啟
+    .accesskey = N
+urlbar-view-context-menu-open-in-private-window2 = 用新隱私視窗開啟
+    .accesskey = P
 
 ## Labels shown above groups of urlbar results
 

@@ -617,6 +617,7 @@ identity-description-passive-loaded-mixed2 = 尽管 { -brand-short-name } 已拦
 identity-description-active-loaded = 此网站包含不安全内容（例如脚本），并且您至它的连接非私密。
 identity-description-active-loaded-insecure = 您提供给此网站的信息（例如密码、聊天消息、信用卡等）可能会被其他人看到。
 identity-description-tls-key-logging-heading = 您的连接可能不私密
+identity-description-tls-key-logging-message = 其他应用或服务可能可以看到您来自此网站的加密流量。
 identity-disable-mixed-content-blocking =
     .label = 暂时解除保护
     .accesskey = D
@@ -1127,6 +1128,14 @@ urlbar-view-context-menu-open-in-window =
     .accesskey = N
 urlbar-view-context-menu-open-in-private-window =
     .label = 新建隐私窗口打开
+    .accesskey = P
+urlbar-view-context-menu-open-in-tab2 = 新建标签页打开
+    .accesskey = w
+urlbar-view-context-menu-open-in-container-tab2 = 新建身份标签页打开
+    .accesskey = i
+urlbar-view-context-menu-open-in-window2 = 新建窗口打开
+    .accesskey = N
+urlbar-view-context-menu-open-in-private-window2 = 新建隐私窗口打开
     .accesskey = P
 
 ## Labels shown above groups of urlbar results

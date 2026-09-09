@@ -30,14 +30,14 @@ cfr-doorhanger-extension-author = 由 { $name } 开发
 cfr-doorhanger-extension-notification = 推荐
 # .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-extension-notification2 = 推荐
-    .tooltiptext = 推荐扩展
     .a11y-announcement = 有推荐扩展可用
+    .tooltiptext = 推荐扩展
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 # .a11y-announcement is extracted in JS and announced via A11y.announce.
 cfr-doorhanger-feature-notification = 推荐
-    .tooltiptext = 推荐功能
     .a11y-announcement = 有推荐功能可用
+    .tooltiptext = 推荐功能
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -360,8 +360,8 @@ root-certificate-windows-background-notification-update-button = 更新 { -brand
 ## FxA Menu Message variants
 
 fxa-menu-message-close-button =
-    .title = 关闭
     .aria-label = 关闭
+    .title = 关闭
 fxa-menu-message-sign-up-button = 注册
 fxa-menu-message-sign-in-button = 登录
 fxa-menu-message-sync-button = 开始同步
@@ -523,3 +523,21 @@ launch-options-spotlight-checkbox-restore-previous = 重新打开先前窗口和
 launch-options-spotlight-primary-button-close = 保存并关闭 { -brand-short-name }
 # Primary button on the browser-launch prompt
 launch-options-spotlight-primary-button-launch = 保存并继续
+
+## Lapsed-user Windows toast notification for the Nova Fall 2026 campaign
+##
+## These strings will be displayed by the Windows operating system in a
+## native toast shown by the background task to users who have Firefox
+## installed but haven't opened it recently. The message itself is hosted
+## off-train on Remote Settings via Nimbus; the strings are landed here so
+## localization can begin.
+##
+## The button labels are fitted into narrow fixed-width buttons by
+## Windows and therefore must be as narrow as possible.
+
+# "has your back" is an idiom meaning support and protection; adapt freely
+# rather than translating literally.
+lapsed-user-toast-title = { -brand-product-name } 随时愿为您护航
+lapsed-user-toast-subtitle = 探索浏览新方式，享受更多选择、更强隐私，还能更好掌管数据。
+lapsed-user-toast-whats-new-button = 了解新版变化
+lapsed-user-toast-dismiss-button = 知道了

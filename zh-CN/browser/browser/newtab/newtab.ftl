@@ -170,7 +170,7 @@ newtab-privacy-menu-learn-more = 详细了解
 # Accessible name for the Privacy widget container. The widget shows no visible
 # title, so screen readers rely on this label to identify it.
 newtab-privacy-widget-label =
-    .aria-label = 隐私
+    .aria-label = 隐私保护
 
 ## Privacy widget — count readout
 
@@ -188,18 +188,18 @@ newtab-privacy-trackers-blocked-today = 今天拦截的跟踪器数量
 # if the short fragment doesn't work in your language.
 # Variables:
 #   $count (number) - Number of sites where trackers were blocked
-newtab-privacy-across-sites = 包含 { $count } 个网站
+newtab-privacy-across-sites = 涉及 { $count } 个网站
 
 ## Privacy widget — empty state
 
 # Shown when no trackers have been blocked yet today.
 newtab-privacy-empty = { -brand-short-name } 会在您浏览时拦截跟踪器。拦截情况将显示在这里。
 # Shown when no trackers have been blocked yet today.
-newtab-privacy-empty-state = { -brand-short-name } 会自动拦截跟踪器，更好地保护您的活动隐私。
+newtab-privacy-empty-state = { -brand-short-name } 会自动拦截跟踪器，让您的活动更私密。
 # "A running tally" is an informal way to say a total that keeps updating as it goes.
 # Here we are referring to the number of trackers blocked, which increases as the user browses.
 # An alternative can be "See a running total here"
-newtab-privacy-empty-state-tally = 在此查看实时累计数量。
+newtab-privacy-empty-state-tally = 在此查看实时计数。
 
 ## Privacy widget — Enhanced Tracking Protection off state
 
@@ -212,7 +212,7 @@ newtab-privacy-etp-off-turn-on-tracking = 前往“设置”开启跟踪保护�
 ## yet; the labels are authored so the pairing is ready).
 
 newtab-privacy-message-info-1 = { -brand-short-name } 会在您浏览时自动拦截跟踪器。
-newtab-privacy-message-info-1-cta = 查看保护情况
+newtab-privacy-message-info-1-cta = 查看保护信息
 newtab-privacy-message-info-2 = 拦截跟踪器有助于阻止大公司在网络上跟踪您。
 newtab-privacy-message-info-2-cta = 查看保护信息
 newtab-privacy-message-info-3 = 许多网站都藏有跟踪器，使得您未曾打过交道的公司也可以在网络上跟踪您。
@@ -343,8 +343,8 @@ newtab-stocks-add-to-watchlist =
 # Variables:
 #   $name (String) - the fund/ETF name.
 newtab-stocks-remove-from-watchlist =
-    .aria-label = 从关注列表中移除“{ $name }”
-    .title = 从关注列表中移除“{ $name }”
+    .aria-label = 从关注列表移除“{ $name }”
+    .title = 从关注列表移除“{ $name }”
 # Visually hidden text on a Markets row whose stock is already in the watchlist, so
 # screen readers announce that it is saved. Removal happens on the Watchlist tab.
 # Variables:
@@ -453,6 +453,7 @@ newtab-recent-searches-menu-learn-more = 详细了解
 
 newtab-spaces-tab-stories = 文章
 newtab-spaces-tab-widgets = 小组件
+newtab-spaces-tab-activity = 动态
 
 ## Search box component.
 
@@ -715,6 +716,12 @@ newtab-discovery-empty-section-topstories-timed-out = 哎呀！无法完全加�
 
 ## Strings for the story cards carousel
 
+# Identifies the current carousel slide to screen reader users.
+# Variables:
+#   $index - the position of this slide
+#   $total - how many slides there are
+newtab-carousel-slide =
+    .aria-label = 第 { $index } 篇，共 { $total } 篇
 # Button that goes to the previous carousel slide.
 newtab-carousel-previous =
     .aria-label = 上一篇
@@ -847,6 +854,16 @@ newtab-custom-close-menu-button =
     .title = 关闭
 newtab-custom-close-button = 关闭
 newtab-custom-settings = 管理更多设置
+
+## Customization Menu
+
+# An arrow button that goes back from a sub-panel in the customize panel, such as a wallpaper category, to the main Customize panel.
+newtab-customize-panel-back-button =
+    .aria-label = 返回“定制”
+    .title = 返回“定制”
+
+## New Tab Appearance (browser theme picker)
+
 # Title of the browser theme ("Appearance") section in the customize panel.
 newtab-custom-appearance-section-title = 外观
 # Button that opens the full browser theme selection view.
@@ -899,10 +916,6 @@ newtab-wallpaper-dark-mountain = 山地景观
 newtab-wallpaper-dark-city = 紫色城市景观
 newtab-wallpaper-dark-fox-anniversary = 树林旁边人行道上的狐狸
 newtab-wallpaper-light-fox-anniversary = 迷蒙山景中草地上的狐狸
-# Goes back from a wallpaper category to the Customize panel. Shown as an
-# arrow with no text, so this is read by screen readers only.
-newtab-wallpaper-category-back =
-    .aria-label = 返回“定制”
 
 ## "Your images" is the folder of wallpapers someone has saved. A saved wallpaper
 ## can be a file they uploaded, a Picture of the Day they chose to keep, or a
@@ -1298,8 +1311,8 @@ newtab-widget-lists-menu-copy = 复制清单到剪贴板
 newtab-widget-lists-menu-learn-more = 详细了解
 # "Change" is a verb here: the button switches which list is shown
 newtab-widget-lists-change-list =
-    .aria-label = 更改清单
-    .title = 更改清单
+    .aria-label = 更换清单
+    .title = 更换清单
 newtab-widget-lists-button-add-item = 添加项目
 newtab-widget-lists-input-add-an-item2 =
     .aria-label = 添加项目

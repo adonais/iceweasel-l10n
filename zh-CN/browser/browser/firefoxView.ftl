@@ -45,7 +45,7 @@ firefoxview-syncedtabs-adddevice-description-2 = 登录手机或其他计算机�
 firefoxview-syncedtabs-adddevice-primarybutton = 试试 { -brand-product-name } 移动版
 # "Your tabs called" - this is playful messaging indicating that a user can find their synced tabs on their phone.
 firefoxview-syncedtabs-adddevice-header-3 = 标签页们来电 — 手机上见。
-firefoxview-syncedtabs-adddevice-description-3 = 扫描二维码即可获取移动版 { -brand-product-name }，开始同步打开的标签页等内容。了解如何<a data-l10n-name="url">连接其他设备</a>。
+firefoxview-syncedtabs-adddevice-description-3 = 扫描二维码即可下载移动版 { -brand-product-name }，开始同步打开的标签页等内容。了解如何<a data-l10n-name="url">连接其他设备</a>。
 firefoxview-tabpickup-synctabs-header = 开启标签页同步
 firefoxview-tabpickup-synctabs-description = 允许 { -brand-short-name } 跨设备共享标签页。
 firefoxview-tabpickup-synctabs-learn-how = 了解要如何做
@@ -249,7 +249,7 @@ firefoxview-dont-remember-history-empty-header-2 = 您已控制 { -brand-short-n
 firefoxview-dont-remember-history-empty-description-one = { -brand-short-name } 当前不会记录您的浏览历史。若要更改，请<a data-l10n-name="history-settings-url-two">更新历史记录设置</a>。
 # “Off the record” is an English phrase journalists use when a conversation will not be recorded or reported on. It’s meant to convey that users’ history activity will not be recorded or shown.
 firefoxview-dont-remember-history-empty-header-3 = 您的浏览不会被记录
-firefoxview-dont-remember-history-empty-description-2 = { -brand-short-name } 当前未保存您的历史记录。您随时可在<a data-l10n-name="history-settings-url-two">设置</a>中更改。
+firefoxview-dont-remember-history-empty-description-2 = { -brand-short-name } 当前未保存您的历史记录。您可随时在<a data-l10n-name="history-settings-url-two">设置</a>中更改。
 
 ##
 
