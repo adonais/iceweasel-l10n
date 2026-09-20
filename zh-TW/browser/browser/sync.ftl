@@ -6,7 +6,6 @@ fxa-toolbar-sync-syncing2 = 同步中…
 sync-disconnect-dialog-title2 = 要取消連線嗎？
 sync-disconnect-dialog-body = { -brand-product-name } 將停止同步您的帳號，但不會刪除此裝置中的任何瀏覽資料。
 sync-disconnect-dialog-button = 取消連線
-fxa-signout-dialog2-title = 要登出 { -fxaccount-brand-name }嗎？
 fxa-signout-dialog-title2 = 要登出帳號嗎？
 fxa-signout-dialog-body = 已同步的資料將保留在您的帳號中。
 fxa-signout-dialog2-button = 登出
@@ -41,10 +40,6 @@ fxviewtabrow-send-to-mobile-not-verified = 帳號未驗證
 fxviewtabrow-send-to-mobile-verify-account = 確認您的帳號
 fxa-menu-send-to-mobile-turn-on-sync = 開啟 Sync 即可傳送分頁
 fxa-menu-send-to-mobile-connect-device = 連結裝置即可傳送分頁
-# Variables:
-#   $tabCount (Number): The number of tabs sent to the device.
-fxa-menu-send-tab-to-device =
-    .label = 傳送 { $tabCount } 個分頁到裝置
 # This is shown dynamically within "Send tab to device" in fxa menu.
 fxa-menu-send-tab-to-device-syncnotready =
     .label = 正在同步裝置…
@@ -71,6 +66,11 @@ fxa-menu-signed-out-sign-in-button =
 fxa-menu-signed-out-message-login-failed = 您已登出
 # Reason shown when the remembered account still needs to verify their email.
 fxa-menu-signed-out-message-unverified = 完成設定
+# Shown by the same card, and by the app menu's sign-in row, once the user has
+# signed out - the account they signed out of can no longer be identified, so
+# this copy stands in for the email.
+fxa-menu-signed-out-title = 登入 Sync
+fxa-menu-signed-out-description = 您已登出
 fxa-avatar-sign-in = 登入
 fxa-avatar-sign-up = 註冊
 fxa-avatar-tooltip =

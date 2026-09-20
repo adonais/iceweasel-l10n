@@ -16,10 +16,6 @@ menu-application-set-as-default =
 # use the browser. "Share" here means recommending or referring the browser
 menu-application-referrals2 =
     .label = 分享 { -brand-product-name }
-# This menu item opens the referral page, where the user can invite others to
-# use the browser. "Share" here means recommending or referring the browser
-menu-application-referrals =
-    .label = 分享 { -brand-shorter-name }
 menu-application-services =
     .label = 服务
 menu-application-hide-this =
@@ -265,8 +261,6 @@ menu-bookmarks-mobile =
 
 ## Profiles Menu
 
-menu-profiles =
-    .label = 配置文件
 menu-profiles-manage-profiles =
     .label = 管理配置文件
 menu-profiles-new-profile =
@@ -290,9 +284,6 @@ menu-tools-downloads =
 menu-tools-extensions-and-themes =
     .label = 扩展和主题
     .accesskey = E
-menu-tools-addons-and-themes =
-    .label = 扩展和主题
-    .accesskey = A
 menu-tools-fxa-sign-in2 =
     .label = 登录
     .accesskey = g
@@ -340,15 +331,6 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
-
-# NOTE: For Engineers, any additions or changes to Help menu strings should
-# also be reflected in the related strings in appmenu.ftl. Those strings, by
-# convention, will have the same ID as these, but prefixed with "app".
-# Example: appmenu-get-help
-#
-# These strings are duplicated to allow for different casing depending on
-# where the strings appear.
-
 menu-help =
     .label = 帮助
     .accesskey = H
@@ -358,8 +340,6 @@ menu-get-help =
 menu-help-more-troubleshooting-info =
     .label = 更多故障排除信息
     .accesskey = T
-menu-help-report-site-issue =
-    .label = 反馈网站问题…
 menu-help-share-ideas =
     .label = 分享想法和意见反馈…
     .accesskey = S
@@ -386,7 +366,3 @@ menu-report-broken-site =
 # use the browser. "Share" here means recommending or referring the browser
 menu-referrals2 =
     .label = 分享 { -brand-product-name }
-# This menu item opens the referral page, where the user can invite others to
-# use the browser. "Share" here means recommending or referring the browser
-menu-referrals =
-    .label = 分享 { -brand-shorter-name }

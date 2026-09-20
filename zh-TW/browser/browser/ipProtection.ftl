@@ -111,15 +111,24 @@ unauthenticated-vpn-title = 試用 { -brand-product-name } 的內建 VPN
 unauthenticated-hide-location-message-3 = 使用 { -brand-product-name } 上網時<a data-l10n-name="learn-more-vpn">隱藏您的實際所在位置</a>。
 unauthenticated-private-location-message = 使用 { -brand-product-name } 上網時可幫助<a data-l10n-name="learn-more-vpn">隱藏您的實際所在位置</a>。
 unauthenticated-choose-location-message-1 = 從多個連線位置挑選，或交由 { -brand-product-name } 為您自動選擇最快的地點。
+unauthenticated-site-rules-message = 控制哪些網站要經由 VPN 開啟，哪些不要。
 unauthenticated-get-started = 開始使用
 unauthenticated-terms-of-service-privacy-notice = 繼續使用，代表您同意我們的<a data-l10n-name="vpn-terms-of-service">服務條款</a>及<a data-l10n-name="vpn-privacy-notice">隱私權公告</a>。
 site-exclusion-toggle-enabled-1 =
-    .label = 使用 VPN 開啟此網站
     .aria-label = 已對此網站開啟 VPN 連線
-site-exclusion-toggle-disabled-1 =
     .label = 使用 VPN 開啟此網站
+site-exclusion-toggle-disabled-1 =
     .aria-label = 已對此網站關閉 VPN 連線
+    .label = 使用 VPN 開啟此網站
 site-exclusion-toggle-description = 網站無法正常運作？可關閉 VPN 試試。
+# Manages rules for VPN to turn on or off automatically for certain websites
+site-rules-manage-rules-link-text = 管理 VPN 規則
+# Heading for user defined rules on VPN usage for particular websites
+site-rules-status-heading = 您的規則
+# Used in the panel when a user navigates to a site where the VPN is off due to a site exclusion
+site-rules-description-exclusion = 已對此網站關閉 VPN 連線
+# Used in the panel when a user navigates to a site where the VPN is on due to a site inclusion
+site-rules-description-inclusion = 已對此網站開啟 VPN 連線
 ipprotection-settings-link =
     .label = 設定
 
@@ -235,11 +244,11 @@ ip-protection-bandwidth-warning-infobar-message-90-mb = <strong>您的 VPN 流�
 ## IP Protection Settings
 
 ip-protection-description =
-    .label = VPN
     .description = 內建 VPN 功能，讓您在使用 { -brand-short-name } 加強保護隱私。
+    .label = VPN
 ip-protection-description-1 =
-    .label = 內建 VPN
     .description = 透過隱藏上網時的實際位置，獲得更加一層的隱私保護。
+    .label = 內建 VPN
 ip-protection-learn-more = 更多資訊
 # Variables
 #   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
@@ -250,8 +259,13 @@ ip-protection-not-opted-in-button = 開始使用
 # Variables:
 #   $count (number) - The number of sites saved as VPN exclusions.
 ip-protection-site-exceptions-all-sites-button =
-    .label = 管理網站設定
     .description = { $count } 個網站
+    .label = 管理網站設定
+ip-protection-site-rules-header =
+    .heading = 管理網站規則
+ip-protection-site-rules-button =
+    .description = 為需要加強保護隱私或關閉 VPN 才能使用的網站，設定規則。
+    .label = 管理網站規則
 ip-protection-autostart =
     .label = 自動開啟 VPN
 ip-protection-autostart-checkbox =
@@ -259,11 +273,11 @@ ip-protection-autostart-checkbox =
 ip-protection-autostart-private-checkbox =
     .label = 於隱私視窗中
 ip-protection-vpn-upgrade-link =
-    .label = 請使用 { -mozilla-vpn-brand-name } 幫 { -brand-short-name } 以外的程式獲得更多保護。
     .description = 自行選擇 VPN 連線位置，幫最多 5 台裝置中的所有應用程式都加上保護。不論是在家或透過公共 Wi-Fi 上網都能使用。
+    .label = 請使用 { -mozilla-vpn-brand-name } 幫 { -brand-short-name } 以外的程式獲得更多保護。
 ip-protection-vpn-upgrade-link-1 =
-    .label = 用 { -mozilla-vpn-brand-name } 獲得更佳保護
     .description = 用最多 5 台裝置，從超過 300 個位置連線並保護您的所有應用程式。
+    .label = 用 { -mozilla-vpn-brand-name } 獲得更佳保護
 
 ## IP Protection dialogs
 

@@ -39,8 +39,6 @@ appmenuitem-extensions-and-themes =
     .label = 擴充套件和佈景主題
 appmenuitem-extensions =
     .label = 擴充套件
-appmenuitem-addons-and-themes =
-    .label = 附加元件與佈景主題
 appmenuitem-print =
     .label = 列印…
 appmenuitem-find-in-page =
@@ -154,7 +152,6 @@ fxa-menu-get-firefox-mobile =
     .label = 下載 Firefox for Android 或 iOS
 fxa-menu-secure-sync-subpanel =
     .title = 安全同步
-appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-account-header = 帳號
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
@@ -176,15 +173,6 @@ appmenuitem-save-page =
     .label = 另存新檔…
 appmenuitem-fxa-sync-off-title = Sync 已關閉
 appmenuitem-fxa-sync-off-description = 保護並從任何裝置存取您的書籤、密碼與其他資訊。
-
-## What's New panel in App menu.
-
-whatsnew-panel-header = 有什麼新鮮事
-# Checkbox displayed at the bottom of the What's New panel, allowing users to
-# enable/disable What's New notifications.
-whatsnew-panel-footer-checkbox =
-    .label = 有新功能推出時通知我
-    .accesskey = f
 
 ## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
@@ -320,19 +308,12 @@ appmenu-about =
 appmenu-referrals2 =
     .label = 分享 { -brand-product-name }
     .accesskey = r
-# This menu item opens the referral page, where the user can invite others to
-# use the browser. "Share" here means recommending or referring the browser
-appmenu-referrals =
-    .label = 分享 { -brand-shorter-name }
-    .accesskey = r
 appmenu-get-help =
     .label = 取得幫助
     .accesskey = H
 appmenu-help-more-troubleshooting-info =
     .label = 更多疑難排解資訊
     .accesskey = T
-appmenu-help-report-site-issue =
-    .label = 回報網站問題…
 appmenu-help-share-ideas =
     .label = 分享想法與意見回饋…
     .accesskey = S
@@ -398,7 +379,6 @@ appmenuitem-vpn-description5 = 在其他裝置也獲得更多一層保護
 appmenuitem-vpn-title-signed-in1 = 下載 { -mozilla-vpn-brand-name }
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description-2 = 獲得完整裝置保護
-appmenuitem-vpn-description = 保護您的線上行為隱私
 appmenu-services-header = 我的服務
 # "Mozilla" is intentionally hardcoded to prevent forks from replacing it
 # with their own vendor name, since these tools are created and maintained by
@@ -408,7 +388,6 @@ appmenu-other-protection-header3 = 隱私權保護工具
 # with their own vendor name, since these tools are created and maintained by
 # Mozilla.
 appmenu-other-protection-header2 = 請試用來自 Mozilla 的其他保護工具：
-appmenu-other-protection-header = 試用來自 { -vendor-short-name } 的其他保護工具：
 
 ## Profiles panel
 
@@ -436,8 +415,6 @@ fxa-menu-create-profile-learn-more =
     .label = 設定檔是什麼？
 # Button in the account menu that links to the Referrals page
 appmenuitem-share-firefox-title2 = 分享 { -brand-product-name }
-# Button in the account menu that links to the Referrals page
-appmenuitem-share-firefox-title = 分享 { -brand-short-name }
 appmenuitem-share-firefox-description = 邀請其他人選用將隱私看得最重要的瀏覽器
 appmenu-profiles-2 =
     .label = 設定檔

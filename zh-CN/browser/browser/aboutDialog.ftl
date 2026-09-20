@@ -18,7 +18,6 @@ settings-update-checking-for-updates =
 ## Variables:
 ##   $transfer (string) - Transfer progress.
 
-settings-update-downloading = <img data-l10n-name="icon"/>正在下载更新 — <label data-l10n-name="download-status">{ $transfer }</label>
 aboutdialog-update-downloading = 正在下载更新 — <label data-l10n-name="download-status">{ $transfer }</label>
 settings-update-downloading-2 =
     .label = 正在下载更新 — { $transfer }
@@ -30,7 +29,6 @@ settings-update-applying =
     .label = 正在应用更新…
 update-failed = 更新失败。 <label data-l10n-name="failed-link">下载最新版本</label>
 update-failed-main = 更新失败。 <a data-l10n-name="failed-link-main">下载最新版本</a>
-update-adminDisabled = 更新已被系统管理员禁用
 update-policy-disabled = 您的组织禁用了更新
 settings-update-policy-disabled =
     .label = 您的组织禁用了更新
@@ -69,12 +67,9 @@ community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-shor
 community-2 = { -brand-short-name } 诞生于 <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>。我们是一个<label data-l10n-name="community-creditsLink">全球社区</label>，携手致力于让互联网保持开放、公开且人人可用。
 helpus = 想支持我们吗？<label data-l10n-name="helpus-donateLink">向我们捐款</label>或者<label data-l10n-name="helpus-getInvolvedLink">参与进来</label>！
 helpus-referrals2 = 想支持我们吗？<label data-l10n-name="helpus-donateLink">向我们捐款</label>、<label data-l10n-name="helpus-shareFirefoxLink">分享 { -brand-product-name }</label>，或者<label data-l10n-name="helpus-getInvolvedLink">参与进来</label>！
-helpus-referrals = 想支持我们吗？<label data-l10n-name="helpus-donateLink">向我们捐款</label>、<label data-l10n-name="helpus-shareFirefoxLink">分享 { -brand-short-name }</label>，或者<label data-l10n-name="helpus-getInvolvedLink">参与进来</label>！
 bottomLinks-license = 许可信息
 bottom-links-terms = 使用条款
 bottom-links-privacy = 隐私声明
-bottomLinks-rights = 最终用户权利
-bottomLinks-privacy = 隐私政策
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:
 #   $version (String): version of Firefox, e.g. 66.0.1

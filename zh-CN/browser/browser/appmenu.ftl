@@ -39,8 +39,6 @@ appmenuitem-extensions-and-themes =
     .label = 扩展和主题
 appmenuitem-extensions =
     .label = 扩展
-appmenuitem-addons-and-themes =
-    .label = 扩展和主题
 appmenuitem-print =
     .label = 打印…
 appmenuitem-find-in-page =
@@ -154,7 +152,6 @@ fxa-menu-get-firefox-mobile =
     .label = 下载 Android 或 iOS 版 Firefox
 fxa-menu-secure-sync-subpanel =
     .title = 安全同步
-appmenu-fxa-header2 = { -fxaccount-brand-name }
 appmenu-account-header = 账户
 # Variables
 # $time (string) - Localized relative time since last sync (e.g. 1 second ago,
@@ -176,15 +173,6 @@ appmenuitem-save-page =
     .label = 另存页面为…
 appmenuitem-fxa-sync-off-title = 同步已关闭
 appmenuitem-fxa-sync-off-description = 保护书签、密码等数据，并可在所有设备上使用。
-
-## What's New panel in App menu.
-
-whatsnew-panel-header = 新版变化
-# Checkbox displayed at the bottom of the What's New panel, allowing users to
-# enable/disable What's New notifications.
-whatsnew-panel-footer-checkbox =
-    .label = 有新功能推出时通知我
-    .accesskey = f
 
 ## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
 ## performance profiles. To enable it go to profiler.firefox.com and click
@@ -320,19 +308,12 @@ appmenu-about =
 appmenu-referrals2 =
     .label = 分享 { -brand-product-name }
     .accesskey = r
-# This menu item opens the referral page, where the user can invite others to
-# use the browser. "Share" here means recommending or referring the browser
-appmenu-referrals =
-    .label = 分享 { -brand-shorter-name }
-    .accesskey = r
 appmenu-get-help =
     .label = 获取帮助
     .accesskey = H
 appmenu-help-more-troubleshooting-info =
     .label = 更多排障信息
     .accesskey = T
-appmenu-help-report-site-issue =
-    .label = 反馈网站问题…
 appmenu-help-share-ideas =
     .label = 分享想法和意见反馈…
     .accesskey = S
@@ -379,14 +360,14 @@ appmenuitem-report-broken-site =
 ## Panel for privacy and security products
 
 appmenuitem-sign-in-account = 登录账户
-appmenuitem-monitor-title2 = 抢先作出反应，阻断身份盗用
+appmenuitem-monitor-title2 = 抢先一步阻断身份盗用
 appmenuitem-monitor-description2 = 接收数据外泄事件警报
 # Shown in place of appmenuitem-monitor-title2 when the user has signed up for Monitor.
 appmenuitem-monitor-title-signed-in = { -monitor-brand-short-name } 数据外泄事件警报
 appmenuitem-monitor-title = { -monitor-brand-short-name }
 appmenuitem-monitor-description = 接收数据外泄警报
 appmenuitem-relay-title = { -relay-brand-short-name }
-appmenuitem-relay-title2 = 保密您的邮箱地址
+appmenuitem-relay-title2 = 让邮箱地址保持私密
 appmenuitem-relay-description2 = 保护收件箱免受垃圾邮件侵扰
 # Shown in place of appmenuitem-relay-title2 when the user has signed up for Relay.
 appmenuitem-relay-title-signed-in = 查看马甲邮箱
@@ -398,7 +379,6 @@ appmenuitem-vpn-description5 = 跨设备享受额外保护
 appmenuitem-vpn-title-signed-in1 = 下载 { -mozilla-vpn-brand-name }
 appmenuitem-vpn-title = { -mozilla-vpn-brand-name }
 appmenuitem-vpn-description-2 = 获取全方位设备保护
-appmenuitem-vpn-description = 保护在线活动
 appmenu-services-header = 我的服务
 # "Mozilla" is intentionally hardcoded to prevent forks from replacing it
 # with their own vendor name, since these tools are created and maintained by
@@ -408,7 +388,6 @@ appmenu-other-protection-header3 = 隐私保护工具
 # with their own vendor name, since these tools are created and maintained by
 # Mozilla.
 appmenu-other-protection-header2 = 尝试 Mozilla 的其他保护工具：
-appmenu-other-protection-header = 试用 { -vendor-short-name } 提供的其他保护工具：
 
 ## Profiles panel
 
@@ -436,8 +415,6 @@ fxa-menu-create-profile-learn-more =
     .label = 什么是配置文件？
 # Button in the account menu that links to the Referrals page
 appmenuitem-share-firefox-title2 = 分享 { -brand-product-name }
-# Button in the account menu that links to the Referrals page
-appmenuitem-share-firefox-title = 分享 { -brand-short-name }
 appmenuitem-share-firefox-description = 邀请朋友选择这款隐私为先的浏览器
 appmenu-profiles-2 =
     .label = 配置文件
