@@ -29,6 +29,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 安全瀏覽器
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge 傳統版
+migration-wizard-migrator-display-name-self = { -brand-product-name }
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = CSV 檔案中的密碼
 migration-wizard-migrator-display-name-file-bookmarks = HTML 檔案裡的書籤
@@ -70,7 +71,7 @@ migration-bookmarks-option-label = 書籤
 # Favorites is used for Bookmarks when importing from Internet Explorer or
 # Edge, as this is the terminology for bookmarks on those browsers.
 migration-favorites-option-label = 我的最愛
-migration-passwords-option-label = 已存密碼
+migration-passwords-option-label = 已儲存的密碼
 migration-history-option-label = 瀏覽紀錄
 migration-extensions-option-label = 擴充套件
 migration-form-autofill-option-label = 表單自動填寫資料

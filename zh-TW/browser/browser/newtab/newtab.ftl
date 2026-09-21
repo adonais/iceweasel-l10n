@@ -95,6 +95,10 @@ home-prefs-stocks-header =
 # Picture of the day is a widget on New Tab that shows a daily Wikimedia Commons image.
 home-prefs-picture-header =
     .label = 每日一圖
+# Search is a widget on New Tab that shows the user's recent and trending
+# searches.
+home-prefs-search-widget-header =
+    .label = 搜尋
 # Recent searches is a widget on New Tab that shows the user's recent searches.
 home-prefs-recent-searches-header =
     .label = 最近搜尋內容
@@ -440,7 +444,7 @@ newtab-picture-check-back = 請於明天再回來看看新照片
 # provides no localized description.
 newtab-picture-image-alt = 來自維基共享資源的每日一圖
 
-## Strings for the Recent Searches widget
+## Strings for the Search widget
 
 # Widget heading; also the widget's accessible name.
 newtab-recent-searches-widget-title = 最近搜尋內容
@@ -464,6 +468,11 @@ newtab-recent-searches-just-now = 剛剛
 #   $search (string) - The search the row shows, e.g. "puffin colonies".
 newtab-recent-searches-row-remove =
     .aria-label = 從最近搜尋內容中移除「{ $search }」
+# Widget heading; also the widget's accessible name.
+newtab-search-widget-title = 搜尋
+# Screen reader label for the widget's icon-only menu button.
+newtab-search-widget-menu-button =
+    .aria-label = 搜尋選項
 
 ## Recent searches widget — empty states
 
@@ -624,7 +633,7 @@ newtab-menu-bookmark = 書籤
 
 newtab-menu-copy-download-link = 複製下載鏈結
 newtab-menu-go-to-download-page = 前往下載頁面
-newtab-menu-remove-download = 自下載記錄移除
+newtab-menu-remove-download = 自下載紀錄移除
 
 ## Context Menu - Download Menu: These are platform specific strings found in the context menu of an item that has
 ## been downloaded. The intention behind "this action" is that it will show where the downloaded file exists on the file
@@ -770,6 +779,8 @@ newtab-custom-widget-stocks-toggle =
     .label = 股市
 newtab-custom-widget-picture-toggle =
     .label = 每日一圖
+newtab-custom-widget-search-toggle =
+    .label = 搜尋
 newtab-custom-widget-recent-searches-toggle =
     .label = 最近搜尋內容
 newtab-custom-widget-section-title = 小工具
@@ -826,6 +837,9 @@ newtab-wallpaper-add-an-image = 新增圖片
 newtab-wallpaper-custom-color = 選擇色彩
 newtab-wallpaper-toggle-title =
     .label = 背景圖
+# Label for the grid of wallpaper categories in the customize panel
+newtab-wallpaper-category-list =
+    .aria-label = 背景圖分類
 # Variables
 #   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
 newtab-wallpaper-error-max-file-size = 圖片超過 { $file_size }MB 的檔案大小限制。請嘗試上傳小一點的檔案。
@@ -1677,6 +1691,16 @@ newtab-activation-window-message-customization-focus-primary-button =
 # the existing widgetry that appears on it.
 newtab-activation-window-message-values-focus-header = 這個空間可以用您想要的方式安排
 newtab-activation-window-message-values-focus-message = { -brand-product-name } 讓您可以用自己想要的方式上網，用更個人化的方式開啟每一天。讓 { -brand-product-name } 有您獨特的風格。
+
+## Strings for the New Tab customization callout shown at the Nova launch.
+
+# "Put your finishing touch on" means to add the last, personal detail that
+# makes something yours. The call to action is to open the New Tab
+# customization panel and pick a theme or wallpaper.
+newtab-nova-customization-callout-header = 為 { -brand-product-name } 加上您的專屬風格
+newtab-nova-customization-callout-message = 探索亮色或暗色佈景主題與背景圖，讓全新的 { -brand-product-name } 更有您的風格。
+newtab-nova-customization-callout-primary-button =
+    .label = 挑選您喜愛的風格
 
 ## Strings for the Clock widget
 

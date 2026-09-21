@@ -30,6 +30,7 @@ policy-BlockAboutSupport = 防止開啟 about:support 頁面。
 policy-Bookmarks = 在書籤工具列、選單或當中的資料夾建立書籤。
 policy-CaptivePortal = 開啟或關閉支援 Captive portal。
 policy-CertificatesDescription = 新增憑證，或使用內建憑證。
+policy-ClearOnShutdown = 結束 { -brand-short-name } 時清除瀏覽資料
 # CNSA 2.0 is the United States National Security Agency's Commercial National
 # Security Algorithm Suite 2.0. ML-KEM-1024 is a post-quantum key agreement
 # algorithm. Neither should be translated.
@@ -136,7 +137,7 @@ policy-PromptForDownloadLocation = 下載檔案時，詢問要將檔案儲存至
 policy-Proxy = 設定代理伺服器選項。
 policy-RelaunchRequired = 要求 { -brand-short-name } 在指定的時間內重新啟動，並在即將重新啟動前通知使用者。
 policy-RequestedLocales = 為應用程式設定使用的語系清單順序。
-policy-SanitizeOnShutdown2 = 關閉瀏覽器時，清除上網資料。
+policy-SanitizeOnShutdown2 = 關閉瀏覽器時，清除瀏覽資料。
 policy-SearchBar = 設定搜尋列的預設位置，使用者仍然可以自訂。
 policy-SearchEngines = 調整搜尋引擎設定。此原則僅對 Extended Support Release（ESR）版本有效。
 policy-SearchSuggestEnabled = 啟用或停用搜尋建議。

@@ -83,6 +83,7 @@ translations-panel-error-change-button =
 translations-panel-error-unsupported-hint-known-2 = 抱歉，我們尚未支援翻譯{ $language }。
 translations-panel-error-unsupported-hint-unknown-2 = 抱歉，我們尚未支援翻譯這種語言。
 
+## The default translation view contains two language dropdowns.
 ## Each label is followed, on a new line, by a dropdown list of language names.
 ## If this structure is problematic for your locale, an alternative way is to
 ## translate them as `Source language:` and `Target language:`
@@ -106,6 +107,10 @@ translations-panel-choose-language =
     .label = 選擇語言
 translations-panel-restore-button =
     .label = 顯示原始內容
+# The label for the target-language dropdown in the revisit view. This may need
+# to be translated differently from translations-panel-to-label to convey that
+# selecting a language will translate the page again.
+translations-panel-revisit-to-label = 翻譯語言：
 
 ## Firefox Translations language management in about:preferences.
 

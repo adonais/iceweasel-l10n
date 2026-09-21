@@ -112,6 +112,8 @@ pref-thread-stream-trans =
     .title = 網路資料流傳輸
 perftools-thread-socket-thread =
     .title = 若網路相關程式進行任何 blocking socket 呼叫時，將發生於此執行緒
+perftools-thread-jxl-img-decode =
+    .title = JPEG XL 圖片解碼執行緒
 perftools-thread-img-decoder =
     .title = 圖片解碼執行緒
 perftools-thread-dns-resolver =
@@ -145,16 +147,6 @@ perftools-onboarding-close-button =
     .aria-label = 關閉功能介紹訊息
 
 ## Profiler presets
-
-
-# Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.jsm.js
-# The same labels and descriptions are also defined in appmenu.ftl.
-
-
-# Presets and their l10n IDs are defined in the file
-# devtools/client/performance-new/shared/background.sys.mjs
-# The same labels and descriptions are also defined in appmenu.ftl.
 
 perftools-presets-web-developer-label = 網頁開發者
 perftools-presets-web-developer-description = 推薦於對大部分網頁應用程式除錯時使用，額外負荷較低。
