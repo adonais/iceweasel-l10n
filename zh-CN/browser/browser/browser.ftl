@@ -844,6 +844,10 @@ urlbar-searchmode-no-keyword2 =
     .title = 关键词搜索已禁用
 urlbar-searchmode-dropmarker2 =
     .title = 选取搜索引擎
+urlbar-searchmode-bookmarks4 = 书签
+urlbar-searchmode-tabs4 = 标签页
+urlbar-searchmode-history4 = 历史记录
+urlbar-searchmode-actions4 = 操作
 urlbar-searchmode-bookmarks3 = 书签
     .accesskey = B
 urlbar-searchmode-tabs3 = 标签页
@@ -867,6 +871,8 @@ urlbar-searchmode-popup-one-off-header = 本次搜索使用：
 # Label shown on the top of Searchmode Switcher popup when the search engine won't automatically
 # reset after submitting.
 urlbar-searchmode-popup-header = 搜索引擎：
+urlbar-searchmode-popup-search-settings2 = 搜索设置
+urlbar-searchmode-popup-settings2 = 设置
 urlbar-searchmode-popup-search-settings = 搜索设置
     .accesskey = S
 urlbar-searchmode-popup-settings = 设置

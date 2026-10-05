@@ -15,15 +15,17 @@ autofill-use-payment-method-os-prompt-other = { -brand-short-name } 正尝试使
 autofill-edit-payment-method-os-prompt-macos = 显示存储的付款方式信息
 autofill-edit-payment-method-os-prompt-windows = { -brand-short-name } 正尝试显示存储的付款方式信息，请在下方登录此 Windows 账户确认。
 autofill-edit-payment-method-os-prompt-other = { -brand-short-name } 正尝试显示存储的付款方式信息。
+# The button leads users to Form Autofill browser preferences.
+credit-card-doorhanger-options-button =
+    .title = 表单自动填写选项
 # The link leads users to Form Autofill browser preferences.
 autofill-options-link = 表单自动填写选项
 
-## The credit card capture doorhanger
+##
 
 # If Sync is enabled and credit card sync is available,
 # this checkbox is displayed on the doorhanger shown when saving credit card.
 credit-card-doorhanger-credit-cards-sync-checkbox = 在我的设备间同步所有保存的卡片
-# Used on the doorhanger when users submit payment with credit card.
 credit-card-save-doorhanger-header = 要安全地保存此卡片吗？
 credit-card-save-doorhanger-description = { -brand-short-name } 会将卡号加密保存。安全码不会被保存。
 credit-card-capture-save-button =

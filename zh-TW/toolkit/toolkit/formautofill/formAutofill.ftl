@@ -20,17 +20,22 @@ autofill-edit-payment-method-os-prompt-other = { -brand-short-name } 正嘗試�
 autofill-delete-payment-method-os-prompt-macos = 刪除儲存的付款方式資訊
 autofill-delete-payment-method-os-prompt-windows = { -brand-short-name } 正嘗試刪除儲存的付款方式資訊。請在下方登入此 Windows 帳號確認。
 autofill-delete-payment-method-os-prompt-other = { -brand-short-name } 正嘗試刪除儲存的付款方式資訊。
+# The button leads users to Form Autofill browser preferences.
+credit-card-doorhanger-options-button =
+    .title = 表單自動填寫選項
 # The link leads users to Form Autofill browser preferences.
 autofill-options-link = 表單自動填寫選項
 
-## The credit card capture doorhanger
+##
 
 # If Sync is enabled and credit card sync is available,
 # this checkbox is displayed on the doorhanger shown when saving credit card.
 credit-card-doorhanger-credit-cards-sync-checkbox = 將所有儲存的卡片資訊同步到我的裝置上
-# Used on the doorhanger when users submit payment with credit card.
 credit-card-save-doorhanger-header = 要安全地儲存這張卡片的資料嗎？
 credit-card-save-doorhanger-description = { -brand-short-name } 會加密您的卡號，不會儲存安全碼。
+credit-card-save-doorhanger-description-security-code = { -brand-short-name } 會加密您的卡號與安全碼，只有您可以用來填寫付款表單內容。
+credit-card-doorhanger-save-security-codes-checkbox =
+    .label = 總是儲存付款方式的安全碼。
 credit-card-capture-save-button =
     .label = 儲存
     .accessKey = S
@@ -59,6 +64,22 @@ autofill-manage-payment-methods-label = 管理付款方式
 # it as the secondary label. "CVC" is a common abbreviation for the code printed
 # on a payment card; use whichever abbreviation is most familiar in your locale.
 autofill-card-security-code-label = CVC 驗證碼
+
+## Details of the card shown on the credit card capture doorhanger, below the
+## masked card number. Each message is used for a different combination of the
+## available details.
+## Variables:
+##   $name (String): The cardholder name
+##   $month (String): Two-digit month the card expires
+##   $year (String): Two-digit year the card expires
+
+credit-card-doorhanger-details-name = { $name }
+credit-card-doorhanger-details-expiration = { $month }/{ $year }
+credit-card-doorhanger-details-cvv = 已儲存 CVV
+credit-card-doorhanger-details-name-expiration = { $name }，{ $month }/{ $year }
+credit-card-doorhanger-details-name-cvv = { $name } | 已儲存 CVV
+credit-card-doorhanger-details-expiration-cvv = { $month }/{ $year } | 已儲存 CVV
+credit-card-doorhanger-details-name-expiration-cvv = { $name }，{ $month }/{ $year } | 已儲存 CVV
 
 ## These are brand names and should only be translated when a locale-specific name for that brand is in common use
 

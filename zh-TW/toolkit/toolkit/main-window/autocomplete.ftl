@@ -29,10 +29,24 @@ autocomplete-import-learn-more = 了解更多
 autocomplete-edit-password = 編輯此密碼
 autocomplete-delete-password = 刪除此密碼
 autocomplete-edit-address = 編輯此地址
+# Tooltip for the trash button on an address row.
 autocomplete-delete-address = 刪除此地址
+# Accessible name for the button. Names the address so screen reader
+# users know which entry the button deletes.
+# Variables:
+#   $entry (String) - The saved address the button would delete.
+autocomplete-delete-address-entry = 刪除地址 { $entry }
 autocomplete-edit-payment-method = 編輯此付款方式
+# Tooltip for the trash button on a payment method row.
 autocomplete-delete-payment-method = 刪除此付款方式
-# aria-label and tooltip for the trash button on a form history entry.
+# Accessible name for the button. Names the payment method so screen reader
+# users know which entry the button deletes.
+# Variables:
+#   $entry (String) - The saved payment method the button would delete.
+autocomplete-delete-payment-method-entry = 刪除付款方式 { $entry }
+# Tooltip for the trash button on a form history entry.
+autocomplete-delete-entry = 刪除
+# aria-label for the trash button on a form history entry.
 # Variables:
 #   $entry (String) - The text of the saved form history entry that would be deleted.
 autocomplete-delete-form-history-entry2 = 從表單填寫紀錄刪除「{ $entry }」
@@ -40,6 +54,13 @@ autocomplete-delete-form-history-entry2 = 從表單填寫紀錄刪除「{ $entry
 # Variables:
 #   $entry (String) - The dropdown row the actions apply to, such as a username, an address, or a payment method.
 autocomplete-more-actions2 = 有關「{ $entry }」的更多操作
+# Tooltip for the button that opens the edit/delete menu.
+autocomplete-more-options = 更多選項
+# Accessible name for the button that opens the edit/delete menu. It names the
+# row so screen reader users know which entry the menu belongs to.
+# Variables:
+#   $entry (String) - The dropdown row the actions apply to, such as a username, an address, or a payment method.
+autocomplete-more-options-for-entry = { $entry } 的更多選項
 
 ## Confirmation shown before a record is removed from the autocomplete dropdown.
 ## Gated by the browser.autocomplete.removeRecords.enabled pref.
@@ -48,7 +69,11 @@ autocomplete-remove-password-title = 要移除密碼嗎？
 autocomplete-remove-address-title = 要移除地址嗎？
 autocomplete-remove-payment-method-title = 要移除付款方式嗎？
 autocomplete-remove-record-message = 無法還原此動作。
+autocomplete-delete-record-button = 刪除
 autocomplete-remove-record-button = 移除
+autocomplete-delete-password-title = 要刪除密碼嗎？
+autocomplete-delete-address-title = 要刪除地址嗎？
+autocomplete-delete-payment-method-title = 要刪除付款方式嗎？
 
 ## Device sign-in prompt shown before a password is removed from the autocomplete
 ## dropdown. The -win and -macosx variants are selected at runtime; other platforms

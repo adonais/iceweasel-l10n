@@ -22,12 +22,12 @@ places-open-in-window =
     .accesskey = N
 places-open-in-private-window =
     .label = 用新隱私視窗開啟
-    .accesskey = P
+    .accesskey = v
 places-empty-bookmarks-folder =
     .label = (空)
 places-add-bookmark =
     .label = 新增書籤…
-    .accesskey = B
+    .accesskey = k
 places-add-folder-contextmenu =
     .label = 新增資料夾…
     .accesskey = F
@@ -245,6 +245,12 @@ places-search-downloads =
 ##
 
 places-locked-prompt = 因為 { -brand-short-name } 的檔案被其他程式鎖定，書籤與瀏覽記錄將無法使用。某些安全軟體會導致這個問題。
+# Share is a verb here. Meaning to "Share" the bookmark "Folder"
+# .badge used to promote the sharing menu item; keep it as short as possible.
+places-share-folder3 =
+    .badge = 新功能
+    .label = 分享資料夾
+    .accesskey = a
 # Share is a verb here. Meaning to "Share" the bookmark "Folder"
 # .badge used to promote the sharing menu item; keep it as short as possible.
 places-share-folder2 =

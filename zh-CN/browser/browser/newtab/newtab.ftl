@@ -183,8 +183,6 @@ newtab-privacy-across-sites = 涉及 { $count } 个网站
 ## Privacy widget — empty state
 
 # Shown when no trackers have been blocked yet today.
-newtab-privacy-empty = { -brand-short-name } 会在您浏览时拦截跟踪器。拦截情况将显示在这里。
-# Shown when no trackers have been blocked yet today.
 newtab-privacy-empty-state = { -brand-short-name } 会自动拦截跟踪器，让您的活动更私密。
 # "A running tally" is an informal way to say a total that keeps updating as it goes.
 # Here we are referring to the number of trackers blocked, which increases as the user browses.
@@ -280,11 +278,11 @@ newtab-privacy-message-streak-cta = 查看保护信息
 newtab-privacy-message-first-protection = 继续浏览，{ -brand-short-name } 将持续拦截。
 newtab-privacy-message-first-protection-cta = 查看保护信息
 
-## Strings for the Stocks widget
+## Strings for the Finance widget
 
-# Context menu item linking to more information about the Stocks widget.
+# Context menu item linking to more information about the Finance widget.
 newtab-stocks-menu-learn-more = 详细了解
-# Shown in the Stocks widget when its data could not be loaded.
+# Shown in the Finance widget when its data could not be loaded.
 newtab-stocks-error-not-available = 无法获取股市数据。
 # "Stocks widget options" is an icon-only button in the widget toolbar — the
 # attributes are consumed as tooltip/screen-reader label only. The button
@@ -292,6 +290,20 @@ newtab-stocks-error-not-available = 无法获取股市数据。
 newtab-stocks-widget-menu-button =
     .aria-label = 股市小组件选项
     .title = 股市小组件选项
+# Toolbar button that opens the stock search. It shows only the icon until it is
+# hovered or focused, then the .label as well; "Search" is a verb. .title and
+# .aria-label name it for tooltips and screen readers.
+newtab-stocks-search-button =
+    .aria-label = 搜索名称或代码
+    .label = 搜索
+    .title = 搜索名称或代码
+# Button under the empty-watchlist message that opens the stock search. Shown
+# with a magnifying-glass icon and the .label, where "Search" is a verb; .title
+# and .aria-label name it the same way as the toolbar search button.
+newtab-stocks-watchlist-empty-search =
+    .aria-label = 搜索名称或代码
+    .label = 搜索
+    .title = 搜索名称或代码
 # Accessible name for the Stocks widget; hidden because the list dropdown is
 # shown in place of the title.
 newtab-stocks-widget-title = 股市
@@ -319,7 +331,7 @@ newtab-stocks-ticker-status-down = { $name }，下跌 { $change }，{ $price }
 # Stock didn't change during the day
 newtab-stocks-ticker-status-flat = { $name }，平盘，{ $change }，{ $price }
 
-## Stocks widget watchlist add and remove controls
+## Finance widget watchlist add and remove controls
 
 # Tooltip and screen-reader label for the button that adds a stock to the watchlist.
 # The button shows only an icon and never renders visible text.
@@ -349,7 +361,7 @@ newtab-stocks-added-to-watchlist = 已将“{ $name }”添加到关注列表
 #   $name (String) - the fund/ETF name.
 newtab-stocks-removed-from-watchlist = 已将“{ $name }”从关注列表移除
 
-## Stocks widget ticker search
+## Finance widget ticker search
 
 # Placeholder and screen-reader label for the ticker search input.
 newtab-stocks-search-input =
@@ -754,6 +766,9 @@ newtab-custom-widget-sports-toggle2 =
     .label = 体育
 newtab-custom-widget-privacy-toggle =
     .label = 隐私保护
+# Crossword is a widget on New Tab that shows a daily crossword puzzle.
+newtab-custom-widget-crossword-toggle =
+    .label = 填字游戏
 newtab-custom-widget-stocks-toggle =
     .label = 股市
 newtab-custom-widget-picture-toggle =
@@ -1372,6 +1387,9 @@ newtab-promo-card-cta = 详细了解
 newtab-promo-card-dismiss-button =
     .aria-label = 知道了
     .title = 知道了
+
+## Strings introduced by the Nova redesign of the Timer widget
+
 # Variables:
 #   $minutes (number) - The currently selected timer duration in minutes
 newtab-widget-timer-start-aria =
@@ -1621,8 +1639,8 @@ newtab-sports-widget-team-name-label-sco =
 # Placeholder used in a match row's aria-label for an undecided team (shown visually as "--").
 newtab-sports-widget-team-tbd = 待定
 
-## Sports widget OMC messages
-## Shown as on-screen messages promoting the Sports widget and World Cup wallpapers.
+## World Cup wallpaper OMC messages
+## Shown as on-screen messages promoting the World Cup wallpapers.
 
 newtab-sports-widget-message-wallpapers-title = 换上新壁纸，迎接世界杯
 newtab-sports-widget-message-wallpapers-body = 赛事期间，将赛场活力注入浏览器

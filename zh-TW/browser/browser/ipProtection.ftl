@@ -26,17 +26,19 @@ ipprotection-title = VPN
 ipprotection-feature-introduction-title = 向您介紹直接內建於瀏覽器的 VPN 功能
 ipprotection-feature-introduction-title-1 = 試用 { -brand-product-name } 的內建 VPN
 ipprotection-feature-introduction-link-text-2 = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏所在位置，並保護您的資料。
-# Used for callout for users who expressed interest in privacy in onboarding
 ipprotection-feature-introduction-title-privacy = 加上一層隱私保護
 ipprotection-feature-introduction-link-text-privacy-1 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的內建 VPN</a> 可幫助保護您的上網安全。從多個連線位置任選，讓您上網更有隱私。
 ipprotection-feature-introduction-link-text-privacy-2 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的內建 VPN</a> 可幫助保護您的上網安全。從多個連線位置任選，讓您上網更有隱私。
 ipprotection-feature-introduction-link-text-privacy-3 = 從多個地點任選，隱藏您的實際上網位置，讓<a data-l10n-name="learn-more-vpn">上網更有隱私</a>。
+# Used for multiple discovery callouts after release of the site inclusions feature
+ipprotection-feature-introduction-description-inclusions = 在您上網時隱藏實際所在地點，以獲得<a data-l10n-name="learn-more-vpn">更多隱私保障</a>。您可以只針對特定網站開啟或關閉 VPN。
 ipprotection-feature-introduction-text-summer-promo-1 = 開啟後即可讓您上網更有隱私。即日起至 8 月 31 日止可<a data-l10n-name="summer-promo-link">獲得無限頻寬</a>與更多連線位置。
 ipprotection-feature-introduction-title-summer-promo = 準備要旅行嗎？讓隱私隨身帶著走。
 ipprotection-feature-introduction-description-summer-promo = 使用 { -brand-product-name } 內建的 VPN 讓您走得更遠：更多地點、頻寬不設限。即日起至 8 月 31 日止。
 ipprotection-feature-introduction-link-text-private-browsing-2 = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏所在位置，並保護您的資料，就算在隱私瀏覽視窗中也能受到保護。
 ipprotection-feature-introduction-description-private-browsing = 隱藏您的實際所在位置，就算是在隱私視窗中也能獲得額外保護。
-# Used for callout shown on login to public wi-fi through a captive portal
+# Alternate version of the feature discovery callout copy used after we've released site inclusions for the VPN. Users have the option to turn the VPN on for specific sites only
+ipprotection-feature-introduction-description-private-browsing-1 = 在您上網時隱藏實際所在地點，以獲得<a data-l10n-name="learn-more-vpn">更多隱私保障</a>。您可以設定規則，對需要更多隱私保護或根據地點顯示不同資訊的網站開啟 VPN，或在不需要的地方關閉。
 ipprotection-feature-introduction-title-captive-portal = 透過公共 Wi-Fi 上網嗎？請試用 { -brand-product-name } 的內建 VPN。
 ipprotection-feature-introduction-description-captive-portal = 隱藏您的實際所在位置，就算是使用公共 Wi-Fi 也能獲得額外保護。
 # Used for discovery callouts for both captive portal login and private browsing
@@ -54,7 +56,11 @@ ipprotection-feature-introduction-button-secondary-remove-1 =
 ipprotection-feature-introduction-button-open-vpn = 開啟 VPN
 ipprotection-feature-introduction-button-get-started = 開始使用
 
-## Unlimited bandwidth summer promotion offramp callouts
+## Callout shown when the user opens a private browsing window
+
+ipprotection-feature-introduction-title-private-browsing = 使用 { -brand-product-name } 內建的 VPN，最大化隱私保護
+
+## Summer promo offramp callout buttons
 
 # Generic summer promo offramp message
 ipprotection-summer-promo-offramp-generic-title = 您內建 VPN 的限制將於 9 月 1 日重設
@@ -79,7 +85,6 @@ ipprotection-summer-promo-offramp-default-browser-incentive-description = 將 { 
 # "Level up" refers to enhancing VPN functionality from the Firefox built-in VPN
 ipprotection-summer-promo-offramp-subscription-upsell-title = 讓 { -mozilla-vpn-brand-name } 升級
 ipprotection-summer-promo-offramp-subscription-upsell-description = 於 8 月 31 起保留無限頻寬，還有能在最多 5 台裝置透過超過 300 個位置連線，讓您上網更難被追蹤。
-# Summer promo offramp callout buttons
 ipprotection-summer-promo-offramp-open-vpn-primary-button = 開啟 VPN
 ipprotection-summer-promo-offramp-set-to-default-primary-button = 設為預設瀏覽器
 ipprotection-summer-promo-offramp-get-subscription-button = 獲得 { -mozilla-vpn-brand-name }
@@ -103,6 +108,16 @@ ipprotection-location-selection-callout-secondary-button = 知道了！
 ipprotection-android-promo-callout-title = 在 Android 把內建 VPN 功能隨身帶著走
 ipprotection-android-promo-callout-description = 掃描 QR Code 即可下載 { -brand-product-name } for Android，並開啟內建 VPN 功能，讓您隨時隨地都有更多隱私保護。iOS 版即將推出。
 ipprotection-android-promo-callout-primary-button = 知道了！
+
+## Feature discovery callout message advertising a feature where the user can turn on the VPN for specific sites only
+
+# Here 'browse on' means continue browsing
+ipprotection-site-inclusions-callout-title-existing-users = 設定內建 VPN 規則，然後繼續上網
+ipprotection-site-inclusions-callout-title-lapsed-users = 試用內建 VPN 功能，現在可針對特定網站單獨開啟
+ipprotection-site-inclusions-callout-description = 針對需加強隱私保護，或瀏覽特定地區內容時開啟，不需要時則關閉。
+ipprotection-site-inclusions-callout-primary-button = 設定規則
+ipprotection-site-inclusions-callout-secondary-button-existing-users = 現在不要
+ipprotection-site-inclusions-callout-secondary-button-lapsed-users = 知道了！
 
 ## Panel
 

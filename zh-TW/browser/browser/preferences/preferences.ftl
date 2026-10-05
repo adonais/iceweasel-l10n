@@ -689,6 +689,10 @@ settings-keyboard-shortcuts-group =
     .label = 快速鍵
 settings-keyboard-shortcuts-customkeys-link =
     .label = 自訂快速鍵
+# Link that takes the user to the Search category of settings, where the
+# address bar options live.
+settings-keyboard-shortcuts-addressbar-link =
+    .label = 前往「搜尋」自訂網址列設定
 settings-media-group =
     .label = 媒體
 browsing-picture-in-picture-toggle-enabled-2 =
@@ -913,6 +917,14 @@ search-separate-default-engine-2 =
     .accesskey = U
 search-separate-default-engine-dropdown =
     .aria-label = 隱私瀏覽視窗中的預設搜尋引擎
+# "Navigation" here means moving around within the address bar and its results
+# list, not navigation to the address bar.
+addressbar-navigation-group =
+    .label = 網址列導航
+# "Results menu" refers to the menu available on each row of the address bar
+# results list, which offers actions such as dismissing the result.
+addressbar-skip-result-menu-on-tab =
+    .label = 使用 Tab 鍵移動焦點時，跳過結果選單
 search-suggestions-header-2 =
     .label = 搜尋引擎建議
 search-one-click-header2 = 搜尋快速鍵
@@ -1142,6 +1154,9 @@ sync-syncing-across-devices-heading-2 = 在不同裝置間同步的資料
 sync-syncing-across-devices-empty-state2 =
     .description = 您目前沒有同步任何資料。開始同步即可將所有資料同步到您的所有裝置上。
     .label = 管理要同步的資料
+sync-syncing-across-devices-empty-state3 =
+    .description = 您還沒有同步任何東西，選擇要在此裝置同步哪些資料。
+    .label = 管理要同步的資料
 sync-currently-syncing-bookmarks = 書籤
 sync-currently-syncing-history = 瀏覽紀錄
 sync-currently-syncing-tabs = 開啟的分頁
@@ -1362,6 +1377,10 @@ autofill-payment-methods-manage-payments-button =
 autofill-reauth-payment-methods-checkbox-2 =
     .label = 自動填寫與管理付款資訊時，需進行裝置登入驗證
     .accesskey = o
+# Security codes are the CVV/CVC card codes
+autofill-payment-methods-save-security-codes-checkbox =
+    .label = 儲存安全碼
+    .accesskey = c
 autofill-payment-methods-add-button = 新增付款方式
 payments-list-header =
     .label = 付款方式
@@ -1428,6 +1447,23 @@ preferences-passwords-autofill-header =
 #   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
 payment-moz-box-item =
     .description = { $expDate }
+    .label = { $cardNumber }
+# Used in place of payment-moz-box-item when a security code is saved alongside
+# the card. Only the presence of a saved security code is ever shown, never the
+# code itself. "CVV" is a common abbreviation for the security code printed on a
+# payment card; use whichever abbreviation is most familiar in your locale.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item-with-security-code =
+    .description = { $expDate } | 已儲存 CVV
+    .label = { $cardNumber }
+# Used in place of payment-moz-box-item-with-security-code for a card that has a
+# saved security code but no expiry date to show alongside it.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+payment-moz-box-item-security-code-only =
+    .description = 已儲存 CVV
     .label = { $cardNumber }
 addresses-group =
     .label = 地址與更多資訊
@@ -2087,9 +2123,6 @@ preferences-ai-controls-speech-recognition-control =
     .label = 語音辨識
 preferences-ai-controls-sidebar-chatbot-group-3 =
     .description = 上網時，在畫面中保留聊天機器人。可從多套服務任選，也可隨時切換。
-    .label = 側邊欄中的 AI 聊天機器人
-preferences-ai-controls-sidebar-chatbot-group-2 =
-    .description = 一邊上網一邊與機器人對話。可從 Anthropic Claude、ChatGPT、Copilot、Google Gemini 及 Mistral Vibe 任選一套。
     .label = 側邊欄中的 AI 聊天機器人
 preferences-ai-controls-sidebar-chatbot-group =
     .description = 上網時也在畫面中留一塊空間給聊天機器人。從 Anthropic Claude、ChatGPT、Copilot、Google Gemini 及 Le Chat Mistral 當中挑選一套。
