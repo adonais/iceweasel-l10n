@@ -415,6 +415,11 @@ newtab-picture-attribution-license =
 newtab-picture-widget-menu-button =
     .aria-label = 每日一图选项
     .title = 每日一图选项
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-picture-widget-open-menu-button =
+    .aria-label = 打开每日一图菜单
+    .title = 打开每日一图菜单
 # Button that sets the current picture as the New Tab background wallpaper. The
 # button collapses to an icon when not hovered/focused, so .title is its tooltip.
 newtab-picture-set-wallpaper =
@@ -453,6 +458,10 @@ newtab-recent-searches-menu-learn-more = 详细了解
 newtab-recent-searches-tab-recent = 近期搜索
 # Tab listing what is trending with the user's search engine.
 newtab-recent-searches-tab-trending = 热门搜索
+# Informs the user which engine the trending results come from.
+# Variables:
+#   $engine (string) - Name of the default search engine, e.g. "Google".
+newtab-recent-searches-trending-attribution = 数据来自 { $engine }
 # Relative time shown for a search made less than a minute ago.
 newtab-recent-searches-just-now = 刚刚
 # Screen reader label for the button that forgets one listed search.
@@ -465,6 +474,11 @@ newtab-search-widget-title = 搜索
 # Screen reader label for the widget's icon-only menu button.
 newtab-search-widget-menu-button =
     .aria-label = 搜索选项
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-search-widget-open-menu-button =
+    .aria-label = 打开搜索菜单
+    .title = 打开搜索菜单
 
 ## Recent searches widget — empty states
 
@@ -998,6 +1012,11 @@ newtab-wallpaper-celestial-river = 河流卫星图
 # Variables:
 #   $provider (string) - Service provider for weather data
 newtab-weather-sponsored = { $provider } ∙ 赞助
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-weather-widget-open-menu-button =
+    .aria-label = 打开天气菜单
+    .title = 打开天气菜单
 newtab-weather-menu-change-location = 更改位置
 newtab-weather-change-location-search-input-placeholder =
     .aria-label = 搜索位置
@@ -1276,6 +1295,12 @@ newtab-widget-lists-edit-clear =
 # Lists is a noun, as in "options for the lists"
 newtab-widget-lists-menu-button =
     .aria-label = 清单选项
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+# Lists is a noun, as in "the menu for your lists".
+newtab-widget-lists-open-menu-button =
+    .aria-label = 打开列表菜单
+    .title = 打开列表菜单
 # the + symbol emphasises the functionality of adding a new list
 newtab-widget-lists-dropdown-create =
     .label = + 创建新清单
@@ -1363,6 +1388,11 @@ newtab-widget-timer-menu-notifications-on = 开启通知
 newtab-widget-timer-menu-learn-more = 详细了解
 newtab-widget-timer-menu-button =
     .aria-label = 计时器选项
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-widget-timer-open-menu-button =
+    .aria-label = 打开计时器菜单
+    .title = 打开计时器菜单
 # The title displays above a set of top news headlines.
 newtab-daily-briefing-card-title = 头条新闻
 newtab-daily-briefing-card-menu-dismiss = 知道了
@@ -1387,6 +1417,14 @@ newtab-promo-card-cta = 详细了解
 newtab-promo-card-dismiss-button =
     .aria-label = 知道了
     .title = 知道了
+
+## Crossword widget
+
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-crossword-widget-open-menu-button =
+    .aria-label = 打开填字游戏菜单
+    .title = 打开填字游戏菜单
 
 ## Strings introduced by the Nova redesign of the Timer widget
 
@@ -1685,6 +1723,16 @@ newtab-activation-window-message-customization-focus-primary-button =
 newtab-activation-window-message-values-focus-header = 这片空间，由您做主
 newtab-activation-window-message-values-focus-message = { -brand-product-name } 可让您以更具个性的方式开启网络上的新一天，按自己喜欢的方式来浏览。让 { -brand-product-name } 有您的个性。
 
+## Strings for the New Tab customization callout shown at the Nova launch.
+
+# "Put your finishing touch on" means to add the last, personal detail that
+# makes something yours. The call to action is to open the New Tab
+# customization panel and pick a theme or wallpaper.
+newtab-nova-customization-callout-header = 为 { -brand-product-name } 添上您个性的点睛之笔
+newtab-nova-customization-callout-message = 体验明亮或深邃主题和壁纸，让全新的 { -brand-product-name } 更具个性。
+newtab-nova-customization-callout-primary-button =
+    .label = 选择外观
+
 ## Strings for the Clock widget
 
 # Context menu item: toggle the clock card off.
@@ -1765,6 +1813,17 @@ newtab-clock-widget-custom-zone-results =
 newtab-clock-widget-custom-zone-no-results = 没有匹配的时区
 # Returns from the custom clock form back to the city search.
 newtab-clock-widget-custom-back = 返回
+# "Clock options" is an icon-only button in the widget toolbar — the
+# attributes are consumed as tooltip/screen-reader label only. The button
+# never renders visible text.
+newtab-clock-widget-menu-button2 =
+    .aria-label = 时钟选项
+    .title = 时钟选项
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-clock-widget-open-menu-button =
+    .aria-label = 打开时钟菜单
+    .title = 打开时钟菜单
 # Shown in place of the search results when the user's query does not match any
 # supported city — e.g. typing a misspelled name or a place not in the IANA
 # time zone list.

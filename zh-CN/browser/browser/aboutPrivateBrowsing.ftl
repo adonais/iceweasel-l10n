@@ -75,8 +75,31 @@ about-private-browsing-felt-privacy-v1-info-link = 谁可以看到我的活动�
 
 about-private-browsing-nova-info-body = 关闭所有隐私窗口时将删除 Cookie、历史记录和网站数据。
 about-private-browsing-nova-info-link = 谁依然可能看到我的活动？
+about-private-browsing-private-window-basics-link = 隐私窗口入门
+about-private-browsing-private-window-redesign-subheader = { -brand-short-name } 内置跟踪保护功能，可在您浏览网页时保护隐私。关闭此窗口会清除其中的历史记录、Cookie 和网站数据，以避免使用此设备的其他人得知您的浏览活动。
 # "You're off the record" is an English idiom meant to communicate that you
 # are not being recorded. If there is not a comparable phrase in the locale,
 # fall back to "Your browsing will be deleted"
 about-private-browsing-nova-info-header = 您的浏览不会被记录
 about-private-browsing-nova-info-subheader2 = 关闭所有隐私窗口后，所有搜索记录和登录状态都将被清除。 { -brand-short-name } 内置的保护功能（例如拦截跟踪器）也在此窗口生效。
+
+## Strings for the Private Window basics spotlight
+
+about-private-browsing-spotlight-basics-title = 隐私窗口入门
+about-private-browsing-spotlight-basics-subtitle = 隐私窗口有助于避免使用此设备的其他人看到您的浏览活动，但不能让您匿名，也无法清除您的所有数据。
+# This is a section header in the Private Window basics spotlight dialog,
+# introducing information about what users should know about Private Windows.
+about-private-browsing-spotlight-basics-what-to-know = 使用须知
+about-private-browsing-spotlight-basics-activity-seen = 网站、搜索引擎、互联网服务提供商或您的雇主仍可能看到您的部分活动。
+about-private-browsing-spotlight-basics-bookmarks-downloads = 书签和下载项会保留在您的设备上，并可能显示在地址栏中。
+# This is a section header in the Private Window basics spotlight dialog,
+# introducing additional privacy protection features available in { -brand-short-name }.
+about-private-browsing-spotlight-basics-more-privacy = 更多隐私保护
+about-private-browsing-spotlight-basics-malware-alerts = { -brand-short-name } 会在识别到恶意软件和诈骗网站时自动发出警报。
+# "Participating sites" refers to websites that honor Global Privacy Control (GPC) signals, either voluntarily or where legally required.
+about-private-browsing-spotlight-basics-no-sell-data = { -brand-short-name } 会自动要求参加网站不要出售或共享您的个人数据。
+about-private-browsing-spotlight-basics-vpn = 使用内置 VPN 可让您的位置更难被追踪。
+# "Strict" refers to the Strict level of Enhanced Tracking Protection settings.
+# Translations should be consistent with the existing "Strict" string in about:preferences.
+about-private-browsing-spotlight-basics-strict-tracking = 在设置中切换到“严格”级别可获得更强的跟踪保护。
+about-private-browsing-spotlight-basics-learn-more = 详细了解

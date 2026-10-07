@@ -524,11 +524,20 @@ onboarding-refresh-gratitude-title = { -brand-short-name } 为您护航
 
 ## First Run Onboarding refresh strings
 
+# "has your back" is an idiom suggesting support and protection
+onboarding-refresh-splash-screen-title = 现在起，{ -brand-product-name } 为您护航
+onboarding-refresh-tou-default = 用 { -brand-short-name } 打开所有链接
+onboarding-refresh-tou-pin =
+    { PLATFORM() ->
+        [macos] 将 { -brand-short-name } 保留在程序坞
+       *[other] 将 { -brand-short-name } 添加到任务栏
+    }
 onboarding-refresh-data-collection-link = 管理数据收集设置
 onboarding-refresh-primary-button = 继续
 onboarding-refresh-fro-import-header = 导入您的数据
 onboarding-refresh-fro-import-body = 您的个人数据始终属于您。{ -brand-product-name } 绝不会将其出售。
 onboarding-refresh-fro-skip-button = 跳过
+onboarding-refresh-fro-theme-header = 打造个性外观
 onboarding-refresh-tab-layout-header = 试试不同的标签页布局
 onboarding-refresh-tab-layout-top = 顶部
 onboarding-refresh-tab-layout-side = 侧边
