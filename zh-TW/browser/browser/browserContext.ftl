@@ -21,10 +21,21 @@ main-context-menu-back-2 =
 main-context-menu-back-mac =
     .label = 返回
     .accesskey = B
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the Go Back command.
+navbar-tooltip-back-3 =
+    .value = 回到上一頁（{ $shortcut }）
+toolbar-button-back-3 =
+    .label = 上一頁
 navbar-tooltip-back-2 =
     .value = { main-context-menu-back-2.tooltiptext }
 toolbar-button-back-2 =
     .label = { main-context-menu-back-2.aria-label }
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the Go Back command.
+main-context-menu-back-3 =
+    .aria-label = 上一頁
+    .tooltiptext = 回到上一頁（{ $shortcut }）
 
 ## Forward
 
@@ -38,10 +49,21 @@ main-context-menu-forward-2 =
 main-context-menu-forward-mac =
     .label = 前進
     .accesskey = F
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the Go Forward command.
+navbar-tooltip-forward-3 =
+    .value = 前進下一頁（{ $shortcut }）
+toolbar-button-forward-3 =
+    .label = 下一頁
 navbar-tooltip-forward-2 =
     .value = { main-context-menu-forward-2.tooltiptext }
 toolbar-button-forward-2 =
     .label = { main-context-menu-forward-2.aria-label }
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the Go Forward command.
+main-context-menu-forward-3 =
+    .aria-label = 下一頁
+    .tooltiptext = 前進下一頁（{ $shortcut }）
 
 ## Reload
 
@@ -52,8 +74,12 @@ main-context-menu-reload =
 main-context-menu-reload-mac =
     .label = 重新載入
     .accesskey = R
+toolbar-button-reload-2 =
+    .label = 重新載入
 toolbar-button-reload =
     .label = { main-context-menu-reload.aria-label }
+main-context-menu-reload-2 =
+    .aria-label = 重新載入
 
 ## Stop
 
@@ -64,13 +90,19 @@ main-context-menu-stop =
 main-context-menu-stop-mac =
     .label = 停止
     .accesskey = S
+toolbar-button-stop-2 =
+    .label = 停止
 toolbar-button-stop =
     .label = { main-context-menu-stop.aria-label }
+main-context-menu-stop-2 =
+    .aria-label = 停止
 
 ## Stop-Reload Button
 
 toolbar-button-stop-reload =
     .title = { main-context-menu-reload.aria-label }
+toolbar-button-stop-reload-2 =
+    .title = 重新載入
 
 ## Account toolbar Button
 
@@ -102,6 +134,19 @@ main-context-menu-bookmark-page-mac =
 main-context-menu-edit-bookmark-mac =
     .label = 編輯書籤…
     .accesskey = m
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-page-with-shortcut-2 =
+    .aria-label = 將頁面加入書籤…
+    .tooltiptext = 將頁面加入書籤（{ $shortcut }）
+main-context-menu-edit-bookmark-2 =
+    .aria-label = 編輯書籤…
+    .tooltiptext = 編輯書籤
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-edit-bookmark-with-shortcut-2 =
+    .aria-label = 編輯書籤…
+    .tooltiptext = 編輯書籤（{ $shortcut }）
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-page-with-shortcut =
@@ -143,7 +188,10 @@ main-context-menu-save-link =
     .label = 鏈結另存新檔…
     .accesskey = k
 main-context-menu-download-link =
-    .label = 使用Upcheck下載此鏈接
+    .label = 使用Upcheck下載此鏈結
+main-context-menu-bookmark-page-2 =
+    .aria-label = 將頁面加入書籤…
+    .tooltiptext = 將頁面加入書籤
 
 ##
 
@@ -165,10 +213,6 @@ main-context-menu-preview-link =
 main-context-menu-copy-clean-link =
     .label = 複製乾淨鏈結
     .accesskey = u
-
-## The access keys for "Copy Link" and "Copy Email Address"
-## should be the same if possible; the two context menu items
-## are mutually exclusive.
 
 ## Media (video/audio) controls
 ##

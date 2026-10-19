@@ -105,13 +105,12 @@ home-prefs-search-widget-header =
 # Horoscopes is a widget on New Tab that shows daily horoscopes.
 home-prefs-horoscopes-header =
     .label = 星座
-# Recent searches is a widget on New Tab that shows the user's recent searches.
-home-prefs-recent-searches-header =
-    .label = 最近搜尋內容
 home-prefs-mission-message2 =
     .message = 贊助商支持我們打造出一個更好的網路環境的使命。
 home-prefs-manage-topics-link2 =
     .label = 管理主題
+home-prefs-manage-widgets-link =
+    .label = 管理小工具
 home-prefs-choose-wallpaper-link2 =
     .label = 挑選一張背景圖
 home-prefs-firefox-logo-header =
@@ -317,23 +316,17 @@ newtab-privacy-message-first-protection-cta = 檢視保護成果
 newtab-stocks-menu-learn-more = 更多資訊
 # Shown in the Finance widget when its data could not be loaded.
 newtab-stocks-error-not-available = 無法提供股市資料。
-# "Finance options" is an icon-only button in the widget toolbar — the
-# attributes are consumed as tooltip/screen-reader label only. The button
-# never renders visible text.
-newtab-stocks-widget-menu-button2 =
-    .aria-label = 金融選項
-    .title = 金融選項
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-stocks-widget-open-menu-button2 =
+    .aria-label = 開啟金融選單
+    .title = 開啟金融選單
 # "Stocks widget options" is an icon-only button in the widget toolbar — the
 # attributes are consumed as tooltip/screen-reader label only. The button
 # never renders visible text.
 newtab-stocks-widget-menu-button =
     .aria-label = 股市小工具選項
     .title = 股市小工具選項
-# Tooltip and screen reader label for the icon-only button that opens the
-# widget's menu.
-newtab-stocks-widget-open-menu-button =
-    .aria-label = 開啟股市選單
-    .title = 開啟股市選單
 # Toolbar button that opens the stock search. It shows only the icon until it is
 # hovered or focused, then the .label as well; "Search" is a verb. .title and
 # .aria-label name it for tooltips and screen readers.
@@ -364,9 +357,6 @@ newtab-stocks-list-watchlist = 自選報價清單
     .label = 自選報價清單
 # Context menu item that opens the stock search (by company name or ticker symbol).
 newtab-stocks-menu-search-stocks = 搜尋股票名稱或代碼
-
-## Strings for the Finance widget
-
 # Accessible name for the Finance widget. It is usually not shown, since the
 # list dropdown or the chosen ticker symbol takes the title's place.
 newtab-stocks-widget-title2 = 金融
@@ -453,6 +443,10 @@ newtab-stocks-watchlist-full = 您最多可加入 { $limit } 支股票。移除�
 newtab-picture-header = 每日一圖 · 維基共享資源
 # Shorter title shown at the top of the widget, without the source name.
 newtab-picture-header-main = 每日一圖
+# Title shown at the top of the widget, with the date of the picture shown.
+# $date (Date) - the day Wikimedia Commons featured the picture as its picture
+# of the day, shown in numbers (for example 10/8/2026).
+newtab-picture-header-date = 每日一圖：{ DATETIME($date, day: "numeric", month: "numeric", year: "numeric") }
 # Attribution line shown under the title once a picture loads: an author
 # credit, a link to the picture's source page, and a link to its license.
 # "©" is the copyright symbol.
@@ -476,6 +470,13 @@ newtab-picture-widget-menu-button =
 newtab-picture-widget-open-menu-button =
     .aria-label = 開啟每日一圖選單
     .title = 開啟每日一圖選單
+# Button that sets the picture shown in the widget, which may be today’s or the
+# previous day’s, as the New Tab background wallpaper. The button collapses to an
+# icon when not hovered/focused, so .title is its tooltip.
+newtab-picture-set-wallpaper2 =
+    .aria-label = 將此照片設為背景圖
+    .label = 設為背景圖
+    .title = 設為背景圖
 # Button that sets the current picture as the New Tab background wallpaper. The
 # button collapses to an icon when not hovered/focused, so .title is its tooltip.
 newtab-picture-set-wallpaper =
@@ -484,6 +485,10 @@ newtab-picture-set-wallpaper =
     .title = 設為背景圖
 # Context menu item that opens the New Tab customization panel.
 newtab-picture-menu-manage-wallpaper = 管理背景圖
+# Context menu item that hides the picture shown in the widget.
+newtab-picture-menu-hide-photo2 = 隱藏此照片
+# Context menu item that restores the picture after it has been hidden.
+newtab-picture-menu-show-photo2 = 顯示照片
 # Context menu item that hides today’s picture, replacing it with an existing
 # wallpaper.
 newtab-picture-menu-hide-photo = 隱藏今天的照片
@@ -491,6 +496,10 @@ newtab-picture-menu-hide-photo = 隱藏今天的照片
 newtab-picture-menu-show-photo = 顯示今天的照片
 # Context menu item linking to more information about the widget.
 newtab-picture-menu-learn-more = 更多資訊
+# Icon button shown on the widget once the picture is hidden; restores it.
+newtab-picture-show-button2 =
+    .aria-label = 顯示照片
+    .title = 顯示照片
 # Icon button shown on the widget once the picture is hidden; restores it.
 newtab-picture-show-button =
     .aria-label = 顯示今天的照片
@@ -503,11 +512,6 @@ newtab-picture-image-alt = 來自維基共享資源的每日一圖
 
 ## Strings for the Search widget
 
-# Widget heading; also the widget's accessible name.
-newtab-recent-searches-widget-title = 最近搜尋內容
-# Screen reader label for the widget's icon-only menu button.
-newtab-recent-searches-widget-menu-button =
-    .aria-label = 最近搜尋選項
 # Context menu item linking to more information about the widget.
 newtab-recent-searches-menu-learn-more = 更多資訊
 # Tab listing the searches the user has made recently.
@@ -547,11 +551,29 @@ newtab-recent-searches-empty-trending = 目前暫時無法顯示熱門搜尋項�
 
 # Widget heading; also the widget's accessible name.
 newtab-horoscopes-widget-title = 星座
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-horoscopes-widget-open-menu-button =
+    .aria-label = 開啟星座選單
+    .title = 開啟星座選單
 # Screen reader label for the widget's icon-only menu button.
 newtab-horoscopes-widget-menu-button =
     .aria-label = 星座選項
 # Context menu item linking to more information about the widget.
 newtab-horoscopes-menu-learn-more = 更多資訊
+
+## Strings for the Travel widget
+
+# Widget heading; also the widget's accessible name. Travel (noun) is a
+# widget on New Tab for searching hotels, flights and car rentals.
+newtab-travel-widget-title = 旅遊
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-travel-widget-open-menu-button =
+    .aria-label = 開啟旅遊選單
+    .title = 開啟旅遊選單
+# Context menu item linking to more information about the widget.
+newtab-travel-menu-learn-more = 更多資訊
 
 ## Strings for the navigable panels that new tab content area can be
 ## split into.
@@ -861,8 +883,10 @@ newtab-custom-widget-search-toggle =
     .label = 搜尋
 newtab-custom-widget-horoscopes-toggle =
     .label = 星座
-newtab-custom-widget-recent-searches-toggle =
-    .label = 最近搜尋內容
+# Travel (noun) is a widget on New Tab for searching hotels, flights
+# and car rentals.
+newtab-custom-widget-travel-toggle =
+    .label = 旅遊
 newtab-custom-widget-section-title = 小工具
 newtab-custom-widget-section-toggle =
     .label = 小工具

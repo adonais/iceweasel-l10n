@@ -440,6 +440,9 @@ bookmark-panel-remove =
 bookmark-panel-show-editor-checkbox =
     .label = 儲存時顯示編輯器
     .accesskey = S
+bookmark-panel-save-button2 =
+    .label = 儲存
+    .accesskey = a
 bookmark-panel-save-button =
     .label = 儲存
 # Width of the bookmark panel.
@@ -1276,6 +1279,9 @@ tabs-toolbar =
     .aria-label = 瀏覽器分頁
 tabs-toolbar-new-tab =
     .label = 開新分頁
+tabs-toolbar-list-all-tabs-2 =
+    .label = 搜尋與管理分頁
+    .tooltiptext = 搜尋與管理分頁
 tabs-toolbar-list-all-tabs =
     .label = 列出所有分頁
     .tooltiptext = 列出所有分頁
@@ -1293,6 +1299,17 @@ restore-session-startup-suggestion-button = 告訴我如何作
 ## Infobar shown when the user tries to open a file picker and file pickers are blocked by enterprise policy
 
 filepicker-blocked-infobar = 您的組織已封鎖存取此電腦中的本機檔案。
+
+## Address bar result shown when someone who used the Extensions and Themes
+## keyboard shortcut presses that shortcut after it moved to Search Tabs.
+## Variables:
+##   $searchTabsShortcut (String) - The Search Tabs keyboard shortcut, e.g. "Ctrl+Shift+A".
+##   $addonsShortcut (String) - The Extensions and Themes keyboard shortcut, e.g. "Ctrl+Shift+F".
+
+urlbar-addons-shortcut-moved-title = { $searchTabsShortcut } 現在也會搜尋分頁
+urlbar-addons-shortcut-moved-description = 若要開啟擴充套件與佈景主題，請按下 { $addonsShortcut }。
+urlbar-addons-shortcut-moved-change-shortcuts = 管理快速鍵
+urlbar-addons-shortcut-moved-dismiss = 知道了！
 
 ## Mozilla data reporting notification (Telemetry, Firefox Health Report, etc)
 
@@ -1375,6 +1392,27 @@ reset-pbm-panel-complete = 已刪除瀏覽階段資料
 reset-pbm-toolbar-button2 =
     .label = 清除隱私瀏覽階段
     .tooltiptext = 清除隱私瀏覽階段
+
+## Fire button. Clears the whole browsing session, then closes every window and
+## opens a new one.
+
+fire-button-toolbar-button =
+    .label = 刪除您部分或全部的瀏覽資料
+    .tooltiptext = 刪除您部分或全部的瀏覽資料
+fire-button-panel-heading = 要刪除所有瀏覽資料嗎？
+fire-button-panel-description = 將清除瀏覽紀錄、Cookie 與網站資料，並將您登出所有網站。此視窗將會關閉，接著 { -brand-short-name } 會開啟新視窗。
+fire-button-panel-choose-description = 若不想刪除所有資料，可以只選擇特定資料進行刪除。
+# Opens the "Delete browsing data" dialog, where the user picks
+# which kinds of data to delete. The trailing ellipsis marks that a dialog
+# follows rather than the action happening immediately.
+fire-button-panel-choose-link = 選擇…
+fire-button-panel-cancel-button =
+    .label = 取消
+    .accesskey = C
+fire-button-panel-confirm-button =
+    .label = 全部刪除
+    .accesskey = D
+fire-button-panel-complete = 已刪除瀏覽資料
 
 ## Autorefresh blocker
 

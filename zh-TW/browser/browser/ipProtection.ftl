@@ -27,6 +27,7 @@ ipprotection-feature-introduction-title = 向您介紹直接內建於瀏覽器�
 ipprotection-feature-introduction-title-1 = 試用 { -brand-product-name } 的內建 VPN
 ipprotection-feature-introduction-link-text-2 = 請使用我們全新推出的<a data-l10n-name="learn-more-vpn">內建 VPN</a> 功能，來隱藏所在位置，並保護您的資料。
 ipprotection-feature-introduction-title-privacy = 加上一層隱私保護
+ipprotection-feature-introduction-title-privacy-1 = 透過內建 VPN 功能，為隱私再添一層防護
 ipprotection-feature-introduction-link-text-privacy-1 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的內建 VPN</a> 可幫助保護您的上網安全。從多個連線位置任選，讓您上網更有隱私。
 ipprotection-feature-introduction-link-text-privacy-2 = <a data-l10n-name="learn-more-vpn">{ -brand-product-name } 的內建 VPN</a> 可幫助保護您的上網安全。從多個連線位置任選，讓您上網更有隱私。
 ipprotection-feature-introduction-link-text-privacy-3 = 從多個地點任選，隱藏您的實際上網位置，讓<a data-l10n-name="learn-more-vpn">上網更有隱私</a>。
@@ -114,6 +115,7 @@ ipprotection-android-promo-callout-primary-button = 知道了！
 # Here 'browse on' means continue browsing
 ipprotection-site-inclusions-callout-title-existing-users = 設定內建 VPN 規則，然後繼續上網
 ipprotection-site-inclusions-callout-title-lapsed-users = 試用內建 VPN 功能，現在可針對特定網站單獨開啟
+ipprotection-site-inclusions-callout-description-1 = 針對需加強隱私保護，或瀏覽特定地區內容時開啟 VPN，不需要時則關閉。
 ipprotection-site-inclusions-callout-description = 針對需加強隱私保護，或瀏覽特定地區內容時開啟，不需要時則關閉。
 ipprotection-site-inclusions-callout-primary-button = 設定規則
 ipprotection-site-inclusions-callout-secondary-button-existing-users = 現在不要
@@ -144,6 +146,12 @@ site-rules-status-heading = 您的規則
 site-rules-description-exclusion = 已對此網站關閉 VPN 連線
 # Used in the panel when a user navigates to a site where the VPN is on due to a site inclusion
 site-rules-description-inclusion = 已對此網站開啟 VPN 連線
+# Message shown in the panel the first time a user turns on the VPN, offering to always turn on VPN for the current website
+# Variables
+#   $website (string) - The host of the current website (e.g. "example.com")
+site-rules-inclusion-prompt =
+    .heading = 要總是為 { $website } 開啟 VPN 嗎？
+    .message = 隨時到設定中更新規則。
 ipprotection-settings-link =
     .label = 設定
 
@@ -265,17 +273,47 @@ ip-protection-description-1 =
     .description = 透過隱藏上網時的實際位置，獲得更加一層的隱私保護。
     .label = 內建 VPN
 ip-protection-learn-more = 更多資訊
-# Variables
-#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
 ip-protection-not-opted-in-4 =
     .heading = 試用 { -brand-short-name } 的內建 VPN
     .message = 隱藏您的實際所在位置，讓上網更加一層保護。
+# Variables
+#   $maxUsage (number) - The maximum amount of data a user can use in a month (in GB)
+ip-protection-not-opted-in-inclusions-enabled =
+    .heading = 準備好試用了嗎？
+    .message = 每月免費獲得 { $maxUsage } GB 的免費流量，並可自行選擇要讓哪些網站透過 VPN 連線。
 ip-protection-not-opted-in-button = 開始使用
 # Variables:
 #   $count (number) - The number of sites saved as VPN exclusions.
 ip-protection-site-exceptions-all-sites-button =
     .description = { $count } 個網站
     .label = 管理網站設定
+ip-protection-site-rules-header-1 =
+    .heading = 管理 VPN 規則
+ip-protection-site-rules-button-1 =
+    .description = 為需要加強保護隱私或關閉 VPN 才能使用的網站設定規則。
+    .label = 管理 VPN 規則
+ip-protection-site-rules-list-section-1 =
+    .description = 設定自動開啟或關閉 VPN 的規則。
+    .label = 網站規則
+ip-protection-site-rules-add-button =
+    .label = 設定規則
+ip-protection-site-rules-delete-all-button =
+    .label = 刪除所有規則
+ip-protection-site-rules-empty = 您設定的規則將顯示於此處。
+# Shown on a website whose rule turns the VPN on for it
+ip-protection-site-rules-rule-included = 永遠開啟 VPN
+# Shown on a website whose rule turns the VPN off for it
+ip-protection-site-rules-rule-excluded = 永遠關閉 VPN
+# Variables:
+#   $website (string) - The website the rule applies to, e.g. https://example.com
+ip-protection-site-rules-edit-button =
+    .aria-label = 編輯 { $website } 的規則
+    .title = 編輯
+# Variables:
+#   $website (string) - The website the rule applies to, e.g. https://example.com
+ip-protection-site-rules-delete-button =
+    .aria-label = 刪除 { $website } 的規則
+    .title = 刪除
 ip-protection-site-rules-header =
     .heading = 管理網站規則
 ip-protection-site-rules-button =
@@ -299,6 +337,52 @@ ip-protection-vpn-upgrade-link-1 =
 ip-protection-exceptions-dialog-window =
     .title = 管理網站設定
 ip-protection-exclusions-desc = 對所有網站開啟 VPN 上網，但排除此清單中的網站。可在此處或開啟 VPN 來新增網站。
+ip-protection-site-rule-window =
+    .title = 設定規則
+ip-protection-edit-site-rule-window =
+    .title = 編輯規則
+ip-protection-site-rule-dialog =
+    .buttonlabelaccept = 設定
+    .buttonaccesskeyaccept = S
+ip-protection-edit-site-rule-dialog =
+    .buttonlabelaccept = 儲存
+    .buttonaccesskeyaccept = S
+# VPN status refers to a state of 'always on' or 'always off' applied to a site
+ip-protection-site-rule-intro = 請輸入網站，然後選擇該網站的 VPN 狀態。
+# "ex:" is short for "example".
+ip-protection-site-rule-website-field =
+    .label = 網站
+    .placeholder = 例如：acme.com
+# VPN status refers to a state of 'always on' or 'always off' applied to a site
+ip-protection-site-rule-status-field =
+    .label = VPN 狀態
+ip-protection-site-rule-status-on =
+    .label = 永遠開啟
+ip-protection-site-rule-status-off =
+    .label = 永遠關閉
+# Shown below the website field when what was typed is not a website address.
+ip-protection-site-rule-invalid-error = 請輸入有效的網站網址。
+# Shown below the website field when the typed website already has a rule.
+ip-protection-site-rule-duplicate-error = 此網站已有規則。
+# Shown at the top of the dialog when the rule could not be saved.
+ip-protection-site-rule-save-error =
+    .message = 建立規則時發生錯誤，請再試一次。
+# Variables:
+#   $website (string) - The website the rule applies to, e.g. https://example.com
+ip-protection-delete-site-rule-message = 要刪除 { $website } 的規則嗎？
+ip-protection-delete-site-rule-cancel =
+    .label = 取消
+ip-protection-delete-site-rule-confirm =
+    .label = 刪除
+ip-protection-delete-all-site-rules-message = 要刪除所有網站規則嗎？
+ip-protection-delete-all-site-rules-confirm =
+    .label = 刪除所有規則
+# Shown in place of the delete confirmation when deleting a rule fails.
+ip-protection-delete-site-rule-error = 無法刪除規則
+# Shown in place of the delete confirmation when deleting all rules fails.
+ip-protection-delete-all-site-rules-error = 無法刪除規則
+ip-protection-delete-site-rule-retry =
+    .label = 重試
 
 ## IP Protection Bandwidth
 

@@ -4,6 +4,19 @@
 
 protocolhandler-mailto-os-handler-yes-button = 設為預設軟體
 protocolhandler-mailto-os-handler-no-button = 現在不要
+# Button in the notification bar shown when a website asks to register as an
+# application handler, for example for email links. Blocks the website from
+# asking again.
+protocolhandler-never-allow-button =
+    .label = 永不允許
+    .accesskey = N
+# Variables:
+#  $host (String): The domain of the web application registering as a protocol handler.
+#  $protocol (String): The type of protocol (e.g. "web+example").
+protocolhandler-add-handler-message = 要新增「{ $host }」為處理 { $protocol } 鍵結的應用程式嗎？
+protocolhandler-add-handler-button =
+    .label = 新增應用程式
+    .accesskey = A
 
 ## Variables:
 ##  $url (String): The url of a webmailer, but only its full domain name.

@@ -500,6 +500,13 @@ lapsed-user-toast-title = { -brand-product-name } 還在背後挺您
 lapsed-user-toast-subtitle = 探索有更多選擇、更保護隱私與掌控權的全新上網方式。
 lapsed-user-toast-whats-new-button = 有什麼新鮮事
 lapsed-user-toast-dismiss-button = 知道了！
+# Title of the second toast in the series. "New look" refers to the refreshed
+# design of the browser; "No starting over" means users don't have to set up
+# the browser again from scratch.
+lapsed-user-toast-import-title = 全新外觀，免從頭設定。
+# "The browser you use today" refers to another browser the user currently
+# uses instead of this one, such as Chrome or Edge.
+lapsed-user-toast-import-subtitle = 從您目前使用的瀏覽器匯入書籤、密碼和瀏覽紀錄。
 
 ## Refresh Firefox infobar
 ##
@@ -511,3 +518,9 @@ refresh-unused-profile-infobar-message = 歡迎回來！看來您好一陣子沒
 refresh-reinstalled-profile-infobar-message = 看來您重新安裝了 { -brand-short-name }。想要清理一下，讓您有個煥然一新的體驗嗎？
 refresh-profile-infobar-button = 重新整理 { -brand-short-name }…
     .accesskey = e
+
+## Infobar shown at startup to suggest session-restore
+
+# <img data-l10n-name="icon"/> will be replaced by the application menu icon
+restore-session-startup-suggestion-message = <strong>想開啟先前的分頁？</strong>您可以從 { -brand-short-name } 應用程式選單 <img data-l10n-name="icon"/> 當中的「歷史」重新開啟先前的瀏覽階段。
+restore-session-startup-suggestion-button = 告訴我如何作

@@ -1128,6 +1128,10 @@ prefs-syncing-off = 同步：關閉
 prefs-syncing-off-2 =
     .description = 開啟同步後，即可在您的所有裝置中有相同的書籤、密碼、瀏覽紀錄與更多資訊。
     .label = 已關閉同步
+# This string is shown when the user's device has per-device syncing enabled but sync is disabled on the device.
+prefs-syncing-off-3 =
+    .description = 開啟同步功能即可在此裝置上同步您的書籤、密碼、瀏覽紀錄與更多資訊。
+    .label = 已關閉同步
 prefs-sync-turn-on-syncing =
     .label = 開啟同步…
     .accesskey = s
@@ -1151,6 +1155,7 @@ prefs-syncing-button-2 =
 
 sync-syncing-across-devices-heading = 您連線的裝置會同步下列項目：
 sync-syncing-across-devices-heading-2 = 在不同裝置間同步的資料
+sync-syncing-across-devices-heading-3 = 此裝置正在同步的資料
 sync-syncing-across-devices-empty-state2 =
     .description = 您目前沒有同步任何資料。開始同步即可將所有資料同步到您的所有裝置上。
     .label = 管理要同步的資料
@@ -1213,6 +1218,13 @@ sync-choose-what-to-sync-dialog4 =
     .buttonaccesskeyextra2 = D
     .style = min-width: 36em;
     .title = 管理要在您連結的裝置間同步哪些資料
+sync-choose-what-to-sync-dialog5 =
+    .buttonlabelaccept = 儲存
+    .buttonlabelextra2 = 中斷連線…
+    .buttonaccesskeyaccept = S
+    .buttonaccesskeyextra2 = D
+    .style = min-width: 36em;
+    .title = 管理要在此裝置上同步哪些資料
 
 ## The device name controls.
 
@@ -1771,6 +1783,15 @@ permissions-addon-install-warning3 =
 permissions-addon-exceptions2 =
     .label = 選擇可以安裝擴充套件的網站
     .accesskey = E
+# App links are links that a website can ask to open for you, like email
+# (mailto:) links.
+permissions-allow-app-links =
+    .label = 允許網站詢問您是否可開啟應用程式鏈結。
+    .accesskey = A
+# Opens the list of sites that are blocked from asking to open app links.
+permissions-app-links-manage-button =
+    .label = 管理封鎖的網站
+    .accesskey = M
 permissions-location2 =
     .label = 位置
 permissions-localhost2 =

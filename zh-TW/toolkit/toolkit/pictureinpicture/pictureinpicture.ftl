@@ -58,8 +58,8 @@ pictureinpicture-seekforward-btn =
     .aria-label = 快轉
     .tooltip = 快轉（→）
 pictureinpicture-playback-rate-btn =
-    .tooltip = 播放速度
     .aria-label = 播放速度
+    .tooltip = 播放速度
 
 ##
 
@@ -67,6 +67,8 @@ pictureinpicture-playback-rate-btn =
 # a screen reader whenever a user opens the subtitles settings panel
 # after selecting the subtitles button.
 pictureinpicture-subtitles-panel-accessible = 字幕設定
+pictureinpicture-subtitles-toggle =
+    .label = 字幕
 pictureinpicture-subtitles-label = 字幕
 # This string is never displayed on the window. Is intended to be announced by
 # a screen reader whenever a user opens the playback speed settings panel
@@ -86,6 +88,14 @@ pictureinpicture-playback-rate-value = { NUMBER($rate) }×
 # Variables:
 #   $rate (number) - The preset's playback rate, e.g. 1.5.
 pictureinpicture-playback-rate-preset = { NUMBER($rate, minimumFractionDigits: 1) }×
+pictureinpicture-font-size-group =
+    .label = 字型大小
+pictureinpicture-font-size-small-radio =
+    .label = 小
+pictureinpicture-font-size-medium-radio =
+    .label = 中
+pictureinpicture-font-size-large-radio =
+    .label = 大
 pictureinpicture-font-size-label = 字型大小
 pictureinpicture-font-size-small = 小
 pictureinpicture-font-size-medium = 中

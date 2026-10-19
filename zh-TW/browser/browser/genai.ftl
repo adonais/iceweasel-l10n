@@ -13,6 +13,7 @@ genai-settings-chat-huggingchat-links = 若選用 HuggingChat，代表您同意 
 genai-settings-chat-lechat-links-2 = 若選用 Mistral Vibe，代表您同意 Mistral AI 的<a data-l10n-name="link1">服務條款</a>與 <a data-l10n-name="link2">隱私權保護政策</a>。
 genai-settings-chat-lechat-links = 若選用 Le Chat Mistral，代表您同意 Mistral AI 的<a data-l10n-name="link1">服務條款</a>與 <a data-l10n-name="link2">隱私權保護政策</a>。
 genai-settings-chat-localhost-links = 將您本機端的私人聊天機器人的 <a data-l10n-name="link1">llamafile</a> 帶到 { -vendor-short-name } 的創新群組使用。
+genai-settings-chat-scout-links = 若選用 Yahoo Scout，代表您同意 Yahoo 的<a data-l10n-name="link1">服務條款</a>與<a data-l10n-name="link2">隱私權保護政策</a>。
 
 ## Chatbot prompts
 ## Prompts are plain language ‘instructions’ sent to a chatbot.
@@ -24,6 +25,9 @@ genai-settings-chat-localhost-links = 將您本機端的私人聊天機器人的
 genai-prompts-summarize =
     .label = 摘要
     .value = 請用簡單明瞭的方式為選擇的這段文字做摘要。請加上標題並分項列出摘要內容，讓讀者可以快速理解。請保持內容原意正確與精準。
+# Prompt purpose: help users understand what a webpage covers at a glance
+# $url (string) - address of the webpage to summarize
+genai-prompts-summarize-page = 請使用準確、簡潔的語言摘要 { $url } 的網頁內容。在摘要中使用標題與符號清單，讓讀者可快速閱讀。維持原意及事實準確性。使用正體中文（台灣）的用詞、文法、標點符號。
 # Prompt purpose: make a selection easier to read
 genai-prompts-simplify =
     .label = 簡化內容
@@ -169,6 +173,8 @@ genai-onboarding-huggingchat-tooltip =
     .title = HuggingChat
 genai-onboarding-lechat-tooltip-2 =
     .title = Mistral Vibe
+genai-onboarding-scout-tooltip =
+    .title = Yahoo Scout
 genai-onboarding-lechat-tooltip =
     .title = Le Chat Mistral
 genai-chatbot-contextual-title = 不用切換分頁就能直接使用 AI 聊天機器人
@@ -223,6 +229,19 @@ link-preview-settings-key-points =
     .label = 允許 AI 讀取頁面頂部，產生頁面重點
 link-preview-settings-long-press =
     .label = 快速預覽：長按鏈結 1 秒鐘
+highlight-to-search-settings-enable =
+    .description = 選擇內容後即可快速做出有用的動作。
+    .label = 選擇文字時顯示操作選單
+# $provider (string) - name of the AI chatbot provider
+highlight-to-search-settings-ask-provider =
+    .label = 問問 { $provider }
+highlight-to-search-settings-ask-generic =
+    .label = 問問 AI
+# Checkbox label for one of the actions in the menu that appears when selecting
+# text on a page. "Search" is a verb: the action searches the selected text
+# with the default search engine.
+highlight-to-search-settings-search =
+    .label = 搜尋
 # Title that appears when user is shown the opt-in flow for link previews
 link-preview-optin-title = 想要用 AI 看到更多內容嗎？
 # Message that appears when user is shown the opt-in flow for link previews

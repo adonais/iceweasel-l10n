@@ -385,12 +385,18 @@ onboarding-checklist-remove-2 = 移除確認清單
 
 tab-groups-onboarding-feature-callout-title = 試用分頁群組，減少雜亂、更能專注
 tab-groups-onboarding-feature-callout-subtitle = 將一個分頁拖曳到另一個分頁，即可建立第一個分頁群組。
+# The text "Search and Manage Tabs" refers to the string tabs-toolbar-list-all-tabs-2
+tab-groups-onboarding-create-group-title-4 = 隨時使用「搜尋與管理分頁」選單來尋找您的分頁群組。
 # The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
 tab-groups-onboarding-create-group-title-3 = 隨時使用「列出所有分頁」選單來尋找您的分頁群組。
 tab-groups-onboarding-create-group-no-alltabs-button-title = 可以在網址列搜尋分頁群組。
+# The text "Search and manage tabs" refers to the string tabs-toolbar-list-all-tabs-2
+tab-groups-onboarding-saved-groups-title-4 = 關閉分頁群組後，可隨時到「搜尋與管理分頁」選單重新開啟。
 # The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
 tab-groups-onboarding-saved-groups-title-3 = 關閉分頁群組後，可隨時到「列出所有分頁」選單重新開啟。
 tab-groups-onboarding-saved-groups-no-alltabs-button-title-2 = 可以在網址列搜尋關閉的分頁群組。
+# The text "Search and manage tabs" refers to the string tabs-toolbar-list-all-tabs-2
+tab-groups-onboarding-session-restore-title-3 = 隨時從「搜尋與管理分頁」選單重新開啟分頁群組。
 # The text "list all tabs" refers to the string tabs-toolbar-list-all-tabs
 tab-groups-onboarding-session-restore-title-2 = 隨時從「列出所有分頁」選單重新開啟分頁群組。
 tab-groups-onboarding-dismiss = 確定
@@ -601,3 +607,17 @@ onboarding-theme-picker-button-label = 儲存並繼續
 # cards. String means `Highlights of a feature` (feature is a noun).
 onboarding-carousel-nav =
     .aria-label = 功能亮點
+
+## Welcome Back Onboarding
+
+welcome-back-onboarding-title = 全新功能，讓您做好更多事
+welcome-back-onboarding-primary-button-label = 開始上網
+welcome-back-onboarding-secondary-button-label = 看看還有哪些新鮮事
+# Pill label for features that allow you to tidy up your tabs
+welcome-back-onboarding-pill-label-tabs = 整理分頁
+welcome-back-onboarding-pill-label-vpn = 內建 VPN
+welcome-back-onboarding-pill-label-pdf = PDF 工具
+welcome-back-onboarding-card-label-tabs = 透過垂直分頁與群組，讓分頁更整齊
+welcome-back-onboarding-card-label-vpn = 透過內建 VPN 保持隱藏狀態
+welcome-back-onboarding-card-label-pdf = 為 PDF 檔案內容畫螢光筆、簽名並編輯內容
+welcome-back-onboarding-card-tilebutton-label = 試試看
