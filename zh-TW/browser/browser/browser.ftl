@@ -243,6 +243,15 @@ urlbar-split-view-button =
     .aria-label = 分割畫面
     .tooltiptext = 分割畫面
 
+## URLbar context menu
+
+urlbar-menuitem-paste-and-go =
+    .label = 貼上並瀏覽
+    .accesskey = G
+urlbar-menuitem-paste-and-search =
+    .label = 貼上並搜尋
+    .accesskey = S
+
 ## Searchbar context menu
 
 clear-search-history =

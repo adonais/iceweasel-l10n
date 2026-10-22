@@ -99,6 +99,11 @@ ipprotection-android-promo-callout-primary-button = 知道了
 ipprotection-site-inclusions-callout-secondary-button-existing-users = 暂时不要
 ipprotection-site-inclusions-callout-secondary-button-lapsed-users = 知道了
 
+## Holiday Promotion Callout
+
+ipprotection-holiday-promo-primary-button = 打开 VPN
+ipprotection-holiday-promo-secondary-button = 知道了
+
 ## Panel
 
 # Also used for the callout shown in private browsing
