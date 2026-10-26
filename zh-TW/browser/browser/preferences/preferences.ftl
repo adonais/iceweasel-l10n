@@ -1536,6 +1536,11 @@ iceweasel_addons_downloadupcheck_description = 多下載器整合
 iceweasel_addons_autoactivatetab_description = 鼠標懸停在分頁上自動激活該分頁
 iceweasel_addons_rightclickclosetab_description = 右鍵點擊分頁關閉當前分頁
 
+iceweasel_script_requires_restart = 改變腳本加載狀態, { -brand-short-name } 必須重新啟動。
+iceweasel_script_restart_title = 重啟 { -brand-short-name }
+iceweasel_script_restart_now = 立即重啟
+iceweasel_script_restart_later = 稍后重啟
+
 mouse_gestures_go_back = 后退
 mouse_gestures_go_forward = 前進
 mouse_gestures_scroll_up = 向上滾動
