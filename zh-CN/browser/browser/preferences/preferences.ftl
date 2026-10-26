@@ -2326,6 +2326,11 @@ iceweasel_addons_downloadupcheck_description = 多下载器整合
 iceweasel_addons_autoactivatetab_description = 鼠标悬停在标签页上自动激活该标签
 iceweasel_addons_rightclickclosetab_description = 右键点击标签页关闭当前标签
 
+iceweasel_script_requires_restart = 改变脚本加载状态, { -brand-short-name } 必须重新启动。
+iceweasel_script_restart_title = 重启 { -brand-short-name }
+iceweasel_script_restart_now = 立即重启
+iceweasel_script_restart_later = 稍后重启
+
 mouse_gestures_go_back = 后退
 mouse_gestures_go_forward = 前进
 mouse_gestures_scroll_up = 向上滚动

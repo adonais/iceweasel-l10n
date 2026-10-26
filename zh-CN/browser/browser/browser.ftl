@@ -1106,7 +1106,8 @@ repair-text-encoding-button =
     .label = 修复文字编码
     .tooltiptext = 根据页面内容猜测正确的文字编码
 
-##
+## Variables:
+##  $shortcut (String): keyboard shortcut to perform the action
 
 # Variables:
 #  $shortcut (String): keyboard shortcut to open settings (only on macOS)
@@ -1142,13 +1143,9 @@ qrcode-image =
     .aria-label = 二维码
 qrcode-close-button =
     .aria-label = 关闭
-# Variables:
-#  $shortcut (String): keyboard shortcut to save a copy of the page
 toolbar-button-save-page =
     .label = 保存页面
     .tooltiptext = 保存此页 ({ $shortcut })
-# Variables:
-#  $shortcut (String): keyboard shortcut to open a local file
 toolbar-button-open-file =
     .label = 打开文件
     .tooltiptext = 打开文件 ({ $shortcut })
@@ -1158,8 +1155,6 @@ toolbar-button-synced-tabs =
 toolbar-button-send-tab =
     .label = 发送标签页
     .tooltiptext = 发送当前标签页到其他设备
-# Variables
-# $shortcut (string) - Keyboard shortcut to open a new private browsing window
 toolbar-button-new-private-window =
     .label = 新建隐私窗口
     .tooltiptext = 新建一个隐私浏览窗口 ({ $shortcut })
@@ -1169,6 +1164,40 @@ toolbar-button-share-tab =
 toolbar-button-tab-groups =
     .label = 标签页群组
     .tooltiptext = 显示标签页群组
+toolbar-button-history =
+    .label = 历史记录
+    .tooltiptext = 显示您的历史记录（{ $shortcut }）
+toolbar-button-find =
+    .label = 查找
+    .tooltiptext = 在此页面中查找 ({ $shortcut })
+toolbar-button-developer =
+    .label = 开发者
+    .tooltiptext = 打开 Web 开发者工具 ({ $shortcut })
+toolbar-button-forget =
+    .label = 抹去足迹
+    .tooltiptext = 抹去某些浏览历史
+toolbar-zoom-controls =
+    .label = 缩放控制
+    .title = 缩放控制
+toolbar-button-zoom-out =
+    .label = 缩小
+    .tooltiptext = 缩小 ({ $shortcut })
+toolbar-button-zoom-reset-tooltip = 重置缩放 ({ $shortcut })
+toolbar-button-zoom-in =
+    .label = 放大
+    .tooltiptext = 放大 ({ $shortcut })
+toolbar-edit-controls =
+    .label = 编辑控制
+    .title = 编辑控制
+toolbar-button-cut =
+    .label = 剪切
+    .tooltiptext = 剪切 ({ $shortcut })
+toolbar-button-copy =
+    .label = 复制
+    .tooltiptext = 复制 ({ $shortcut })
+toolbar-button-paste =
+    .label = 粘贴
+    .tooltiptext = 粘贴 ({ $shortcut })
 
 ## Default filenames used when saving a QR code. The file extension (.png)
 ## is added automatically.
@@ -1185,6 +1214,33 @@ eme-notifications-drm-content-playing-manage = 管理设置
 eme-notifications-drm-content-playing-manage-accesskey = M
 eme-notifications-drm-content-playing-dismiss = 知道了
 eme-notifications-drm-content-playing-dismiss-accesskey = D
+
+## Notification bars for media playback issues
+
+eme-notifications-drm-content-disabled-message = 您必须启用 DRM 才能播放此页面上的某些音频或视频。
+eme-notifications-drm-content-disabled-button =
+    .label = 启用数字版权管理（DRM）
+    .accesskey = E
+eme-notifications-drm-content-cdm-installing-message = { -brand-short-name } 正在安装组件，以便播放此页面上的音频或视频。请稍后再试。
+decoder-doctor-no-codecs-linux-message = 为了播放视频，您可能需要安装所需的视频编解码器。
+decoder-doctor-no-hw-acceleration-message = 为了改善视频质量，您可能需要安装 Microsoft 的“媒体功能包”（Media Feature Pack）。
+decoder-doctor-no-pulse-audio-message = 要播放音频，您可能需要安装必需的 PulseAudio 软件。
+decoder-doctor-unsupported-libavcodec-message = libavcodec 可能存在安全隐患或已不再支持，应当被更新以播放视频。
+decoder-doctor-decode-error-message = 解码媒体资源时发生错误。
+decoder-doctor-decode-warning-message = 解码媒体资源时发生可恢复的错误。
+decoder-doctor-learn-how-link = 了解如何运行
+decoder-doctor-report-issue-button =
+    .label = 反馈网站问题
+    .accesskey = R
+# Variables:
+#   $pluginName (String) - The name of the media plugin that crashed (for example, “Widevine Content Decryption Module”).
+plugin-crashed-notification-message = 插件 { $pluginName } 已崩溃。
+plugin-crashed-notification-reload-button =
+    .label = 重新加载页面
+    .accesskey = R
+plugin-crashed-notification-submit-button =
+    .label = 提交崩溃报告
+    .accesskey = S
 
 ## Password save/update panel
 

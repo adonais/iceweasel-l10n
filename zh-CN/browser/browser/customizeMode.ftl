@@ -16,19 +16,19 @@ customize-mode-titlebar =
     .label = 标题栏
 customize-mode-uidensity-menu-touch =
     .label = 触控
-    .accesskey = T
     .tooltiptext = 触控
+    .accesskey = T
 customize-mode-uidensity-auto-touch-mode-checkbox =
     .label = 在平板模式下使用为触控优化的界面
 customize-mode-overflow-list-description = 按钮可以拖放到这里，方便使用、不占用工具栏空间
 customize-mode-uidensity-menu-normal =
     .label = 普通
-    .accesskey = N
     .tooltiptext = 普通
+    .accesskey = N
 customize-mode-uidensity-menu-compact-unsupported =
     .label = 紧凑（不支持）
-    .accesskey = C
     .tooltiptext = 紧凑（不支持）
+    .accesskey = C
 customize-mode-undo-cmd =
     .label = 撤销
 customize-mode-uidensity-link = 窗口密度设置
@@ -38,3 +38,12 @@ customize-mode-touchbar-cmd =
     .label = 自定义触控栏…
 customize-mode-downloads-button-autohide =
     .label = 空闲时隐藏按钮
+
+## Labels for the special items that can be added to toolbars in customize mode
+
+customize-mode-toolbarspring =
+    .title = 弹性空白
+customize-mode-toolbarseparator =
+    .title = 分隔符
+customize-mode-toolbarspacer =
+    .title = 空白
