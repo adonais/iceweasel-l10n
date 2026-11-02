@@ -345,6 +345,8 @@ website-language-heading =
     .label = 網站語言
 website-preferred-language =
     .label = 偏好語言
+website-language-list =
+    .aria-label = 偏好語言
 website-add-language =
     .label = 新增語言
 website-add-language-button =
@@ -801,6 +803,8 @@ home-homepage-custom-homepage-button =
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
 home-custom-homepage-card-header =
     .label = 網站網址
+home-custom-homepage-list =
+    .aria-label = 網站網址
 home-custom-homepage-address =
     .placeholder = 請輸入網址
 home-custom-homepage-address-button =
@@ -932,6 +936,8 @@ search-one-click-desc = 請選擇當您在網址列或搜尋列輸入關鍵字�
 search-one-click-header-3 =
     .description = 選擇要在網址列顯示哪些搜尋引擎與捷徑。
     .label = 其他搜尋引擎
+search-engine-list =
+    .aria-label = 搜尋引擎與快速鍵
 update-search-engine-success =
     .message = 已成功更新搜尋引擎
 search-edit-engine-2 =
@@ -995,6 +1001,8 @@ containers-card-header2 =
 containers-add-button2 =
     .label = 新增容器
     .accesskey = A
+containers-list =
+    .aria-label = 容器
 containers-new-tab-check3 =
     .label = 選擇要分別使用哪個容器來開啟分頁
     .accesskey = S
@@ -1386,6 +1394,10 @@ autofill-payment-methods-manage-payments-button =
     .label = 管理付款方式
     .accesskey = m
 # This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-payment-methods-require-device-sign-in-checkbox =
+    .label = 要求裝置登入才能自動填寫
+    .accesskey = o
+# This operation requires the user to authenticate with the operating system (device sign-in)
 autofill-reauth-payment-methods-checkbox-2 =
     .label = 自動填寫與管理付款資訊時，需進行裝置登入驗證
     .accesskey = o
@@ -1459,6 +1471,28 @@ preferences-passwords-autofill-header =
 #   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
 payment-moz-box-item =
     .description = { $expDate }
+    .label = { $cardNumber }
+# Used in place of payment-moz-box-item when a security code is saved alongside
+# the card. Only the presence of a saved security code is ever shown, never the
+# code itself: "•••" stands for the hidden code, so keep it as is rather than
+# translating it into words.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+#   $securityCode (string) - The name of the card's security code, which depends
+#     on the card network (for example: CVV)
+payment-moz-box-item-with-security-code-2 =
+    .description = { $expDate } | { $securityCode } •••
+    .label = { $cardNumber }
+# Used in place of payment-moz-box-item-with-security-code-2 for a card that has
+# a saved security code but no expiry date to show alongside it. "•••" stands for
+# the hidden code.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $securityCode (string) - The name of the card's security code, which depends
+#     on the card network (for example: CVV)
+payment-moz-box-item-security-code-only-2 =
+    .description = { $securityCode } •••
     .label = { $cardNumber }
 # Used in place of payment-moz-box-item when a security code is saved alongside
 # the card. Only the presence of a saved security code is ever shown, never the
@@ -2241,89 +2275,6 @@ pane-iceweasel-title2 = 冰鼬
 iceweasel-header = Iceweasel 選項
 iceweasel-warning-title = 注意！
 iceweasel-warning-description = 我們仔細選擇默認設置，專注于隱私和安全。更改這些設置時，請閱讀描述以了解這些更改的影響。
-iceweasel-extension-update-checkbox =
-    .label = 自動更新附加組件
-iceweasel-tabcompactmode-checkbox =
-    .label = 恢復標簽欄緊湊模式
-iceweasel-lastclose-checkbox =
-    .label = 保留最后一個新分頁
-iceweasel-tips-checkbox =
-    .label = 允許分頁上的消息提示框
-iceweasel-styling-checkbox =
-    .label = 允許 userChrome.css 自定義
-iceweasel-autocopy-checkbox =
-    .label = 啟用中鍵粘貼
-iceweasel-ipv6-checkbox =
-    .label = 啟用 IPv6
-iceweasel-javascript-checkbox =
-    .label = 禁用 Javascript
-iceweasel-searchhand-checkbox =
-    .label = 恢復搜索移交功能
-iceweasel-taskbartabs-checkbox =
-    .label = 隱藏地址欄 TaskbarTabs 按鈕
-iceweasel-libportable-heading = libportable 選項
-iceweasel-libportable-upcheck-checkbox =
-    .label = 啟用Iceweasel自動更新
-iceweasel-libportable-ubo-checkbox =
-    .label = 安裝 ublock origin
-iceweasel-libportable-chrome-checkbox =
-    .label = 啟用userChrome環境與鼠標手勢
-iceweasel-libportable-download-checkbox =
-    .label = 啟用downloadUpcheck接管瀏覽器下載
-iceweasel-libportable-bosskey-checkbox =
-    .label = 啟用老板鍵
-iceweasel-libportable-ontabs-checkbox =
-    .label = 啟用分頁功能
-iceweasel-hover-activate =
-    .label = 鼠標懸停激活分頁
-iceweasel-double-click-close =
-    .label = 鼠標左鍵雙擊關閉分頁
-iceweasel-double-click-new =
-    .label = 鼠標左鍵雙擊標簽欄時新建分頁
-iceweasel-mouse-hover-close =
-    .label = 鼠標懸停在關閉按鈕時關閉分頁
-iceweasel-mouse-hover-new =
-    .label = 鼠標懸停在新建按鈕時新建分頁
-iceweasel-right-click-close =
-    .label = 鼠標右鍵單擊標簽時關閉分頁
-iceweasel-right-click-recover =
-    .label = 鼠標右鍵單擊標簽欄空白處時恢復分頁
-iceweasel-extension-update-description = 無需手動干預即可保持擴展程序最新。這對您的安全很有利。
-iceweasel-extension-update-warning1 = 如果您不在每次更新前審查擴展程序的代碼，應啟用此選項。
-iceweasel-autocopy-description = 選擇一些文本復制，然后用鼠標中鍵粘貼。
-iceweasel-ipv6-description = 允許 Iceweasel 使用 IPv6 連接。
-iceweasel-ipv6-warning1 = 與其在瀏覽器中阻止 IPv6，我們建議在您的操作系統中啟用 IPv6 隱私擴展。
-iceweasel-searchhand-description = 在新標簽頁搜索時移交到地址欄。
-iceweasel-searchhand-warning1 = 我們默認禁用, 你可以恢復它。
-iceweasel-tips-description = 當禁用分頁預覽時，我們也禁用了分頁消息提示框。
-iceweasel-tips-warning1 = 此選項可以恢復禁用分頁預覽后的消息提示框。
-iceweasel-tabcompactmode-description = 恢復舊版設計的標簽欄與地址欄高度。
-iceweasel-tabcompactmode-warning1 = 如果你確實認為它們的高度不合理。
-iceweasel-taskbartabs-description = Mozilla 開發的新功能就是為了讓人們禁用它。
-iceweasel-taskbartabs-warning1 = 把分頁固定到操作系統任務欄, 有什么意義?
-iceweasel-lastclose-description = 關閉最后一個分頁時不關閉瀏覽器。
-iceweasel-lastclose-warning1 = 防止快速關閉分頁時錯誤的退出了瀏覽器。
-iceweasel-styling-description = 如果要使用手動加載的主題自定義界面，請啟用此選項。
-iceweasel-styling-warning1 = 確保您信任該主題的提供者。
-iceweasel-javascript-description = JavaScript是大部分網頁的重要組成部分。
-iceweasel-javascript-warning1 = 但有時候我們可能需要臨時禁用它，之后記得開啟哦。
-iceweasel-libportable-description = libportable 庫額外提供的功能
-iceweasel-libportable-warning1 = 即時生效需要Upcheck支持，不要刪除它。
-iceweasel-libportable-upcheck-description = Upcheck隨瀏覽器啟動，24小時檢測一次，不會帶來額外消耗。
-iceweasel-libportable-upcheck-warning1 = 建議中國大陸用戶手動啟用[Update]下的faster選項，可緩解更新失敗的問題。
-iceweasel-libportable-ubo-description = 在瀏覽器中安裝 ublock origin 擴展，需重啟。
-iceweasel-libportable-ubo-warning1 = 當你在擴展管理器卸載此擴展時，需取消此選項。
-iceweasel-libportable-chrome-description = 腳本文件會在后臺安裝到瀏覽器目錄，如果你原先存在userChrome環境，將不會安裝。
-iceweasel-libportable-chrome-warning1 = 用戶腳本可能存在兼容性問題，請積極參與開源社區。
-iceweasel-libportable-chrome-pop = userChrome環境安裝成功<br>重啟瀏覽器后生效
-iceweasel-libportable-download-description = downloadUpcheck整合了Aria2 Rpc, Aria2 Cmd, Thunder, Upcheck下載。
-iceweasel-libportable-download-warning1 = 你也可以很方便的手動整合下載器, 見項目 Issues 說明。
-iceweasel-libportable-download-pop = 腳本安裝成功<br>重啟瀏覽器后生效
-iceweasel-libportable-download-needed = 下載失敗或者沒有啟用userChrome環境
-iceweasel-libportable-bosskey-description = 默認Ctrl+Shift+~，portable.ini 可修改快捷鍵。
-iceweasel-libportable-bosskey-warning1 = 你需要防止快捷鍵與其他應用沖突。
-iceweasel-libportable-ontabs-description = 對應 portable.ini 中的 OnTabs 選項。
-iceweasel-libportable-ontabs-warning1 = Ontabs使用Automation技術對分頁進行操作。
 
 iceweasel-header2 =
     .label = Iceweasel 選項
@@ -2388,6 +2339,8 @@ iceweasel-right-click-close2 =
     .label = 鼠標右鍵單擊分頁時關閉分頁
 iceweasel-right-click-recover2 =
     .label = 鼠標右鍵單擊分頁欄空白處時恢復分頁
+iceweasel-right-click-mousewheel2 =
+    .label = 鼠標右鍵加滾輪切換分頁
 iceweasel-libportable-multiline-checkbox2 =
     .label = 啟用多行選項卡顯示
     .description = 所有分頁一次可見。

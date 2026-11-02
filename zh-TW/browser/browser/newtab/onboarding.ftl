@@ -549,10 +549,14 @@ onboarding-refresh-terms-of-use-with-links = 繼續使用，代表您同意 <a d
 onboarding-refresh-data-collection-link = 管理資料收集選項
 onboarding-refresh-primary-button = 繼續
 onboarding-refresh-fro-import-header = 匯入您的資料
+# "It" in "It stays yours" means the browsing data the user is importing (bookmarks, passwords, history).
+# Refers to personal data, indicating that ownership of imported data remains with the user.
+onboarding-refresh-fro-import-subtitle = 您的資料仍歸您所有，{ -brand-product-name } 絕不販售個人資料。
 onboarding-refresh-fro-import-body = 您的個人資料只屬於您，{ -brand-product-name } 絕不將其出售。
 onboarding-refresh-fro-skip-button = 略過
 onboarding-refresh-fro-theme-header = 玩出您的風格
 onboarding-refresh-tab-layout-header = 試用不同的分頁版面
+onboarding-refresh-fro-tab-layout-title = 選擇一種新分頁版面
 onboarding-refresh-tab-layout-top = 置於頂端
 onboarding-refresh-tab-layout-side = 置於側邊
 onboarding-refresh-tab-layout-minimal = 極簡

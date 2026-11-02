@@ -17,6 +17,7 @@ customkeys-reset-all = 將所有快速鍵重設回預設值
 customkeys-conflict-confirm = 此快速鍵已分配給「{ $conflict }」功能，您確定要取代嗎？
 customkeys-reset-all-confirm = 您確定要將所有快速鍵重設回預設值嗎？
 customkeys-file-duplicate-tab = 複製分頁
+customkeys-file-copy-tab-url = 複製分頁網址
 customkeys-file-focus-search = 聚焦於搜尋列
 customkeys-history-reopen-tab = 回復關閉的分頁
 customkeys-history-reopen-window = 回復關閉的視窗
@@ -83,6 +84,16 @@ customkeys-key-new =
     .label = 按下新按鍵：
 # Displayed below the action label (e.g. "Undo") when the shortcut cannot be changed.
 customkeys-key-unchangeable = （無法更改）
+# Displayed below the action label (e.g. "Undo") when the user has assigned the
+# shortcut in the operating system's keyboard settings (System Settings on
+# macOS). That shortcut is used instead of any shortcut set here, and it can't
+# be changed here. Translate "keyboard settings" the way the operating system
+# names these settings in your language. "set" here means "assigned".
+customkeys-key-system-assigned =
+    { PLATFORM() ->
+        [macos] （到 macOS 的鍵盤設定調整）
+       *[other] （到您系統的鍵盤設定調整）
+    }
 
 ## Confirmation dialogs
 

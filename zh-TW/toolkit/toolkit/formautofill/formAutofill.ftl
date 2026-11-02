@@ -42,6 +42,9 @@ credit-card-capture-save-button =
 credit-card-capture-cancel-button =
     .label = 現在不要
     .accessKey = W
+credit-card-capture-never-save-payment-methods-button =
+    .label = 永不儲存付款方式
+    .accessKey = N
 credit-card-capture-never-save-button =
     .label = 永不儲存卡片資訊
     .accessKey = N
@@ -64,6 +67,73 @@ autofill-manage-payment-methods-label = 管理付款方式
 # it as the secondary label. "CVC" is a common abbreviation for the code printed
 # on a payment card; use whichever abbreviation is most familiar in your locale.
 autofill-card-security-code-label = CVC 驗證碼
+
+## The name of the security code printed on a payment card, as each card
+## network calls it.
+
+# Visa calls it "CVV".
+credit-card-security-code-name-visa = CVV 安全碼
+# Mastercard calls it "CVC".
+credit-card-security-code-name-mastercard = CVC 安全碼
+# American Express calls it "CID".
+credit-card-security-code-name-amex = CID 安全碼
+# Used for any other card network, or when the network isn't known.
+credit-card-security-code-name-other = 安全碼
+
+## Details of the card shown on the credit card capture doorhanger, below the
+## masked card number. Each message is used for a different combination of the
+## available details.
+## Variables:
+##   $name (String): The cardholder name
+##   $month (String): Two-digit month the card expires
+##   $year (String): Two-digit year the card expires
+##   $securityCode (String): The name of the card's security code, from one of
+##     the credit-card-security-code-name-* strings (for example "CVV")
+
+credit-card-doorhanger-card-details-name = { $name }
+credit-card-doorhanger-card-details-expiration = { $month }/{ $year }
+credit-card-doorhanger-card-details-security-code = { $securityCode }
+credit-card-doorhanger-card-details-name-expiration = { $name } | { $month }/{ $year }
+credit-card-doorhanger-card-details-name-security-code = { $name } | { $securityCode }
+credit-card-doorhanger-card-details-expiration-security-code = { $month }/{ $year } | { $securityCode }
+credit-card-doorhanger-card-details-name-expiration-security-code = { $name } | { $month }/{ $year } | { $securityCode }
+
+## Used on the doorhanger when a saved card is submitted with changed details
+## and security codes can be saved.
+
+credit-card-capture-update-payment-method-button =
+    .label = 更新
+    .accessKey = U
+credit-card-update-saved-payment-method-doorhanger-header = 要更新儲存的付款方式嗎？
+# Saves the submitted details as a new payment method instead of updating
+# the saved one.
+credit-card-capture-save-as-new-payment-method-button =
+    .label = 另存為新付款方式
+    .accessKey = S
+
+## Used on the doorhanger when a saved card is submitted with a new or changed
+## security code.
+
+credit-card-save-security-code-doorhanger-header = 要儲存安全碼嗎？
+
+## Used on the doorhanger when users submit a new card and security codes can be saved.
+
+credit-card-save-payment-method-doorhanger-header = 要儲存這筆付款方式嗎？
+# Also used on the doorhanger when a saved card is submitted with a new or
+# changed security code.
+# “Checkout” refers to the payment stage on websites.
+credit-card-save-payment-method-doorhanger-description = { -brand-short-name } 會加密並自動填寫您的付款資訊，讓您更快完成結帳。
+credit-card-capture-dismiss-button =
+    .label = 知道了！
+    .accessKey = D
+
+## The toggle turns saving security codes on and off. Its label describes the
+## current state: whether security codes are saved or not.
+
+credit-card-doorhanger-always-save-security-codes-toggle =
+    .label = 總是儲存安全碼
+credit-card-doorhanger-dont-save-security-codes-toggle =
+    .label = 不要儲存安全碼
 
 ## Details of the card shown on the credit card capture doorhanger, below the
 ## masked card number. Each message is used for a different combination of the

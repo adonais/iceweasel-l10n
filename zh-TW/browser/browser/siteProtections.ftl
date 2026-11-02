@@ -18,6 +18,11 @@ content-blocking-cookies-view-allowed-label =
 # It forms the end of the (imaginary) sentence "www.example.com [was] Blocked"
 content-blocking-cookies-view-blocked-label =
     .value = 已封鎖
+# This label is shown next to a tracker origin in the list of blocked trackers
+# when the same tracker was blocked on more than one page of the same site.
+# Variables:
+#   $count (Number): the number of pages the tracker was blocked on.
+content-blocking-tracker-count = （×{ $count }）
 # Variables:
 #   $domain (String): the domain of the site.
 content-blocking-cookies-view-remove-button =
@@ -79,10 +84,10 @@ protections-not-blocking-social-media-trackers =
 # This text indicates the total number of trackers blocked on all sites.
 # In its tooltip, we show the date when we started counting this number.
 protections-footer-blocked-tracker-counter = 已封鎖 { $trackerCount } 個
-    .tooltiptext = 自 { DATETIME($date, year: "numeric", month: "long", day: "numeric") } 起
+    .tooltiptext = 自 { DATETIME($date, day: "numeric", month: "long", year: "numeric") } 起
 # This text indicates the total number of trackers blocked on all sites.
 # It should be the same as protections-footer-blocked-tracker-counter;
 # this message is used to leave out the tooltip when the date is not available.
 protections-footer-blocked-tracker-counter-no-tooltip = 已封鎖 { $trackerCount } 個
 # In English this looks like "Firefox blocked over 10,000 trackers since October 2019"
-protections-milestone = 自 { DATETIME($date, year: "numeric", month: "long") }起，{ -brand-short-name } 已封鎖超過 { $trackerCount } 組追蹤器
+protections-milestone = 自 { DATETIME($date, month: "long", year: "numeric") }起，{ -brand-short-name } 已封鎖超過 { $trackerCount } 組追蹤器

@@ -1443,6 +1443,7 @@ unified-extensions-button-blocklisted =
 ## Private browsing reset button
 
 reset-pbm-panel-heading2 = 要清除資料並重新開始隱私瀏覽階段嗎？
+reset-pbm-panel-description3 = 將清除您的瀏覽紀錄與 Cookie，並將您從網站登出。將關閉您的隱私視窗並重新開啟新視窗。
 reset-pbm-panel-description2 = 不用關閉隱私瀏覽視窗，即可清除瀏覽紀錄、Cookie 以及所有其他網站資料。
 reset-pbm-panel-always-ask-checkbox =
     .label = 每次都問我
@@ -1478,6 +1479,9 @@ fire-button-panel-confirm-button =
     .label = 全部刪除
     .accesskey = D
 fire-button-panel-complete = 已刪除瀏覽資料
+fire-button-toolbar-button2 =
+    .label = 刪除部分或全部資料
+    .tooltiptext = 刪除您部分或全部的瀏覽資料
 
 ## Autorefresh blocker
 
@@ -1569,6 +1573,29 @@ file-picker-crashed-save-nowhere = Windows 檔案對話框發生錯誤，找不�
 file-picker-crashed-show-in-folder =
     .label = 於資料夾顯示
     .accessKey = F
+
+## Unsigned add-ons notification
+
+unsigned-addons-disabled-message = 已安裝的附加元件中有一組以上尚未通過驗證，已被停用。
+unsigned-addons-disabled-learn-more =
+    .label = 了解更多
+    .accesskey = L
+
+## Process hang notification ("ProcessHangMonitor.sys.mjs")
+
+process-hang-selected-tab-message = 這張網頁讓您的 { -brand-short-name } 變慢了，可停止處理這張網頁，恢復原本的速度。
+process-hang-nonspecific-tab-message = 有張網頁讓您的 { -brand-short-name } 變慢了，可停止處理該網頁，恢復原本的速度。
+# Variables:
+#   $title (String): the title of the tab.
+process-hang-specific-tab-message = 「{ $title }」讓您的 { -brand-short-name } 變慢了，可停止處理該網頁，恢復原本的速度。
+# Variables:
+#   $addonName (String): the name of the extension.
+process-hang-addon-message = 「{ $addonName }」讓您的 { -brand-short-name } 變慢了，可停止處理該擴充套件，恢復原本的速度。
+process-hang-addon-learn-more =
+    .value = 了解更多
+process-hang-stop-button =
+    .label = 停止
+    .accesskey = S
 
 ## Onboarding Finish Setup checklist
 

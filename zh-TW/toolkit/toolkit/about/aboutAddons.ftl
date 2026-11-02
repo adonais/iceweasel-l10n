@@ -310,6 +310,10 @@ release-notes-addon-button = 發行公告
 permissions-addon-button = 權限
 extension-enabled-heading = 啟用
 extension-disabled-heading = 停用
+theme-enabled-heading2 =
+    .heading = 使用中的佈景主題
+theme-disabled-heading3 =
+    .heading = 儲存的佈景主題
 theme-enabled-heading = 啟用
 theme-disabled-heading2 = 儲存的佈景主題
 plugin-enabled-heading = 啟用
@@ -424,6 +428,8 @@ addon-permissions-learnmore = 了解權限的更多資訊
 # the user.
 addon-permissions-managed-by-policy = 某些權限受到您的組織管理。
 recommended-extensions-heading = 推薦的擴充套件
+recommended-themes-card-heading =
+    .heading = 推薦的佈景主題
 recommended-themes-heading = 推薦的佈景主題
 # Variables:
 #   $hostname (string) - Host where the permissions are granted

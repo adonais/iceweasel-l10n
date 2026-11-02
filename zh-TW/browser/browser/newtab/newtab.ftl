@@ -535,6 +535,9 @@ newtab-horoscopes-widget-menu-button =
     .aria-label = 星座選項
 # Context menu item linking to more information about the widget.
 newtab-horoscopes-menu-learn-more = 更多資訊
+# Context menu item linking to the Yahoo website, the provider of the
+# horoscopes. “Yahoo” is a brand name and should not be translated.
+newtab-horoscopes-menu-powered-by-yahoo = 由 Yahoo 提供
 
 ## Strings for the Travel widget
 
@@ -548,6 +551,9 @@ newtab-travel-widget-open-menu-button =
     .title = 開啟旅遊選單
 # Context menu item linking to more information about the widget.
 newtab-travel-menu-learn-more = 更多資訊
+# Context menu item linking to the Kayak website, the provider of the
+# travel search. “Kayak” is a brand name and should not be translated.
+newtab-travel-menu-powered-by-kayak = 由 Kayak 提供
 
 ## Strings for the Solitaire widget. Solitaire is a widget on New Tab where you
 ## can play solitaire, a card game for one player, also known as patience.
@@ -779,6 +785,9 @@ newtab-discovery-empty-section-topstories-header = 都讀完了！
 newtab-discovery-empty-section-topstories-content = 晚點再回來看看有沒有新鮮事。
 newtab-discovery-empty-section-topstories-try-again-button = 重試
 newtab-discovery-empty-section-topstories-loading = 載入中…
+# Headline and body shown when stories fail to load, for example when offline or the server can’t be reached.
+newtab-discovery-empty-section-topstories-unavailable-header = 目前無法載入文章
+newtab-discovery-empty-section-topstories-unavailable-body = 請確認連線正常或稍後再試。
 # Displays when a layout in a section took too long to fetch articles.
 newtab-discovery-empty-section-topstories-timed-out = 唉呀，暫時無法載入此區塊。
 
@@ -1076,6 +1085,9 @@ newtab-wallpaper-firefox-peak-dark = 在暗色背景的左邊邊緣有一張狐�
 newtab-wallpaper-firefox-peak-light = 在亮色背景的左邊邊緣有一張狐狸的臉
 newtab-wallpaper-firefox-sky-dark = 夜空下的暗紫色山丘
 newtab-wallpaper-firefox-sky-light = 柔和天空下的明亮山丘
+# “Wrexham AFC” is the name of a football club and should not be translated.
+# "crest" refers to the football club's logo (team badge).
+newtab-wallpaper-firefox-wrexham = 紅色背景上的雷克斯漢姆足球俱樂部隊徽
 
 ## Firefox
 
@@ -1112,6 +1124,14 @@ newtab-weather-menu-change-location = 更改位置
 newtab-weather-change-location-search-input-placeholder =
     .aria-label = 搜尋位置
     .placeholder = 搜尋位置
+# "Back" is an icon-only button next to the location search field that returns to the widget.
+newtab-weather-search-back-button =
+    .aria-label = 上一頁
+    .title = 上一頁
+# Screen reader label for the dropdown below the location search field that
+# lists matching locations as the user types.
+newtab-weather-location-search-results =
+    .aria-label = 位置建議
 newtab-weather-cancel-input =
     .aria-label = 取消
     .title = 取消
@@ -1511,6 +1531,9 @@ newtab-promo-card-dismiss-button =
 newtab-crossword-widget-open-menu-button =
     .aria-label = 開啟填字遊戲選單
     .title = 開啟填字遊戲選單
+# Context menu item linking to the Particle website, the provider of the
+# crossword. “Particle” is a brand name and should not be translated.
+newtab-crossword-menu-powered-by-particle = 由 Particle 提供
 
 ## Strings introduced by the Nova redesign of the Timer widget
 
@@ -1814,6 +1837,13 @@ newtab-clock-widget-menu-edit = 編輯時鐘
 newtab-clock-widget-menu-switch-to-12h = 切換為 12 小時格式
 newtab-clock-widget-menu-switch-to-24h = 切換為 24 小時格式
 newtab-clock-widget-label-your-clocks = 您的時鐘
+# "Back" is an icon-only button next to the city search field form that returns to the list of clocks.
+newtab-clock-widget-search-back-button =
+    .aria-label = 上一頁
+    .title = 上一頁
+newtab-clock-widget-search-location-input2 =
+    .aria-label = 搜尋城市
+    .placeholder = 搜尋城市
 newtab-clock-widget-search-location-input =
     .aria-label = 搜尋城市
     .label = 位置
