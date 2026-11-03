@@ -2276,6 +2276,10 @@ iceweasel-header = Iceweasel 選項
 iceweasel-warning-title = 注意！
 iceweasel-warning-description = 我們仔細選擇默認設置，專注于隱私和安全。更改這些設置時，請閱讀描述以了解這些更改的影響。
 
+iceweasel-libportable-chrome-pop = userChrome環境安裝成功<br>重啟瀏覽器后生效
+iceweasel-libportable-download-pop = 腳本安裝成功<br>重啟瀏覽器后生效
+iceweasel-libportable-download-needed = 下載失敗或者沒有啟用userChrome環境
+
 iceweasel-header2 =
     .label = Iceweasel 選項
 iceweasel-header3 =
