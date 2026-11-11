@@ -13,6 +13,7 @@ genai-settings-chat-huggingchat-links = 选择 HuggingChat，即代表您同意 
 genai-settings-chat-lechat-links-2 = 选择 Mistral Vibe，即代表您同意 Mistral AI 的<a data-l10n-name="link1">服务条款</a>和<a data-l10n-name="link2">隐私政策</a>。
 genai-settings-chat-lechat-links = 选择 Le Chat Mistral，即代表您同意 Mistral AI 的<a data-l10n-name="link1">服务条款</a>和<a data-l10n-name="link2">隐私政策</a>。
 genai-settings-chat-localhost-links = 引入您私有的本地聊天机器人，例如 { -vendor-short-name }’s Innovation 集群打造的 <a data-l10n-name="link1">llamafile</a>。
+genai-settings-chat-scout-links = 选择 Yahoo Scout，即代表您同意 Yahoo 的<a data-l10n-name="link1">服务条款</a>和<a data-l10n-name="link2">隐私政策</a>。
 
 ## Chatbot prompts
 ## Prompts are plain language ‘instructions’ sent to a chatbot.
@@ -24,6 +25,9 @@ genai-settings-chat-localhost-links = 引入您私有的本地聊天机器人，
 genai-prompts-summarize =
     .label = 生成摘要
     .value = 请简要概括所选内容。用标题分节、列表分点，做到一目了然。据实生成摘要，不要脱离原意。
+# Prompt purpose: help users understand what a webpage covers at a glance
+# $url (string) - address of the webpage to summarize
+genai-prompts-summarize-page = 请简要概括 { $url } 网页的内容。用标题分节、列表分点，做到一目了然。据实生成摘要，不要脱离原意。
 # Prompt purpose: make a selection easier to read
 genai-prompts-simplify =
     .label = 简化措辞
@@ -70,18 +74,41 @@ genai-shortcut-search-button =
 genai-shortcut-copy-button =
     .aria-label = 复制选中的文本
     .tooltiptext = 复制选中的文本
+# Shown briefly after clicking the Copy action in the text selection menu,
+# confirming the selection was copied to the clipboard.
+genai-shortcut-copy-confirmation = 已复制
 genai-shortcut-more-actions-button =
     .aria-label = 更多选项
     .tooltiptext = 更多选项
+genai-more-actions-panel =
+    .aria-label = 选择要显示的操作
+# $provider (string) - name of the chatbot provider
+genai-more-actions-ai-provider =
+    .label = 询问 { $provider }
+genai-more-actions-ai-generic =
+    .label = 询问 AI
+genai-more-actions-search =
+    .label = 搜索
+genai-more-actions-copy =
+    .label = 复制
+# The span is a right-pointing chevron that separates the steps of the path to
+# the setting, in place of a ">" character.
+genai-more-actions-all-off-notice = 选中文本时将不再显示此菜单。前往 设置<span data-l10n-name="chevron"></span>标签页与浏览 可重新设为显示。
+genai-more-actions-manage-settings =
+    .label = 管理设置
+genai-selection-callout-title = 选中文本以选择操作
 # $provider (string) - name of the AI chat provider
 genai-shortcut-button =
     .aria-label = 询问 { $provider }
 genai-menu-new-badge = 新
 genai-menu-summarize-page = 生成页面摘要
+genai-menu-summarize-with-ai = 使用 AI 生成摘要
 genai-input-ask-smart-window =
     .placeholder = 询问…
 genai-input-ask-generic =
     .placeholder = 询问 AI 聊天机器人…
+genai-input-ask-ai =
+    .placeholder = 询问 AI…
 # $provider (string) - name of the provider
 genai-input-ask-provider =
     .placeholder = 询问 { $provider }…
@@ -165,6 +192,8 @@ genai-onboarding-huggingchat-tooltip =
     .title = HuggingChat
 genai-onboarding-lechat-tooltip-2 =
     .title = Mistral Vibe
+genai-onboarding-scout-tooltip =
+    .title = Yahoo Scout
 genai-onboarding-lechat-tooltip =
     .title = Le Chat Mistral
 genai-chatbot-contextual-title = 使用 AI 聊天机器人时，无需再切换标签页

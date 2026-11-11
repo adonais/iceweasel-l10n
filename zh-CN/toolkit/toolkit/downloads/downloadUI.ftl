@@ -39,6 +39,44 @@ download-ui-cancel-downloads-ok =
         [1] 取消 1 项下载
        *[other] 取消 { $downloadsCount } 项下载
     }
+download-ui-confirm-cancel-button = 取消
+download-ui-confirm-quit-title =
+    { PLATFORM() ->
+        [windows]
+            { $downloadsCount ->
+                [1] 要停止 1 项下载并退出 { -brand-short-name } 吗？
+               *[other] 要停止 { $downloadsCount } 项下载并退出 { -brand-short-name } 吗？
+            }
+       *[other]
+            { $downloadsCount ->
+                [1] 要停止 1 项下载并退出 { -brand-short-name } 吗？
+               *[other] 要停止 { $downloadsCount } 项下载并退出 { -brand-short-name } 吗？
+            }
+    }
+download-ui-confirm-quit-message = 重新打开 { -brand-short-name } 后，将尝试恢复下载，但可能需要从头开始。
+download-ui-confirm-quit-button =
+    { PLATFORM() ->
+        [windows] 退出 { -brand-short-name }
+       *[other] 退出 { -brand-short-name }
+    }
+download-ui-confirm-offline-title =
+    { $downloadsCount ->
+        [1] 要停止 1 项下载并进入离线模式吗？
+       *[other] 要停止 { $downloadsCount } 项下载并进入离线模式吗？
+    }
+download-ui-confirm-offline-message = 恢复联网后，{ -brand-short-name } 将尝试恢复下载，但可能需要从头开始。
+download-ui-confirm-offline-button = 进入离线模式
+download-ui-confirm-private-browsing-title =
+    { $downloadsCount ->
+        [1] 要停止 1 项下载并关闭此隐私窗口吗？
+       *[other] 要停止 { $downloadsCount } 项下载并关闭此隐私窗口吗？
+    }
+download-ui-confirm-private-browsing-message =
+    { $downloadsCount ->
+        [1] 此下载将无法恢复。
+       *[other] 这些下载将无法恢复。
+    }
+download-ui-confirm-private-browsing-button = 关闭窗口
 
 ##
 

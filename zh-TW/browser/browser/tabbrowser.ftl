@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 tabbrowser-empty-tab-title = 新分頁
-tabbrowser-empty-private-tab-title = 開新隱私分頁
+tabbrowser-empty-private-tab-title = 新隱私分頁
 tabbrowser-menuitem-close-tab =
     .label = 關閉分頁
 tabbrowser-menuitem-close =
@@ -32,6 +32,11 @@ tab-splitview-splitter =
     .aria-label = 調整分割畫面分頁大小
 tab-devtools-splitter =
     .aria-label = 調整開發者工具面板大小
+# Used for the "Add to Group" submenu when opened on a split view.
+# The split view's two tabs are added to the group together.
+tab-context-add-split-view-to-group =
+    .label = 將分頁加入至群組
+    .accesskey = G
 
 ## Tooltips for tab audio control
 ## Variables:
@@ -126,7 +131,7 @@ tabbrowser-confirm-caretbrowsing-checkbox = 下次不要再顯示此對話方塊
 ## Confirmation dialog for closing all duplicate tabs
 
 tabbrowser-confirm-close-all-duplicate-tabs-title = 要關閉重複開啟的分頁嗎？
-tabbrowser-confirm-close-all-duplicate-tabs-text = 將關閉此視窗中重複的分頁，只保留最後一個開啟的分頁。
+tabbrowser-confirm-close-all-duplicate-tabs-text = 將關閉此視窗中重複的分頁，只保留最後使用的分頁。
 tabbrowser-confirm-close-all-duplicate-tabs-button-closetabs = 關閉分頁
 
 ##
@@ -254,6 +259,13 @@ tab-context-move-tab-to-new-group =
            *[other] 將分頁加入至新群組
         }
     .accesskey = G
+tab-context-add-tab-to-group =
+    .label =
+        { $tabCount ->
+            [1] 加入群組
+           *[other] 將 { $tabCount } 的分頁加入至群組
+        }
+    .accesskey = G
 tab-context-move-tab-to-group =
     .label =
         { $tabCount ->
@@ -287,7 +299,7 @@ tab-group-editor-action-copy-links =
     .label =
         { $linkCount ->
             [1] 複製群組中的鏈結
-           *[other] 複製群組中的 { $linkCount } 的鏈結
+           *[other] 複製群組中的 { $linkCount } 個鏈結
         }
 tab-group-editor-action-save =
     .label = 儲存並關閉群組
@@ -414,6 +426,10 @@ tab-context-open-in-split-view =
 # Separate the two split view tabs and display the tabs and their contents as normal
 tab-context-separate-split-view =
     .label = 分離分割畫面
+    .accesskey = t
+# Separate the two split view tabs and display the tabs and their contents as normal
+tab-context-separate-split-view-alt =
+    .label = 分離分頁
     .accesskey = t
 # Reverse the order of the two tabs in the split view
 tab-context-reverse-split-view =

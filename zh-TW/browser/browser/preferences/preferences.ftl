@@ -1195,6 +1195,11 @@ sync-engine-bookmarks =
 sync-engine-history =
     .label = 瀏覽紀錄
     .accesskey = r
+# This string is a modified noun (i.e. tabs that are open)
+sync-engine-tabs2 =
+    .label = 開啟的分頁
+    .tooltiptext = 開啟您其他裝置上的分頁
+    .accesskey = t
 sync-engine-tabs =
     .label = 開啟的分頁
     .tooltiptext = 所有同步設備中，開啟的網頁清單
@@ -1203,6 +1208,22 @@ sync-engine-passwords =
     .label = 密碼
     .tooltiptext = 您已儲存的密碼
     .accesskey = P
+sync-engine-addresses2 =
+    .label = 地址
+    .tooltiptext = 您儲存於 { -brand-short-name } 的地址
+    .accesskey = e
+sync-engine-payment-methods3 =
+    .label = 付款方式
+    .tooltiptext = 您儲存的付款方式
+    .accesskey = n
+sync-engine-addons2 =
+    .label = 附加元件
+    .tooltiptext = 您已安裝到 { -brand-short-name } 桌面版的擴充套件與佈景主題
+    .accesskey = A
+sync-engine-settings2 =
+    .label = 設定
+    .tooltiptext = 適用的 { -brand-short-name } 設定
+    .accesskey = s
 sync-engine-addresses =
     .label = 地址
     .tooltiptext = 您儲存的郵政地址（僅桌機）
@@ -1711,7 +1732,7 @@ enhanced-tracking-protection-setting-custom =
     .label = 自訂
     .accesskey = C
 
-##
+## Privacy Section - Content Blocking
 
 content-blocking-etp-standard-desc = 兼顧保護與效能。網站可正常運作。
 content-blocking-etp-strict-desc = 保護更強大，但可能會導致某些網站或內容故障。
@@ -1999,7 +2020,7 @@ certs-devices-enable-fips = 啟用 FIPS
 space-alert-over-5gb-settings-button =
     .label = 開啟選項
     .accesskey = O
-space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 的磁碟空間不足。</strong>網站內容可能無法正確顯示。您可以到「選項 > 隱私權與安全性 > Cookie 與網站資料」清除目前儲存的網站資料。
+space-alert-over-5gb-message2 = <strong>{ -brand-short-name } 的磁碟空間不足。</strong>網站內容可能無法正確顯示。您可以到「設定 > 隱私權與安全性 > Cookie 與網站資料」清除目前儲存的網站資料。
 space-alert-under-5gb-message2 = <strong>{ -brand-short-name } 的磁碟空間不足。</strong>網站內容可能無法正確顯示。請點擊「瞭解更多」清理磁碟空間，讓您有更好的瀏覽體驗。
 certs-description3 =
     .description = 設定 { -brand-short-name } 要用來確認加密連線的憑證。
@@ -2066,7 +2087,7 @@ preferences-doh-default-detailed-desc-5 = 當網路裝置告訴 { -brand-short-n
 preferences-doh-setting-enabled =
     .label = 加強保護
     .accesskey = I
-preferences-doh-enabled-desc = 由您自行決定要使用哪個提供者的安全 DNS。
+preferences-doh-enabled-desc = 由您決定何時使用安全 DNS，並選擇提供者。
 preferences-doh-enabled-detailed-desc-1 = 使用您選擇的提供者
 preferences-doh-enabled-detailed-desc-2 = 只在無法使用安全 DNS 提供者時，使用您的預設 DNS 解析器。
 preferences-doh-setting-strict =
@@ -2205,7 +2226,7 @@ related-settings-tabs-browsing-link =
 
 ## AI controls page
 
-preferences-ai-controls-description = 您可隨時在 { -brand-short-name } 決定是否使用 AI 擴充功能。即將推出更多控制設定。
+preferences-ai-controls-description = 您可隨時在 { -brand-short-name } 決定是否使用 AI 強化功能。即將推出更多控制設定。
 preferences-ai-controls-block-ai-label = 封鎖 AI 強化功能
 preferences-ai-controls-block-ai =
     .label = { preferences-ai-controls-block-ai-label }
@@ -2223,7 +2244,7 @@ preferences-ai-controls-pdfjs-control =
     .description = 當您新增圖片到 PDF 當中時，根據圖片內容加入描述，讓圖片更有親和力。
     .label = { -brand-short-name } PDF 檢視器中的圖片替代文字
 preferences-ai-controls-tab-group-suggestions-control =
-    .description = 管理您的分頁，並提供名稱建議。
+    .description = 取得為分頁命名與整理分頁的建議。
     .label = 分頁群組建議
 preferences-ai-controls-key-points-control =
     .description = 在開啟鏈結之前先看一下快速摘要。

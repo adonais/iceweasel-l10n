@@ -20,12 +20,53 @@ about-networking-alt-svc-validated = 已验证
 about-networking-alt-svc-ttl = TTL
 about-networking-alt-svc-origin-attributes-suffix = 隔离键
 about-networking-ssl-tokens = TLS 令牌
+# $count (Number) - Number of cached TLS resumption tokens
+about-networking-ssl-tokens-summary-count = { $count } 个令牌
+# $count (Number) - Number of cached tokens that have already expired
+about-networking-ssl-tokens-summary-expired = （{ $count } 个已过期）
+# $decompressedLength (Number) - Total uncompressed size in bytes across all tokens
+# $compressedLength (Number) - Total compressed size in bytes across all tokens
+# $saved (Number) - Percentage of space saved by compression
+about-networking-ssl-tokens-summary-compression = { $decompressedLength } → { $compressedLength } B（节省 { $saved }%）
+# $used (Number) - Cache size currently in use, in kilobytes
+# $capacity (Number) - Total cache capacity, in kilobytes
+# $percent (Number) - Percentage of the cache capacity currently in use
+about-networking-ssl-tokens-summary-capacity = { $used } / { $capacity } KB（{ $percent }%）
+# Certificates are stored inside every cached token, so the same certificate is
+# held many times over.
+# $references (Number) - Total number of stored certificate copies
+# $totalBytes (Number) - Uncompressed size of all stored copies, in bytes
+# $distinct (Number) - Number of unique certificates across all tokens
+# $distinctBytes (Number) - Uncompressed size of the unique certificates, in bytes
+about-networking-ssl-tokens-summary-certs = 已存储证书：{ $references } 份（{ $totalBytes } B），不重复证书：{ $distinct } 份（{ $distinctBytes } B）
+about-networking-ssl-tokens-partition-key = 分区键
+about-networking-ssl-tokens-tokens-column = 令牌
+about-networking-ssl-tokens-expires = 过期时间
+about-networking-ssl-tokens-certificate = 证书
+# $count (Number) - Number of tokens sharing this row's host and certificate
+about-networking-ssl-tokens-token-list = { $count } 个令牌
+about-networking-ssl-tokens-restored =
+    .alt = 从存储恢复
+    .title = 从存储恢复
+about-networking-ssl-tokens-new =
+    .alt = 本次会话新建
+    .title = 本次会话新建
 about-networking-ssl-tokens-expired =
     .alt = 已过期
     .title = 已过期
+# $tokenLength (Number) - Total size in bytes of the raw TLS resumption token(s)
+# $decompressedLength (Number) - Total size in bytes before compression
+# $compressedLength (Number) - Total size in bytes after compression
+about-networking-ssl-tokens-compression-details =
+    .title = 令牌：{ $tokenLength } B。编码后：{ $decompressedLength } → { $compressedLength } B。
 about-networking-ssl-tokens-ev-status = EV 证书
 about-networking-ssl-tokens-ct-status = 证书透明度状态
+about-networking-ssl-tokens-overridable-error = 可覆盖的错误类别
 about-networking-ssl-tokens-built-in-root = 内置根证书
+# $count (Number) - Number of certs in the succeeded cert chain
+about-networking-ssl-tokens-cert-chain = 证书链（{ $count } 个）
+# $count (Number) - Number of certs seen during the TLS handshake
+about-networking-ssl-tokens-handshake-certs = 握手证书（{ $count } 个）
 about-networking-refresh = 刷新
 about-networking-auto-refresh = 每 3 秒自动刷新
 about-networking-hostname = 主机名

@@ -47,8 +47,8 @@ home-custom-homepage-address-button =
 home-custom-homepage-no-results =
     .label = 尚未加入任何網站。
 home-custom-homepage-delete-address-button =
-    .aria-label = 刪除地址
-    .title = 刪除地址
+    .aria-label = 刪除網址
+    .title = 刪除網址
 # Further options to use when setting the home page. Two action buttons are placed in line with this prompt
 # to replace the current home page with a currently open page or bookmark.
 home-custom-homepage-replace-with-prompt =
@@ -83,25 +83,6 @@ home-prefs-sports-widget-header =
 # Clock is a widget on New Tab that displays time zones around the world.
 home-prefs-clocks-header =
     .label = 時鐘
-# Privacy is a widget on New Tab that shows tracking protection activity.
-home-prefs-privacy-header =
-    .label = 隱私權
-# Crossword is a widget on New Tab that shows a daily crossword puzzle.
-home-prefs-crossword-widget-header =
-    .label = 填字遊戲
-# Finance is a widget on New Tab that shows stock ticker prices.
-home-prefs-stocks-header2 =
-    .label = 金融
-# Picture of the day is a widget on New Tab that shows a daily Wikimedia Commons image.
-home-prefs-picture-header =
-    .label = 每日一圖
-# Search is a widget on New Tab that shows the user's recent and trending
-# searches.
-home-prefs-search-widget-header =
-    .label = 搜尋
-# Horoscopes is a widget on New Tab that shows daily horoscopes.
-home-prefs-horoscopes-header =
-    .label = 星座
 home-prefs-mission-message2 =
     .message = 贊助商支持我們打造出一個更好的網路環境的使命。
 home-prefs-manage-topics-link2 =
@@ -203,6 +184,9 @@ newtab-privacy-empty-state = { -brand-short-name } 會自動封鎖追蹤器，�
 # Here we are referring to the number of trackers blocked, which increases as the user browses.
 # An alternative can be "See a running total here"
 newtab-privacy-empty-state-tally = 可在這裡確認數量變動。
+# Shorter empty-state copy for the small card, shown as two separate lines.
+newtab-privacy-empty-state-small-title = 追蹤器更少，上網更快速。
+newtab-privacy-empty-state-small-message = 隨您上網就會開始自動封鎖。
 
 ## Privacy widget — Enhanced Tracking Protection off state
 
@@ -234,7 +218,7 @@ newtab-privacy-message-info-8 = 使用 { -brand-short-name } 上網，就代表�
 newtab-privacy-message-info-8-cta = 了解更多
 newtab-privacy-message-info-9 = 將 { -brand-short-name } 設為您內建隱私保護的預設瀏覽器。
 newtab-privacy-message-info-9-cta = 設為預設瀏覽器
-newtab-privacy-message-info-10 = 將密碼儲存在 { -brand-short-name } 即可任何網站都使用強大、不重複的登入資訊。
+newtab-privacy-message-info-10 = 將密碼儲存在 { -brand-short-name } 即可在任何網站都使用強大、不重複的登入資訊。
 newtab-privacy-message-info-10-cta = 前往密碼
 newtab-privacy-message-info-11 = 看看 { -brand-short-name } 如何幫助您讓上網更有隱私。
 newtab-privacy-message-info-11-cta = 更多資訊
@@ -454,33 +438,18 @@ newtab-picture-set-wallpaper2 =
     .aria-label = 將此照片設為背景圖
     .label = 設為背景圖
     .title = 設為背景圖
-# Button that sets the current picture as the New Tab background wallpaper. The
-# button collapses to an icon when not hovered/focused, so .title is its tooltip.
-newtab-picture-set-wallpaper =
-    .aria-label = 將今天的每日一圖設定為背景圖
-    .label = 設為背景圖
-    .title = 設為背景圖
 # Context menu item that opens the New Tab customization panel.
 newtab-picture-menu-manage-wallpaper = 管理背景圖
 # Context menu item that hides the picture shown in the widget.
 newtab-picture-menu-hide-photo2 = 隱藏此照片
 # Context menu item that restores the picture after it has been hidden.
 newtab-picture-menu-show-photo2 = 顯示照片
-# Context menu item that hides today’s picture, replacing it with an existing
-# wallpaper.
-newtab-picture-menu-hide-photo = 隱藏今天的照片
-# Context menu item that restores today’s picture after it has been hidden.
-newtab-picture-menu-show-photo = 顯示今天的照片
 # Context menu item linking to more information about the widget.
 newtab-picture-menu-learn-more = 更多資訊
 # Icon button shown on the widget once the picture is hidden; restores it.
 newtab-picture-show-button2 =
     .aria-label = 顯示照片
     .title = 顯示照片
-# Icon button shown on the widget once the picture is hidden; restores it.
-newtab-picture-show-button =
-    .aria-label = 顯示今天的照片
-    .title = 顯示今天的照片
 # Shown when there is no new picture to display yet.
 newtab-picture-check-back = 請於明天再回來看看新照片
 # Screen-reader text alternative for the picture; fallback used when the source
@@ -530,9 +499,6 @@ newtab-horoscopes-widget-title = 星座
 newtab-horoscopes-widget-open-menu-button =
     .aria-label = 開啟星座選單
     .title = 開啟星座選單
-# Screen reader label for the widget's icon-only menu button.
-newtab-horoscopes-widget-menu-button =
-    .aria-label = 星座選項
 # Context menu item linking to more information about the widget.
 newtab-horoscopes-menu-learn-more = 更多資訊
 # Context menu item linking to the Yahoo website, the provider of the
@@ -568,6 +534,34 @@ newtab-solitaire-widget-open-menu-button =
     .title = 開啟接龍選單
 # Context menu item linking to more information about the widget.
 newtab-solitaire-menu-learn-more = 更多資訊
+
+## Strings for the Wrexham AFC widget. Wrexham AFC is a football club from
+## Wrexham, Wales. For now, the widget is only expected to be shown in Welsh
+## and British English. “Wrexham AFC” is the club’s name. Use the name the
+## club is known by in your language, if it has one: in Welsh, “CPD Wrecsam”.
+
+# The widget's name. .title is its heading and accessible name, .label its
+# Customize panel toggle, and .menu-label the screen reader label of the
+# button that opens its menu.
+newtab-custom-widget-wrexhamafc =
+    .label = 雷克斯漢姆足球俱樂部
+    .menu-label = 開啟雷克斯漢姆足球俱樂部選單
+    .title = 雷克斯漢姆足球俱樂部
+# Menu item opening a submenu that switches what the widget shows. “View” is a
+# noun here, as in “the view the widget shows”.
+newtab-widget-wrexhamafc-menu-view = 檢視
+
+## Options in the View submenu, each switching the widget to a different view.
+## These are football terms: “Matches” shows the club’s latest or next match,
+## with its score once it has started; “Table” shows the league table, the
+## standings of the teams in the club’s league; and “Fixtures” lists the club’s
+## upcoming scheduled matches.
+
+newtab-widget-wrexhamafc-view-matches = 賽事
+newtab-widget-wrexhamafc-view-table = 排名表
+newtab-widget-wrexhamafc-view-fixtures = 賽程
+# Menu item opening the New Tab customize panel, where wallpapers are chosen.
+newtab-widget-wrexhamafc-menu-wallpapers = 背景圖
 
 ## Strings for the navigable panels that new tab content area can be
 ## split into.
@@ -947,7 +941,7 @@ newtab-wallpaper-category-list =
 # Variables
 #   $file_size (number) - The number of the maximum image file size (in MB) that may be uploaded
 newtab-wallpaper-error-max-file-size = 圖片超過 { $file_size }MB 的檔案大小限制。請嘗試上傳小一點的檔案。
-newtab-wallpaper-error-upload-file-type = 無法上傳您的檔案，請稍後再重新上傳圖片。
+newtab-wallpaper-error-upload-file-type = 無法上傳您的檔案，請使用圖片檔案再試一次。
 newtab-wallpaper-light-red-panda = 小貓熊
 newtab-wallpaper-light-mountain = 白色山脈
 newtab-wallpaper-light-sky = 紫色與粉紅色的天空
@@ -1085,7 +1079,8 @@ newtab-wallpaper-firefox-peak-dark = 在暗色背景的左邊邊緣有一張狐�
 newtab-wallpaper-firefox-peak-light = 在亮色背景的左邊邊緣有一張狐狸的臉
 newtab-wallpaper-firefox-sky-dark = 夜空下的暗紫色山丘
 newtab-wallpaper-firefox-sky-light = 柔和天空下的明亮山丘
-# “Wrexham AFC” is the name of a football club and should not be translated.
+# “Wrexham AFC” is the name of a football club. Use the name the club is known
+# by in your language, if it has one: in Welsh, “CPD Wrecsam”.
 # "crest" refers to the football club's logo (team badge).
 newtab-wallpaper-firefox-wrexham = 紅色背景上的雷克斯漢姆足球俱樂部隊徽
 
@@ -1437,6 +1432,12 @@ newtab-widget-menu-move-left = 置左
 # Submenu item under "Move"; moves the widget one position to the right.
 # RTL locales should translate this as "Left".
 newtab-widget-menu-move-right = 置右
+# Submenu item under "Move"; pins the widget to Home, the New Tab space the
+# page opens on.
+newtab-widget-menu-move-to-home = 首頁
+# Submenu item under "Move"; moves the widget from Home back to the Widgets
+# space, the New Tab space that holds every widget not pinned to Home.
+newtab-widget-menu-move-to-widgets = 小工具
 newtab-widget-size-small = 小
 newtab-widget-size-medium = 中
 newtab-widget-size-large = 大
@@ -1473,6 +1474,10 @@ newtab-widget-section-show-more =
 # allowing users to collapse it back to one row.
 newtab-widget-section-show-less =
     .label = 顯示更少小工具
+# Shown in place of a widget's content when the widget could not be loaded.
+# The widget's name is shown and read out separately, just before this message,
+# so this message names no widget.
+newtab-widget-error-not-available = 小工具目前無法使用，請稍後再試。
 newtab-widget-lists-name-default = 檢查清單
 
 ## Strings introduced by the Nova redesign of the Timer widget
