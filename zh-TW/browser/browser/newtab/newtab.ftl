@@ -1317,6 +1317,7 @@ newtab-shortcuts-highlight-title = 手指輕鬆一點就開啟最愛網站
 newtab-shortcuts-highlight-subtitle = 新增捷徑，輕鬆一點就能開啟您的最愛網站。
 
 ## Strings for reporting issues with ads and content
+## Preceded by "Why are you reporting this?"
 
 newtab-report-content-why-reporting-this =
     .label = 為什麼您會如此回報？
@@ -1326,6 +1327,12 @@ newtab-report-ads-reason-inappropriate =
     .label = 此資訊不適當
 newtab-report-ads-reason-seen-it-too-many-times =
     .label = 我看到此資訊太多次
+newtab-report-ads-reason-scam =
+    .label = 詐騙、偽冒內容
+newtab-report-ads-reason-misleading =
+    .label = 誤導或虛假陳述
+newtab-report-ads-reason-offensive =
+    .label = 冒犯人或不適當
 newtab-report-content-wrong-category =
     .label = 分類不正確
 newtab-report-content-outdated =
@@ -1849,6 +1856,20 @@ newtab-clock-widget-search-back-button =
 newtab-clock-widget-search-location-input2 =
     .aria-label = 搜尋城市
     .placeholder = 搜尋城市
+# "Nickname (optional)" refers to a custom, user-defined label for a saved location
+# (e.g., "Home", "Office", or "School") to make it easier to recognize.
+# Not to be translated as a legal name, username, or alias used for identity verification.
+# The description counts down as the user types.
+# Variables:
+#   $count (number) - How many more characters the nickname can have.
+newtab-clock-widget-input-nickname2 =
+    .aria-label = 暱稱（選填）
+    .description =
+        { $count ->
+           *[other] 剩餘 { $count } 個字元
+        }
+    .label = 暱稱（選填）
+    .placeholder = 新增暱稱
 newtab-clock-widget-search-location-input =
     .aria-label = 搜尋城市
     .label = 位置

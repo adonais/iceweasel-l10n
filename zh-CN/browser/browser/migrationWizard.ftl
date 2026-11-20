@@ -29,6 +29,7 @@ migration-wizard-migrator-display-name-chromium-360se = 360 安全浏览器
 migration-wizard-migrator-display-name-chromium-edge = Microsoft Edge
 migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = 旧版 Microsoft Edge
+migration-wizard-migrator-display-name-self = { -brand-product-name }
 migration-wizard-migrator-display-name-firefox = Firefox
 migration-wizard-migrator-display-name-file-password-csv = CSV 文件中的密码
 migration-wizard-migrator-display-name-file-bookmarks = HTML 文件中的书签
@@ -50,6 +51,17 @@ migration-imported-edge-reading-list = 阅读列表（来自 Edge）
 migration-no-permissions-message = { -brand-short-name } 无法访问此设备上安装的其他浏览器的配置文件。
 migration-no-permissions-instructions = 如需继续从其他浏览器导入数据，请允许 { -brand-short-name } 访问其配置文件夹。
 migration-no-permissions-instructions-step1 = 选择“继续”
+# The second step in getting permissions to read data for the selected
+# browser type. On macOS, the file picker already opens in the folder that
+# needs to be selected.
+#
+# Variables:
+#  $permissionsPath (String): the file system path that the user will need to grant read permission to.
+migration-no-permissions-instructions-step2-2 =
+    { PLATFORM() ->
+        [macos] 在文件选择器中选取“打开”
+       *[other] 在文件选择器中前往 <code>{ $permissionsPath }</code>，然后选择“选择”
+    }
 # The second step in getting permissions to read data for the selected
 # browser type.
 #

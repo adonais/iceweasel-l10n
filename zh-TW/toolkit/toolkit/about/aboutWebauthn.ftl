@@ -18,6 +18,8 @@ about-webauthn-pin-section-title = PIN 碼管理
 about-webauthn-credential-management-section-title = 管理登入資訊
 about-webauthn-pin-required-section-title = 必須輸入 PIN 碼
 about-webauthn-confirm-deletion-section-title = 確認刪除
+# Section showing a log of the messages exchanged with a security token (CTAP protocol).
+about-webauthn-logging-section-title = 紀錄
 # Registered biometric features for authentication. Mostly, but not exclusively, fingerprints.
 about-webauthn-bio-enrollment-section-title = 登記生物識別資訊
 
@@ -31,6 +33,9 @@ about-webauthn-text-non-ctap2-device = 由於您的安全性 Token 不支援 CTA
 about-webauthn-text-not-available = 與此平台不相容。
 about-webauthn-bio-enrollment-list-subsection-title = 登記項目：
 about-webauthn-add-bio-enrollment-section-title = 新增登記項目
+about-webauthn-logging-warning = 紀錄檔可能包含使用者名稱、帳號識別碼及網址等個人資訊。分享前請先確認內容。
+# CTAP (Client to Authenticator Protocol) and WebAuthn are protocol names and should not be translated.
+about-webauthn-logging-scope-note = 只會記錄傳送至 { -brand-short-name } 原生 CTAP 實作的請求，不會記錄傳送至平台 WebAuthn API 或瀏覽器擴充套件的請求。
 
 ## Results label
 
@@ -74,6 +79,12 @@ about-webauthn-add-bio-enrollment-button = 新增登記資訊
 about-webauthn-cancel-button = 取消
 about-webauthn-send-pin-button = 確定
 about-webauthn-delete-button = 刪除
+# Starts recording the log of messages exchanged with a security token.
+about-webauthn-start-button = 開始
+# Stops recording the log of messages exchanged with a security token.
+about-webauthn-stop-button = 停止
+# Clears the log of messages exchanged with a security token.
+about-webauthn-clear-button = 清除
 about-webauthn-start-enrollment-button = 開始登記資訊
 about-webauthn-update-button = 更新
 

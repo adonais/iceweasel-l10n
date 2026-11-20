@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Downloads - Files and applications
+
 global-privacy-control-description =
     .label = 告訴網站不要銷售或分享我的資料
     .accesskey = s
@@ -464,7 +467,7 @@ spellcheck-promo =
     .heading = 如何進行拼字檢查
     .message = 對文字欄位按右鍵，即可開關拼字檢查功能或更改語言。不是所有輸入欄位都支援拼字檢查。
 
-## General Section - Files and Applications
+## Downloads - Files and applications
 
 files-and-applications-title = 檔案與應用程式
 download-save-files-header =
@@ -634,6 +637,14 @@ support-get-help =
     .label = 取得幫助
 support-share-ideas =
     .label = 分享想法與意見回饋
+
+## Firefox newsletter
+
+newsletter-settings-heading =
+    .description = 訂閱使用秘訣、建議與相關新聞，讓 { -brand-product-name } 為您發揮最大威力。
+    .label = { -brand-product-name } 電子報
+newsletter-sign-up-link =
+    .label = 訂閱
 
 ## General Section - Performance
 
@@ -1158,6 +1169,9 @@ prefs-syncing-button =
 prefs-syncing-button-2 =
     .label = 同步中…
     .title = 立刻同步
+# "Your sync choices" refers to the choices a user makes on what types of data they want to sync
+sync-cwts-migration-notification =
+    .message = 現在起，您選擇的同步項目只會套用至此裝置。
 
 ## The list of things currently syncing.
 
@@ -2163,7 +2177,7 @@ preferences-doh-select-resolver-label =
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item =
     .label = { $name }
-    .tooltiptext = 使用者此提供者進行 DNS over HTTPS 解析
+    .tooltiptext = 使用此提供者進行 DNS over HTTPS 解析
 preferences-doh-custom-provider-label =
     .aria-label = 輸入自訂提供者網址
 preferences-doh-header2 =

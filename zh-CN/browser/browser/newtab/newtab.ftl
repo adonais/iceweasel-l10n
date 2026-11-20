@@ -144,6 +144,11 @@ home-prefs-mission-message-learn-more-link-srd = 了解其方式
 
 # Context menu item linking to more information about the Privacy widget.
 newtab-privacy-menu-learn-more = 详细了解
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-privacy-widget-open-menu-button =
+    .aria-label = 打开隐私菜单
+    .title = 打开隐私菜单
 # Accessible name for the Privacy widget container. The widget shows no visible
 # title, so screen readers rely on this label to identify it.
 newtab-privacy-widget-label =
@@ -175,9 +180,14 @@ newtab-privacy-empty-state = { -brand-short-name } 会自动拦截跟踪器，�
 # Here we are referring to the number of trackers blocked, which increases as the user browses.
 # An alternative can be "See a running total here"
 newtab-privacy-empty-state-tally = 在此查看实时计数。
+# Shorter empty-state copy for the small card, shown as two separate lines.
+newtab-privacy-empty-state-small-title = 减少跟踪器，浏览更快速。
+newtab-privacy-empty-state-small-message = 开始浏览后，即会拦截跟踪器。
 
 ## Privacy widget — Enhanced Tracking Protection off state
 
+# Shown when the user has turned off the Enhanced Tracking Protection setting.
+newtab-privacy-etp-off-faster-browsing = 减少跟踪器，浏览更快速。
 newtab-privacy-etp-off-turn-on-tracking = 前往“设置”开启跟踪保护，即可开始拦截。
 
 ## Privacy widget — informational messages
@@ -244,6 +254,9 @@ newtab-privacy-message-promo-relay-3-cta = 获取马甲邮箱
 ## Earned "celebration" moments (milestones, daily cap, streak, first
 ## protection). Count-bearing ones interpolate { $count }.
 
+# Variables:
+#   $count (number) - Trackers blocked this week
+newtab-privacy-message-milestone-week = 本周已拦截 { $count } 个跟踪器，来看看 { -brand-short-name } 的拦截成果。
 newtab-privacy-message-milestone-week-cta = 查看保护信息
 # Variables:
 #   $count (number) - Trackers blocked this month
@@ -271,6 +284,11 @@ newtab-privacy-message-first-protection-cta = 查看保护信息
 newtab-stocks-menu-learn-more = 详细了解
 # Shown in the Finance widget when its data could not be loaded.
 newtab-stocks-error-not-available = 无法获取股市数据。
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-stocks-widget-open-menu-button2 =
+    .aria-label = 打开财经菜单
+    .title = 打开财经菜单
 # Toolbar button that opens the stock search. It shows only the icon until it is
 # hovered or focused, then the .label as well; "Search" is a verb. .title and
 # .aria-label name it for tooltips and screen readers.
@@ -278,6 +296,9 @@ newtab-stocks-search-button =
     .aria-label = 搜索名称或代码
     .label = 搜索
     .title = 搜索名称或代码
+# Shown on the Watchlist while the user has no stocks in it, above a button that
+# opens the stock search.
+newtab-stocks-watchlist-empty = 开始关注您感兴趣的股票
 # Button under the empty-watchlist message that opens the stock search. Shown
 # with a magnifying-glass icon and the .label, where "Search" is a verb; .title
 # and .aria-label name it the same way as the toolbar search button.
@@ -295,6 +316,9 @@ newtab-stocks-list-watchlist = 关注列表
     .label = 关注列表
 # Context menu item that opens the stock search (by company name or ticker symbol).
 newtab-stocks-menu-search-stocks = 搜索名称或代码
+# Accessible name for the Finance widget. It is usually not shown, since the
+# list dropdown or the chosen ticker symbol takes the title's place.
+newtab-stocks-widget-title2 = 财经
 
 ## Screen-reader summary of a stock ticker.
 ## Variables:
@@ -349,6 +373,9 @@ newtab-stocks-search-input =
 # search. It means "results of the search", not "search within the results".
 newtab-stocks-search-results =
     .aria-label = 搜索结果
+# Shown in the search panel, where the results will appear, until the user
+# has searched.
+newtab-stocks-search-hint = 搜索股票代码或公司，将其添加到关注列表
 # "Back" is an icon-only button in the search panel header that returns to the
 # widget — the attributes are consumed as tooltip/screen-reader label only. The
 # button never renders visible text.
@@ -375,6 +402,10 @@ newtab-stocks-watchlist-full = 最多可添加 { $limit } 支股票。请先移�
 newtab-picture-header = 每日一图 · 维基共享资源
 # Shorter title shown at the top of the widget, without the source name.
 newtab-picture-header-main = 每日一图
+# Title shown at the top of the widget, with the date of the picture shown.
+# $date (Date) - the day Wikimedia Commons featured the picture as its picture
+# of the day, shown in numbers (for example 10/8/2026).
+newtab-picture-header-date = 每日一图：{ DATETIME($date, day: "numeric", month: "numeric", year: "numeric") }
 # Attribution line shown under the title once a picture loads: an author
 # credit, a link to the picture's source page, and a link to its license.
 # "©" is the copyright symbol.
@@ -393,10 +424,25 @@ newtab-picture-attribution-license =
 newtab-picture-widget-open-menu-button =
     .aria-label = 打开每日一图菜单
     .title = 打开每日一图菜单
+# Button that sets the picture shown in the widget, which may be today’s or the
+# previous day’s, as the New Tab background wallpaper. The button collapses to an
+# icon when not hovered/focused, so .title is its tooltip.
+newtab-picture-set-wallpaper2 =
+    .aria-label = 将此图片设为壁纸
+    .label = 设为壁纸
+    .title = 设为壁纸
 # Context menu item that opens the New Tab customization panel.
 newtab-picture-menu-manage-wallpaper = 管理壁纸
+# Context menu item that hides the picture shown in the widget.
+newtab-picture-menu-hide-photo2 = 隐藏此图片
+# Context menu item that restores the picture after it has been hidden.
+newtab-picture-menu-show-photo2 = 显示图片
 # Context menu item linking to more information about the widget.
 newtab-picture-menu-learn-more = 详细了解
+# Icon button shown on the widget once the picture is hidden; restores it.
+newtab-picture-show-button2 =
+    .aria-label = 显示图片
+    .title = 显示图片
 # Shown when there is no new picture to display yet.
 newtab-picture-check-back = 明天再来看看有没有新照片吧
 # Screen-reader text alternative for the picture; fallback used when the source
@@ -437,10 +483,78 @@ newtab-recent-searches-empty-recent = 近期搜索会显示在这里，方便随
 # Shown in place of the list when there are no trending search results.
 newtab-recent-searches-empty-trending = 热门搜索当前不可用。
 
+## Strings for the Horoscopes widget
+
+# Widget heading; also the widget's accessible name.
+newtab-horoscopes-widget-title = 星座
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-horoscopes-widget-open-menu-button =
+    .aria-label = 打开星座菜单
+    .title = 打开星座菜单
+# Context menu item linking to more information about the widget.
+newtab-horoscopes-menu-learn-more = 详细了解
+# Context menu item linking to the Yahoo website, the provider of the
+# horoscopes. “Yahoo” is a brand name and should not be translated.
+newtab-horoscopes-menu-powered-by-yahoo = 由 Yahoo 提供
+
 ## Strings for the Travel widget
 
+# Widget heading; also the widget's accessible name. Travel (noun) is a
+# widget on New Tab for searching hotels, flights and car rentals.
+newtab-travel-widget-title = 旅行
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-travel-widget-open-menu-button =
+    .aria-label = 打开旅行菜单
+    .title = 打开旅行菜单
 # Context menu item linking to more information about the widget.
 newtab-travel-menu-learn-more = 详细了解
+# Context menu item linking to the Kayak website, the provider of the
+# travel search. “Kayak” is a brand name and should not be translated.
+newtab-travel-menu-powered-by-kayak = 由 Kayak 提供
+
+## Strings for the Solitaire widget. Solitaire is a widget on New Tab where you
+## can play solitaire, a card game for one player, also known as patience.
+## Game displays within an iframe with name “Yahoo Solitaire”
+
+# Widget heading; also the widget's accessible name.
+newtab-solitaire-widget-title = 纸牌
+# Tooltip and screen reader label for the icon-only button that opens the
+# widget's menu.
+newtab-solitaire-widget-open-menu-button =
+    .aria-label = 打开纸牌菜单
+    .title = 打开纸牌菜单
+# Context menu item linking to more information about the widget.
+newtab-solitaire-menu-learn-more = 详细了解
+
+## Strings for the Wrexham AFC widget. Wrexham AFC is a football club from
+## Wrexham, Wales. For now, the widget is only expected to be shown in Welsh
+## and British English. “Wrexham AFC” is the club’s name. Use the name the
+## club is known by in your language, if it has one: in Welsh, “CPD Wrecsam”.
+
+# The widget's name. .title is its heading and accessible name, .label its
+# Customize panel toggle, and .menu-label the screen reader label of the
+# button that opens its menu.
+newtab-custom-widget-wrexhamafc =
+    .label = 雷克瑟姆队
+    .menu-label = 打开雷克瑟姆队菜单
+    .title = 雷克瑟姆队
+# Menu item opening a submenu that switches what the widget shows. “View” is a
+# noun here, as in “the view the widget shows”.
+newtab-widget-wrexhamafc-menu-view = 视图
+
+## Options in the View submenu, each switching the widget to a different view.
+## These are football terms: “Matches” shows the club’s latest or next match,
+## with its score once it has started; “Table” shows the league table, the
+## standings of the teams in the club’s league; and “Fixtures” lists the club’s
+## upcoming scheduled matches.
+
+newtab-widget-wrexhamafc-view-matches = 比赛
+newtab-widget-wrexhamafc-view-table = 积分榜
+newtab-widget-wrexhamafc-view-fixtures = 赛程
+# Menu item opening the New Tab customize panel, where wallpapers are chosen.
+newtab-widget-wrexhamafc-menu-wallpapers = 壁纸
 
 ## Strings for the navigable panels that new tab content area can be
 ## split into.
@@ -658,6 +772,9 @@ newtab-discovery-empty-section-topstories-header = 都读完了！
 newtab-discovery-empty-section-topstories-content = 待会再来看是否有新文章。
 newtab-discovery-empty-section-topstories-try-again-button = 重试
 newtab-discovery-empty-section-topstories-loading = 正在加载…
+# Headline and body shown when stories fail to load, for example when offline or the server can’t be reached.
+newtab-discovery-empty-section-topstories-unavailable-header = 暂时无法获取文章
+newtab-discovery-empty-section-topstories-unavailable-body = 请检查网络连接或稍后再试。
 # Displays when a layout in a section took too long to fetch articles.
 newtab-discovery-empty-section-topstories-timed-out = 哎呀！无法完全加载此版块。
 
@@ -738,10 +855,24 @@ newtab-custom-widget-privacy-toggle =
 # Crossword is a widget on New Tab that shows a daily crossword puzzle.
 newtab-custom-widget-crossword-toggle =
     .label = 填字游戏
+# Finance is a widget on New Tab that shows stock ticker prices.
+newtab-custom-widget-stocks-toggle2 =
+    .label = 财经
 newtab-custom-widget-picture-toggle =
     .label = 每日一图
 newtab-custom-widget-search-toggle =
     .label = 搜索
+newtab-custom-widget-horoscopes-toggle =
+    .label = 星座
+# Travel (noun) is a widget on New Tab for searching hotels, flights
+# and car rentals.
+newtab-custom-widget-travel-toggle =
+    .label = 旅行
+# Solitaire is a widget on New Tab where you can play solitaire, a card game
+# for one player, also known as patience.
+# Game displays within an iframe with name “Yahoo Solitaire”
+newtab-custom-widget-solitaire-toggle =
+    .label = 纸牌
 newtab-custom-widget-section-title = 小组件
 newtab-custom-widget-section-toggle =
     .label = 小组件
@@ -932,10 +1063,18 @@ newtab-wallpaper-firefox-hills-dark = 狐狸奔跑在暗色的山丘上
 newtab-wallpaper-firefox-hills-light = 狐狸奔跑在明亮的山丘上
 newtab-wallpaper-firefox-tail-dark = 深色背景上的狐狸尾巴
 newtab-wallpaper-firefox-tail-light = 浅色背景上的狐狸尾巴
+newtab-wallpaper-firefox-side-kit-dark = 狐狸从深色背景左侧探出脑袋
+newtab-wallpaper-firefox-side-kit-light = 狐狸从浅色背景左侧探出脑袋
 newtab-wallpaper-firefox-sitting-hill-dark = 狐狸坐在深紫色山丘上
 newtab-wallpaper-firefox-sitting-hill-light = 狐狸坐在明亮的山丘上
+newtab-wallpaper-firefox-peak-dark = 深色背景左侧边缘露出狐狸的脸
+newtab-wallpaper-firefox-peak-light = 浅色背景左侧边缘露出狐狸的脸
 newtab-wallpaper-firefox-sky-dark = 夜幕下的深紫色山峦
 newtab-wallpaper-firefox-sky-light = 柔和天空下的明亮山峦
+# “Wrexham AFC” is the name of a football club. Use the name the club is known
+# by in your language, if it has one: in Welsh, “CPD Wrecsam”.
+# "crest" refers to the football club's logo (team badge).
+newtab-wallpaper-firefox-wrexham = 红色背景上的雷克瑟姆队队徽
 
 ## Firefox
 
@@ -972,6 +1111,14 @@ newtab-weather-menu-change-location = 更改位置
 newtab-weather-change-location-search-input-placeholder =
     .aria-label = 搜索位置
     .placeholder = 搜索位置
+# "Back" is an icon-only button next to the location search field that returns to the widget.
+newtab-weather-search-back-button =
+    .aria-label = 返回
+    .title = 返回
+# Screen reader label for the dropdown below the location search field that
+# lists matching locations as the user types.
+newtab-weather-location-search-results =
+    .aria-label = 建议的位置
 newtab-weather-cancel-input =
     .aria-label = 取消
     .title = 取消
@@ -1162,6 +1309,7 @@ newtab-shortcuts-highlight-title = 顺手就能打开常用网站
 newtab-shortcuts-highlight-subtitle = 添加快捷方式，一键打开常用网站。
 
 ## Strings for reporting issues with ads and content
+## Preceded by "Why are you reporting this?"
 
 newtab-report-content-why-reporting-this =
     .label = 此内容存在什么问题？
@@ -1277,6 +1425,12 @@ newtab-widget-menu-move-left = 左侧
 # Submenu item under "Move"; moves the widget one position to the right.
 # RTL locales should translate this as "Left".
 newtab-widget-menu-move-right = 右侧
+# Submenu item under "Move"; pins the widget to Home, the New Tab space the
+# page opens on.
+newtab-widget-menu-move-to-home = 主页
+# Submenu item under "Move"; moves the widget from Home back to the Widgets
+# space, the New Tab space that holds every widget not pinned to Home.
+newtab-widget-menu-move-to-widgets = 小组件
 newtab-widget-size-small = 小
 newtab-widget-size-medium = 中
 newtab-widget-size-large = 大
@@ -1313,6 +1467,10 @@ newtab-widget-section-show-more =
 # allowing users to collapse it back to one row.
 newtab-widget-section-show-less =
     .label = 折叠小组件
+# Shown in place of a widget's content when the widget could not be loaded.
+# The widget's name is shown and read out separately, just before this message,
+# so this message names no widget.
+newtab-widget-error-not-available = 小组件不可用，请稍后再来查看。
 newtab-widget-lists-name-default = 核对清单
 
 ## Strings introduced by the Nova redesign of the Timer widget
@@ -1371,6 +1529,9 @@ newtab-promo-card-dismiss-button =
 newtab-crossword-widget-open-menu-button =
     .aria-label = 打开填字游戏菜单
     .title = 打开填字游戏菜单
+# Context menu item linking to the Particle website, the provider of the
+# crossword. “Particle” is a brand name and should not be translated.
+newtab-crossword-menu-powered-by-particle = 由 Particle 提供
 
 ## Strings introduced by the Nova redesign of the Timer widget
 
@@ -1674,6 +1835,10 @@ newtab-clock-widget-menu-edit = 编辑时钟
 newtab-clock-widget-menu-switch-to-12h = 切换为 12 小时制
 newtab-clock-widget-menu-switch-to-24h = 切换为 24 小时制
 newtab-clock-widget-label-your-clocks = 您的时钟
+# "Back" is an icon-only button next to the city search field form that returns to the list of clocks.
+newtab-clock-widget-search-back-button =
+    .aria-label = 返回
+    .title = 返回
 newtab-clock-widget-search-location-input2 =
     .aria-label = 搜索城市
     .placeholder = 搜索城市

@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## Downloads - Files and applications
+
 global-privacy-control-description =
     .label = 要求网站不许出售或共享我的数据
     .accesskey = s
@@ -353,6 +356,8 @@ website-language-heading =
     .label = 网站语言
 website-preferred-language =
     .label = 偏好语言
+website-language-list =
+    .aria-label = 偏好语言
 website-add-language =
     .label = 添加语言
 website-add-language-button =
@@ -470,7 +475,7 @@ spellcheck-promo =
     .heading = 如何使用拼写检查
     .message = 右键点击文本字段可开关拼写检查或更改语言。并非所有字段都支持拼写检查。
 
-## General Section - Files and Applications
+## Downloads - Files and applications
 
 files-and-applications-title = 文件与应用程序
 download-save-files-header =
@@ -696,7 +701,11 @@ settings-keyboard-shortcuts-group =
     .description = 控制操作和与 { -brand-short-name } 交互的方式。
     .label = 键盘快捷键
 settings-keyboard-shortcuts-customkeys-link =
-    .label = 自定义键盘快捷键
+    .label = 定制键盘快捷键
+# Link that takes the user to the Search category of settings, where the
+# address bar options live.
+settings-keyboard-shortcuts-addressbar-link =
+    .label = 在搜索部分中定制地址栏设置
 settings-media-group =
     .label = 媒体
 browsing-picture-in-picture-toggle-enabled-2 =
@@ -805,6 +814,8 @@ home-homepage-custom-homepage-button =
 # Subheader on the Custom Homepage subpage. Followed by a form to enter URLs and a list of URLs already saved, if any.
 home-custom-homepage-card-header =
     .label = 网址
+home-custom-homepage-list =
+    .aria-label = 网址
 home-custom-homepage-address =
     .placeholder = 输入地址
 home-custom-homepage-address-button =
@@ -917,6 +928,14 @@ search-separate-default-engine-2 =
     .accesskey = U
 search-separate-default-engine-dropdown =
     .aria-label = 隐私窗口中的默认搜索引擎
+# "Navigation" here means moving around within the address bar and its results
+# list, not navigation to the address bar.
+addressbar-navigation-group =
+    .label = 地址栏导航
+# "Results menu" refers to the menu available on each row of the address bar
+# results list, which offers actions such as dismissing the result.
+addressbar-skip-result-menu-on-tab =
+    .label = 使用 Tab 键移动焦点时跳过结果菜单
 search-suggestions-header-2 =
     .label = 搜索引擎建议
 search-one-click-header2 = 快捷搜索
@@ -924,6 +943,8 @@ search-one-click-desc = 请选择在地址栏和搜索栏输入关键词时，�
 search-one-click-header-3 =
     .description = 选择在地址栏中显示的搜索引擎和快捷方式。
     .label = 备用搜索引擎
+search-engine-list =
+    .aria-label = 搜索引擎与快捷方式
 update-search-engine-success =
     .message = 更新搜索引擎成功
 search-edit-engine-2 =
@@ -987,6 +1008,8 @@ containers-card-header2 =
 containers-add-button2 =
     .label = 添加新身份
     .accesskey = A
+containers-list =
+    .aria-label = 身份
 containers-new-tab-check3 =
     .label = 每次新建标签页时选择身份
     .accesskey = S
@@ -1117,6 +1140,10 @@ prefs-syncing-off = 同步：关闭
 prefs-syncing-off-2 =
     .description = 开启同步以跨设备查看书签、密码、历史记录等信息。
     .label = 同步：关闭
+# This string is shown when the user's device has per-device syncing enabled but sync is disabled on the device.
+prefs-syncing-off-3 =
+    .description = 开启同步服务以获取您在此设备上的书签、密码、历史记录等数据。
+    .label = 同步：关闭
 prefs-sync-turn-on-syncing =
     .label = 开启同步...
     .accesskey = s
@@ -1140,8 +1167,12 @@ prefs-syncing-button-2 =
 
 sync-syncing-across-devices-heading = 您目前与已连接的设备同步以下项目：
 sync-syncing-across-devices-heading-2 = 跨设备同步的数据
+sync-syncing-across-devices-heading-3 = 此设备正在同步的数据
 sync-syncing-across-devices-empty-state2 =
     .description = 尚未同步任何数据。开始同步，让所有数据在您的各设备上触手可得。
+    .label = 管理同步的数据
+sync-syncing-across-devices-empty-state3 =
+    .description = 尚未同步任何数据，请选择此设备要同步的数据。
     .label = 管理同步的数据
 sync-currently-syncing-bookmarks = 书签
 sync-currently-syncing-history = 历史记录
@@ -1168,6 +1199,11 @@ sync-engine-bookmarks =
 sync-engine-history =
     .label = 历史记录
     .accesskey = r
+# This string is a modified noun (i.e. tabs that are open)
+sync-engine-tabs2 =
+    .label = 打开的标签页
+    .tooltiptext = 其他设备上打开的标签页
+    .accesskey = t
 sync-engine-tabs =
     .label = 打开的标签页
     .tooltiptext = 所有同步的设备上打开的标签页
@@ -1176,6 +1212,22 @@ sync-engine-passwords =
     .label = 密码
     .tooltiptext = 保存的密码
     .accesskey = P
+sync-engine-addresses2 =
+    .label = 地址
+    .tooltiptext = 在 { -brand-short-name } 中保存的地址
+    .accesskey = e
+sync-engine-payment-methods3 =
+    .label = 付款方式
+    .tooltiptext = 保存的付款方式
+    .accesskey = n
+sync-engine-addons2 =
+    .label = 附加组件
+    .tooltiptext = 添加到桌面版 { -brand-short-name } 的扩展和主题
+    .accesskey = A
+sync-engine-settings2 =
+    .label = 设置
+    .tooltiptext = 适用的 { -brand-short-name } 设置
+    .accesskey = s
 sync-engine-addresses =
     .label = 邮政地址
     .tooltiptext = 您已保存的邮政地址（仅限桌面版）
@@ -1198,7 +1250,14 @@ sync-choose-what-to-sync-dialog4 =
     .buttonaccesskeyaccept = S
     .buttonaccesskeyextra2 = D
     .style = min-width: 36em;
-    .title = 管理需要同步到所有已连接设备上的项目
+    .title = 管理同步到所有已连接设备上的数据
+sync-choose-what-to-sync-dialog5 =
+    .buttonlabelaccept = 保存
+    .buttonlabelextra2 = 断开连接…
+    .buttonaccesskeyaccept = S
+    .buttonaccesskeyextra2 = D
+    .style = min-width: 36em;
+    .title = 管理此设备同步的数据
 
 ## The device name controls.
 
@@ -1360,6 +1419,10 @@ autofill-payment-methods-manage-payments-button =
     .label = 管理付款方式
     .accesskey = m
 # This operation requires the user to authenticate with the operating system (device sign-in)
+autofill-payment-methods-require-device-sign-in-checkbox =
+    .label = 需要通过设备登录才能自动填写
+    .accesskey = o
+# This operation requires the user to authenticate with the operating system (device sign-in)
 autofill-reauth-payment-methods-checkbox-2 =
     .label = 自动填写和管理付款方式前需验证设备登录信息
     .accesskey = o
@@ -1434,6 +1497,45 @@ preferences-passwords-autofill-header =
 payment-moz-box-item =
     .description = { $expDate }
     .label = { $cardNumber }
+# Used in place of payment-moz-box-item when a security code is saved alongside
+# the card. Only the presence of a saved security code is ever shown, never the
+# code itself: "•••" stands for the hidden code, so keep it as is rather than
+# translating it into words.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+#   $securityCode (string) - The name of the card's security code, which depends
+#     on the card network (for example: CVV)
+payment-moz-box-item-with-security-code-2 =
+    .description = { $expDate } | { $securityCode } •••
+    .label = { $cardNumber }
+# Used in place of payment-moz-box-item-with-security-code-2 for a card that has
+# a saved security code but no expiry date to show alongside it. "•••" stands for
+# the hidden code.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $securityCode (string) - The name of the card's security code, which depends
+#     on the card network (for example: CVV)
+payment-moz-box-item-security-code-only-2 =
+    .description = { $securityCode } •••
+    .label = { $cardNumber }
+# Used in place of payment-moz-box-item when a security code is saved alongside
+# the card. Only the presence of a saved security code is ever shown, never the
+# code itself. "CVV" is a common abbreviation for the security code printed on a
+# payment card; use whichever abbreviation is most familiar in your locale.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+#   $expDate (string) - The obscured expiry date of the credit card (for example: XX/2027)
+payment-moz-box-item-with-security-code =
+    .description = { $expDate } | 安全码已保存
+    .label = { $cardNumber }
+# Used in place of payment-moz-box-item-with-security-code for a card that has a
+# saved security code but no expiry date to show alongside it.
+# Variables:
+#   $cardNumber (string) - The obscured credit card number (for example: ********* 2423)
+payment-moz-box-item-security-code-only =
+    .description = CVV 已保存
+    .label = { $cardNumber }
 addresses-group =
     .label = 地址等信息
 payments-group =
@@ -1445,7 +1547,7 @@ history-remember-option-never2 =
     .description = 所有窗口都将如同隐私窗口。启用后，扩展需经允许后才能运行。
     .label = 不记录历史
 history-remember-option-custom2 =
-    .label = 自定义历史记录
+    .label = 定制历史
 history-remember-description4 =
     .aria-label = { history-group.label }
     .description = { -brand-short-name } 将记住您的浏览、下载、表单和搜索记录。
@@ -1459,10 +1561,10 @@ history-private-browsing-permanent =
     .label = 一律使用隐私浏览模式
     .accesskey = p
 history-remember-browser-option =
-    .label = 记住浏览和下载历史
+    .label = 记录浏览和下载历史
     .accesskey = b
 history-remember-search-option =
-    .label = 记住搜索和表单历史
+    .label = 记录搜索和表单历史
     .accesskey = f
 history-clear-on-close-option =
     .label = 在 { -brand-short-name } 关闭时清除历史记录
@@ -1479,7 +1581,7 @@ history-clear-button =
 history-header2 =
     .heading = 历史记录
 history-section-header =
-    .description = 选择关闭浏览器时 { -brand-short-name } 应记住的内容。
+    .description = 选择关闭浏览器时 { -brand-short-name } 应记录的内容。
     .label = 历史记录
 history-custom-section-header =
     .description = 自定义关闭浏览器时 { -brand-short-name } 应记住的内容。
@@ -1740,6 +1842,15 @@ permissions-addon-install-warning3 =
 permissions-addon-exceptions2 =
     .label = 选择可以安装扩展的网站
     .accesskey = E
+# App links are links that a website can ask to open for you, like email
+# (mailto:) links.
+permissions-allow-app-links =
+    .label = 允许网站询问是否打开应用链接。
+    .accesskey = A
+# Opens the list of sites that are blocked from asking to open app links.
+permissions-app-links-manage-button =
+    .label = 管理已屏蔽的网站
+    .accesskey = M
 permissions-location2 =
     .label = 位置
 permissions-localhost2 =
@@ -1764,6 +1875,58 @@ permissions-data-section =
     .heading = 权限与数据
 pane-permissions-data-title2 = 权限与数据
     .title = 权限与数据
+notifications-section-header =
+    .heading = 通知
+# Variables:
+#   $count (number) - Number of websites with a stored notification decision,
+#                     always one or more. The zero case is a separate message,
+#                     notifications-entry-manage-button-empty.
+notifications-entry-manage-button =
+    .description =
+        { $count ->
+           *[other] { $count } 个网站
+        }
+    .label = 管理通知设置
+# Replaces notifications-entry-manage-button when no website has a stored
+# notification decision. It deliberately carries no description: the empty
+# state is stated on the Notifications page rather than on this row.
+notifications-entry-manage-button-empty =
+    .label = 管理网站通知设置
+notifications-website-card-header =
+    .description = 选择网站发送通知的方式。
+    .label = 网站通知
+notifications-filter =
+    .placeholder = 搜索网站
+# Heading of the website column in the list of websites and their notification
+# state, shown when the list has rows.
+notifications-list-header =
+    .label = 网站
+# Heading of the state column in the list of websites and their notification
+# state, shown when the list has rows.
+notifications-list-header-state = 允许通知
+# Heading of the list of websites when it has no rows, because no website has a
+# stored notification decision or a search matches no website.
+notifications-list-header-empty =
+    .label = 网站
+# Read-only state shown on each row of the website notifications list, in the
+# column headed "Allow notifications". "Always" is used where notifications can
+# also be delivered while Firefox is closed.
+notifications-state-always = 始终
+# Read-only state shown on each row of the website notifications list, in the
+# column headed "Allow notifications". "Allow" is used where notifications
+# cannot be delivered while Firefox is closed.
+notifications-state-allow = 允许
+# Read-only state shown on each row of the website notifications list, in the
+# column headed "Allow notifications", for websites blocked from sending
+# notifications.
+notifications-state-never = 永不
+# Shown as a row under the list header when no website has a stored
+# notification decision.
+notifications-empty-message =
+    .label = 未添加网站通知。
+# Shown as a row under the list header when a search matches no website.
+notifications-no-results-message =
+    .label = 没有符合搜索条件的网站通知。
 
 ## Privacy Section - Data Collection
 
@@ -2056,7 +2219,7 @@ appearance-window-density-touch =
 related-settings-group =
     .label = 相关设置
 related-settings-accessibility-link =
-    .label = 在无障碍部分中自定义缩放和字体设置
+    .label = 在无障碍部分中定制缩放和字体设置
 related-settings-home-link =
     .label = 定制 { -firefox-home-brand-name }
 related-settings-tabs-browsing-link =
@@ -2363,7 +2526,7 @@ preferences-etp-level-strict =
     .label = 严格
 preferences-etp-level-custom =
     .description = 选择开启和关闭的保护。
-    .label = 定制
+    .label = 自定义
 preferences-etp-status-advanced-button =
     .label = 高级设置
 preferences-etp-tracker-count-enabled =
@@ -2377,7 +2540,7 @@ preferences-etp-advanced-settings-group =
     .description = 网站会使用跟踪器在网络上跟踪您，从而显示恼人的广告。{ -brand-short-name } 可在浏览期间保护您，自动拦截大多数跟踪器，让您能控制自己的数字痕迹。
     .label = 高级设置
 preferences-etp-customize-button =
-    .label = 自定义跟踪保护
+    .label = 定制跟踪保护
 preferences-etp-reload-tabs-hint =
     .message = 重新加载标签页以应用这些更改。
 preferences-etp-reload-tabs-hint-button =
@@ -2391,7 +2554,7 @@ preferences-etp-manage-exceptions-button =
     .description = 管理禁用增强型跟踪保护的网站。
     .label = 管理例外
 preferences-etp-customize-header =
-    .heading = 自定义跟踪保护
+    .heading = 定制跟踪保护
 preferences-etp-reset =
     .description = 将设置恢复为预设的保护级别。
     .label = 重置定制项
